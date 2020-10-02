@@ -1,0 +1,24 @@
+---
+permalink: administration/reference_snap_creator_agent_not_responding.html
+sidebar: sidebar
+keywords: 
+summary: 'The Snap Creator Agent is not responding.'
+---
+= Snap Creator Agent not responding
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+The Snap Creator Agent is not responding.
+
+* *Issue*
++
+The Snap Creator Agent is not responding.
+
+* *Corrective action*
++
+Verify the following:
+
+ ** The Snap Creator Agent is running.
+ ** The selected port is not already in use.
+ ** Communication on the Agent port is allowed through the firewall.

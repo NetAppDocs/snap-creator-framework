@@ -1,0 +1,20 @@
+---
+permalink: administration/task_assigning_permissions_to_snap_creator_roles.html
+sidebar: sidebar
+keywords: 
+summary: 'You can assign permissions to Snap Creator roles by using the Snap Creator GUI.'
+---
+= Assigning permissions to Snap Creator roles
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can assign permissions to Snap Creator roles by using the Snap Creator GUI.
+
+. From the Snap Creator GUI main menu, select *Users and Roles* > *Role management*.
+. In the Role management tab, select the desired role and then click *Assign Permissions*.
+. Move the desired permissions from the left column to the right column and then click *Save*.
++
+You can select and drag the permissions between columns or click the arrow to move the permissions between columns.
+
+. Verify that the permission was assigned by selecting the role and viewing the assigned permission in the Roles and assigned permissions pane.

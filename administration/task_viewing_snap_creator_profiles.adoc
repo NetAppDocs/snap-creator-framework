@@ -1,0 +1,16 @@
+---
+permalink: administration/task_viewing_snap_creator_profiles.html
+sidebar: sidebar
+keywords: 
+summary: 'You can list the existing Snap Creator profiles.'
+---
+= Viewing profiles
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can list the existing Snap Creator profiles.
+
+. From the Snap Creator GUI main menu, select *Management* > *Configurations*.
++
+The existing Snap Creator profiles are listed in the Profiles and Configurations pane.

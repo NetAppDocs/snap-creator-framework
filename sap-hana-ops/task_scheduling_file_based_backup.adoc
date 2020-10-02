@@ -1,0 +1,19 @@
+---
+permalink: sap-hana-ops/task_scheduling_file_based_backup.html
+sidebar: sidebar
+keywords: 
+summary: 'For SAP HANA configurations, you can schedule additional operations such as file-based backup and database integrity checks. You can schedule the file-based backup operation to occur at specific intervals.'
+---
+= Scheduling file-based backup
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+For SAP HANA configurations, you can schedule additional operations such as file-based backup and database integrity checks. You can schedule the file-based backup operation to occur at specific intervals.
+
+. From the main menu of the Snap Creator GUI, select *Management* > *Schedules*, and click *Create*.
+. In the New Job window, enter the details for the job.
++
+The file-based backup policy is set to "`none`" by default.
++
+image::../media/creating_file_based_backup_schedules.gif[Creating File-Based Backup schedules]

@@ -1,0 +1,30 @@
+---
+permalink: installation/task_starting_the_server_from_a_command_prompt.html
+sidebar: sidebar
+keywords: 
+summary: 'You can manually start the Snap Creator Server from a command prompt by running a batch script \(scServer.bat\).'
+---
+= Starting the Server from a command prompt
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can manually start the Snap Creator Server from a command prompt by running a batch script (scServer.bat).
+
+Typically, you must follow this procedure only if you did not select the *Start server as service* option during installation.
+
+You can also schedule the batch script (scServer.bat) to run at startup through the Windows task scheduler. For details about using the Windows task scheduler, see the documentation for your Windows operating system.
+
+Because the batch script (scServer.bat) runs Snap Creator in the foreground, the Snap Creator Server continues to run only as long as the command prompt is open. Closing the command prompt quits the Snap Creator Server. To run in the background, the Snap Creator Server service should be used.
+
+. Open a command prompt and enter the following commands:
++
+----
+cd \install_path\scServerrelease-version\bin\
+scServer.bat start
+----
++
+----
+cd \Program Files\NetApp\Snap_Creator_Framework\scServer4.1.0\bin\
+scServer.bat start
+----

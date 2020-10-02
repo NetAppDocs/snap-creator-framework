@@ -1,0 +1,34 @@
+---
+permalink: administration/concept_vm_backup_and_restore_using_vmware_plug_in.html
+sidebar: sidebar
+keywords: 
+summary: 'Snap Creator supports the backup of VMware virtual machines through the VMware plug-in. Virtual machine backups are taken through the vSphere API on the VMware vCenter server.'
+---
+= Virtual machine backup and restore by using the VMware plug-in
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Snap Creator supports the backup of VMware virtual machines through the VMware plug-in. Virtual machine backups are taken through the vSphere API on the VMware vCenter server.
+
+For virtual machine backup, you must provide the following details in the configuration file:
+
+* vCenter IP or host name and credentials
+* vSphere virtual machines and datastore names
+
+NOTE: Snap Creator discovers vCenter only if vCenter is configured on the default port (443).
+
+For the restore operation, you should provide the backup parameters and the Snapshot copy name.
+
+Consider the following when performing the VMware backup and restore processes:
+
+* If a virtual machine is listed and is not available, the plug-in displays an error message. It will not be able to restore a lost virtual machine even if it is backed up.
+* If a datastore is listed, all the virtual machines in the datastore are backed up.
+* Only the listed virtual machines or virtual machines located in the datastores specified are backed up.
+* If a virtual machine selected for backup is contained within a datastore that is also selected for backup, it will be backed up only once.
+* The VMware plug-in supports both Network File System (NFS) and VMware Virtual Machine File System (VMFS) datastores.
+ ** Virtual machine restores on an NFS datastore use Single File SnapRestore (SFSR) on the storage system, which avoids host copies.
+ ** To restore a virtual machine on a VMFS datastore, perform the following steps:
+  ... Use FlexClone or LUN clone of the LUN contained in a specific restore Snapshot copy.
+  ... Map it to the cluster.
+  ... Use vCenter API calls to copy contents from the Snapshot copy of the VMFS datastore to the original VMFS datastore.

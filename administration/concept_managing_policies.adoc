@@ -1,0 +1,16 @@
+---
+permalink: administration/concept_managing_policies.html
+sidebar: sidebar
+keywords: 
+summary: 'You can create retention policies, as well as list and delete the policies.'
+---
+= Managing retention policies
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can create retention policies, as well as list and delete the policies.
+
+A retention policy typically defines Snapshot retention settings, such as how many Snapshot copies should be retained and for how long. For example, a daily policy might retain 30 days of Snapshot copies that must be at least 30 days old. (The retention age setting prevents multiple Snapshot copies that were created on the same day from bypassing service-level agreements (SLAs) that might state that a Snapshot copy must be 30 days old.)
+
+If SnapVault is used, the policy also defines the retention settings for the SnapVault copy.

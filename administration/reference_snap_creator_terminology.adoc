@@ -1,0 +1,136 @@
+---
+permalink: administration/reference_snap_creator_terminology.html
+sidebar: sidebar
+keywords: 
+summary: 'Snap Creator consists of a few different constructs, and it is important to understand the language and concepts.'
+---
+= Snap Creator terminology
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Snap Creator consists of a few different constructs, and it is important to understand the language and concepts.
+
+* *Action*
++
+Snap Creator can perform various actions on configuration files. This is typically a defined workflow to achieve a desired result. To execute an action, select a configuration file from the GUI, click *Action*, and select one of the following actions from the drop-down list:
+
+ ** *Backup*
++
+Backs up the environment specified in a configuration file. The backup workflow is a multistep action that changes depending on the settings of the selected configuration file. An example of a backup action with a plug-in configured might be quiesce an application or database, take a Snapshot copy of all defined volumes, unquiesce the selected application or database, perform a SnapVault and/or SnapMirror update, act on any retention policies, or act on any archive log settings.
+
+ ** *LUN clone*
++
+Creates a new Snapshot copy of a LUN and clones the new Snapshot copy.
+
+ ** *Volume clone*
++
+Creates a new Snapshot copy of a volume and clones the new Snapshot copy.
+
+* *Agent Monitor*
++
+The Agent Monitor queries the Snap Creator Server for all agents defined in the configuration files and queries the agents to check their status. The Agent Monitor reports if the agent is running, the port that the agent is listening, and the version of the agent is in use.
+
+* *Archive log*
++
+The archive log action acts on any settings in the archive log management setting of the configuration file. This action typically purges logs that are no longer needed by Snap Creator.
+
+* *Configuration file*
++
+A configuration file is the heart of Snap Creator. It configures Snap Creator, enables application plug-ins to run, sets necessary variables, and defines the volumes that are captured in Snapshot copies. Configuration files are composed of different parameters that can be set to affect the behavior of Snap Creator. Configuration file is often shortened to configuration or config.
+
+* *Discover*
++
+The discover action performs storage-level discovery on the environment detailed in the configuration file. Not all plug-ins support discovery.
+
+* *Global configuration file*
++
+A configuration file that can act at either a superglobal level (parameters will affect all configuration files in the entire Snap Creator Server environment) or a profile level (parameters will affect all configuration files in a specified profile). Superglobal parameters will be overridden with any parameters specified in a profile-level global. Likewise, parameters specified in a configuration file will override any parameters in a super or profile-level global configuration file. Global configuration file is often shortened to global config.
+
+* *Job*
++
+All operations performed by Snap Creator are considered jobs. Some actions might consist of multiple jobs. All jobs executed by Snap Creator will be listed in the Job Monitor.
+
+* *Job Monitor*
++
+The Job Monitor is an easy-to-use dashboard interface that allows for a simple glance of the status of Snap Creator jobs that are running or have run previously. The Job Monitor is enabled at setup and can store from 1 to 1,000 jobs.
+
+* *Mount*
++
+The mount action allows you to specify an existing Snapshot copy that will be cloned and mounted.
+
+* *OSSV*
++
+The OSSV (Open Systems SnapVault) action performs OSSV operations.
+
+* *Profile*
++
+A profile is essentially a folder used for organizing configuration files. Profiles also act as objects for role-based access control (RBAC), meaning that you can be allowed access to only certain profiles and the configuration files contained within.
+
+* *Policy*
++
+Policy is short for retention policy. A policy typically defines Snapshot retention policies (how many Snapshot copies to keep) and age (how old should a Snapshot copy be before deleting it). For example, a daily policy might keep 30 days`' worth of Snapshot copies that must be at least 30 days old. (The retention age setting prevents multiple Snapshot copies taken on the same day from bypassing SLAs that might state a Snapshot copy needs to be 30 days old.) If SnapVault is used, the policy will also define any retention settings for the SnapVault copy. Currently policies can be stored either directly in a configuration file or as part of a policy object. If a policy is part of a configuration file, it might be called a local retention policy.
+
+* *Policy object*
++
+A policy object is a retention policy that can be applied at the profile level. Like a policy, a policy object defines retention policies, but it also can define a schedule and a label. The following are components of a policy object:
+
+ ** *Backup type*
++
+A backup type is a label that can be set by the policy object.
+
+ ** *Policy assignments*
++
+Policy assignments assign a policy (created in policy management) to a specific profile of profiles.
+
+ ** *Policy management*
++
+Policy management creates a policy within the policy object. This allows for definition of the retention count and age for Snapshot copies. If SnapVault is used, the associated retention count and age can also be set. Policy management also allows for optional selection of a policy schedule and backup type.
+
+ ** *Policy schedules*
++
+Policy schedules define an action to take on a specified schedule.
+
+* *Quiesce*
++
+The quiesce action performs actions necessary to place an application or database into a consistent state. Though the action is named quiesce, this might not be a true quiesce operation depending on the plug-in or configuration file setting. For example, the Domino plug-in performs Domino API calls to put Domino databases into a backup start state, whereas the DB2 plug-in performs the DB2 write suspend command.
+
+* *Restore*
++
+The restore action performs a volume or single-file restore operation on one or more volumes specified in the configuration file. Depending on the plug-in used in the configuration files, additional restore operations might be available.
+
+* *scdump*
++
+scdump is a troubleshooting operation that gathers all of the configuration files and log files at a profile level, as well as gathering some standard Snap Creator Server logs and environment information. All of these gathered files are compressed into a zip file, which you are prompted to download. The scdump zip file can then be e-mailed or uploaded to Support for analysis.
+
+* *Schedules*
++
+The Snap Creator Server contains a centralized scheduler. This allows for Snap Creator jobs to be scheduled either through a policy schedule (part of policy objects) or directly created through the scheduler. The scheduler runs up to 10 jobs concurrently and queues additional jobs until a running job completes.
+
+* *Snap Creator Agent*
++
+The Snap Creator Agent is typically installed on the same host as where an application or database is installed. The Agent is where the plug-ins are located. The Agent is sometimes shortened to scAgent within Snap Creator.
+
+* *Snap Creator Framework*
++
+Snap Creator is a framework, and the complete product name is NetApp Snap Creator Framework.
+
+* *Snap Creator plug-ins*
++
+Plug-ins are used to put applications or databases into a consistent state. Snap Creator contains several plug-ins that are already part of the binary file and do not require any additional installation.
+
+* *Snap Creator Server*
++
+Snap Creator Server is typically installed on a physical or virtual host. The Server hosts the Snap Creator GUI and necessary databases for storing information about jobs, schedules, users, roles, profiles, configuration files, and metadata from plug-ins. The Server is sometimes shortened to scServer within Snap Creator.
+
+* *Umount*
++
+The umount action allows you to specify an existing mount point to unmount.
+
+* *Unquiesce*
++
+The unquiesce action performs actions necessary to return an application or database to normal operation mode. Though the action is named unquiesce, this might not be a true unquiesce operation depending on the plug-in or configuration file setting. For example, the Domino plug-in performs Domino API calls to put Domino databases into a backup stop state, whereas the DB2 plug-in performs the write resume command.
+
+* *Watchdog*
++
+The Watchdog is part of Snap Creator Agent that monitors the status of jobs that the agent is executing. If the Agent does not respond within a specified amount of time, the Watchdog can restart the Agent or end specific actions. For example, if a quiesce operation exceeds the timeout value, the Watchdog can stop the quiesce action and initiate an unquiesce to return the database back to normal operating mode.

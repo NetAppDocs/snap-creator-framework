@@ -1,0 +1,40 @@
+---
+permalink: sap-hana-ops/task_restoring_databases_after_a_primary_storage_failure_with_clustered_data_ontap.html
+sidebar: sidebar
+keywords: 
+summary: 'You can restore an SAP HANA database after a primary storage system running clustered Data ONTAP fails.'
+---
+= Restoring databases after a primary storage failure with clustered Data ONTAP
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can restore an SAP HANA database after a primary storage system running clustered Data ONTAP fails.
+
+Assuming the primary volume is lost completely, you need to create a new primary volume and then restore from the backup volume.
+
+. Create a primary volume with type data protection.
++
+----
+hana::> volume create -vserver hana1a -volume hana_data -aggregate aggr_sas_101 -size 300G -state online -type DP -policy default -autosize-mode grow_shrink -space-guarantee none
+-snapshot-policy none -foreground true
+[Job 6744] Job is queued: Create hana_data.
+[Job 6744] Job succeeded: Successful
+----
+
+. Restore all data from the backup volume.
++
+----
+hana::> snapmirror restore -destination-path hana1a:hana_data -source-path hana2b:backup_hana_data -source-snapshot sc-backup-daily_20140505121000
+[Job 6746] Job is queued: snapmirror restore from source "hana2b:backup_hana_data" for the
+snapshot sc-backup-daily_20140505121000.
+
+hana::> job show -id 6746
+Owning
+Job ID Name                 Vserver    Node           State
+------ -------------------- ---------- -------------- ----------
+6746   SnapMirror restore   hana        hana01        Running
+       Description: snapmirror restore from source "hana2b:backup_hana_data" for the snapshot sc-backup-daily_20140505121000
+----
+
+When the restore process is finished, you use SAP HANA to perform the recovery.

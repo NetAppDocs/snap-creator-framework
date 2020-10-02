@@ -1,0 +1,12 @@
+---
+permalink: installation/concept_uninstalling_snap_creator.html
+sidebar: sidebar
+keywords: 
+summary: 'You can uninstall Snap Creator from your Windows and UNIX systems.'
+---
+= Uninstalling Snap Creator
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can uninstall Snap Creator from your Windows and UNIX systems.

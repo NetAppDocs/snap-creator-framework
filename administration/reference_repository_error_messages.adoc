@@ -1,0 +1,401 @@
+---
+permalink: administration/reference_repository_error_messages.html
+sidebar: sidebar
+keywords: 
+summary: 'The following table lists the Repository error messages.'
+---
+= Repository error messages
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+The following table lists the Repository error messages.
+
+|===
+| Error code| Error message| Description/resolution
+a|
+REPO-01001
+a|
+Global configuration does not exist
+a|
+Check if the global.conf file exists in the configs folder.
+a|
+REPO-01002
+a|
+Global configuration already exists
+a|
+The global.conf file already exists in the configs folder. Either delete the global configuration file first or update the existing file.
+a|
+REPO-01103
+a|
+Creating global configuration failed with error [%s]
+a|
+Failed to create the global.conf file in the configs folder. Check the permissions of the user running Snap Creator against directory.
+a|
+REPO-01203
+a|
+Updating global configuration failed with error [%s]
+a|
+Failed to update the global.conf file in the configs folder. Check the permissions of user running Snap Creator against directory.
+a|
+REPO-01303
+a|
+Removing global configuration failed with error [%s]
+a|
+Failed to remove global.conf file in the configs folder. Check if the file is present in configs folder or check permissions of user running Snap Creator against directory
+a|
+REPO-01403
+a|
+Exporting global configuration failed with error [%s]
+a|
+Failed to read global.conf file in the configs folder. Check if your global configuration file is deleted.
+a|
+REPO-01503
+a|
+Importing global configuration [%s] failed with error [%s]
+a|
+Failed to update the global.conf file in the configs folder. Check permissions of user running Snap Creator against directory.
+
+a|
+REPO-01603
+a|
+Retrieving global configuration failed with error [%s]
+a|
+Failed to read global.conf file in the configs folder. Check if your global configuration file is deleted.
+a|
+REPO-02002
+a|
+Profile [%s] already exists, use a different name.
+a|
+Profile with same name already exists. If the profile is not visible, then the user does not have permission on this profile.
+a|
+REPO-02003
+a|
+Profile [%s] does not exist
+a|
+Check if your profile is renamed or deleted. Also, the user might not have permission on this profile.
+a|
+REPO-02103
+a|
+Creating global profile configuration [%s] failed with error [%s]
+a|
+Failed to create global.conf file in the profile. Check permissions of user running Snap Creator against directory.
+a|
+REPO-02106
+a|
+Creating profile configuration [%s] failed with error [%s]
+a|
+Failed to create profile in the configs folder. Check permissions of user running Snap Creator against directory.
+a|
+REPO-02203
+a|
+Updating profile configuration [%s] failed with error [%s]
+a|
+Failed to update the profile in the configs folder. Check permissions of user running Snap Creator against directory.
+a|
+REPO-02213
+a|
+Renaming profile [%s] to [%s] failed with error [%s]
+a|
+Failed to rename profile in the configs folder. Check permissions of user running Snap Creator against directory or check if your profile is already renamed or deleted.
+a|
+REPO-02303
+a|
+Removing profile configuration [%s] failed
+a|
+ 
+a|
+REPO-02403
+a|
+Exporting profile configuration [%s] failed with error [%s]
+a|
+ 
+a|
+REPO-02503
+a|
+Importing profile configuration [%s] failed with error [%s]
+a|
+ 
+a|
+REPO-02603
+a|
+Retrieving global profile failed with error [%s]
+a|
+ 
+a|
+REPO-02606
+a|
+Retrieving profile [%s] failed with error [%s]
+a|
+ 
+a|
+REPO-02703
+a|
+Listing profiles failed with error [%s]
+a|
+Listing profiles failed. Check the configs folder path.
+a|
+REPO-03002
+a|
+Configuration [%s] already exists for profile [%s]
+a|
+Configuration file with same name already exists for the given profile. Choose a different name.
+a|
+REPO-03103
+a|
+Creating configuration [%s] for profile [%s] failed with error [%s]
+a|
+ 
+a|
+REPO-03203
+a|
+Updating configuration [%s] for profile [%s] failed with error [%s]
+a|
+ 
+a|
+REPO-03212
+a|
+Renaming configuration [%s] for profile [%s] to [%s] failed
+a|
+Failed to rename the configuration from profile. Check if your configuration is renamed or deleted and also check permissions of user running Snap Creator against directory.
+a|
+REPO-03303
+a|
+Removing configuration [%s] from profile [%s] failed
+a|
+Failed to delete configuration from profile in the configs folder. Check permissions of user running Snap Creator against directory.
+a|
+REPO-03403
+a|
+Exporting configuration [%s] for profile [%s] failed with error [%s]
+a|
+ 
+a|
+REPO-03503
+a|
+Importing configuration [%s] to profile [%s] failed with error [%s]
+a|
+ 
+a|
+REPO-03603
+a|
+Retrieving configuration [%s] from profile [%s] failed with error [%s]
+a|
+ 
+a|
+REPO-03703
+a|
+Listing configurations from profile [%s] failed with error [%s]
+a|
+ 
+a|
+REPO-04003
+a|
+Reading catalog for profile [%s], configuration [%s] and timestamp [%s] failed with error [%s]
+a|
+ 
+a|
+REPO-04103
+a|
+Writing catalog for profile [%s], configuration [%s] and timestamp [%s] failed with error [%s]
+a|
+ 
+a|
+REPO-04203
+a|
+Purging catalog for profile [%s], configuration [%s] and timestamp [%s] failed with error [%s]
+a|
+ 
+a|
+REPO-04303
+a|
+Inventoring catalog for profile [%s] and configuration [%s] failed with error [%s]
+a|
+ 
+a|
+REPO-04304
+a|
+Configuration [%s] does not exist
+a|
+ 
+a|
+REPO-04309
+a|
+Adding policy object failed [%s]
+a|
+Database error; check stack trace for more information.
+a|
+REPO-04313
+a|
+Removing policy object failed for policy Id: %s
+a|
+Database error; check stack trace for more information.
+a|
+REPO-04315
+a|
+Updating policy object failed : %s
+a|
+Database error; check stack trace for more information.
+a|
+REPO-04316
+a|
+Failed to list policies
+a|
+Database error; check stack trace for more information.
+a|
+REPO-04321
+a|
+Adding backup type object failed [%s]
+a|
+Database error; check stack trace for more information.
+a|
+REPO-04323
+a|
+Backup type entry does not exist for backup type id: %s
+a|
+Pass a valid backup type.
+a|
+REPO-04325
+a|
+Removing backup type object failed for backup type Id: %s
+a|
+Database error; check stack trace for more information.
+a|
+REPO-04327
+a|
+Updating backup type object failed : %s
+a|
+Database error; check stack trace for more information.
+a|
+REPO-04328
+a|
+Failed to list backup types
+a|
+Database error; check stack trace for more information.
+a|
+REPO-04333
+a|
+Adding scheduler job object failed [%s]
+a|
+Database error; check stack trace for more information.
+a|
+REPO-04335
+a|
+Scheduler job entry does not exist for job id: %s
+a|
+Pass a valid scheduler job.
+a|
+REPO-04337
+a|
+Removing scheduler job object failed for job Id: %s
+a|
+Database error; check stack trace for more information.
+a|
+REPO-04339
+a|
+Updating scheduler job object failed : %s
+a|
+Database error; check stack trace for more information.
+a|
+REPO-04340
+a|
+Failed to list scheduler jobs
+a|
+Database error; check stack trace for more information.
+a|
+REPO-04341
+a|
+Adding policy object failed, policy [%s] with same name already exists
+a|
+Policy with same name already exists; try with different name.
+a|
+REPO-04342
+a|
+Adding backup type object failed, backup type [%s] with same name already exists
+a|
+Backup type with same name already exists; try with different name.
+a|
+REPO-04343
+a|
+Adding scheduler object failed, scheduler [%s] with same task name already exists
+a|
+ 
+a|
+REPO-04344
+a|
+Failed to update profile [%s]. Profile is empty.
+a|
+ 
+a|
+REPO-04345
+a|
+Policy Type cannot be null while adding new policy
+a|
+ 
+a|
+REPO-04346
+a|
+Storage object cannot be null
+a|
+ 
+a|
+REPO-04347
+a|
+Adding storage object failed, storage [%s] with same name/IP already exists
+a|
+ 
+a|
+REPO-04348
+a|
+Failed to fetch the storage details. Database Error!
+a|
+ 
+a|
+REPO-04349
+a|
+Invalid host name. Storage with the host name/IP [%s] does not exist
+a|
+ 
+a|
+REPO-04350
+a|
+Hostname cannot be null
+a|
+Invalid host name
+a|
+REPO-04351
+a|
+Deleting storage [%s] failed with error [%s]
+a|
+Failed to delete the storage. Database Error!
+a|
+REPO-04355
+a|
+Updating storage [%s] failed with error [%s]
+a|
+Failed to update the storage. Database Error!
+a|
+REPO-04356
+a|
+Cluster object cannot be null
+a|
+ 
+a|
+REPO-04358
+a|
+Adding storage [%s] failed with error [%s]
+a|
+ 
+a|
+REPO-04359
+a|
+Updating cluster [%s] failed with error [%s]
+a|
+ 
+a|
+REPO-04360
+a|
+Adding cluster object failed, cluster [%s] with same name/IP already exists
+a|
+Cluster with same host name already exists
+|===

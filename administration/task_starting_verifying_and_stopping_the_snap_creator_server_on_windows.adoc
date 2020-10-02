@@ -1,0 +1,45 @@
+---
+permalink: administration/task_starting_verifying_and_stopping_the_snap_creator_server_on_windows.html
+sidebar: sidebar
+keywords: 
+summary: 'You can start and stop the Snap Creator Server service, and verify whether the Snap Creator Server service is running on your Windows system.'
+---
+= Starting, verifying, and stopping Snap Creator Server on Windows
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can start and stop the Snap Creator Server service, and verify whether the Snap Creator Server service is running on your Windows system.
+
+. If the Snap Creator graphical user interface (GUI) is not open, open it:
+ .. Enter the URL of the Snap Creator Server in a web browser: https://IP_address:gui_port
++
+By default, the port is 8443.
+
+ .. Log in by using the credentials for the Snap Creator GUI.
+
++
+If the Snap Creator GUI opens, then the Snap Creator Server service is running.
+. From the command prompt, start or stop the Snap Creator Server service, or verify whether the Snap Creator Server service is running, as applicable:
++
+|===
+| If you want to...| Enter the following...
+a|
+Start the Snap Creator Server service
+a|
+sc start snapcreatorserverservice
+a|
+Verify whether the Snap Creator Server service is running
+a|
+sc query snapcreatorserverservice
+a|
+Stop the Snap Creator Server service
+a|
+sc stop snapcreatorserverservice
+|===
+If you want to run Snap Creator in the foreground, then instead of using the sc start command, perform the following steps:
+
+ .. Open a command prompt on the host where the Snap Creator Server is installed, and then navigate to the Snap Creator Serverdirectory: cd \install_path\scServer4.3.0\bin\
+ .. To start the Snap Creator Server, run the batch script: scServer.bat start
++
+Closing the command prompt stops the Snap Creator Server service. Because the batch script (scServer.bat) runs Snap Creator in the foreground, the Snap Creator Server will run only as long as the command prompt is open. To run Snap Creator in the background, you should use the Snap Creator Server service command.

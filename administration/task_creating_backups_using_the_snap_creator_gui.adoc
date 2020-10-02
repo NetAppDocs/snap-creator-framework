@@ -1,0 +1,39 @@
+---
+permalink: administration/task_creating_backups_using_the_snap_creator_gui.html
+sidebar: sidebar
+keywords: 
+summary: 'You can create backups by using the Snap Creator GUI.'
+---
+= Creating backups
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can create backups by using the Snap Creator GUI.
+
+One of the following conditions must be met:
+
+* A backup policy must be defined in the configuration file; or,
+* A policy object must be configured and assigned to the profile.
++
+NOTE: If a policy object is defined, it will overrule any entries that might be in the configuration file.
+
+. From the Snap Creator GUI main menu, select *Management* > *Configurations*.
+. From the *Configurations* tab, in the *Profiles and Configuration* pane, select the configuration file.
+. Select *Actions* > *Backup*.
++
+image::../media/backup_select.gif[]
+
+. In the Additional Parameters dialog box, select the policy, and then click *OK* to start the backup.
++
+NOTE: If no user-created policy is assigned to the configuration, hourly, daily, weekly, and monthly are the available selections in the *Policy* drop-down list. If one or more user-created policies have been assigned to the configuration, they are displayed in the *Policy* drop-down list instead.
++
+image::../media/additional_parameters.gif[]
+
+. Verify that information about the backup job is displayed in the *Console* pane.
++
+image::../media/console_area_backup.gif[]
++
+In this example, the output indicates that the Snap Creator operation finished successfully.
++
+NOTE: The *Console* pane only displays the most pertinent information; this is the verbose mode. To see detailed information about the job that just ran, select *Reports* > *Logs* at the top of the page. From the Logs view, the profile, configuration file, log type, and specific log can be selected.

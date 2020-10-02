@@ -1,0 +1,41 @@
+---
+permalink: administration/concept_using_the_plug_in_framework_to_create_custom_plug_ins.html
+sidebar: sidebar
+keywords: 
+summary: 'The plug-in framework enables you to create your own plug-ins for Snap Creator or reuse the existing plug-ins. The plug-in provides Snap Creator with the steps for handling backup and recovery of a given application.'
+---
+= Using the plug-in framework to create custom plug-ins
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+The plug-in framework enables you to create your own plug-ins for Snap Creator or reuse the existing plug-ins. The plug-in provides Snap Creator with the steps for handling backup and recovery of a given application.
+
+The plug-in framework defines the following methods:
+
+* quiesce - Method for handling quiesce for a given application plug-in
+* unquiesce - Method for handling unquiesce for a given application plug-in
+* discover - Method for handling discovery of storage objects for a given application plug-in
+* scdump - Method for handling collection of support information, database, operating system, and SnapDrive
+* restore - Method for handling restore for a given application plug-in
+* restore_pre - Method for handling prerestore operations for a given application plug-in (can use built-in restore CLI of Snap Creator)
+* restore_post - Method for handling post-restore operations for a given application plug-in (can use built-in restore CLI of Snap Creator)
+* clone_pre - Method for handling preclone operations for a given application plug-in
+* clone_post - Method for handling post-clone operations for a given application plug-in
+* describe - Method for describing what a plug-in implements. This is optional for Perl plug-ins but required for native plug-ins under plug-ins/native.
+* clone_all - Method for handling cloning for a given application plug-in (cannot use built-in cloning interface)
+* clone_cleanup - Method for handling cleanup if a clone operation fails
+* restore_cleanup - Method for handling cleanup if a restore operation fails
+
+NOTE:
+
+* The plug-in framework supports Perl, PowerShell, Java, UNIX Shell, and Python for programming.
+* The plug-in framework enables you to implement objects and functions that exist within the Snap Creator.
++
+For example, error handling is available, which means the plug-in can use the standard implementation Snap Creator uses. This reduces the work required to create a plug-in.
+
+* Perl plug-ins are installed under /plug-ins/PLUG-IN-name/PLUG-IN.pm.
+* Native plug-ins are installed under /plug-ins/native/plug-in.sh,plug-in.java.plug-in.bat, and so on.
+* The plug-in must be installed where it is supposed to run. This can be Snap Creator Server or Snap Creator Agent depending on the set up of Snap Creator.
+
+For more information about the plug-in framework, plug-ins, and a plug-in user guides, see the http://community.netapp.com/t5/Snap-Creator-Framework-Discussions/bd-p/snap-creator-framework-discussions[Snap Creator Framework Discussions Community forum].

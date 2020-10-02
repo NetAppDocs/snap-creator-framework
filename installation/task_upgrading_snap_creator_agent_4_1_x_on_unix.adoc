@@ -1,0 +1,47 @@
+---
+permalink: installation/task_upgrading_snap_creator_agent_4_1_x_on_unix.html
+sidebar: sidebar
+keywords: 
+summary: 'You can upgrade from Snap Creator Agent 4.1.x on UNIX-based systems.'
+---
+= Upgrading Snap Creator Agent 4.1.x on UNIX-based systems
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can upgrade from Snap Creator Agent 4.1.x on UNIX-based systems.
+
+* You have stopped Snap Creator Agent before backing up the Snap Creator Agent directories to ensure that the backed-up data is complete.
++
+For example, enter the following command:
++
+----
+/install_path/scAgent4.1.0/bin/scAgent stop
+----
+
+* You have backed up the following directories, and all associated subdirectories and files, within the Snap Creator Agent directory (/install_path/scAgent4.1.x):
+ ** Snap Creator Agent properties (../etc), which contains the allowed_commands.config  and agent.properties files
+ ** Logs (../logs)
+ ** Plug-ins (../plugins)
+*Note:* Do not delete the Snap Creator 4.1.x backup copies that you created.
+
+The paths provided in the following steps refer to the default installation path. Path information might differ from your installation path if the defaults were not used.
+
+. Stop Snap Creator Agent if you have not already done so.
++
+For information, refer to the details provided earlier in this topic.
+
+. Install the latest Snap Creator Agent, but do not start the Snap Creator Agent.
++
+For details, see the information about installing Snap Creator Agent on UNIX.
+
+. Copy the backed-up Snap Creator 4.1.x logs directory to the latest location at /install_path/scAgent4.1.x/logs).
+. Copy the backed-up Snap Creator 4.1.x plug-ins directory to the latest location at /install_path/scAgent4.1.x/plugins).
+. Copy the backed-up Snap Creator 4.1.x agent properties directory to the latest location at /install_path/scAgent4.1.x/etc).
+. Start Snap Creator Agent by entering the following command:
++
+----
+/install_path/scAgent4.1.x/bin/scAgent start
+----
++
+NOTE: Any changes to the allowed_commands.config or agent.properties files require you to restart the Snap Creator Agent if it is running when the changes are made.

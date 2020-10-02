@@ -1,0 +1,41 @@
+---
+permalink: domino-ops/concept_domino_database_restore_overview.html
+sidebar: sidebar
+keywords: 
+summary: 'The IBM Domino plug-in restores database files from the Snapshot copy of the volume on which the database is stored. When the Snapshot restore is complete, the plug-in applies any changes recorded in the changeinfo directory.'
+---
+= Restoring databases
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+The IBM Domino plug-in restores database files from the Snapshot copy of the volume on which the database is stored. When the Snapshot restore is complete, the plug-in applies any changes recorded in the changeinfo directory.
+
+== Understanding SnapMirror and SnapVault restore operations
+
+You cannot use Snap Creator to restore a SnapMirror copy of the data. If you want to restore a mirror copy, you need to break the mirror first, then manually restore the data. For more information, see the http://docs.netapp.com/ontap-9/topic/com.netapp.doc.exp-sm-ic-fr/home.html[ONTAP 9 Volume Disaster Recovery Express Guide].
+
+Only point-in-time volume restores are available when you restore a SnapVault copy from secondary storage. You cannot perform an up-to-the-minute volume restore or a single-file restore. You can work around this limitation by first restoring from secondary storage to primary storage. From primary storage, you can then perform an up-to-the-minute volume restore or a single-file restore as needed.
+
+== Understanding destination directories
+
+Volume restores and single-file restores typically have different destination directories. You specify the destination directory in the Data Restore Directory parameter in the backup and restore configuration file (see step link:task_using_the_gui_to_create_a_configuration_file.md#STEP_E6C507729B3647FD8B2E8D0818F22D3B[task_using_the_gui_to_create_a_configuration_file.md#STEP_E6C507729B3647FD8B2E8D0818F22D3B]):
+
+* For a volume restore, you need to set Data Restore Directory to the Domino data directory.
+* For a single-file restore, you need to set Data Restore Directory to a subdirectory on the Domino data volume.
+
+This means that if you alternate restore types, you need to modify Data Restore Directory to point to the correct setting for each restore type. Otherwise, change information will not be applied correctly, and the data will be inconsistent with the database state you want to restore to. Of course, you can create different configurations for volume and single-file restores if you prefer.
+
+== Where to run a restore
+
+With one exception, you can use either the Snap Creator GUI or the Snap Creator CLI to restore databases. For single-file restores in a SAN environment, you must use the CLI, as described in xref:concept_single_file_restore_in_fc_iscsi_environments.adoc[Performing a single-file restore in a SAN environment].
+
+NOTE: This guide shows how to use the CLI only for single-file restores in a SAN environment. Otherwise, it shows how to use the GUI to restore databases. For information on how to use the CLI, see the https://library.netapp.com/ecm/ecm_download_file/ECMP12395422[Snap Creator Framework 4.1.2 Administration Guide].
+
+*Related information*
+
+xref:task_performing_point_in_time_volume_restore.adoc[Performing a volume restore]
+
+xref:task_performing_point_in_time_single_file_restore_with_nfs.adoc[Performing a single-file restore]
+
+xref:concept_single_file_restore_in_fc_iscsi_environments.adoc[Performing a single-file restore in a SAN environment]

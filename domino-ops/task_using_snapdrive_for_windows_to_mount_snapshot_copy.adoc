@@ -1,0 +1,30 @@
+---
+permalink: domino-ops/task_using_snapdrive_for_windows_to_mount_snapshot_copy.html
+sidebar: sidebar
+keywords: 
+summary: 'You can use SnapDrive to mount the Snapshot copy for the file you want to restore. You can then manually copy the file to the Data Restore Directory.'
+---
+= Using SnapDrive to mount a Snapshot copy
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can use SnapDrive to mount the Snapshot copy for the file you want to restore. You can then manually copy the file to the Data Restore Directory.
+
+The following procedure shows how to use SnapDrive for Windows to mount a Snapshot copy on a Windows Server 2008 host. SnapDrive for Windows and the Snap Creator Agent must be running on the host.
+
+. In Server Manager, click *Storage* > *SnapDrive* > *physical_server_name* > *Disks*.
+. In the Disk Identification pane, navigate to the Snapshot copy that contains the copy of the file you want to restore and choose *Connect Disk* in the right-click menu.
++
+The Connect Disk wizard opens.
++
+Throughout the Connect Disk wizard, click *Next* to advance to the next page. Click *Back* to return to the previous page.
++
+TIP: Make a note of the name of the Snapshot copy. You will need the name when you copy the file to the Data Restore Directory.
+
+. On the Provide a Storage System Name, Lun Path and Name page, optionally enter descriptive text for the LUN.
+. On theSelect a LUN Type page, leave the default.
+. On theSelect LUN Properties page, select the drive letter or mount point for the Snapshot copy.
+. On the iSCSI initiator/FC host bus adapter (HBA) page, select the iSCSI initiator or FC host bus adapter (HBA).
+. On the Management Type page, select the management type you want to use to map to the LUN: automatic or manual.
+. Click *Finish* to mount the Snapshot copy to the specified mount point.

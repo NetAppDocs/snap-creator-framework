@@ -1,0 +1,506 @@
+---
+permalink: administration/reference_snap_creator_framework_error_messages.html
+sidebar: sidebar
+keywords: 
+summary: 'The Snap Creator Framework error messages can help you troubleshoot any issues that occur.'
+---
+= Snap Creator Framework error messages
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+The Snap Creator Framework error messages can help you troubleshoot any issues that occur.
+
+|===
+| Error code| Error message| Description/resolution
+a|
+scf-00001
+a|
+Could not get the serial number [%s]
+a|
+The Snap Creator setup command is not run. Run the snapcreator --profile setup command. Ensure that the serial number is either blank or set to a numeric value.
+
+a|
+scf-00002
+a|
+Backup handling of plug-in [%s] failed with error [%s] and exit code [%s], Exiting!
+a|
+Application backup failed because of an application error. Check the logs and application settings.
+
+a|
+scf-00003
+a|
+Backup cleanup handling of plug-in [%s] failed with error [%s] and exit code [%s], Exiting!
+a|
+Application backup cleanup failed because of an application error. Check the logs and application settings.
+
+a|
+scf-00004
+a|
+Clone handling of plug-in [%s] failed with error [%s] and exit code [%s], Exiting!
+a|
+Application clone failed because of an application error. Check the logs and application settings.
+
+a|
+scf-00005
+a|
+Clone cleanup handling of plugin [%s] failed with error [%s] and exit code [%s], Exiting!
+a|
+Application clone cleanup failed because of an application error. Check the logs and application settings.
+
+a|
+scf-00006
+a|
+Pre-clone handling of [%s] failed with error [%s] and exit code [%s], Exiting!
+a|
+Application pre-clone operation failed because of an application error. Check the logs and application settings.
+
+a|
+scf-00007
+a|
+Post-clone handling of plug-in [%s] failed with error [%s] and exit code [%s], Exiting!
+a|
+Application post-clone operation failed because of an application error. Check the logs and application settings.
+
+a|
+scf-00008
+a|
+Cloned LUN igroup map of [%s] to igroup [%s] on [%s] failed, Exiting!
+a|
+The igroup mapping for the LUN clone failed. Check the error logs. You might have a NetApp Manageability SDK solution error. The logs might reveal the cause of the problem.
+
+a|
+scf-00009
+a|
+NetApp Management Console backup list end for dataset [%s] failed with exit code [%s], Exiting!
+a|
+Snap Creator started the backup delete operation in the NetApp Management Console, but failed to list the Snapshot copies. Ensure that Snap Creator is registering backups, and check the configuration of the NTAP_PM_UPDATE and NTAP_DFM_DATA_SET parameters.
+
+a|
+scf-00010
+a|
+NetApp Management Console backup list is undefined, no backups for dataset [%s] exist, Exiting!
+a|
+Snap Creator started the backup delete operation in the NetApp Management Console, but the Snapshot copies exist. Ensure that Snap Creator is registering backups, and check the configuration of the NTAP_PM_UPDATE and NTAP_DFM_DATA_SET parameters.
+
+a|
+scf-00011
+a|
+NetApp Management Console backup version ID [%s] Timestamp [%s] Delete for dataset [%s] failed with exit code [%s], Exiting!
+a|
+Ensure that Snap Creator is registering backups, and check the configuration of the NTAP_PM_UPDATE and NTAP_DFM_DATA_SET parameters.
+a|
+scf-00012
+a|
+Retrieving NetApp Management Console dataset status for dataset [%s] failed with exit code [%s], Exiting!
+a|
+Ensure that the dataset exists and the status is conformant. Also ensure that the dataset was created by Snap Creator. Datasets that are not created by Snap Creator are not application datasets; these datasets do not work.
+
+a|
+scf-00013
+a|
+Failed to register the Snapshot copies with dataset [%s] exit code [%s]
+a|
+Check the configuration of the NTAP_PM_UPDATE and NTAP_DFM_DATA_SET parameters.
+a|
+scf-00014
+a|
+NetApp Management Console backup start for [%s] ([%s]) failed, Exiting!
+a|
+Check the configuration of the NTAP_PM_UPDATE and NTAP_DFM_DATA_SET parameters.
+a|
+scf-00015
+a|
+NetApp Management Console backup for job-id [%s] completed with errors - [%s]|[%s]|[%s]|[%s]
+a|
+Snap Creator started the NetApp Management Console backup, but obtaining the progress of the backup operation failed. Check the configuration of the NTAP_PM_UPDATE and NTAP_DFM_DATA_SET parameters.
+
+a|
+scf-00016
+a|
+SnapMirror status for [%s] failed, Exiting!
+a|
+Snap Creator was unable to find any SnapMirror relationships for the given controller. Log in to the storage controller and run the snapmirror status command, and to ensure that the relationship exists.
+
+a|
+scf-00017
+a|
+SnapMirror relationship for [%s]:[%s] does not exist, Exiting!
+a|
+Snap Creator was unable to find SnapMirror relationships for the given controller volumes. Log in to the storage controller, run the snapmirror status command, and ensure that the relationships for the given controller name exist. If a different name is used, then you must configure the SECONDARY_INTERFACESparameter to inform Snap Creator what maps to the storage controller.
+
+a|
+scf-00018
+a|
+SnapVault Status list for [%s] failed, Exiting!
+a|
+Snap Creator was unable to find any SnapVault relationships for the given controller.Log in to the storage controller and run the snapvault status command. Ensure that the SnapVault relationship exists.
+
+a|
+scf-00019
+a|
+SnapVault relationship for [%s]:[%s] does not exist, Exiting!
+a|
+Snap Creator was unable to find the SnapVault relationship.Log in to the storage controller and run the snapvault status command. Ensure that the SnapVault relationship for the given controller name exists. If a different name is used, then you must configure the SECONDARY_INTERFACES parameter to tell Snap Creator what maps to the storage controller.
+
+a|
+scf-00020
+a|
+Running SnapVault update on destination [%s] using source [%s] failed!
+a|
+Snap Creator was unable to start SnapVault update. Log in to the storage controller and run the snapvault status command. Ensure that the SnapVault relationship for the given controller name exists. If a different name is used, then you must configure the SECONDARY_INTERFACES parameter to tell Snap Creator what maps to the storage controller.
+
+a|
+scf-00021
+a|
+SnapMirror transfer error detected - [%s], Exiting!
+a|
+Check the error and storage controller settings for SnapMirror.
+a|
+scf-00022
+a|
+SnapMirror update on source [%s] failed to complete in [%s] minutes, Exiting!
+a|
+The SnapMirror update took longer than the configured wait time. You can adjust the wait time by increasing the value for NTAP_SNAPMIRROR_WAIT in the configuration file.
+
+a|
+scf-00023
+a|
+SnapVault update on source [%s] failed to complete in [%s] minutes, Exiting!
+a|
+The SnapVault update took longer than the configured wait time. You can adjust the wait time by increasing the value for NTAP_SNAPVAULT_WAIT in the configuration file.
+
+a|
+scf-00024
+a|
+SnapVault transfer Error detected - [%s], Exiting!
+a|
+Check the error and storage controller settings for SnapVault.
+a|
+scf-00025
+a|
+Post restore handling of plug-in [%s] failed with error [%s] and exit code [%s]
+a|
+Application post restore operation failed because of an application error. Check the logs and application settings.
+
+a|
+scf-00026
+a|
+Restore cleanup handling of plug-in [%s] failed with error [%s] and exit code [%s]
+a|
+Application restore cleanup operation failed because of an application error. Check the logs and application settings.
+
+a|
+scf-00027
+a|
+Pre restore handling of plug-in [%s] failed with error [%s] and exit code [%s]
+a|
+Application pre restore operation failed because of an application error. Check the logs and application settings.
+
+a|
+scf-00028
+a|
+Auto Discovery for plug-in [%s] failed with error [%s] and exit code [%s], Exiting!
+a|
+Application discovery failed because of an application error. Check the logs and application settings. In addition, automatic discovery can be disabled by setting APP_AUTO_DISCOVERY=N and commenting out VALIDATE_VOLUMES.
+
+a|
+scf-00029
+a|
+Auto Discovery for plug-in [%s] failed because environment is empty, Exiting!
+a|
+The application plug-in does not support the use automatic discovery. Disable automatic discovery by setting APP_AUTO_DISCOVERY=N.
+
+a|
+scf-00030
+a|
+File system quiesce for plug-in [%s] failed with error [%s] and exit code [%s], Exiting!
+a|
+File system quiesce failed because of a file system error. Check the logs and file system settings. To ignore errors and proceed with the backup, you can set APP_IGNORE_ERROR=Y.
+
+a|
+scf-00031
+a|
+File system quiesce for plug-in [%s] encountered errors, exit code [%s], proceeding with backup!
+a|
+File system quiesce failed because of a file system error. However, APP_IGNORE_ERROR=Y; Snap Creator will proceed with the backup. Check the logs and file system settings.
+
+a|
+scf-00032
+a|
+Application unquiesce failed due to application error. To ignore application errors and to proceed with backup, you can set APP_IGNORE_ERROR=Y
+a|
+Check the logs and application settings.
+a|
+scf-00033
+a|
+Application unquiesce for plug-in [%s] failed with exit code [%s], proceeding with backup!
+a|
+Application unquiesce failed because of an application error. However, the APP_IGNORE_ERROR=Y; Snap Creator proceeds with the backup. Check logs and application settings.
+
+a|
+scf-00034
+a|
+LUN clone create of [%s] from [%s] on [%s]:[%s] failed, Exiting!
+a|
+The LUN clone creation failed. Check the error logs. There might be a NetApp Manageability error. The logs might reveal the cause of the problem.
+
+a|
+scf-00035
+a|
+Inventory of LUNs on [%s] failed, Exiting!
+a|
+The LUN list create failed. Check the error logs. There might be a NetApp Manageability error. The logs might reveal the cause of the problem.
+
+a|
+scf-00036
+a|
+Application quiesce for plug-in [%s] failed, no exit code returned from plug-in, Exiting!
+a|
+Application quiesce finished with no exit code. Check the logs and application settings.
+
+a|
+scf-00037
+a|
+Application quiesce for plug-in [%s] failed with error [%s] and exit code [%s], Exiting!
+a|
+Application quiesce failed because of an application error. Check the logs and application settings. To ignore application errors and proceed with backup, you can set APP_IGNORE_ERROR=Y.
+
+a|
+scf-00038
+a|
+Application quiesce for plug-in [%s] failed with exit code [%s], continuing with backup.
+a|
+Application quiesce failed because of an application error. However, the APP_IGNORE_ERROR=Y; Snap Creator proceeds with the backup. Check the logs and application settings.
+
+a|
+scf-00039
+a|
+The controller [%s] specified did not match any controllers specified in the configuration. Check the NTAP_USERS parameter in the configuration file.
+a|
+Check NTAP_USERS and ensure that the storage controller is defined in the configuration file.
+a|
+scf-00040
+a|
+The volume [%s] specified did not match any storage system or volume specified in the configuration. Check the VOLUMES parameter in the configuration file.
+a|
+Check the VOLUMES setting in the configuration file and ensure that the correct controller volumes are configured.
+a|
+scf-00041
+a|
+Clustered Data ONTAP detected but CMODE_CLUSTER_NAME is not configured correctly. Check the configuration parameter, Exiting!
+a|
+The CMODE_CLUSTER_NAME parameter is required and used for AutoSupport and SnapMirror. You should define this parameter correctly in the configuration file.
+
+a|
+scf-00042
+a|
+Clustered Data ONTAP detected, but CMODE_CLUSTER_USERS is not configured correctly. Check the configuration parameter, Exiting!
+a|
+The parameters CMODE_CLUSTER_NAME and CMODE_CLUSTER_USERS are required and used for AutoSupport and SnapMirror. You should define these parameters correctly in the configuration file.
+
+a|
+scf-00043
+a|
+SnapVault is not supported in clustered Data ONTAP, set NTAP_SNAPVAULT_UPDATE to N in configuration.
+a|
+Check configuration and change parameter. Clustered Data ONTAP does not support SnapVault.
+
+a|
+scf-00044
+a|
+The META_DATA_VOLUME parameter is defined, but storage system:volume specified does not match what is configured in VOLUMES parameter. Check the configuration.
+a|
+The META_DATA_VOLUME parameter is not specified in VOLUMES. Add the metadata volume to VOLUMES.
+
+a|
+scf-00045
+a|
+The META_DATA_VOLUME parameter is defined but it cannot be the only volume specified in VOLUMES parameter. The metadata volume must be a separate volume.
+a|
+The volume specified in META_DATA_VOLUME is the only volume present in VOLUMES. There should be other volumes also. Do not use META_DATA_VOLUME for normal Snapshot operation.
+
+a|
+scf-00046
+a|
+NetApp Management Console supports only timestamp Snapshot copies.
+a|
+Update the configuration file, and set the SNAP_TIMESTAMP_ONLY option to Y.
+a|
+scf-00047
+a|
+Incompatible settings have been selected. The NTAP_SNAPVAULT_UPDATE and NTAP_SNAPVAULT_SNAPSHOT options both cannot be enabled
+a|
+Edit the configuration file, and disable one of the two options.
+a|
+scf-00048
+a|
+Mount handling of plug-in [%s] failed with error [%s] and exit code [%s], Exiting!
+a|
+Application mount failed because of an application error. Check the logs and application settings.
+
+a|
+scf-00049
+a|
+Unmount handling of plug-in [%s] failed with error [%s] and exit code [%s], Exiting!
+a|
+Application unmount failed because of an application error. Check the logs and application settings.
+
+a|
+scf-00050
+a|
+Custom action is supported only for application plug-ins
+a|
+The APP_NAME parameter is not set in the configuration file. This parameter determines which plug-in to use. The custom action is only supported with an application plug-in.
+
+a|
+scf-00051
+a|
+NetApp Management Console dataset creation failed for [%s] with exit code [%s], Exiting!
+a|
+Check the debug error message. There could be a problem while communicating with the Active IQ Unified Manager server.
+
+a|
+scf-00052
+a|
+Restore handling of plug-in [%s] failed with error [%s] exit code [%s], Exiting!
+a|
+Restore failed because of an application error. Check the logs and application settings.
+
+a|
+scf-00053
+a|
+File system unquiesce for plug-in [%s] failed with error [%s] and exit code [%s], Exiting!
+a|
+File system unquiesce failed because of a file system error. However, the APP_IGNORE_ERROR=Y; Snap Creator proceeds with the backup. Check the logs and file system settings.
+
+a|
+scf-00054
+a|
+File system unquiesce for plug-in [%s] encountered errors, exit code [%s], proceeding with backup!
+a|
+File system unquiesce failed because of file system error. However, the APP_IGNORE_ERROR=Y; Snap Creator proceeds with the backup. Check the logs and file system settings.
+
+a|
+scf-00055
+a|
+NetApp Management Console driven backup [%s] of dataset [%s] with policy [%s] on storage controller [%s]
+a|
+N/A
+a|
+scf-00056
+a|
+Creating NetApp Management Console driven backup [%s] of dataset [%s] with policy [%s] on storage controller [%s] finished successfully
+a|
+N/A
+a|
+scf-00057
+a|
+Creating NetApp Management Console driven backup [%s] of dataset [%s] with policy [%s] on storage controller [%s] failed with error [%s]
+a|
+Check the configuration of the NTAP_PM_UPDATE and NTAP_DFM_DATA_SET parameters.
+a|
+scf-00058
+a|
+Update configuration with application discovered value failed for [%s], Exiting!
+a|
+Could not update the file because of the permissions problem or a failure to parse the values returned from the application. Check the permissions of the user running Snap Creator and ensure that the permissions are correct.
+
+a|
+scf-00059
+a|
+[%s] dump for plug-in [%s] failed with exit code [%s], Exiting!
+a|
+The scdump action failed because of an application error. Check the logs and application settings.
+
+a|
+scf-00060
+a|
+Invalid DTO: [%s]
+a|
+A required field in the DTO is either not set or is invalid, which caused a validation error when processing the DTO. Correct the issue and resend the DTO.
+
+a|
+scf-00061
+a|
+Archive log deletion failed with error [%s], Exiting!
+a|
+Snap Creator could not delete the archive logs for the application. Check the permissions for the Snap Creator user; this could be the Snap Creator Server or Snap Creator Agent, depending on the configuration.
+
+a|
+scf-00062
+a|
+Authentication Failed!
+a|
+Authentication failed because the user does not have permission to perform the operation.
+a|
+scf-00063
+a|
+Discovery for [%s] failed with return code [%s] and message [%s]
+a|
+Application discovery using VALIDATE_VOLUMES=DATA failed because of an application error. Check the logs and application settings.
+
+a|
+scf-00064
+a|
+Discovery discovered no storage objects
+a|
+Application discovery using VALIDATE_VOLUMES=DATA failed. Snap Creator was unable to discover any data volumes residing on the storage system. To disable automatic discovery, comment out VALIDATE_VOLUMES.
+
+a|
+scf-00065
+a|
+Volume [%s] on [%s] is not included in the configuration file
+a|
+Application discovery detected that some volumes are missing. Check for the missing volumes and add them to the VOLUMES parameter so that they can be included in the backup.
+
+a|
+scf-00066
+a|
+Agent validation failed for [%s] with error [%s]
+a|
+The configured agent is not reachable. The agent might be down, or there might be a local firewall issue. Check the configuration parameter SC_AGENT.
+
+a|
+scf-00067
+a|
+Failed to list external Snapshot copy for [%s] with name pattern [%s]
+a|
+Snap Creator could not find external Snapshot copy based on the regex pattern NTAP_EXTERNAL_SNAPSHOT_REGEX. Log in to the controller and match the snap list output with the regex pattern.
+
+a|
+scf-00068
+a|
+File system pre_restore for plug-in [%s] failed with exit code [%s], Exiting!
+a|
+File system pre-restore failed because of a file system error. Check the logs and file system settings.
+
+a|
+scf-00069
+a|
+File system pre_restore for plug-in [%s] encountered errors exit code [%s], proceeding with backup!
+a|
+File system pre-restore failed because of a file system error. However, the APP_IGNORE_ERROR=Y; Snap Creator proceeds with other operations. Check the logs and file system settings.
+
+a|
+scf-00070
+a|
+File system post_restore for plug-in [%s] failed with exit code [%s], Exiting!
+a|
+File system post restore failed because of a file system error. Check the logs and file system settings.
+
+a|
+scf-00071
+a|
+File system post_restore for plug-in [%s] encountered errors, exit code [%s], proceeding with backup!
+a|
+File system post restore failed because of a file system error. However, the APP_IGNORE_ERROR=Y; Snap Creator proceeds with other operations. Check the logs and file system settings.
+
+a|
+scf-00072
+a|
+Policy [%s] is not a defined Snapshot copy retention policy in the configuration, Exiting!
+a|
+The policy you are using is not valid. Check the configuration file and configure NTAP_SNAPSHOT_RETENTIONS properly.
+
+|===

@@ -1,0 +1,19 @@
+---
+permalink: domino-ops/concept_general_configuration_file_information.html
+sidebar: sidebar
+keywords: 
+summary: 'You use a web browser to log in to the Snap Creator GUI. Check with your administrator for the Snap Creator Server IP address, port, and login credentials.'
+---
+= Logging in to the Snap Creator GUI
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You use a web browser to log in to the Snap Creator GUI. Check with your administrator for the Snap Creator Server IP address, port, and login credentials.
+
+. Enter the following URL in your web browser: `+https://server_name:port+`, where:
+ ** server_name is the name or IP address of the Snap Creator Server
+ ** port is the port for the Snap Creator Server (8443, by default)
+. Enter the login credentials for the Snap Creator Server.
+
+The Snap Creator GUI is displayed in the browser. If you are launching the GUI for the first time, a welcome message appears on screen. Click *OK* to dismiss the message.

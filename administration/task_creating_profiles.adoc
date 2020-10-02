@@ -1,0 +1,23 @@
+---
+permalink: administration/task_creating_profiles.html
+sidebar: sidebar
+keywords: 
+summary: 'You can create profiles to organize configuration files by using the Snap Creator GUI.'
+---
+= Creating profiles
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can create profiles to organize configuration files by using the Snap Creator GUI.
+
+The first time that you open the Snap Creator GUI, the New Profile dialog box is displayed automatically, prompting you to create a new profile.
+
+. From the Snap Creator GUI main menu, select *Management* > *Configurations*.
+. From the *Profiles and Configurations* pane, click *Add Profile*.
++
+The New Profile dialog box is displayed.
+
+. Enter the name of the new profile, and then click *OK*.
++
+The new profile is listed in the **Profiles and Configuration**s pane, and the Configuration wizard is displayed in the right pane.

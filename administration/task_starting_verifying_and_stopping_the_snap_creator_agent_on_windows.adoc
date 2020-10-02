@@ -1,0 +1,36 @@
+---
+permalink: administration/task_starting_verifying_and_stopping_the_snap_creator_agent_on_windows.html
+sidebar: sidebar
+keywords: 
+summary: 'You can start and stop the Snap Creator Agent service, and verify whether the Snap Creator Agent service is running on your Windows system.'
+---
+= Starting, verifying, and stopping Snap Creator Agent on Windows
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can start and stop the Snap Creator Agent service, and verify whether the Snap Creator Agent service is running on your Windows system.
+
+. From the command prompt, start or stop the Snap Creator Agent service, or verify whether the Snap Creator Agent service is running, as applicable:
++
+|===
+| If you want to...| Enter the following...
+a|
+Start the Snap Creator Agent service
+a|
+sc start snapcreatoragentservice
+a|
+Verify whether the Snap Creator Agent service is running
+a|
+sc query snapcreatoragentservice
+a|
+Stop the Snap Creator Agent service
+a|
+sc stop snapcreatoragentservice
+|===
+If you want to run Snap Creator in the foreground, then instead of using the sc start command, perform the following steps:
+
+ .. Open a command prompt on the host where the Snap Creator Agent is installed, and then navigate to the Snap Creator Agentdirectory: cd \install_path\scAgent4.3.0\bin\
+ .. To start the Snap Creator Agent service, run the batch script: scAgent.bat start
++
+Closing the command prompt stops the Snap Creator Agent service. Because the batch script (scAgent.bat) runs Snap Creator in the foreground, the Snap Creator Agent will run only as long as the command prompt is open. To run Snap Creator in the background, you should use the Snap Creator Agent service.

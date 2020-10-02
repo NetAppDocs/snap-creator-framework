@@ -1,0 +1,97 @@
+---
+permalink: installation/task_installing_the_snap_creator_server_on_a_windows_host.html
+sidebar: sidebar
+keywords: 
+summary: 'You can install Snap Creator Server on a Windows host by using Windows installer.'
+---
+= Installing the Snap Creator Server on a Windows host
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can install Snap Creator Server on a Windows host by using Windows installer.
+
+* JRE 1.8 Update 72 or later must be installed.
+* The person performing the installation must have admin-level privileges to perform the installation.
+* The default port for the Snap Creator Server must be 8443.
++
+You can use netstat or a similar tool to verify that the network port that you want to use (as long as the port supports HTTPS) is available and is not already in use (for example, Windows: `netstat -na | find "8443"`).
+
+* You must have already downloaded Snap Creator.
+
+. Double-click the Snap_Creator_Frameworkrelease-Windowsversion.exe file.
++
+To launch the Snap Creator installer, you would use Snap_Creator_Framework4.1.0-Windows64.exe.
+
+. On the Welcome page, click *Next* to start the installation.
+. Read and accept the terms of the license agreement.
+. On the *Choose Install Type* page, change the settings to fit various installation types, and then click *Next*.
++
+image::../media/choose_install_type_page.gif[]
+
+ ** *Select installation type*
++
+Select *Server*. Both the Snap Creator Server and Snap Creator Agent can be installed at the same time if you want both on the same system.
+
+ ** *Start server as service*
++
+Select this option to automatically install and start the snapcreatorserverservice service immediately after the installation process is complete. If it is not selected, the *Server port* field is disabled.
++
+NOTE: If you do not select this option, the service is not installed and you need to manually start the Snap Creator Server by running a batch script from a command prompt.
+
+ ** *Enter your system IP*
++
+Select this option to provide the IP address of the system on which Snap Creator Server or Snap Creator Agent is installed. This option is used for generating the SSL certificate during Snap Creator installation.
+
+ ** *Enter JAVA bin path*
++
+Select this option to provide the Java bin path to locate the keytool utility. Keytool is used to generate an SSL certificate during the Snap Creator installation.
+
+ ** *Server port*
++
+Accept the default port of `8443` or specify the port number.
+
+. Configure the *Profile Setup* page, and then click *Next*.
++
+The information entered on the *Profile Setup* page is used to set up the profile required for the Snap Creator GUI.
+
+ ** *Storage controller serial number*
++
+This parameter is optional. Enter the serial number of one of your storage controllers. When this information is provided, the controller serial number is embedded into the Snap Creator properties file and included in support and log outputs. This information can be used to help troubleshoot any issues that happen in the future.
+
+ ** *User name*
++
+Enter the name of the Snap Creator Server administrator.
+
+ ** *Password and confirmation*
++
+Enter the password for the Snap Creator Server administrator.
+
+ ** *Enable job monitor*
++
+If you want to enable job monitoring, select the *Enable job monitor* check box. Job Monitor is a separate section in the GUI that monitors all of the jobs that are run by Snap Creator and the status of these jobs.
+
+ ** *Job log size*
++
+Enter the number of jobs to keep in the history of the job log. The default is `100`; the size should be between 1 and 1000.
++
+NOTE: Although the maximum accepted value for the *Job log size* is 10,000, the recommended maximum size that you provide is 1000.
+
+. On the *Choose Install Location* page, enter the Snap Creator installation path or accept the default (C:\Program Files\NetApp\Snap_Creator_Framework), and then click *Next*.
+. On the *Choose Start Menu Folder* page, customize the folder in which Snap Creator should appear in the Windows Start Menu or accept the default, and then click *Install*.
+. After the installation is complete, click *Next*.
++
+During the Snap Creator Server service installation, a command prompt is displayed if a service was selected as part of the installation options. This process attempts to start existing services; therefore, it is common to see failure messages listed as part of this step.
+
+. Click *Finish* to close the Windows installer.
+. Validate the Snap Creator Framework GUI startup by navigating to the local host on the specified port (https://IP_address:gui_port).
++
+You must connect using HTTPS; otherwise, the connection is not automatically redirected to an HTTPS connection and the GUI will not work.
+
+*Related information*
+
+xref:task_installing_java_on_snap_creator_hosts.adoc[Installing Java on Snap Creator hosts]
+
+xref:task_downloading_the_snap_creator_software.adoc[Downloading the Snap Creator software]
+
+xref:task_starting_the_server_from_a_command_prompt.adoc[Starting the Server from a command prompt]

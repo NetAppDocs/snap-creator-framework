@@ -1,0 +1,54 @@
+---
+permalink: administration/reference_parameters_to_set_up_netapp_management_console_data_protection_capability.html
+sidebar: sidebar
+keywords: 
+summary: 'Several parameters are required to set up the NetApp Management Console data protection capability.'
+---
+= Parameters to set up the NetApp Management Console data protection capability
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Several parameters are required to set up the NetApp Management Console data protection capability.
+
+|===
+| Parameter| Setting| Description
+a|
+NTAP_PM_UPDATE
+a|
+(Y|N)
+a|
+Enables you to turn on and off the NetApp Management Console data protection capability update that registers Snap Creator Snapshot copies in the NetApp Management Console data protection capability. *Note:* If NTAP_PM_UPDATE is enabled, you must configure NTAP_DFM_DATA_SET.
+
+a|
+NTAP_DFM_DATA_SET
+a|
+ 
+a|
+Lists the storage systems and the NetApp Management Console data protection capability data sets to volume correlations; that is, controller1:dataset1/vol1,vol2;controller1:dataset2/vol3.
+a|
+NTAP_PM_RUN_BACKUP
+a|
+(Y|N)
+a|
+Starts the NetApp Management Console data protection capability backup, checks the progress and status, and waits for it to finish.
+a|
+NTAP_DFM_SNAPSHOT_FORMAT
+a|
+ 
+a|
+Optional setting for the format of the secondary Snapshot copies when using the NetApp Management Console data protection capability. This option requires OnCommand 5.0 or later. Required variable:
+
+* Timestamp: %T
+
+Optional variables:
+
+* Retention type: %R
+* Dataset label: %L
+* Storage controller: %H
+* Volume name: %N
+* Application-specific data: %A
+
+If this option is not set, then the default naming convention for the NetApp Management Console data protection capability is used. The naming convention can only be set at the time of dataset creation.
+
+|===

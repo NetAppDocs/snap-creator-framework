@@ -1,0 +1,61 @@
+---
+permalink: sap-hana-ops/concept_backup_solution_components.html
+sidebar: sidebar
+keywords: 
+summary: 'The Snap Creator backup solution for SAP HANA consists of SAP HANA data file backup using storage-based Snapshot copies, replication of data file backups to a secondary offsite backup location, SAP HANA log file backup using the HANA database log backup functionality, database block integrity check using a file-based backup, and housekeeping of data file, log file backups, and the SAP HANA backup catalog.'
+---
+= Backup solution components
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+The Snap Creator backup solution for SAP HANA consists of SAP HANA data file backup using storage-based Snapshot copies, replication of data file backups to a secondary offsite backup location, SAP HANA log file backup using the HANA database log backup functionality, database block integrity check using a file-based backup, and housekeeping of data file, log file backups, and the SAP HANA backup catalog.
+
+Database backups are executed by Snap Creator in conjunction with a plug-in for SAP HANA. The plug-in ensures database consistency so that the Snapshot copies that are created on the primary storage system are based on a consistent image of the SAP HANA database.
+
+Snap Creator allows you to replicate the consistent database images to a secondary storage using SnapVault. Typically, there will be different retention policies defined for the backups at the primary storage and the backups at the secondary storage. Snap Creator handles the retention at the primary storage as well as the secondary storage.
+
+The log backup is executed automatically by the SAP HANA database tools. The log backup destination should not be on the same storage system where the log volume of the database is located. Configuring the log backup destination on the same secondary storage where the database backups get replicated with SnapVault is recommended. With this configuration, the secondary storage has similar availability requirements as the primary storage so that it is certain that the log backups can always be written to the secondary storage.
+
+image::../media/sap_hana_database_log_backup.gif[SAP HANA database and log backup]
+
+The backup schedules and retention policies must be defined based on customer requirements. The following table shows an example configuration of the different schedules and retention policies.
+
+|===
+|  | Executed by Snap Creator| Primary storage| Secondary storage
+a|
+Database backups
+a|
+Schedule 1: every 4 hours
+a|
+Retention: 6 (\=> 6 hourly Snapshot copies)
+a|
+Retention: 6 (\=> 6 hourly Snapshot copies)
+a|
+Schedule 2: once per day
+a|
+Retention: 3 (\=> 3 daily Snapshot copies)
+a|
+Retention: 28 (4 weeks) (\=> 28 daily Snapshot copies)
+a|
+Log backups
+a|
+SAP HANA database tools schedule: every 15 minutes
+a|
+NA
+a|
+Retention: 28 days (4 weeks)
+a|
+Block integrity check
+a|
+Scheduled by Snap Creator, executed by SAP HANA database
+
+Schedule: once per week
+
+a|
+Retention: 1The backup is overwritten when the next block integrity check is executed.
+
+a|
+NA
+|===
+With this example, six hourly and three daily backups are kept at the primary storage. At the secondary storage, the database backups are kept for four weeks. To be able to recover any of the data backups, you must set the same retention for the log backups.

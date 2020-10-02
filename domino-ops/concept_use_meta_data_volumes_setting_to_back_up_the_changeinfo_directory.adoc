@@ -1,0 +1,32 @@
+---
+permalink: domino-ops/concept_use_meta_data_volumes_setting_to_back_up_the_changeinfo_directory.html
+sidebar: sidebar
+keywords: 
+summary: 'If you plan to back up the changeinfo directory, you must configure the volume containing the directory as a metadata volume. Doing so tells the IBM Domino plug-in to create a Snapshot copy of the changeinfo volume after creating the Snapshot copy for database files.'
+---
+= Backing up the changeinfo directory
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+If you plan to back up the changeinfo directory, you must configure the volume containing the directory as a metadata volume. Doing so tells the IBM Domino plug-in to create a Snapshot copy of the changeinfo volume _after_ creating the Snapshot copy for database files.
+
+You should already have identified the changeinfo volume as a volume to be backed up when you created the configuration file. For more information, see step link:task_using_the_gui_to_create_a_configuration_file.md#STEP_2036E43A6921415985798979F2226786[task_using_the_gui_to_create_a_configuration_file.md#STEP_2036E43A6921415985798979F2226786].
+
+You use the META_DATA_VOLUME parameter in the configuration file to identify the changeinfo volume as a metadata volume. The parameter is not available in the GUI.
+
+. Open the configuration file in a text editor.
++
+Configuration files reside in the Snap Creator installation directory, in a subdirectory named for the profile. On a Windows host, for example, C:\Program Files\NetApp\Snap_Creator_Framework\scServer4.1.x\engine\configs\Domino\Fuji15.conf, where Domino is the name of the profile and Fuji15.conf is the name of the configuration file.
+
+. Enter the name of the changeinfo volume in the META_DATA_VOLUME parameter.
++
+The changeinfo volume should already be listed in the VOLUMES parameter.
++
+The following example shows how to configure Fuji15_DomChangeInfo as a metadata volume:
++
+----
+VOLUMES=domino_vserver:Fuji15_DomDAOS,Fuji15_DomChangeInfo,
+Fuji15_DomTxn,Fuji15_DomData
+META_DATA_VOLUME=domino_vserver:Fuji15_DomChangeInfo
+----

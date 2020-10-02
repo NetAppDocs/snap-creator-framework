@@ -1,0 +1,16 @@
+---
+permalink: sap-hana-ops/concept_sap_hana_file_based_backup_and_database_integrity_checks.html
+sidebar: sidebar
+keywords: 
+summary: 'SAP recommends combining storage-based Snapshot backups with a weekly file-based backup to execute a block integrity check. The block integrity check can be executed from within the Snap Creator graphical user interface \(GUI\) or command line interface \(CLI\).'
+---
+= SAP HANA File-Based Backup and Database Integrity Checks
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+SAP recommends combining storage-based Snapshot backups with a weekly file-based backup to execute a block integrity check. The block integrity check can be executed from within the Snap Creator graphical user interface (GUI) or command line interface (CLI).
+
+The File-Based Data Backup operation is used when the backup copies of files are to be retained. The Database Integrity Checks operation is used when backup copies have to be discarded.
+
+You can configure either one or both of the operations. During on demand backup, you can choose either one of the operations.

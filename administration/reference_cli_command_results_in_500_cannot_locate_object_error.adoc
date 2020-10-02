@@ -1,0 +1,71 @@
+---
+permalink: administration/reference_cli_command_results_in_500_cannot_locate_object_error.html
+sidebar: sidebar
+keywords: 
+summary: 'In a UNIX environment, you might encounter the 500 Cannot locate object error after running a CLI command.'
+---
+= CLI command results in 500 Cannot locate object error
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+In a UNIX environment, you might encounter the 500 Cannot locate object error after running a CLI command.
+
+* *Issue*
++
+In a UNIX environment, you attempt to run a CLI command but encounter the 500 Cannot locate object error as seen in the following example:
++
+----
+500 Can't locate object method "new" via package "LWP::Protocol::https::Socket"
+----
+
+* *Cause*
++
+There are two possible causes of this error message:
+
+ ** The most probable cause of this error message is that the CLI SSL libraries are not linked.
+ ** If the error message is not the result of the SSL libraries not being linked, another cause might be that the HTTPS Perl library is missing.
+
+* *Corrective action*
++
+To resolve the library files linking issue, the simlinks need to be created manually. Consult the operating system administrator and verify the presence of the libssl.so and libcrypto.so files. SSL packages might need to be installed.
++
+Assuming that the files are present, you must manually link the files. To do this, run one of the following sets of commands based on your operating system:
+
+ ** For 32-bit:
++
+----
+cd /usr/lib
+ln -s libssl.so.1.0.0 libssl.so.6
+ln -s libcrypto.so.1.0.0 libcrypto.so.6
+----
+
+ ** For 3264it:
++
+----
+cd /usr/lib64
+ln -s libssl.so.1.0.0 libssl.so.6
+ln -s libcrypto.so.1.0.0 libcrypto.so.6
+----
+
+* *Corrective action*
++
+To resolve the missing HTTPS Perl library issue, install the LWP::Protocol::https library from CPAN mode.
++
+Perform the following steps:
+
+ .. Open an SSH session of your Linux server and run the following command: perl -MCPAN -e shell
++
+NOTE: If this is the first time you used CPAN, you are prompted with the following:
++
+----
+Would you like me to configure as much as possible automatically? [yes]
+----
++
+Press *Enter* to accept the default. The CPAN shell will open.
+
+ .. Run the following command: install LWP::Protocol::https
++
+The necessary packages are downloaded and installed. If additional packages are needed, you might be prompted to install those as well by selecting [yes].
+
+ .. After the installation is complete, enter exit to return to the normal shell.

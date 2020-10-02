@@ -1,0 +1,28 @@
+---
+permalink: administration/reference_cli_command_results_in_403_forbidden_error.html
+sidebar: sidebar
+keywords: 
+summary: 'In a UNIX environment, you might encounter the 403 Forbidden error when running a CLI command.'
+---
+= CLI command results in 403 Forbidden error
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+In a UNIX environment, you might encounter the 403 Forbidden error when running a CLI command.
+
+* *Issue*
++
+In a UNIX environment, you attempt to run a CLI command, but you encounter the 403 Forbidden error as seen in the following example:
++
+----
+403 Forbidden at //scServer4.1.0/snapcreator>SnapCreator/Service/Engine.pm line 152
+----
+
+* *Cause*
++
+This error generally occurs when permission is denied due to an incorrect Snap Creator username or password.
+
+* *Corrective action*
++
+Verify you have the correct Snap Creator username and password.

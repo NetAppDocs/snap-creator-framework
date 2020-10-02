@@ -1,0 +1,20 @@
+---
+permalink: administration/task_assigning_policies.html
+sidebar: sidebar
+keywords: 
+summary: 'You can assign retention policies to the configuration files by using the Snap Creator GUI.'
+---
+= Assigning policies
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can assign retention policies to the configuration files by using the Snap Creator GUI.
+
+. From the Snap Creator GUI main menu, select *Policy* > *Policy Assignments*.
+. Select a profile from the Profile pane.
+. Select a policy or policies to assign to the profile by selecting the appropriate check box on the right pane, and then click *Save*.
++
+If configuration files already exist in the profile, a message displays, informing you that the assigned policy will overrule the settings in the configuration file.
+
+. Click *Yes* to assign the policy.

@@ -1,0 +1,20 @@
+---
+permalink: administration/task_assigning_roles_to_snap_creator_users.html
+sidebar: sidebar
+keywords: 
+summary: 'You can assign roles to Snap Creator users by using the Snap Creator GUI.'
+---
+= Assigning roles to Snap Creator users
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can assign roles to Snap Creator users by using the Snap Creator GUI.
+
+. From the Snap Creator GUI main menu, select *Users and Roles* > *User management*.
+. In the User management tab, select the desired user name, and then click *Assign Profiles*.
+. Move the desired roles from the left column to the right column, and then click *Save*.
++
+You can select and drag the roles between columns or click the arrow to move the roles between columns.
+
+. Verify that the role was assigned by selecting the user and viewing the assigned role in the *Assigned Profiles and Roles* pane.

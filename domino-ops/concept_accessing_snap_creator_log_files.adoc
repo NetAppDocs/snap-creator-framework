@@ -1,0 +1,47 @@
+---
+permalink: domino-ops/concept_accessing_snap_creator_log_files.html
+sidebar: sidebar
+keywords: 
+summary: 'You can view the status of a job in the Snap Creator Job Monitor. You can view a log of job actions in the Console pane while the job is running, or in the Out Log for the job. A number of specialized logs also are available.'
+---
+= Viewing job status and logs
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can view the status of a job in the Snap Creator Job Monitor. You can view a log of job actions in the Console pane while the job is running, or in the Out Log for the job. A number of specialized logs also are available.
+
+You can view the following logs in the GUI:
+
+|===
+| Log| Description
+a|
+Out
+a|
+Provide verbose-level information for a job.
+a|
+Debug
+a|
+Provides verbose-level information plus information useful in debugging.
+a|
+GUI
+a|
+Provides information about Snap Creator GUI actions.
+a|
+Stderr
+a|
+Provides information about errors written to standard error (Reports pane only).
+a|
+Error
+a|
+Provides all error information (Reports pane only).
+|===
+You can view all the logs in a text editor if you prefer not to use the Job Monitor or Reports pane. Logs reside in the installation directory for the Snap Creator Server.
+
+*Related information*
+
+xref:task_using_the_snap_creator_job_monitor_to_review_logs.adoc[Viewing job status and logs in the Job Monitor]
+
+xref:task_using_the_snap_creator_reports_option_to_view_logs.adoc[Viewing logs in the Reports pane]
+
+xref:task_creating_an_scdump_using_the_snap_creator_gui.adoc[Using scdump to gather logs in a compressed format]

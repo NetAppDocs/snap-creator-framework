@@ -1,0 +1,33 @@
+---
+permalink: domino-ops/concept_creating_a_configuration_for_domino_using_the_gui.html
+sidebar: sidebar
+keywords: 
+summary: 'You specify most of the information you need for backup and restore operations in a configuration file. The configuration file is the input for Snap Creator backup and restore operations.'
+---
+= Creating a backup and restore configuration
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You specify most of the information you need for backup and restore operations in a configuration file. The configuration file is the input for Snap Creator backup and restore operations.
+
+You can create as many configuration files as you need, but you can specify only a single configuration file as input for an operation. You can use either the Snap Creator GUI or the Snap Creator CLI to create configuration files.
+
+NOTE: This guide shows how to use the GUI to create configuration files. For information on how to use the CLI, see the https://library.netapp.com/ecm/ecm_download_file/ECMP12395422[Snap Creator Framework 4.1.2 Administration Guide].
+
+You organize configuration files in Snap Creatorprofiles. Profiles and configuration files reside in the \engine\configs subdirectory in the Snap Creator installation directory:
+
+* On UNIX hosts, the directory to which the installation file was extracted
+* On Windows hosts, C:\Program Files\NetApp\Snap_Creator_Framework\scServer4.1.x, by default
+
+*Related information*
+
+xref:concept_general_configuration_file_information.adoc[Logging in to the Snap Creator GUI]
+
+xref:task_using_the_gui_to_create_a_configuration_file.adoc[Creating a configuration file]
+
+xref:concept_adding_commands_to_the_backup_and_restore_configuration.adoc[Adding commands to the backup and restore configuration]
+
+xref:task_setting_the_snap_creator_archive_log_management_settings.adoc[Cleaning up archived copies of Domino transaction logs]
+
+xref:concept_use_meta_data_volumes_setting_to_back_up_the_changeinfo_directory.adoc[Backing up the changeinfo directory]

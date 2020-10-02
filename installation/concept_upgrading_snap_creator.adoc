@@ -1,0 +1,24 @@
+---
+permalink: installation/concept_upgrading_snap_creator.html
+sidebar: sidebar
+keywords: 
+summary: 'You can upgrade to the latest version of Snap Creator from various supported versions.'
+---
+= Upgrading Snap Creator
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can upgrade to the latest version of Snap Creator from various supported versions.
+
+NOTE: If you have any questions about whether you can upgrade from releases posted on the Communities site, you can submit general questions to the NetApp Communities Forum. The NetApp Communities Forum is online at: https://communities.netapp.com/community/products_and_solutions/databases_and_enterprise_apps/snapcreator
+
+Before upgrading to the latest version of Snap Creator, check the job monitor size for the currently installed version of Snap Creator. When you upgrade Snap Creator, you must set the job monitor size equal to or greater than the previous setting to avoid data loss in the job monitor database.
+
+In addition, when upgrading Snap Creator, you must ensure the upgrade takes place on a host that uses the same operating system environment. For example, if you are upgrading in a Windows environment, you should make sure that when you copy backed-up data you also copy the data back to a Windows environment and not UNIX-based system.
+
+IMPORTANT: Snap Creator does not have a downgrade (revert) option. During an upgrade process, you back up several files. It is important to keep the backed-up files until you are certain that you do not need to revert to an earlier version of Snap Creator.
+
+*Related information*
+
+xref:task_checking_job_monitor_size.adoc[Checking job monitor size]

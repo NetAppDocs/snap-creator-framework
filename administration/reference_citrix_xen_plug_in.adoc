@@ -1,0 +1,90 @@
+---
+permalink: administration/reference_citrix_xen_plug_in.html
+sidebar: sidebar
+keywords: 
+summary: 'Snap Creator supports the backup and restore of Citrix XenServer virtual machines \(VMs\) by using the Citrix XenServer plug-in.'
+---
+= Citrix XenServer plug-in
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Snap Creator supports the backup and restore of Citrix XenServer virtual machines (VMs) by using the Citrix XenServer plug-in.
+
+NOTE: For the latest information about support or compatibility matrices, see the Interoperability Matrix.
+
+The Citrix XenServer plug-in supports Windows and XenServer.
+
+Consider the following when you use the Citrix XenServer plug-in:
+
+* Active IQ Unified Manager server as a proxy is not supported.
+* Mount, unmount, and backup operations using Open Systems SnapVault, and archive log management, are not supported.
+* Volume restore operations are not supported; only application-defined restore operations are supported.
+* Deleted VMs can be restored.
+* Snap Creator Agent must be installed on the host where XenCenter is installed, and Snap Creator Server must not be installed on XenServer.
+* The SC_AGENT_TIMEOUT value should be greater than the default value: 600 or higher.
+* If the value of APP_DEFINED_RESTORE is Y, then the SnapVault restore operation using the GUI is not supported.
+* If the pool master goes down in a server pool, then the Snap Creator configuration file should be modified manually with the new master server for further activity.
+* XenServer tools must be installed on all the VMs.
+* For Fibre Channel in a storage area network (SAN) environment, the plink.exe tool must be installed on a host where Snap Creator Agent is installed, and the plink.exe path must be added to the system environment variable.
++
+For detailed information about how to add the plink.exe path to the system environment variable, refer to the _Snap Creator Framework Installation Guide_.
+
+* VM pause and unpause operations are performed serially.
++
+For multiple VMs, the duration of VM in the pause state during backup operation depends on the number of VMs.
+
+* Automatic discovery of volumes is supported.
+
+== Supported Citrix XenServer configurations
+
+The following Citrix XenServer configurations are supported:
+
+* SAN
+ ** Supports guest virtual machines with one virtual disk image (VDI) per storage repository.
+ ** Supports data disks with one VDI per storage repository
+* NAS
+ ** Supports guest VMs installed on NFS mounts.
+ ** Supports data disks on NFS mounts.
+
+== Parameters
+
+The following table lists and describes the Citrix XenServer plug-in parameters:
+
+|===
+| Parameter| Setting| Description
+a|
+XEN_VMS
+a|
+host IP:VM#
+a|
+Lists virtual machines of a particular host, separated by a slash (/). For example: 10.10.10.192:VM1/VM2/VM3
+
+a|
+XEN_HOST_USERS
+a|
+host IP:username/password
+a|
+Lists Xen hosts and the corresponding user name and password.
+a|
+XEN_BIN_PATH
+a|
+For example: c:\Program Files\Citrix\XenCenter\xe.exe
+a|
+Specifies the path of the XenServer executable (xe). The XenCenter console is required for importing and exporting the VM metadata.
+a|
+XEN_METADATA_PATH
+a|
+For example: c:\scmetadata
+a|
+Specifies the path on the server to which you can download the virtual machine metadata.
+a|
+XEN_RESTORE_VMS
+a|
+For example: xenserver1:vm1,vm2;xenserver2:vm1,vm2
+a|
+Contains the VMs that must be restored. This parameter is required only during a restore operation.
+|===
+*Related information*
+
+http://mysupport.netapp.com/matrix[Interoperability Matrix Tool: mysupport.netapp.com/matrix]

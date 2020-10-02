@@ -1,0 +1,37 @@
+---
+permalink: administration/reference_ca_signed_ssl_certificate.html
+sidebar: sidebar
+keywords: 
+summary: ''
+---
+= CA-signed SSL certificate is required for Snap Creator Framework
+:icons: font
+:imagesdir: ../media/
+
+* *Issue*
++
+The Certificate Authority (CA)-signed SSL certificate is required for Snap Creator Framework.
+
+* *Cause*
++
+The server's X.509 certificate does not have a signature from a known public certificate authority.
+
+* *Corrective action*
++
+Snap Creator Framework supports installation of a third-party certificate.
+
+ .. Update the following parameter values in the snapcreator.properties and agent.properties files:
++
+snapcreator.properties file:
++
+SNAPCREATOR_KEYSTORE_PASS
++
+SNAPCREATOR_KEYSTORE_PATH
++
+agent.properties file:
++
+KEYSTORE_FILE
++
+KEYSTORE_PASS
+
+ .. Restart the server and the agent services.

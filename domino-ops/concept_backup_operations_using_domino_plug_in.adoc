@@ -1,0 +1,27 @@
+---
+permalink: domino-ops/concept_backup_operations_using_domino_plug_in.html
+sidebar: sidebar
+keywords: 
+summary: 'Unlike other backup technologies, the IBM Domino plug-in allows data to be written to the database during backup operations. It ensures that the backup is consistent with application data by recording any changes to the database during backup operations in a temporary directory called changeinfo. At restore time, it applies these changes to the database after restoring data from the Snapshot copy.'
+---
+= Understanding IBM Domino plug-in backup operations
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Unlike other backup technologies, the IBM Domino plug-in allows data to be written to the database during backup operations. It ensures that the backup is consistent with application data by recording any changes to the database during backup operations in a temporary directory called changeinfo. At restore time, it applies these changes to the database after restoring data from the Snapshot copy.
+
+During backup operations, database files are said to be in backup mode. Although the Snap Creator Framework refers to these files as "`quiesced,`" that is not the case. Data continues to be written to the files while the Snapshot copy is being made.
+
+High-level steps are as follows:
+
+. List databases, templates, and mailboxes in the volumes to be backed up.
+. Put files in backup mode, one database at a time.
+. Check for inconsistent or corrupted databases.
++
+NOTE: You can force the plug-in to proceed with backup operations despite errors, as described in step link:task_using_the_gui_to_create_a_configuration_file.md#STEP_AA41331683A24598B7845367CB967F99[task_using_the_gui_to_create_a_configuration_file.md#STEP_AA41331683A24598B7845367CB967F99].
+
+. Make a Snapshot copy of each volume.
+. If Domino transaction logging is in use, archive copies of Domino transaction logs for use in up-to-the-minute restore operations.
+. Take files out of backup mode, one database at a time.
+. Record changes to the database since files were put in backup mode in the changeinfo directory.

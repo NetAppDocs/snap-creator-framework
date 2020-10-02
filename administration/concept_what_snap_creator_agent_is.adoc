@@ -1,0 +1,46 @@
+---
+permalink: administration/concept_what_snap_creator_agent_is.html
+sidebar: sidebar
+keywords: 
+summary: 'The Snap Creator Agent, typically installed on the same host where an application or database is installed, handles quiesce and unquiesce commands from the Snap Creator Server to a given application, and is where the plug-ins are located. Agent is sometimes shortened to scAgent within Snap Creator.'
+---
+= Snap Creator Agent overview
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+The Snap Creator Agent, typically installed on the same host where an application or database is installed, handles quiesce and unquiesce commands from the Snap Creator Server to a given application, and is where the plug-ins are located. Agent is sometimes shortened to scAgent within Snap Creator.
+
+The Snap Creator Agent receives communication from the Snap Creator Server's Agent Interface through the Agent RESTful interface, and through HTTPS only. This means secure and encrypted communication, which is a very important feature in multi-tenant and cloud environments. Self-signed certificates allow the use of a generated certificate with the Snap Creator Agent. Furthermore, the Snap Creator Agent is protected by a configurable user and password combination, which is stored on disk.
+
+The following illustration depicts the architecture of the Snap Creator Agent:
+
+image::../media/scfw_agent_architecture_41_refresh.gif[]
+
+The Snap Creator Agent (sometimes shortened to scAgent within Snap Creator itself) component includes the following parts:
+
+* *Operation and Execution Managers*
++
+The Operation Manager takes care of the incoming, outgoing, and completed requests. The Execution Manager is responsible for executing the requests.
+
+* *Thread pool*
++
+Consisting of worker threads, the thread pool is used to execute multiple tasks.
++
+This determines the number of concurrent operations at any given time. The Execution Manager executes a plug-in, and it executes it in one of the threads in the thread pool. If the thread pool has eight threads, you can run eight plug-in operations concurrently. New incoming operations are queued, until threads become free again.
+
+* *Watchdog*
++
+Triggered by the Execution Manager for certain operations, typically quiesce, the Watchdog calls back to the Execution Manager after a specified time to stop the operation, if necessary, and executes a corresponding undo operation. For example, the Plug-in quiesce function is called to put the application into a backup mode. The Watchdog starts listening. If the unquiesce is not executed within the specified time window, the Watchdog unquiesces the application, putting it back into normal operation mode. This is to ensure that the database does not get stuck in backup mode.
+
+* *Context Store*
++
+Holding all information needed for the lifetime of the workflow, the Context Store provides context objects to the plug-in as needed, and, if a workflow fails or is never completed, the context object is deleted after a period of time.
++
+For workflows that do not finish or that fail in an undefined state, there is a maximum context time specified in install_path/etc/agent.properties: CONTEXT_LIFETIME_IN_MSEC=1800000 (the default value, 30 minutes). If this value is increased, the Snap Creator Agent occupies more memory.
+
+* *Plug-in Factory*
++
+The Plug-in Factory starts the plug-in and ensures that it runs in an isolated space. The Plug-in Factory also communicates with the Context Store to access stored information. It also enables running Perl-based and native plug-ins from Snap Creator using the Plug-in Integration Engine.
++
+The Snap Creator Agent can also use plug-ins written in languages other than Java.

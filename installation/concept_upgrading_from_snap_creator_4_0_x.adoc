@@ -1,0 +1,12 @@
+---
+permalink: installation/concept_upgrading_from_snap_creator_4_0_x.html
+sidebar: sidebar
+keywords: 
+summary: 'When you upgrade from Snap Creator 4.0.x, the database schema is upgraded.'
+---
+= Upgrading from Snap Creator 4.0.x
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+When you upgrade from Snap Creator 4.0.x, the database schema is upgraded.

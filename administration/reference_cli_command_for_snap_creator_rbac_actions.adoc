@@ -1,0 +1,381 @@
+---
+permalink: administration/reference_cli_command_for_snap_creator_rbac_actions.html
+sidebar: sidebar
+keywords: 
+summary: 'You can perform Snap Creator RBAC actions using CLI commands.'
+---
+= Commands used to manage Snap Creator user access
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can perform Snap Creator RBAC actions using CLI commands.
+
+The following table provides the command-line equivalent for Snap Creator GUI-based RBAC actions:
+
+|===
+| RBAC area| Action| Command and associated parameters
+a|
+Users
+a|
+Create a new user.
+a|
+
+----
+snapcreator
+--server IP
+--port Port
+--user User
+--passwd Password
+--action userAdd
+--username user_name
+--userPwd user_passwd
+--verbose
+----
+
+a|
+Delete a user.
+a|
+
+----
+snapcreator
+--server IP
+--port Port
+--user User
+--passwd Password
+--action userDelete
+--username user_name
+--verbose
+----
+
+a|
+List all users.
+a|
+
+----
+snapcreator
+--server IP
+--port Port
+--user User
+--passwd Password
+--action userList
+--verbose
+----
+
+a|
+List all assigned users for a role.
+a|
+
+----
+snapcreator
+--server IP
+--port Port
+--user User
+--passwd Password
+--action userListAssigned
+--roleName role_name
+--verbose
+----
+
+a|
+List all users who are assigned a profile.
+a|
+
+----
+snapcreator
+--server IP
+--port Port
+--user User
+--passwd Password
+--profile Profile
+--action userListForProfile
+--verbose
+----
+
+a|
+Roles
+a|
+Create a new role.
+a|
+
+----
+snapcreator
+--server IP
+--port Port
+--user User
+--passwd Password
+--action roleAdd
+--roleName role_name
+--roleDesc role_description
+--verbose
+----
+
+a|
+Delete a role.
+a|
+
+----
+snapcreator
+--server IP
+--port Port
+--user User
+--passwd Password
+--action roleDelete
+--roleName role_name
+--verbose
+----
+
+a|
+Assign a role to a user.
+a|
+
+----
+snapcreator
+--server IP
+--port Port
+--user User
+--passwd Password
+--action roleAssign
+--userName user_name
+--roleName role_name
+--verbose
+----
+
+a|
+Unassign a role from a user.
+a|
+
+----
+snapcreator
+--server IP
+--port Port
+--user User
+--passwd Password
+--action roleUnassign
+--userName user_name
+--roleName role_name
+--verbose
+----
+
+a|
+List all assigned roles for a user.
+a|
+
+----
+snapcreator
+--server IP
+--port Port
+--user User
+--passwd Password
+--action roleListAssigned
+--userName user_name
+--verbose
+----
+
+a|
+Permissions
+a|
+Create a new permission.
+a|
+
+----
+snapcreator
+--server IP
+--port Port
+--user User
+--passwd Password
+--action permAdd
+--permName permission_name
+--permDesc permission_description
+--verbose
+----
+
+a|
+Delete a permission.
+a|
+
+----
+snapcreator
+--server IP
+--port Port
+--user User
+--passwd Password
+--action permDelete
+--permName permission_name
+--verbose
+----
+
+a|
+Assign a permission to a user.
+a|
+
+----
+snapcreator
+--server IP
+--port Port
+--user User
+--passwd Password
+--action permAssign
+--permName permission_name
+--roleName role_name
+--verbose
+----
+
+a|
+Unassign a permission from a user.
+a|
+
+----
+snapcreator
+--server IP
+--port Port
+--user User
+--passwd Password
+--action permUnaspermission_namesign
+--permName
+--roleName role_name
+--verbose
+----
+
+a|
+List all permissions.
+a|
+
+----
+snapcreator
+--server IP
+--port Port
+--user User
+--passwd Password
+--action permList
+--verbose
+----
+
+a|
+List all permissions assigned to a role.
+a|
+
+----
+snapcreator
+--server IP
+--port Port
+--user User
+--passwd Password
+--action permListAssigned
+--roleName role_name
+--verbose
+----
+
+a|
+Operations
+a|
+Assign an operation to a permission.
+a|
+
+----
+snapcreator
+--server IP
+--port Port
+--user User
+--passwd Password
+--action opAssign
+--opName operation_name
+--permName permission_name
+--verbose
+----
+
+a|
+Unassign an operation from a permission.
+a|
+
+----
+snapcreator
+--server IP
+--port Port
+--user User
+--passwd Password
+--action opUnassign
+--opName operation_name
+--permName permission_name
+--verbose
+----
+
+a|
+List all operations.
+a|
+
+----
+snapcreator
+--server IP
+--port Port
+--user User
+--passwd Password
+--action opList
+--verbose
+----
+
+a|
+List all operations assigned to a permission.
+a|
+
+----
+snapcreator
+--server IP
+--port Port
+--user User
+--passwd Password
+--action opListAssigned
+--permName permission_name
+--verbose
+----
+
+a|
+Profiles
+a|
+Assign a profile to a user.
+a|
+
+----
+snapcreator
+--server IP
+--port Port
+--user User
+--passwd Password
+--profile Profile
+--action profileAssign
+--userName user_name
+--verbose
+----
+
+a|
+Unassign a profile from a user.
+a|
+
+----
+snapcreator
+--server IP
+--port Port
+--user User
+--passwd Password
+--profile Profile
+--action profileUnassign
+--userName user_name
+--verbose
+----
+
+a|
+List all profiles assigned to a user.
+a|
+
+----
+snapcreator
+--server IP
+--port Port
+--user User
+--passwd Password
+--action profileListForUser
+--userName user_name
+--verbose
+----
+
+|===

@@ -1,0 +1,29 @@
+---
+permalink: domino-ops/task_using_the_snap_creator_job_monitor_to_review_logs.html
+sidebar: sidebar
+keywords: 
+summary: 'The Snap Creator Job Monitor is a dashboard-like interface for Snap Creator jobs. You can use the Job Monitor to view job status and download logs.'
+---
+= Viewing job status and logs in the Job Monitor
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+The Snap Creator Job Monitor is a dashboard-like interface for Snap Creator jobs. You can use the Job Monitor to view job status and download logs.
+
+The Job Monitor indicates job status as follows:
+
+* image:../media/scfw_domino_icon_job_in_progress.gif[This image is explained by the surrounding text.] indicates a job in progress.
+* image:../media/scfw_domino_icon_job_successful.gif[This image is explained by the surrounding text.] indicates a job that has completed successfully.
+* image:../media/scfw_domino_icon_job_completed_with_errors.gif[This image is explained by the surrounding text.] indicates a job that completed with errors.
+* image:../media/scfw_domino_icon_job_failed.gif[This image is explained by the surrounding text.] indicates a job that failed.
+
+. In the Profiles and Configurations pane, select the configuration file and click *Management* > *Job Monitor* at the top of the Snap Creator Framework window.
++
+The Job Monitor pane is displayed, where you can view job status.
+
+. Select a job, then click *Download Logs* > *Log_Type*, where Log_Type is one of the following:
+ ** *Out Logs* provide verbose-level information for a job.
+ ** *Debug Logs* provides verbose-level information plus information useful in debugging.
+ ** *GUI Logs* provides information about Snap Creator GUI actions.The GUI log is not specific to the job that is selected.
+. In the download dialog, click *Open* or *Save* as required.

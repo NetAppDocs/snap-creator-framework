@@ -1,0 +1,107 @@
+---
+permalink: administration/reference_maxdb_plug_in.html
+sidebar: sidebar
+keywords: 
+summary: 'The MaxDB plug-in automates backup and restore operations on MaxDB databases.'
+---
+= MaxDB plug-in
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+The MaxDB plug-in automates backup and restore operations on MaxDB databases.
+
+NOTE: For latest information about support or to view compatibility matrices, see the Interoperability Matrix.
+
+The MaxDB plug-in provides the following features:
+
+* A centralized framework to back up, restore, and clone MaxDB databases
+* Integration with the database and provision of application consistency
+* Utilization of Snapshot technology to create point-in-time copies of the database
+* Utilization of SnapRestore to restore a previous Snapshot copy, and therefore an application-consistent database, in seconds, regardless of the capacity or number of files
+* Utilization of FlexClone technology to create fast, space-efficient clones of databases based on Snapshot copy backups
+
+The following table lists the MaxDB plug-in parameters, provides their settings, and describes them:
+
+|===
+| Parameter| Setting| Description
+a|
+APP_NAME
+a|
+maxdb
+a|
+Specifies the application name.
+a|
+XUSER_ENABLE
+a|
+(Y|N)
+a|
+Enables or disables the use of an xuser for MaxDB so that a password is not required for the database user.
+a|
+HANDLE_LOGWRITER
+a|
+(Y|N)
+a|
+Executes suspend logwriter (N) or resume logwriter (Y) operations.
+a|
+DBMCLICMD
+a|
+path_to_dbmcli_cmd
+a|
+Specifies the path to the MaxDB dbmcli command.If not set, dbmcli on the search path is used.
+
+NOTE: If in a Windows environment, the path needs to be contained within double-quotes ("...").
+
+a|
+SQLCLICMD
+a|
+path_to_sqlcli_cmd
+a|
+Specifies the path for the MaxDB sqlcli command.If not set, sqlcli is used on the search path.
+
+a|
+MAXDB_UPDATE_HIST_LOG
+a|
+(Y|N)
+a|
+Instructs the MaxDB backup program whether or not to update the MaxDB history log.
+a|
+MAXDB_DATABASES
+a|
+db_name:user_name/password
+a|
+Lists databases to be backed up with the user name and password.Multiple databases and user names can be specified using a comma-separated list: for example, `db1:user1/password,db2:user2/password`.
+
+a|
+MAXDB_CHECK_SNAPSHOT_DIR
+a|
+Example: `+SID1:directory[,directory...];[SID2:directory[,directory...]+`
+a|
+Checks that a Snap Creator Snapshot copy operation is successful and ensures that the Snapshot copy is created. This applies to NFS only. The directory must point to the location that contains the .snapshot directory.
+
+Multiple directories can be included in a comma-separated list. Multiple databases can be specified as a semicolon-separated list.
+
+In MaxDB 7.8 and later versions, the database backup request is marked Failed in the backup history.
+
+a|
+MAXDB_BACKUP_TEMPLATES
+a|
+template_name Example: `na_snap`
+
+a|
+Specifies a backup template for each database.The template must already exist and be an external type of backup template.
+
+To enable Snapshot copy integration for MaxDB 7.8 and later, you must have MaxDB background server functionality and already configured MaxDB backup template.
+
+a|
+MAXDB_BG_SERVER_PREFIX
+a|
+bg_server_prefix Example: `na_bg`
+
+a|
+Specifies the prefix for the background server name. If the MAXDB_BACKUP_TEMPLATES parameter is set, you must also set the MAXDB_BG_SERVER_PREFIX parameter. If you do not set the prefix, the default value `na_bg_DATABASE` is used.
+
+|===
+*Related information*
+
+http://mysupport.netapp.com/matrix[Interoperability Matrix Tool: mysupport.netapp.com/matrix]

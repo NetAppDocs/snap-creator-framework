@@ -1,0 +1,21 @@
+---
+permalink: administration/task_deleting_retention_policies.html
+sidebar: sidebar
+keywords: 
+summary: 'You can delete retention policies.'
+---
+= Deleting retention policies
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can delete retention policies.
+
+. From the Snap Creator GUI main menu, select *Policy* > *Policy Management*.
+. From the *Policy Manager* tab, select a policy and click *Delete*.
++
+NOTE: If you try to delete a policy that is assigned to a configuration file, the GUI displays the following error message: Policy cannot be deleted since the policy name is applied to configuration.Use Detach policy and then delete the policy.
+
+. Click *Yes* in the confirmation window.
++
+The policy is removed from the Policy Manager tab.

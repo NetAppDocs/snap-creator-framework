@@ -1,0 +1,51 @@
+---
+permalink: administration/reference_parameters_to_connect_to_vfiler_units_and_interface.html
+sidebar: sidebar
+keywords: 
+summary: 'Several parameters are required to connect Snap Creator Server to vFiler units and interfaces.'
+---
+= Parameters to connect to vFiler units and interfaces
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Several parameters are required to connect Snap Creator Server to vFiler units and interfaces.
+
+|===
+| Parameter| Setting| Description
+a|
+VFILERS
+a|
+ 
+a|
+List the vFiler units and their hosting storage systems or volumes. For example: vFiler1@controller1:vol1,vol2,vol3;vFiler2@controller2:vol1;vFiler3@controller3:vol2,vol3**Note:** HTTPS is not supported with vFiler units.
+
+a|
+MANAGEMENT_ INTERFACES
+a|
+ 
+a|
+Lists the primary storage controllers and their management interfaces used for communications.For example: MANAGEMENT_INTERFACES=controller1:controller1-mgmt;controller2:controller2-mgmt
+
+a|
+SECONDARY_ INTERFACES
+a|
+ 
+a|
+List the primary storage controllers or vFiler units and their secondary interfaces' source or destination for SnapVault and SnapMirror relationships.For example: controller1:controller1-source/controller2-destination
+
+NOTE: The SnapVault and SnapMirror relationships must be configured to use this secondary interface. Snap Creator does not manage SnapMirror and SnapVault relationships.
+
+a|
+USE_PROXY
+a|
+(Y|N)
+a|
+Allows API calls to go through Active IQ Unified Manager server proxy instead of the storage controller directly. If this option is used, NTAP_USERS is not required.
+a|
+ALLOW_IP_ADDR
+a|
+(Y|N)
+a|
+Allows the IP address to be used for the storage system. This applies to SnapVault, SnapMirror, and the NetApp Management Console data protection capability. Using IPs can create problems and should only be used under certain conditions.
+|===

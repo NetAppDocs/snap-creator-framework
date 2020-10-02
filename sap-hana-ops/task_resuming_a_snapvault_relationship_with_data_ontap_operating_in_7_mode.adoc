@@ -1,0 +1,54 @@
+---
+permalink: sap-hana-ops/task_resuming_a_snapvault_relationship_with_data_ontap_operating_in_7_mode.html
+sidebar: sidebar
+keywords: 
+summary: 'If you restore using a Snapshot backup other than the latest one, you need to resume the SnapVault relationship so that Snap Creator can continue to run backups.'
+---
+= Resuming a SnapVault relationship with Data ONTAP operating in 7-Mode
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+If you restore using a Snapshot backup other than the latest one, you need to resume the SnapVault relationship so that Snap Creator can continue to run backups.
+
+. Resume the SnapVault relationship with Data ONTAP operating in 7-Mode by entering the following command. snapvault start -r -S source_controller:source_volumebackup_controller:backup_volume
++
+Perform this step for all volumes belonging to the SAP HANA database.
++
+----
+hana2b> snapvault start -r -S hana1a:/vol/data_00001/mnt00001
+hana2b:/vol/backup_data_00001/mnt00001
+The resync base snapshot will be: Backup-ANA-SV_daily_20140406200000
+Resync may alter the data in this qtree.
+Are you sure you want to resync the qtree? y
+Mon Apr  7 14:08:21 CEST [hana2b:replication.dst.resync.success:notice]: SnapVault resync of
+/vol/backup_data_00001/mnt00001 to hana1a:/vol/data_00001/mnt00001 was successful.
+Transfer started.
+Monitor progress with 'snapvault status' or the snapmirror log.
+----
++
+----
+hana2b> snapvault start -r -S hana1b:/vol/data_00002/mnt00002
+hana2b:/vol/backup_data_00002/mnt00002
+The resync base snapshot will be: Backup-ANA-SV_daily_20140406200000
+Resync may alter the data in this qtree.
+Are you sure you want to resync the qtree? y
+Mon Apr  7 14:09:49 CEST [hana2b:replication.dst.resync.success:notice]: SnapVault resync of
+/vol/backup_data_00002/mnt00002 to hana1b:/vol/data_00002/mnt00002 was successful.
+Transfer started.
+Monitor progress with 'snapvault status' or the snapmirror log.
+----
++
+----
+hana2b> snapvault start -r -S hana1a:/vol/data_00003/mnt00003
+hana2b:/vol/backup_data_00003/mnt00003
+The resync base snapshot will be: Backup-ANA-SV_daily_20140406200000
+Resync may alter the data in this qtree.
+Are you sure you want to resync the qtree? y
+Mon Apr  7 14:10:25 CEST [hana2b:replication.dst.resync.success:notice]: SnapVault resync of
+/vol/backup_data_00003/mnt00003 to hana1a:/vol/data_00003/mnt00003 was successful.
+Transfer started.
+Monitor progress with 'snapvault status' or the snapmirror log.
+----
++
+When the data transfer is finished, you can again schedule backups by using Snap Creator.

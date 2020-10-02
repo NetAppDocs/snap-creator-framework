@@ -1,0 +1,24 @@
+---
+permalink: administration/task_deleting_configuration_files.html
+sidebar: sidebar
+keywords: 
+summary: 'You can delete configuration files from a profile.'
+---
+= Deleting configuration files from a profile
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can delete configuration files from a profile.
+
+IMPORTANT: When deleting configuration files, schedules associated with the configuration are also removed as part of the process.
+
+. From the Snap Creator GUI main menu, select *Management* > *Configurations*.
+. From the Profiles and Configurations pane, expand the content for the profile.
++
+The assigned configuration files assigned to the profile are listed below the profile name.
+
+. Right-click the configuration file and select *Delete*.
+. Click *Yes* in the confirmation window.
++
+The configuration file is removed from the list under the profile name and is permanently deleted from the Snap Creator Server.

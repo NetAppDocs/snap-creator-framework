@@ -1,0 +1,12 @@
+---
+permalink: administration/concept_troubleshooting_snap_creator_gui_errors.html
+sidebar: sidebar
+keywords: 
+summary: 'In UNIX environments, you might encounter some errors when accessing the Snap Creator GUI. You should be aware of these errors and know how to troubleshoot them.'
+---
+= Troubleshooting Snap Creator GUI errors
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+In UNIX environments, you might encounter some errors when accessing the Snap Creator GUI. You should be aware of these errors and know how to troubleshoot them.

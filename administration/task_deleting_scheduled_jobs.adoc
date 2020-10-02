@@ -1,0 +1,18 @@
+---
+permalink: administration/task_deleting_scheduled_jobs.html
+sidebar: sidebar
+keywords: 
+summary: 'You can delete a scheduled job.'
+---
+= Deleting scheduled jobs
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can delete a scheduled job.
+
+. From the Snap Creator GUI main menu, select *Management* > *Schedules*.
+. From the Schedules tab, select a job from the list of scheduled jobs, and click *Delete*.
+. Click *Yes* in the confirmation window.
++
+The scheduled job is deleted from the list.

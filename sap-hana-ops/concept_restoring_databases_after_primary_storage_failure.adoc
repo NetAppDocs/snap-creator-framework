@@ -1,0 +1,12 @@
+---
+permalink: sap-hana-ops/concept_restoring_databases_after_primary_storage_failure.html
+sidebar: sidebar
+keywords: 
+summary: 'After a primary storage failure, or when all Snapshot copies are deleted from the volumes at the primary storage, Snap Creator will not be able to handle the restore, because there will no longer be a SnapVault relationship on the primary storage systems.'
+---
+= Restoring databases after primary storage failure
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+After a primary storage failure, or when all Snapshot copies are deleted from the volumes at the primary storage, Snap Creator will not be able to handle the restore, because there will no longer be a SnapVault relationship on the primary storage systems.

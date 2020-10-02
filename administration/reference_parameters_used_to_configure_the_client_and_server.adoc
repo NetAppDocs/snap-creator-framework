@@ -1,0 +1,87 @@
+---
+permalink: administration/reference_parameters_used_to_configure_the_client_and_server.html
+sidebar: sidebar
+keywords: Snap Creator
+summary: 'You must be aware of the parameters for configuring the Snap Creator Agent host client and Snap Creator Server.'
+---
+= Parameters for configuring the Snap Creator Agent host client and Snap Creator Server
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You must be aware of the parameters for configuring the Snap Creator Agent host client and Snap Creator Server.
+
+|===
+| Parameter| Setting| Description
+a|
+SC_AGENT_##
+a|
+host name or IP_address:port
+a|
+Runs commands or tasks on multiple remote hosts simultaneously using a single configuration. A task is either a defined plug-in (parameter APP_NAME) or a command specified with the _CMD command (for example, NTAP_SNAPSHOT_CREATE_CMD01).
+
+To specify a remote host, you should enter its name or IP address followed by a colon, and the port on which Snap Creator Agent is listening.
+
+For example: SC_AGENT_ number = IP address:Port
+
+SC_AGENT_01=Agent IP:Agent port
+
+SC_AGENT_02=Agent IP:Agent port
+
+On the remote host, you can start Snap Creator Agent by running the <path to scAgent_v<#>>/bin/scAgent start command.
+
+a|
+SC_CLONE_TARGET
+a|
+host name or IP_address of the clone target:port
+a|
+Enables clone operations.Using the parameter *cloneVol* with the {PRE|POST}_CLONE_CREATE_CMDxx parameter, you can manage the remote storage objects on the remote side (for example, mounting or unmounting file systems).
+
+To specify a clone target, you should enter its name or IP address followed by a colon, and the port on which Snap Creator Agent is listening.
+
+a|
+SC_AGENT_TIMEOUT
+a|
+Time (in seconds)
+a|
+Specifies the timeout in seconds of the Agent service. The implemented client/server architecture uses a timeout mechanism. This means that if the client does not respond in the specified interval, the server fails with a timeout message. However, the task on the client is not aborted and requires further investigation.
+
+The timeout is set to 300 seconds by default. On a server with a high load or known long-running tasks (such as, user-created scripts or complex SnapDrive operations), you should extend the timeout and modify this value according to your requirements.
+
+You should set this parameter to the maximum time that an operation can take (for example, if quiesce takes 1,800 minutes, this parameter must be set to 1800).
+
+NOTE: Some plug-ins have specific SC_AGENT_TIMEOUT value requirements.
+
+a|
+SC_AGENT_WATCHDOG_ENABLE
+a|
+"`Y`" or "`N`"
+a|
+The SC_AGENT_WATCHDOG_ENABLE parameter applies only when the Snap Creator Agent version is earlier than 4.1. This parameter enables or disables the Watchdog process. For Snap Creator Agent 4.1 or later, this parameter is ignored because the Watchdog process is always enabled. If the parameter is enabled (that is, set to Y) and the Snap Creator Agent version is 4.1 or later, the Watchdog process starts when the Snap Creator Agentreceives a quiesce request.
+
+The Watchdog process uses the SC_AGENT_UNQUIESCE_TIMEOUT parameter as timeout to unquiesce the application. If the parameter is disabled (that is, set to N) and the Snap Creator Agentversion is earlier than 4.1, the Watchdog process unquiesces the application, but it uses the OPERATION_TIMEOUT_IN_MSEC parameter (default: 1 hour) from scAgent/etc/agent.properties path.
+
+NOTE: The SC_AGENT_WATCHDOG_ENABLE parameter is deprecated for Snap Creator Agent 4.1, and applicable only for use with Snap Creator Agent 4.0. Beginning with Snap Creator Agent 4.1, the Watchdog process is enabled (as it is hard coded), regardless of the value set for this parameter.
+
+a|
+SC_AGENT_UNQUIESCE_TIMEOUT
+a|
+Time (in seconds)
+a|
+Specifies the unquiesce timeout in seconds. With Snap Creator Agent versions earlier than 4.1, this parameter is only used when SC_AGENT_WATCHDOG_ENABLE is set to Y. With Snap Creator Agent 4.1 or later, the parameter is always applicable, because the Snap Creator Agent Watchdog process is always on.If communication with Snap Creator Agent is not possible and an application is in the quiesce state, the Snap Creator Agent automatically returns the application to its normal mode of operation without communication from the server. By default, the unquiesce timeout is set to whatever the SC_AGENT_TIMEOUT parameter value is, plus five seconds.
+
+a|
+SC_TMP_DIR
+a|
+"`Y`" or "`N`"
+a|
+Enables the use of a user-defined, alternate temporary directory to store Snap Creator-related files. The user creates the directory and manages user access. The plug-ins use temporary files to interact with the database. The temporary files are created in the host's default temp directory, which has write access for all users. If the temp directory is full, Snap Creator displays an error while creating the temporary files.
+
+a|
+SC_AGENT_LOG_ENABLE
+a|
+"`Y`" or "`N`"
+a|
+Enables log creation for all operations executed by Snap Creator Server to Snap Creator Agent. If a failure occurs, you can check these logs. Snap Creator Server sends operations to Snap Creator Agent. If an error occurs before Snap Creator Agent sends a callback to Snap Creator Server, the Snap Creator Agent messages could be lost. This parameter helps Snap Creator Agent messages to be logged on Snap Creator Agent so that these messages are not lost.
+
+|===

@@ -1,0 +1,45 @@
+---
+permalink: sap-hana-ops/task_restoring_and_recovering_sap_hana_databases.html
+sidebar: sidebar
+keywords: 
+summary: 'You use SAP HANA Studio and Snap Creator to restore and recover SAP HANA databases.'
+---
+= Restoring and recovering SAP HANA databases
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You use SAP HANA Studio and Snap Creator to restore and recover SAP HANA databases.
+
+. Within SAP HANA Studio:
+ .. Select Recover for the SAP HANA system.
+ .. SAP HANA system is shut down.
+ .. Select the recovery type.
+ .. Provide log backup locations.
+ .. List of data backups is shown
+ .. Select backup to see the external backup ID.
+. For a storage system running clustered Data ONTAP only:
+ .. Only required if any other backup than the latest has been used for the restore.
+ .. Only required for "`Volume SnapRestore`" from primary storage.
+ .. Deactivate SnapVault relationships
+. Within Snap Creator:
+ .. Select "`Restore`" for the SAP HANA system.
+ .. Select restore from primary or secondary storage, depending on the availability of the backup at the primary storage.
+ .. Select storage controller, volume name, and Snapshot copy name. Snapshot copy name correlates with the backup ID earlier.
+ .. For multinode SAP HANA systems, multiple volumes need to be restored:
+  ... Choose *Add more restore items*.
+  ... Select storage controller, volume name, and Snapshot copy name.
+  ... Repeat this process for all required volumes.
+ .. For multitenant database containers (MDC) single tenant database systems, both the SYSTEM and TENANT databases are restored.
+ .. Restore process is started
+ .. Restore finished for all volumes.
+. At the database nodes, unmount and mount all data volumes to clean "Stale NFS Handles."
+. Within SAP HANA Studio:
+ .. Select *Refresh* on backup list.
+ .. Select available backup for recovery (green item).
+ .. Start recovery process.
+ .. For multitenant database containers (MDC) single tenant database systems, start the recovery process first for the SYSTEM database, and then for the TENANT database.
+ .. The SAP HANA system is started.
+. (Optional) Resume SnapVault relationships for all restored volumes.
++
+NOTE: At the storage systems, this step is only required if a backup other than the latest one has been used for the restore.

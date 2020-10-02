@@ -1,0 +1,50 @@
+---
+permalink: domino-ops/task_running_snap_creator_by_using_the_custom_action.html
+sidebar: sidebar
+keywords: 
+summary: 'You can use a Snap Creator custom action to complete processing of restores originated outside of Snap Creator.'
+---
+= Using a Snap Creator custom action to complete restore processing
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can use a Snap Creator custom action to complete processing of restores originated outside of Snap Creator.
+
+You can perform this action in the Snap Creator CLI only.
+
+. In the Snap Creator CLI, enter the following command: snapcreator.exe ---action custom --server server --port port --user user --passwd password --profile profile --config config --params snapname=snapshot_name datapath=datapath restoretype=u2m | su2m restoretime="MM/DD/YYYY HH:MM:SS" disablereplication=Y|N
++
+where
+
+ ** server is the host name or IP address of the Snap Creator Server.
+ ** port is the port number where the Snap Creator Server is running.
+ ** user is the name of the Snap Creator user.
+ ** password is the Snap Creator user's password.
++
+NOTE: You can omit the --passwd option if you do not want to type the password in clear text. Snap Creator will prompt for the password when you execute the command
+
+ ** profile is the name of the Snap Creator profile.
+ ** config is the name of the Snap Creator configuration file.
+ ** snapshot_name is the name of the Snapshot copy from which you want to restore the file.
+ ** datapath is the pathname of the directory to which you want to restore the file.
+ ** restoretype is the type of restore to be performed:
+  *** u2m performs an up-to-the-minute restore.
+  *** su2m performs a selectable up-to-the-minute restore. Specify the date and time to which you want to play forward Domino transaction logs in MM/DD/YYYY HH:MM:SS format in the --restoretime option. For example, 01/23/2014 12:45:00.
+ ** disablereplication disables Domino replication:
+  *** Enter N (default) to allow Domino replication. The plug-in uses an existing Domino replica ID for the restored database file.
++
+NOTE: An alternative method to allow Domino replication is to leave this parameter out of the command.
+
+  *** Enter Y to disable Domino replication. The plug-in sets a new Domino replica ID for the restored database file.
+*Note:* Appending --verbose to the command will show additional information about the restore operation. Otherwise, you are immediately returned to the command prompt when the command finishes executing.
+
++
+----
+snapcreator.exe --action custom --server Tampico --port 8443
+--user admin --profile Domino --config Nantes
+--params snapname=Nantes-Test_Policy_20140123121459
+datapath=F:\Domino\data\restore\mail\t04.nsf
+restoretype=su2m restoretime="01/23/2014 12:45:00"
+disablereplication=y
+----

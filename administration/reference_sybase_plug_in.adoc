@@ -1,0 +1,133 @@
+---
+permalink: administration/reference_sybase_plug_in.html
+sidebar: sidebar
+keywords: 
+summary: 'The Sybase ASE plug-in uses the isql command to interact with the Sybase database.'
+---
+= Sybase ASE plug-in
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+The Sybase ASE plug-in uses the isql command to interact with the Sybase database.
+
+NOTE: For latest information about support or to view compatibility matrices, see the Interoperability Matrix.
+
+The following table lists the Sybase plug-in parameters, provides their settings, and describes them:
+
+|===
+| Parameter| Setting| Description
+a|
+SYBASE_USER
+a|
+user_name
+a|
+Specifies the operating system user who can run the isql command. This parameter is required for UNIX. This parameter is required if the user running the Snap Creator Agentstart and stop commands (usually the root user) and the user running the isql command are different.
+
+a|
+SYBASE_SERVER
+a|
+data_server_name
+a|
+Specifies the Sybase data server name (-S option on isql command).For example: `p_test`
+
+a|
+SYBASE_DATABASES
+a|
+db_name:user_name/password
+a|
+Lists the databases within the instance to back up. The master database is added; for example: `DBAtest2:sa/53616c7404351e`.If a database named +ALL is used, then database automatic discovery is used, and the sybsyntax, sybsystemdb, sybsystemprocs, and tempdb databases are excluded.
+
+For example: `+ALL:sa/53616c71a6351e`
+
+Encrypted passwords are supported if the NTAP_PWD_PROTECTION parameter is set.
+
+a|
+SYBASE_DATABASES_EXCLUDE
+a|
+db_name
+a|
+Allows databases to be excluded if the +ALL construct is used. You can specify multiple databases by using a semicolon-separated list.For example, `pubs2;test_db1`
+
+a|
+SYBASE_TRAN_DUMP
+a|
+db_name:directory_path
+a|
+Enables you to perform a Sybase transaction dump after creating a Snapshot copy.For example: `pubs2:/sybasedumps/pubs2`
+
+You must specify each database that requires a transaction dump.
+
+a|
+SYBASE_TRAN_DUMP_FORMAT
+a|
+%S_%D_%T.cmn
+a|
+Enables you to specify the dump naming convention. The following keys can be specified:
+
+* %S = instance name from SYBASE_SERVER
+* %D = database from SYBASE_DATABASES
+* %T = unique timestamp
+
+Here is an example: `%S_%D_%T.log`
+
+a|
+SYBASE_TRAN_DUMP_COMPRESS
+a|
+(Y|N )
+a|
+Enables or disables native Sybase transaction dump compression.
+a|
+SYBASE_ISQL_CMD
+a|
+Example: /opt/sybase/OCS-15__0/bin/isql
+a|
+Defines the path to the isql command.
+a|
+SYBASE
+a|
+Example: /sybase
+a|
+Specifies the location of the Sybase installation.
+a|
+SYBASE_LOGDIR
+a|
+Example: /usr/local/ntap/scServer/logs
+a|
+Defines the directory where Snap Creator logs are placed.
+a|
+SYBASE_MANIFEST
+a|
+Example: `DBAtest2:/t_inf_nzl_devs/`
+a|
+Specifies the databases for which the manifest file should be created, along with the location where the manifest file should be placed.
+a|
+SYBASE_MANIFEST_FORMAT
+a|
+%S__%D_%T.manifest Example: `%S_%D_%T.manifest`
+
+a|
+Enables you to specify the manifest file naming convention. The following keys can be specified:
+
+* %S = Instance name from SYBASE_SERVER
+* %D = database from SYBASE_DATABASES
+* %T = unique timestamp, which is the same as that used for Snapshot copy naming
+
+a|
+SYBASE_MANIFEST_DELETE
+a|
+(Y|N )
+a|
+Allows the manifest to be deleted after the Snapshot copy has been created. The manifest file should be captured in the Snapshot copy so that it is always available with the backup.
+
+a|
+SYBASE_EXCLUDE_TEMPDB
+a|
+(Y|N )
+a|
+Enables automatic exclusion of user-created temporary databases.
+
+|===
+*Related information*
+
+http://mysupport.netapp.com/matrix[Interoperability Matrix Tool: mysupport.netapp.com/matrix]

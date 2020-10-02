@@ -1,0 +1,14 @@
+---
+permalink: administration/concept_managing_configuration_files.html
+sidebar: sidebar
+keywords: 
+summary: 'You can create, copy, download, list, and delete configuration files.'
+---
+= Managing configuration files
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can create, copy, download, list, and delete configuration files.
+
+A configuration file is the center of Snap Creator and is composed of parameters that are set to affect the behavior of Snap Creator, such as enabling supported plug-ins to run, specifying required variables, and defining the volumes that are captured in Snapshot copies.

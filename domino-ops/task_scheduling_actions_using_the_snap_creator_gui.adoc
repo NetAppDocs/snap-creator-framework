@@ -1,0 +1,61 @@
+---
+permalink: domino-ops/task_scheduling_actions_using_the_snap_creator_gui.html
+sidebar: sidebar
+keywords: 
+summary: 'You can schedule recurring backup jobs after performing the initial backup.'
+---
+= Scheduling backups
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can schedule recurring backup jobs after performing the initial backup.
+
+You should have created the configuration file for the backup, as described in xref:task_using_the_gui_to_create_a_configuration_file.adoc[Creating a configuration file].
+
+. In the Profiles and Configurations pane, select the configuration file and click *Management* > *Schedules* at the top of the Snap Creator Framework window.
+. In the Jobs pane, click *Create*
+. In the New Job dialog, specify the job information:
++
+|===
+| For this field...| Do this...
+a|
+Job Name
+a|
+Enter the name of the job.
+a|
+Start Date
+a|
+Use the calendar control to select the date on which the schedule should start.
+a|
+Active
+a|
+Select this box to activate the schedule. Deselect the box to deactivate the schedule.
+a|
+Profile
+a|
+Select the profile for the configuration file.
+a|
+Configuration
+a|
+Select the configuration file.
+a|
+Action
+a|
+Select backup.
+a|
+Policy
+a|
+Select the policy for the backup job.    *Note:* You must have configured the policy in the configuration file.
+a|
+Frequency
+a|
+Select the frequency with which the job should run. Depending on your choice, new fields are displayed where you can specify the minute, hour, and day to run the job. If you want to use a cron job, select cron and enter the cron command.
+|===
+The following example shows how to schedule a backup job to run every day at midnight:
++
+image::../media/scfw_domino_new_job.gif[This image is explained by the surrounding text.]
+
+. Click *Save*.
++
+The scheduled job is listed on the Schedules tab in the Jobs pane. Select the job to run, edit, or delete it.

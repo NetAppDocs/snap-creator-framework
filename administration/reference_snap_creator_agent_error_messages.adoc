@@ -1,0 +1,60 @@
+---
+permalink: administration/reference_snap_creator_agent_error_messages.html
+sidebar: sidebar
+keywords: 
+summary: 'The following table lists the Snap Creator Agent error messages.'
+---
+= Snap Creator Agent error messages
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+The following table lists the Snap Creator Agent error messages.
+
+|===
+| Error code| Description/Resolution
+a|
+agt-00001
+a|
+The Snap Creator Agent or some other process is running on the port specified. Try a different port.
+a|
+agt-00003
+a|
+The parameters given were not correct to start the Snap Creator Agent. Check the required parameters.
+a|
+agt-00004
+a|
+The SC_AGENTconfiguration parameter must be defined when using a remote agent.
+a|
+agt-00005
+a|
+You are not allowed to perform back to back quiesce operations and one operation is already running. Wait or run unquiesce.
+a|
+agt-00006
+a|
+The watchdog process is unable to spawn. The system most likely has reached the maximum number of processes. Disable the watchdog in the configuration or check the operating system settings.
+a|
+agt-00008
+a|
+The quiesce and unquiesce operation did not complete and backup is only crash consistent. Check the logs. This can happen if the quiesce operation takes too long and you are using a watchdog. The watchdog process performs a forced unquiesce after x seconds as defined in the configuration.
+a|
+agt-00009
+a|
+Pre and Post commands must be allowed in the agent.conf on the agent side. Update the agent.confand allow necessary commands.
+a|
+agt-00010
+a|
+The agent could not read its configuration file. Check the permissions on the agent.conf file.
+a|
+agt-00011
+a|
+A command was sent to the agent but is not allowed. Update the agent.conf to allow the command.
+a|
+agt-00012
+a|
+This error occurs while loading a plug-in. Check the plug-in and APP_NAME setting.
+a|
+agt-00013
+a|
+This error occurs while running the setENV method inside plug-in. Check the plug-in and ensure the syntax is correct.
+|===

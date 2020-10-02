@@ -1,0 +1,106 @@
+---
+permalink: administration/reference_oracle_plug_in.html
+sidebar: sidebar
+keywords: Snap Creator
+summary: 'The Oracle plug-in uses SQL\*Plus to communicate with the database and quiesce & unquiesce oracle database for backup.'
+---
+= Oracle plug-in
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+The Oracle plug-in uses SQL*Plus to communicate with the database and quiesce & unquiesce oracle database for backup.
+
+The Snap Creator Oracle plug-in supports Oracle Automatic Storage Management (offline or online backups) and online backup of a Real Application Clusters (RAC) database configuration. The Interoperability Matrix contains the latest information about support and compatibility.
+
+To use C Shell (CSH) with the Oracle plug-in on UNIX or Linux platforms, the following conditions should be met:
+
+* Snap Creator Agent must be started as the Oracle user, instead of the root user.
+* The Oracle user must have the proper environmental variables (ORACLE_HOME and ORACLE_SID) set for the plug-in driven SQL*Plus commands to work.
++
+This can be accomplished using a shell startup file, such as ~/.cshrc.
+
+The following table lists the Oracle plug-in parameters, provides their settings, and describes them:
+
+|===
+| Parameter| Setting| Description
+a|
+APP_NAME
+a|
+Oracle
+a|
+Application name
+a|
+ORACLE_DATABASES
+a|
+db_name:user_name
+a|
+List of Oracle databases and user names Multiple databases and user names can be specified as a semicolon-separated list, for example, `db1:user1;db2:user2`.
+
+a|
+SQLPLUS_CMD
+a|
+ 
+a|
+Path to the sqlplus command
+a|
+CNTL_FILE_BACKUP_DIR
+a|
+ 
+a|
+Path to the directory where the user should store the backup control filesThe Oracle user must have appropriate permissions to this directory.
+
+a|
+ORA_TEMP
+a|
+ 
+a|
+Path to the directory to store the temporary file, for example, /tmp.The Oracle user must have appropriate permissions to this directory.
+
+a|
+ARCHIVE_LOG_ONLY
+a|
+(Y|N|policy:<Y|N>)
+a|
+Informs the Oracle plug-in to perform only a switch log operationThis setting is useful if you are handling archive log backups separately from data backups.
+
+a|
+ORACLE_HOME
+a|
+ 
+a|
+Path to the Oracle home directory
+a|
+ORACLE_HOME_SID
+a|
+ 
+a|
+Path to the Oracle home directory for a given system identifier (SID)When backing up multiple databases, it might be important to specify more than one Oracle home directory.
+
+a|
+ORACLE_EXPORT_PARAMETERS
+a|
+(Y|N )
+a|
+The ORACLE_HOME and ORACLE_SID environment parameters are exported by using the export command. This is applicable only in UNIX or a Linux-based environment.
+a|
+ORACLE_BACKUPMODE
+a|
+ 
+a|
+Option to configure offline or online backups by using the Snap Creator policy. The default option is online. ORACLE_BACKUPMODE=hourly:online,daily:offline
+a|
+ORACLE_SHUTDOWNABORT
+a|
+(Y|N )
+a|
+If set to Y while performing the Oracle offline backup, it uses the shutdown abort mechanism to ensure database shuts down in a consistent state. The shutdown steps for the ORACLE_SHUTDOWNABORT parameter is as follows:
+
+* Shutdown abort
+* Startup restrict
+* Shutdown immediate
+
+|===
+*Related information*
+
+http://mysupport.netapp.com/matrix[Interoperability Matrix Tool: mysupport.netapp.com/matrix]

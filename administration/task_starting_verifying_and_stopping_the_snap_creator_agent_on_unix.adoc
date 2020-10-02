@@ -1,0 +1,30 @@
+---
+permalink: administration/task_starting_verifying_and_stopping_the_snap_creator_agent_on_unix.html
+sidebar: sidebar
+keywords: 
+summary: 'You can start and stop the Snap Creator Agent service, and verify whether the Snap Creator Agent service is running on your UNIX system.'
+---
+= Starting, verifying, and stopping Snap Creator Agent on UNIX
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can start and stop the Snap Creator Agent service, and verify whether the Snap Creator Agent service is running on your UNIX system.
+
+. Start or stop the Snap Creator Agent, or verify whether the Snap Creator Server service is running, as applicable:
++
+|===
+| If you want to...| Enter the following...
+a|
+Start the Snap Creator Agent service
+a|
+install_path/scAgent4.3.0/bin/scAgent start
+a|
+Verify whether the Snap Creator Agent service is running
+a|
+install_path/scAgent4.3.0/bin/scAgent status
+a|
+Stop the Snap Creator Agent service
+a|
+install_path/scAgent4.3.0/bin/Agent stop
+|===

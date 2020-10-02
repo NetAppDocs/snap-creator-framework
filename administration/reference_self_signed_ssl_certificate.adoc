@@ -1,0 +1,24 @@
+---
+permalink: administration/reference_self_signed_ssl_certificate.html
+sidebar: sidebar
+keywords: Snap Creator
+summary: ''
+---
+= Self-signed SSL certificate not matching the URL
+:icons: font
+:imagesdir: ../media/
+
+* *Issue*
++
+The self-signed SSL certificate provided with Snap Creator Framework does not match the URL.
+
+* *Cause*
++
+The common name (CN) of the SSL certificate presented on the Snap Creator service is for a different machine, and so it does not match the host name.
+
+* *Corrective action*
++
+System IP parameter has been introduced during the installation of Snap Creator Server and Snap Creator Agent to resolve host name.
+
+ .. Enter the system IP address on which Snap Creator Framework is being installed in the System IP option.
+  *** The common name of the SSL certificate can be created using the same IP address.

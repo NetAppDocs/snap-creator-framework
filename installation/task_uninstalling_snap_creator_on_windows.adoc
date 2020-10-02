@@ -1,0 +1,30 @@
+---
+permalink: installation/task_uninstalling_snap_creator_on_windows.html
+sidebar: sidebar
+keywords: 
+summary: 'You can uninstall Snap Creator using the Windows Start menu. The Windows uninstaller removes the Snap Creator components that are installed \(for example, if both the Snap Creator Server and Snap Creator Agent are installed, both will be uninstalled\). Similarly, if only one of the components is installed, that component will be uninstalled.'
+---
+= Uninstalling Snap Creator on Windows
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can uninstall Snap Creator using the Windows *Start* menu. The Windows uninstaller removes the Snap Creator components that are installed (for example, if both the Snap Creator Server and Snap Creator Agent are installed, both will be uninstalled). Similarly, if only one of the components is installed, that component will be uninstalled.
+
+* Back up the following directories and all associated subdirectories and files, within the Snap Creator Server engine directory (C:\Program Files\NetApp\Snap_Creator_Framework\scServer4.1.0\engine):
+ ** Snap Creator database (..\snapcreator)
+ ** Snap Creator Server properties (..\etc)
+ ** Configuration files (..\configs)
+ ** Logs (..\logs)
+ ** Plug-in repository, if enabled (..\snapcreatorPlugin)
+* Back up the following directories and all associated subdirectories and files within the Snap Creator Agent directory (C:\Program Files\NetApp\Snap_Creator_Framework\scAgent4.1.0):
+ ** Logs (..\logs)
+ ** Plug-ins (..\plugins)
+ ** Snap Creator Agent properties (..\etc), which contains the allowed_commands.config and agent.properties files
+* If Snap Creator was manually started from a command prompt, stop and quit Snap Creator by closing the command prompt.
++
+NOTE: If Snap Creator was started from a service, the uninstaller stops the service as part of the uninstall process.
+
+. Select *Start* > *All programs* > *Snap Creator* > *Uninstall NetApp Snap Creator Framework*.
+. Click *Yes* when you are prompted as to whether you backed up the log and configurations files before uninstalling Snap Creator.
+. Click *Close* when prompted after the uninstall process is complete.

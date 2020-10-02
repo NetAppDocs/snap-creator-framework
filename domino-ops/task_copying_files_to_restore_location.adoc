@@ -1,0 +1,19 @@
+---
+permalink: domino-ops/task_copying_files_to_restore_location.html
+sidebar: sidebar
+keywords: 
+summary: 'After you have mounted the Snapshot copy for the file you want to restore, you can copy the file to the Data Restore Directory specified in the backup and restore configuration file.'
+---
+= Copying the file to the Data Restore Directory
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+After you have mounted the Snapshot copy for the file you want to restore, you can copy the file to the Data Restore Directory specified in the backup and restore configuration file.
+
+. Copy the file to be restored from the mounted Snapshot copy.
+. Paste the file in the Data Restore Directory specified in the backup and restore configuration file.
++
+The following example shows how you might copy the database file t04.nsf from the Snapshot copy mounted on the R: drive to the Data Restore Directory specified in the configuration file.
++
+image::../media/scfw_domino_copy_files_to_restore.gif[This image is explained by the surrounding text.]

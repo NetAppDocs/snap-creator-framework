@@ -1,0 +1,91 @@
+---
+permalink: administration/reference_red_hat_kvm_plug_in.html
+sidebar: sidebar
+keywords: 
+summary: 'Kernel-based Virtual Machine \(KVM\) is a virtualization solution for the Linux kernel. Snap Creator uses the KVM plug-in to back up and restore the guest virtual machines.'
+---
+= Red Hat KVM plug-in guidelines
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Kernel-based Virtual Machine (KVM) is a virtualization solution for the Linux kernel. Snap Creator uses the KVM plug-in to back up and restore the guest virtual machines.
+
+NOTE: For the latest information about support or for compatibility matrices, see the Interoperability Matrix.
+
+The KVM plug-in supports guest operating systems such as Linux, Windows, and Solaris.
+
+The plug-in internally uses virsh commands.
+
+You must consider the following when you use the KVM plug-in:
+
+* Active IQ Unified Manager server as a proxy is not supported.
+* Mount, unmount, and backup operations using Open Systems SnapVault, and archive log management, are not supported.
+* In a storage area network (SAN) environment, the Linux Host Utilities (LHU) kit is required to collect information about LUNs and volumes from the storage controller.
++
+The LHU kit should be installed on a KVM hypervisor, which is the same location as the Snap Creator Agent.
++
+NOTE: If the LHU kit is not installed and the configuration is a mix of network attached storage and storage area network environments, then the backup and restore operations work only on a Network File System (NFS).
+
+* The KVM plug-in supports only the Linux version of the Snap Creator 4.0 and 4.1 Agent.
+* Volume restore is not supported; only application-defined restore operations are supported.
+* The deleted virtual machines (VMs) cannot be restored.
+* The storage controller IPs and host should be either in /etc/hosts on the KVM host or in a Domain Name System (DNS).
+* Only one KVM host per configuration is supported.
+* If a virtual machine is created by using an ISO repository, then to perform any action, you should disconnect this repository from the virtual machine through the Virt Manager console in CD-ROM options.
+* The SC_AGENT_TIMEOUT value should be more than the default value: 600 or higher.
+* The volumes are automatically discovered using automatic detection.
++
+You cannot see the discovered destination volumes if the destination is not in a SnapMirror relationship. You should use dpstatus to check the status of the SnapMirror relationship. If a SnapMirror relationship does not exist, you must first create the SnapMirror relationship.
+
+* If the value of APP_DEFINED_RESTORE is Y, then the SnapVault restore operation using the GUI is not supported.
+* When creating a SnapMirror and SnapVault configuration by using the GUI, the volume details must be entered manually because the SnapMirror and SnapVault relationship is not detected automatically.
+* Data disks mapped to the VMs are not backed up.
+* VM suspend and resume operations are performed serially.
++
+For multiple VMs, the duration of VM in suspend state during backup operation depends on number of VMs.
+
+== Supported KVM configurations
+
+* SAN: Supports guest virtual machines installed on a raw multipath device (LUN with multiple paths).
+* NAS: Supports guest virtual machines installed on NFS volumes.
+
+NOTE: Configurations with multiple virtual machines installed on a single multipath device are not supported.
+
+Guest virtual machines installed on LVM or on an image file in the SAN environment are not supported.
+
+The following table describes the KVM plug-in parameters:
+
+|===
+| Parameter| Setting| Description
+a|
+KVM_RESTORE_VM_LIST
+a|
+Example: `VM1,VM2`
+
+a|
+Specifies the list of VMs to be restored. This parameter is required only during restore.
+a|
+KVM_VM_MAPPING
+a|
+Example: `VM1:s_c1:/vol/vol1/lun1;VM2:s_c2:/vol/vol2/lun2;`
+
+a|
+(Required) Specifies the mapping between the VM and its associated storage controller, LUN, or file path. This parameter is updated dynamically during the discovery process.
+a|
+KVM_VM_CONFIG_DIR
+a|
+Default: /etc/libvirt/qemu
+
+a|
+(Optional) Specifies the path to the directory where all the XML configuration files of the VM are stored.
+a|
+KVM_CMD_RETRY_COUNT
+a|
+Default: `3`
+a|
+(Optional) Specifies the number of times you rerun the command when running it fails in the KVM plug-in.
+|===
+*Related information*
+
+http://mysupport.netapp.com/matrix[Interoperability Matrix Tool: mysupport.netapp.com/matrix]

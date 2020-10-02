@@ -1,0 +1,74 @@
+---
+permalink: administration/task_creating_global_configuration_files.html
+sidebar: sidebar
+keywords: 
+summary: 'You can create a global configuration file to separate the storage controller, storage virtual machine \(SVM\), or VMware credential configuration from the backup policy.'
+---
+= Creating global configuration files
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can create a global configuration file to separate the storage controller, storage virtual machine (SVM), or VMware credential configuration from the backup policy.
+
+Global configuration files enable you to control access and to handle backup and restore operations.
+
+You can create two types of global configuration files:
+
+* *Super Global*
++
+This configuration applies to all the configurations in all the profiles.
+
+* *Profile Global*
++
+This configuration applies to all the configurations created within a profile.
+
+. From the main menu of the Snap Creator GUI, select *Management* > *Global Configurations*.
+. In the Global Configurations pane, click *Create Global*.
++
+The Configuration wizard for Global Configurations opens in the right pane.
+
+. Complete the Configuration wizard to create the configuration file:
+ .. On the *Configuration* page, select the global configuration type (Super Global or Profile Global).
++
+The name of the configuration file is set to global by default. You cannot change this name.
++
+If you selected Profile Global as the global configuration type, select the profile.
++
+NOTE: By default, password encryption is enabled to prevent passwords from being displayed in clear text in the configuration file.
+
+ .. On the Plug-In Type page, select the type of plug-in.
++
+The page that you advance to in the wizard depends on the option that you select.
++
+|===
+| Plug-in type option| Next page| Next page
+a|
+Virtualization plug-in
+a|
+*Virtualization plug-ins*        Select the plug-in to configure.
+a|
+*Authentication Information*        Provide the authentication information for the selected plug-in option.
+a|
+None
+a|
+*Storage Connection Settings*
+a|
+--
+|===
+For more information about plug-in credentials, see the plug-in documentation.
+
+ .. On the Storage Connection Settings page, select the transport type (HTTP or HTTPS).
++
+The standard port for the selected transport type is displayed. If the storage system uses a non-standard port, enter the port information in the port field.
+
+ .. On the Controller/Vserver Credentials page, enter the IP address and login credentials for each storage controller or SVM that contains the volumes in this configuration file.
++
+NOTE: You must add at least one storage controller or SVM to the configuration.
+
+ .. On the Controller Credentials page, verify that the controllers display the correct information.
++
+If changes are required, select a controller, and then click *Edit*.
+
+ .. On the DFM/OnCommand Settings page, if you want to integrate the Snap Creator configuration with NetApp OnCommand management tools, select and provide the details.
+ .. Review the summary, and then click *Finish*.

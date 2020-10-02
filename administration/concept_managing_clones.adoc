@@ -1,0 +1,12 @@
+---
+permalink: administration/concept_managing_clones.html
+sidebar: sidebar
+keywords: 
+summary: 'You can manage clones by creating clones \(using the Actions setting or by mounting a backup copy as source\), and deleting clones, or unmounting clones.'
+---
+= Managing clones
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can manage clones by creating clones (using the *Actions* setting or by mounting a backup copy as source), and deleting clones, or unmounting clones.

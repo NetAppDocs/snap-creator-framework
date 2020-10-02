@@ -1,0 +1,39 @@
+---
+permalink: installation/task_creating_symbolic_links_for_domino_plug_in_on_linux_and_solaris_hosts.html
+sidebar: sidebar
+keywords: 
+summary: 'You need to perform this procedure if you want to create symbolic links for the Domino plug-in on Linux and Solaris hosts.'
+---
+= Creating symbolic links for the Domino plug-in on Linux and Solaris hosts
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You need to perform this procedure if you want to create symbolic links for the Domino plug-in on Linux and Solaris hosts.
+
+You should not copy and paste commands directly from this document; errors (such as incorrectly transferred characters caused by line breaks and hard returns) might result. Copy and paste the commands into a text editor, verify the commands, and then enter them in the CLI console.
+
+NOTE: The paths provided in the following steps refer to the 32-bit systems; 64-bit systems must create simlinks to /usr/lib64 instead of /usr/lib.
+
+. Add links to /usr/lib for the following files:
+ ** libxmlproc.so
+ ** libndgts.so
+ ** libnotes.so
+ ** libgsk8iccs.so (for Domino 9.0 or later only)
+A typical method of creating a symbolic link is to use the ln command:
+
++
+ln -s /path/to/source_file /usr/lib/linked_file
++
+where:
+ ** -s instructs the operating system to make a symbolic link.
+ ** /path/to/source_file is the path to one of the Domino library files, including the file name.
+ ** linked_file is the name of the file that is being linked.
++
+----
+ln -s /opt/ibm/domino/notes/latest/linux/libxmlproc.so /usr/lib/libxmlproc.so
+ln -s /opt/ibm/domino/notes/latest/linux/libndgts.so /usr/lib/libndgts.so
+ln -s /opt/ibm/domino/notes/latest/linux/libnotes.so /usr/lib/libnotes.so
+ln -s /opt/ibm/domino/notes/latest/linux/libgsk8iccs.so /usr/lib/libgsk8iccs.so
+----
+. Verify the path to the files listed in Step 1.

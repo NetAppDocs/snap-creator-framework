@@ -1,0 +1,42 @@
+---
+permalink: administration/task_managing_snap_creator_agent_security.html
+sidebar: sidebar
+keywords: 
+summary: 'You can manage the security settings of the Snap Creator Agent by adding commands that can be used by Snap Creator. You can also limit communication to specific Snap Creator servers.'
+---
+= Managing Snap Creator Agent security
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can manage the security settings of the Snap Creator Agent by adding commands that can be used by Snap Creator. You can also limit communication to specific Snap Creator servers.
+
+The procedure for managing Snap Creator Agent security is the same for Windows and UNIX. The following procedure uses examples from the UNIX environment.
+
+. Log in to the system where the Snap Creator Agent is running, and switch to the etc subdirectory within the installation directory.
++
+cd /install_path/scAgent4.3.0/etc
+
+. If you want to add commands that can be used by Snap Creator, perform the following steps:
+ .. Open the allowed_commands.config file in a text editor.
+ .. Add commands as needed, with each command on a separate line.
++
+NOTE: The commands entered in the allowed_commands.config file are case sensitive and must exactly match the commands in the configuration file, including capitalization and quotation marks.
++
+command: "C:\Program Files\NetApp\SnapDrive\sdcli.exe"
++
+NOTE: If the command contains any spaces, then you must enclose the command within quotation marks.
+
+ .. Save and close the file.
+. If you want to limit communication to specific Snap Creator servers, perform the following steps:
+ .. Open the agent.properties file in a text editor.
+ .. Change the AUTHORIZED_HOSTS parameter, using commas to separate the host names.
++
+Both host names and IP addresses are supported.
++
+AUTHORIZED_HOSTS=Lyon, 10.10.10.192, Fuji01
+
+ .. Save and close the file.
+. Restart the Snap Creator Agent.
++
+/install_path/scAgent4.3.0/bin/scAgent restart

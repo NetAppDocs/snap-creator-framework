@@ -1,0 +1,42 @@
+---
+permalink: sap-hana-ops/concept_sap_hana_plug_in_overview.html
+sidebar: sidebar
+keywords: 
+summary: 'The SAP HANA plug-in works in conjunction with the Snap Creator Framework to provide a backup solution for SAP HANA databases that rely on a NetApp storage back end. The Snapshot backups created by Snap Creator are registered in the HANA Catalog and are visible in HANA Studio.'
+---
+= SAP HANA plug-in overview
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+The SAP HANA plug-in works in conjunction with the Snap Creator Framework to provide a backup solution for SAP HANA databases that rely on a NetApp storage back end. The Snapshot backups created by Snap Creator are registered in the HANA Catalog and are visible in HANA Studio.
+
+Snap Creator Framework supports two types of SAP HANA databases: single containers and multitenant database containers (MDC) single tenant database.
+
+Snap Creator and the SAP HANA plug-in are supported with Data ONTAP operating in 7-Mode and clustered Data ONTAP with the SAP HANA database nodes attached to the storage controllers using either NFS or Fibre Channel. The required interfaces to the SAP HANA database are available for Service Pack Stack (SPS) 7 and later.
+
+The Snap Creator Framework communicates with the storage systems to create Snapshot copies and to replicate the data to a secondary storage using SnapVault. Snap Creator is also used to restore the data either with SnapRestore at the primary storage or with SnapVault restore from the secondary storage.
+
+The Snap Creator plug-in for SAP HANA uses the SAP HANA hdbsql client to execute SQL commands in order to provide database consistency and to manage the SAP HANA backup catalog. The SAP HANA plug-in is supported for both SAP Certified Hardware Appliances and Tailored Datacenter Integration (TDI) programs.
+
+The Snap Creator plug-in for SAP HANA uses the SAP HANA hdbsql client to execute SQL commands for the following tasks:
+
+* Provide database consistency to prepare a storage-based Snapshot backup
+* Manage log file backup retention on file system level
+* Manage the SAP HANA backup catalog for data file and log file backups
+* Execute a file-based backup for block integrity check
+
+The following illustration shows an overview of the communication paths of Snap Creator with the storage and the SAP HANA database.
+
+image::../media/sap_hana_overview_of_communication_path.gif[This image is explained by the surrounding text.]
+
+Snap Creator performs the following steps to back up the database:
+
+. Creates an SAP HANA database Snapshot copy to obtain a consistent image on the persistence layer.
+. Creates a storage Snapshot copy of the data volume(s).
+. Registers the storage Snapshot backup within the SAP HANA backup catalog.
+. Deletes the SAP HANA Snapshot copy.
+. Executes a SnapVault update for the data volume.
+. Deletes the storage Snapshot copies at the primary and/or secondary storage, based on the defined retention policies for backups at the primary and secondary storage.
+. Deletes the SAP HANA backup catalog entries if the backups do not exist anymore at the primary and the secondary storage.
+. Deletes all log backups that are older than the oldest data backup on the file system and within the SAP HANA backup catalog.

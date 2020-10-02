@@ -1,0 +1,20 @@
+---
+permalink: administration/reference_error_messages.html
+sidebar: sidebar
+keywords: 
+summary: 'You must be aware of the error messages associated with different Snap Creator operations.'
+---
+= Error messages
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You must be aware of the error messages associated with different Snap Creator operations.
+
+Each error message includes an area code and a unique 5-digit identifier----for example, ERROR: [<area code>-<unique area error identifier>] <error message>. The area code identifies where the error occurred. The different area codes are as follows:
+
+* `scf`: Snap Creator Framework
+* `REPO`: Repository
+* `STORAGE`: Storage
+* `agt`: Snap Creator Agent
+* `gui`: Snap Creator graphical user interface (GUI)

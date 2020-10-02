@@ -1,0 +1,18 @@
+---
+permalink: sap-hana-ops/task_performing_file_based_backup_from_snap_creator_command_line.html
+sidebar: sidebar
+keywords: 
+summary: 'You can perform File-Based Backup using the Snap Creator command line.'
+---
+= Performing File-Based Backup from Snap Creator command line
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can perform File-Based Backup using the Snap Creator command line.
+
+. To perform File-Based Backup, run the following command:
++
+----
+./snapcreator --server localhost --port 8443 --user sc --passwd sc --profile hana_testing --config HANA_Test --action fileBasedBackup --policy none --verbose
+----

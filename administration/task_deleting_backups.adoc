@@ -1,0 +1,20 @@
+---
+permalink: administration/task_deleting_backups.html
+sidebar: sidebar
+keywords: 
+summary: 'You can delete backup copies of a configuration file.'
+---
+= Deleting backups
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can delete backup copies of a configuration file.
+
+. From the main menu of the Snap Creator graphical user interface (GUI), select *Data* > *Backups*
+. From the Profiles and Configurations pane of the Backups tab, expand a profile and select a configuration file.
+. Select the backup that you want to delete and click *Delete*.
++
+NOTE: If the configuration file contains multiple Data ONTAP volumes, you must select the Snapshot copy that you want to delete on each of the Data ONTAP volumes.
+
+. Click *Yes* in the confirmation window.

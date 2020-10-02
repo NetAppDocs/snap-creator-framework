@@ -1,0 +1,14 @@
+---
+permalink: administration/concept_managing_profiles.html
+sidebar: sidebar
+keywords: 
+summary: 'You can create, view, and delete profiles.'
+---
+= Managing profiles
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can create, view, and delete profiles.
+
+A profile is essentially a folder used for organizing configuration files. Profiles also act as objects for role-based access control (RBAC), meaning that users can be allowed access to only certain profiles and the configuration files contained within.

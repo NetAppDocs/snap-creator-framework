@@ -1,0 +1,50 @@
+---
+permalink: administration/reference_archive_log_plug_in.html
+sidebar: sidebar
+keywords: 
+summary: 'The Archive log plug-in works with Snap Creator Archive logs and not with the logs of any application or database.'
+---
+= Archive log plug-in
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+The Archive log plug-in works with Snap Creator Archive logs and not with the logs of any application or database.
+
+The following table lists the Archive log plug-in parameters, provides their settings, and describes them:
+
+|===
+| Parameter| Setting| Description
+a|
+ARCHIVE_LOG_ENABLE
+a|
+(Y|N|policy:age)
+a|
+Enables archive log management (deletion of the old archive logs).
+a|
+ARCHIVE_LOG_RETENTION
+a|
+number_of_days
+a|
+Specifies the number of days the archive logs are retained. This setting must be equal to or greater than NTAP_SNAPSHOT_ RETENTIONS.
+
+a|
+ARCHIVE_LOG_DIR
+a|
+change_info_directory/logs
+a|
+Specifies the path to the directory that contains the archive logs.
+a|
+ARCHIVE_LOG_EXT
+a|
+file_extension
+a|
+Specifies the file extension of the archive logs. For example, if the archive logs are 10192091019.log, specify this parameter setting to LOG.
+
+a|
+ARCHIVE_LOG_RECURSIVE_SEARCH
+a|
+(Y|N)
+a|
+Enables the management of archive logs within subdirectories. If the archive logs are located under subdirectories, you should use this parameter.
+|===

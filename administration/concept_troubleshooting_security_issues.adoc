@@ -1,0 +1,12 @@
+---
+permalink: administration/concept_troubleshooting_security_issues.html
+sidebar: sidebar
+keywords: Snap Creator
+summary: 'You must be aware of certain security issues in Snap Creator and know how to troubleshoot them.'
+---
+= Troubleshooting security issues
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You must be aware of certain security issues in Snap Creator and know how to troubleshoot them.

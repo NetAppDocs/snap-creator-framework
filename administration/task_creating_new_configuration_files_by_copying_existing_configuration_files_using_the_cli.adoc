@@ -1,0 +1,19 @@
+---
+permalink: administration/task_creating_new_configuration_files_by_copying_existing_configuration_files_using_the_cli.html
+sidebar: sidebar
+keywords: 
+summary: 'Using the command-line interface \(CLI\), you can create a new configuration file by copying an existing configuration file, and then renaming the new file.'
+---
+= Creating new configuration files by copying existing configuration files
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Using the command-line interface (CLI), you can create a new configuration file by copying an existing configuration file, and then renaming the new file.
+
+. Switch to the configuration directory: cd install_path/scServer4.3/engine/configs
+. Copy the source configuration file: cp source_profile_name/configuration_nametarget_profile_name/new_configuration_name
++
+You must provide a name for the new configuration file.
+
+. Customize the new configuration file for use with the application or database that you want to manage.

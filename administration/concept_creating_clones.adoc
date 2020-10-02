@@ -1,0 +1,15 @@
+---
+permalink: administration/concept_creating_clones.html
+sidebar: sidebar
+keywords: 
+summary: 'There are two methods for cloning volumes or LUNS: from a new backup and from an existing backup.'
+---
+= Creating clones
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+There are two methods for cloning volumes or LUNS: from a new backup and from an existing backup.
+
+* Creating a clone from a new backup consists of taking a Snapshot, cloning the new Snapshot copy, and then mounting the cloned copy.
+* Creating a clone from an existing backup consists of cloning an existing Snapshot copy, and then mounting the cloned copy.

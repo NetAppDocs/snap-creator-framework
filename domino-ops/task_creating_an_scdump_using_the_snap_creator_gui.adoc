@@ -1,0 +1,59 @@
+---
+permalink: domino-ops/task_creating_an_scdump_using_the_snap_creator_gui.html
+sidebar: sidebar
+keywords: 
+summary: 'You can use the Snap Creatorscdump action to gather logs into a compressed file archive. You can then send the archive to technical support or a Snap Creator expert for review.'
+---
+= Using scdump to gather logs in a compressed format
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can use the Snap Creatorscdump action to gather logs into a compressed file archive. You can then send the archive to technical support or a Snap Creator expert for review.
+
+You should have created a backup and restore configuration file.
+
+An scdump includes the following files:
+
+|===
+| File| Description
+a|
+scdump.txt
+a|
+Contains theSnap Creator Agent version and host operating system, the Data ONTAP release, and the Domino version.
+a|
+engine.log
+a|
+Contains information on Snap Creator workflow engine operations.
+a|
+gui.log
+a|
+Contains information on Snap Creator GUI operations and messages. Multiple logs may be included.
+a|
+sc_server.log
+a|
+Contains detailed information on Snap Creator Server operations. Multiple logs may be included.
+a|
+out logs
+a|
+Contain verbose-level information for jobs. Output logs for all configurations in the selected profile are included.
+a|
+debug logs
+a|
+Contain verbose-level information plus information useful in debugging. Debug logs for all configurations in the selected profile are included.
+a|
+error logs
+a|
+Contain error information for logs. Error logs for all configurations in the selected profile are included.
+a|
+configuration files
+a|
+All configuration files in the selected profile are included, including global configuration files.
+|===
+*Note:* Although a configuration file is the input for scdump, the utility gathers information for all configurations in the parent profile.
+
+. In the Profiles and Configurations pane, select a configuration file and click *Actions* > *scdump*.
++
+scdump gathers logs and other files into a compressed file archive.
+
+. In the download dialog, click *Open* or *Save* as required.

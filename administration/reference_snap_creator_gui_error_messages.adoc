@@ -1,0 +1,132 @@
+---
+permalink: administration/reference_snap_creator_gui_error_messages.html
+sidebar: sidebar
+keywords: 
+summary: 'The following table lists the Snap Creator GUI error messages.'
+---
+= Snap Creator GUI error messages
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+The following table lists the Snap Creator GUI error messages.
+
+|===
+| Error code| Description/resolution
+a|
+gui-00001
+a|
+Ensure that the encrypted password in the configuration file is correct.
+a|
+gui-00002
+a|
+Ensure that you are using the correct Snap Creator executable. Verify that /etc/snapcreatorgui.conf is correct.
+a|
+gui-00003
+a|
+Ensure that the logs and corresponding profile folder exist.
+a|
+gui-00004
+a|
+Check if Snap Creator home/logs/profilename exists.
+a|
+gui-00005
+a|
+Check if the corresponding profile and configuration exists in the configs directory.
+a|
+gui-00006
+a|
+Try running snapcreator profile setup, if the snapcreatorgui.conf is lost.
+a|
+gui-00007
+a|
+Check if your configuration is renamed or deleted.
+a|
+gui-00008
+a|
+Check your user name and password and verify if you have run snapcreator profile setup command.
+a|
+gui-00009
+a|
+Check if permissions on file or folder exist.
+a|
+gui-00010
+a|
+Check if permissions on file or folder exist.
+a|
+gui-00011
+a|
+Choose a different profile or delete the existing one.
+a|
+gui-00012
+a|
+Verify if configs directory exists and if have run snapcreator profile setup command.
+a|
+gui-00013
+a|
+Check the logs for more information.
+a|
+gui-00014
+a|
+Close the configuration and open it again.
+a|
+gui-00015
+a|
+Check the permissions on file and if they exist.
+a|
+gui-00017
+a|
+Check if your vCenter is correct and has a valid datacenter.
+a|
+gui-00019
+a|
+Try again, because the datastore might have been deleted during retrieval.
+a|
+gui-00020
+a|
+Try again, because the datastore might have been deleted during retrieval.
+a|
+gui-00021
+a|
+Try again, verify if your vCenter is correct.
+a|
+gui-00022
+a|
+Add datastores to your vCenter.
+a|
+gui-00023
+a|
+Try again, verify your vCenter.
+a|
+gui-00024
+a|
+The version of vCloud Director you are using is not supported.
+a|
+gui-00025
+a|
+Enter correct credentials and try again.
+a|
+gui-00026
+a|
+Organizations not found for vCD. Create organizations and retry.
+a|
+gui-00027
+a|
+Check your vCenter credentials.
+a|
+gui-00028
+a|
+Check the controller details/NTAP_USERS.
+a|
+gui-00029
+a|
+Verify the vCloud Director URL.
+a|
+gui-00030
+a|
+Check if vDCs exist for the organizations.
+a|
+gui-00031
+a|
+Check if vApps exist for the vDCs.
+|===

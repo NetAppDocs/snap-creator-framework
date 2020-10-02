@@ -1,0 +1,23 @@
+---
+permalink: domino-ops/task_creating_a_domino_backup_using_the_snap_creator_gui.html
+sidebar: sidebar
+keywords: 
+summary: 'You should back up your databases as soon as they are available in NetApp storage. You can schedule recurring backups after the initial backup.'
+---
+= Backing up databases on demand
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You should back up your databases as soon as they are available in NetApp storage. You can schedule recurring backups after the initial backup.
+
+You should have created the configuration file for the backup, as described in xref:task_using_the_gui_to_create_a_configuration_file.adoc[Creating a configuration file].
+
+. In the Profiles and Configurations pane, select the configuration file and click *Actions* > *Backup*.
+. In the Additional Parameters dialog box, select the policy for the backup job in the *Policy* drop-down and click *OK*.
++
+image::../media/scfw_domino_select_a_policy.gif[This image is explained by the surrounding text.]
++
+NOTE: You must have configured the policy in the configuration file.
++
+Snap Creator starts the backup job. Job information is displayed in the Console pane.

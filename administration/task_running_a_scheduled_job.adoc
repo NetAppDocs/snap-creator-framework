@@ -1,0 +1,15 @@
+---
+permalink: administration/task_running_a_scheduled_job.html
+sidebar: sidebar
+keywords: 
+summary: 'You can run a scheduled job.'
+---
+= Running scheduled jobs
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can run a scheduled job.
+
+. From the Snap Creator GUI main menu, select *Management* > *Schedules*.
+. From the Schedules tab, select a job from the list of scheduled jobs, and click *Run*.

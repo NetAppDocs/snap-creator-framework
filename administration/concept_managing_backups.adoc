@@ -1,0 +1,18 @@
+---
+permalink: administration/concept_managing_backups.html
+sidebar: sidebar
+keywords: 
+summary: 'You can create backup copies, view a list of backup copies, and delete backup copies when they are no longer required.'
+---
+= Managing backups
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can create backup copies, view a list of backup copies, and delete backup copies when they are no longer required.
+
+In addition, you can automate backup operations. For details, see related tasks for information about creating scheduled jobs.
+
+*Related information*
+
+xref:task_creating_scheduled_jobs_using_sc_gui.adoc[Creating scheduled jobs]

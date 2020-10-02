@@ -1,0 +1,12 @@
+---
+permalink: installation/concept_upgrading_from_snap_creator_3_6_x.html
+sidebar: sidebar
+keywords: 
+summary: 'When you upgrade from Snap Creator 3.6.x, the database schema is upgraded and all the configuration file passwords are updated for compatibility with the latest Snap Creator.'
+---
+= Upgrading from Snap Creator 3.6.x
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+When you upgrade from Snap Creator 3.6.x, the database schema is upgraded and all the configuration file passwords are updated for compatibility with the latest Snap Creator.

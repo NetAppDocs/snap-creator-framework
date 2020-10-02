@@ -1,0 +1,66 @@
+---
+permalink: installation/task_upgrading_snap_creator_server_4_1_x_on_unix_based_systems.html
+sidebar: sidebar
+keywords: 
+summary: 'You can upgrade from Snap Creator Server 4.1.x on UNIX-based systems.'
+---
+= Upgrading Snap Creator Server 4.1.x on UNIX-based systems
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can upgrade from Snap Creator Server 4.1.x on UNIX-based systems.
+
+* You have stopped the Snap Creator processes before backing up the Snap Creator directories to ensure that the backed-up data is complete.
++
+For example, enter the following commands:
++
+----
+/install_path/scServer4.1.0/bin/scServer stop
+/install_path/scAgent4.1.0/bin/scAgent stop
+----
+
+* You have backed up the following directories, and all associated subdirectories and files, within the Snap Creator 4.1.x Server engine subdirectory (/install_path/scServer4.1.x/engine):
+ ** Snap Creator database (../snapcreator)
+ ** Snap Creator Server properties (../etc)
+ ** Configuration files (../configs)
+ ** Logs (../logs)
+ ** Plug-in repository, if enabled (../snapcreatorPlugin)
+*Note:* You must not delete the Snap Creator 4.1.x backup copies that you created.
+
+The paths provided in the following steps refer to the default installation path. Path information might differ from your installation path if the defaults were not used.
+
+After the upgrade process is complete, you should consider the following issues:
+
+* If the Snap Creator database that is upgraded contains some tasks marked as "`in progress`", the state remains the same even after the upgrade process is complete.
+* The default administrator in the latest Snap Creator must be an administrator in Snap Creator 4.1.x.
++
+If the 4.1.x user is not an administrator, then the upgrade assigns an operator role to the 4.1.x user.
+
+. Stop the Snap Creator processes if you have not already done so.
++
+For information about stopping the processes, refer to the details provided earlier in this topic.
+
+. Install the latest version of Snap Creator, but do not start Snap Creator Server.
++
+For details, see the information about installing Snap Creator Server on UNIX.
+
+. Copy the backed-up Snap Creator 4.1.x database directory to the latest location at /install_path/scServer4.1.x/engine/snapcreator.
+. Copy the backed-up 4.1.x configuration directory to the latest location at /install_path/scServer4.1.x/engine/configs).
+. Copy the backed-up 4.1.x logs directory to the latest location at /install_path/scServer4.1.x/engine/logs.
+. Change directories to the engine subdirectory in the Snap Creator install path at /install_path/scServer4.1.x/engine.
+. Upgrade Snap Creator by entering the following command: java -jar snapcreator.jar -upgrade
+
+After the upgrade process is complete, start Snap Creator Server by entering the following command:
+
+----
+/install_path/scServer4.1.x/bin/scServer start
+----
+
+Also, delete the Snap Creator 4.1.x installation directory.
+
+IMPORTANT: Do not delete your backup copies until you are certain that you do not need to revert to an older version.
+
+You must also validate the Snap Creator Framework GUI startup by navigating to the local host on the specified port (https://IP_address:gui_port).
+
+You must connect using HTTPS; otherwise, the connection is not automatically redirected to an HTTPS connection and the GUI will not work.

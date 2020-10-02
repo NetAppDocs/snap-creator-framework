@@ -1,0 +1,145 @@
+---
+permalink: administration/reference_vmware_vibe_plug_in.html
+sidebar: sidebar
+keywords: 
+summary: 'Snap Creator supports the backup of VMware virtual machines and vApps through the VMware VIBE plug-in. The VMware plug-in is an integrated plug-in for both virtual machines with vSphere and vApps with vCloud Director.'
+---
+= VMware VIBE plug-in
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Snap Creator supports the backup of VMware virtual machines and vApps through the VMware VIBE plug-in. The VMware plug-in is an integrated plug-in for both virtual machines with vSphere and vApps with vCloud Director.
+
+You must consider the following when you use the VMware VIBE plug-in:
+
+* The VMware plug-in is supported only on Windows and Linux.
++
+If you are using a non-Windows or non-Linux Snap Creator Server, you need a Snap Creator Windows or Linux agent to run the VMware plug-in.
+
+* Unified Manager server as a proxy is not supported.
+* Mount, unmount, and backup operations using Open Systems SnapVault and archive log management are not supported.
+* VMware high availability (HA) with the VMware plug-in is not tested and is not supported.
+* VMware vCenter Linked Mode with the VMware plug-in is not tested and is not supported.
+* The VMware plug-in does not support raw device mapping (RDM).
+* The volumes are discovered using automatic detection.
++
+You cannot view a discovered destination volume if it is not in a SnapMirror relationship. You can use the dpstatus command to check the SnapMirror relationship. If a SnapMirror relationship does not exist, you must first create the SnapMirror relationship.
+
+* Before you perform restore operations, you must delete all of the VMware snapshot copies.
+* After the restore operations are complete, you must run a Snap Creator backup of the restored virtual machines and vApps so that the new environment is cleaned up and all VMware snapshot copies are removed.
++
+If the VMware plug-in cannot clean up VMware snapshot copies and displays an error, you must remove the VMware snapshot copies manually. The VMware plug-in does not guarantee 100% VMware snapshot copy removal. This is a known VMware issue.
+
+* The VMware plug-in supports only 32-bit Snap Creator with a 32-bit Linux system and 64-bit Snap Creator with a 64-bit Linux system.
+* The deleted virtual machines cannot be restored.
+* The volume restore operation is not supported; only application-defined restore operations are supported.
+* The value of the SC_AGENT_TIMEOUT parameter should be set to 1800 or higher.
+* The default value of the VIBE_VMWARE_snapshot parameter (VMware snapshot option) is N.
+* If the value of APP_DEFINED_RESTORE is Y, then the SnapVault restore operation using the graphical user interface (GUI) is not supported.
+* While creating a SnapMirror and SnapVault configuration by using the GUI, you must manually enter the SnapMirror and SnapVault parameters because the SnapMirror and SnapVault relationship is not detected automatically.
+* The VMware plug-in discovers the ISO-mounted path as a datastore.
+
+The following table lists the VMware VIBE plug-in parameters, provides the parameter settings, and describes the parameters.
+
+|===
+| Parameter| Setting| Description
+a|
+VIBE_DYNAMIC_VOLUMES_UPDATE
+a|
+Y or NDefault: not set
+
+a|
+If this parameter is set to N, dynamic volume update is not performed, which means you have to set the VOLUMES, SNAPVAULT_VOLUMES, SNAPMIRROR_VOLUMES, and NTAP_DFM_DATA_SET parameters manually.
+a|
+VIBE_NOPING
+a|
+Default: N
+a|
+Specifies that Internet Control Message Protocol (ICMP) is not used to ping VMware plug-in or the storage controllers.
+a|
+VIBE_VCLOUD_IPADDR
+a|
+N/A
+a|
+Specifies the IP address or the host name of the vCloud Director that is used for logging in to (vCloud only).
+a|
+VIBE_VCLOUD_USER
+a|
+N/A
+a|
+Specifies the user name to be used for logging in to the vCloud Director (vCloud only). You must set @org or @system (top-level vCloud database).
+
+NOTE: The vCloud Director system administrator user name must be used to perform the backup and restore operations. These operations fail if the organization administrator credentials or any other user credentials are used.
+
+Example: `administrator@system`
+a|
+VIBE_VCLOUD_PASSWD
+a|
+N/A
+a|
+Specifies the password that is associated with the specified VIBE_VCLOUD_USER (vCloud only).
+a|
+VIBE_VCENTER_USER
+a|
+N/A
+a|
+Specifies the user name to be used for logging in to vCenter.
+a|
+VIBE_VCENTER_PASSWD
+a|
+N/A
+a|
+Specifies the password that is associated with the specified VIBE_VCENTER_USER.
+a|
+VIBE_VCLOUD_NAMES
+a|
+N/A
+a|
+Lists the organization, virtual data center, and vApp object names that should be backed up (vCloud only).Example: `ORG:VDC1,VDC2:VAPP1,VAPP2;ORG2:VDC3:;ORG3::VAPP6`
+
+a|
+VIBE_VSPHERE_NAMES
+a|
+N/A
+a|
+Lists the datastores and virtual machines that should be backed up per vCenter (vSphere only).Example: `VCENTER1:DS1:VM1;VCENTER2;DS2,DS3:;VCENTER3::VM4`
+
+a|
+VIBE_TRIM_VSPHERE_NAMES
+a|
+N/A
+a|
+Lists the virtual machines that should be removed from backup per vCenter (vSphere only).Example: `VCENTER1:VM99;VCENTER2:VM5,VM12`
+
+a|
+VIBE_RESTORE_INTERVAL
+a|
+Default: `30 seconds`
+a|
+Specifies the time between each restore check.
+a|
+VIBE_RESTORE_TIME
+a|
+Default: `3600 seconds`
+a|
+Specifies the total time to wait for a complete restore operation to finish.
+a|
+VIBE_VMWARE_SNAPSHOT
+a|
+Default: N
+a|
+Creates a VMware snapshot copies during backup.
+a|
+VIBE_IGNORE_EXPORTFS=Y or N
+a|
+Default: N
+a|
+You must manually add this parameter to the Snap Creator VIBE configuration file.
+
+When the value is set to Y, Data ONTAP operating in 7-Mode configurations ignores any exportfs values on the controller. Instead, Data ONTAP maps the volume export path as /vol/datastore_name, where a datastore name is specified for backup. Older environments using vFiler units might use this methodology because the exportfs information of individual datastores is not available from a vFiler unit. Instead, a configuration needs to map the path based on queries to vfiler0.
+
+|===
+*Related information*
+
+http://mysupport.netapp.com/matrix[Interoperability Matrix Tool: mysupport.netapp.com/matrix]

@@ -1,0 +1,18 @@
+---
+permalink: administration/task_deleting_clones.html
+sidebar: sidebar
+keywords: 
+summary: 'You can unmount \(or delete\) clones.'
+---
+= Unmounting clones
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can unmount (or delete) clones.
+
+. From the Snap Creator GUI main menu, select *Management* > *Configurations*.
+. From the *Configurations* tab, select a configuration file, and then select *Actions* > *Unmount*.
+. From the Additional parameters window, select the controller, volume, Snapshot copy policy containing the mounted backup, and specific Snapshot copy name on which the clone was created; then click *OK*.
++
+The clone is unmounted; the Snapshot copy is not deleted.

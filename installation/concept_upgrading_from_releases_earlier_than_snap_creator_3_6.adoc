@@ -1,0 +1,18 @@
+---
+permalink: installation/concept_upgrading_from_releases_earlier_than_snap_creator_3_6.html
+sidebar: sidebar
+keywords: 
+summary: 'If you are upgrading from releases earlier than Snap Creator 3.6, you must first upgrade to Snap Creator 3.6 one version at a time.'
+---
+= Upgrading from releases earlier than Snap Creator 3.6
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+If you are upgrading from releases earlier than Snap Creator 3.6, you must first upgrade to Snap Creator 3.6 one version at a time.
+
+For example, to upgrade from Snap Creator 3.5.x, you must first upgrade from 3.5.x to 3.6. After you are running Snap Creator 3.6, you can complete the upgrade to latest version. During this upgrade process, you can install the Snap Creator Agent at the same time as you upgrade the Snap Creator Server.
+
+*Related information*
+
+xref:task_upgrading_the_snap_creator_server_3_6_x_on_windows.adoc[Upgrading the Snap Creator Server 3.6.x on Windows]

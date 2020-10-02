@@ -1,0 +1,28 @@
+---
+permalink: administration/task_creating_clones_using_a_mounted_backup.html
+sidebar: sidebar
+keywords: 
+summary: 'You can clone volumes or LUNs from an existing backup as your source.'
+---
+= Creating clones from an existing backup
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can clone volumes or LUNs from an existing backup as your source.
+
+* The Snap Creator Server must be communicating with the storage system.
+* You must be logged into Snap Creator with the proper permission to perform the cloning operation.
+
+This cloning operation consists of mounting an existing Snapshot copy, and then cloning the existing backup.
+
+. From the Snap Creator GUI main menu, select *Management* > *Configurations*.
+. From the *Configurations* tab, in the *Profiles and Configuration* pane, select a configuration file.
+. Select *Actions* > *Mount*.
+. In the Additional Parameters dialog box, select the controller, volume, and policy containing the backup to be mounted, then select the Snapshot copy to be mounted (cloned), and then click *OK* to start the cloning process.
++
+image::../media/additional_parameters_clone_existing.png[]
++
+NOTE: Record the selected Snapshot copy name. When unmounting the backup, the same Snapshot copy name must be selected.
+
+. In the *Console* pane, verify that the cloning process was successful.

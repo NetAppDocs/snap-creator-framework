@@ -1,0 +1,126 @@
+---
+permalink: sap-hana-ops/reference_troubleshooting.html
+sidebar: sidebar
+keywords: 
+summary: 'The troubleshooting section provides information about the error codes, error messages, and includes the description or resolution to solve the issue.'
+---
+= Troubleshooting
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+The troubleshooting section provides information about the error codes, error messages, and includes the description or resolution to solve the issue.
+
+The following table lists the SAP HANA plug-in error messages.
+
+|===
+| Error code| Error message| Description/Resolution
+a|
+hdb-00001
+a|
+Unable to find an accessible HANA node for executing hdbsql commands using the provided configuration parameters. Verify and update HANA settings in the configuration and try again.
+a|
+Verify that HANA nodes are running and reachable, and the instance number provided is correct.
+a|
+hdb-00002
+a|
+Creating database snapshot for [$sid] failed.
+a|
+Check if a HANA database snapshot is already created on the database. If already created, delete the HANA database snapshot or run unquiesce operation. If not already created, check the logs for other error messages and details.
+a|
+hdb-00003
+a|
+Deleting database snapshot for [$sid] failed.
+a|
+Check if a HANA database snapshot is already deleted. If yes, this error can be ignored. If no, check SAP HANA plug-in parameters and make sure that nodes are reachable and instance number provided is correct.
+a|
+hdb-00004
+a|
+Connection to [$hana_node] node with instance [$instance] failed as the connection was refused.
+a|
+The HANA node with instance displayed in the message are not reachable. This can be just a warning as the plug-in will attempt to run hdbsql commands on other nodes. Check the logs to see if the operation was successful.
+a|
+hdb-00005
+a|
+Database [$sid] already has a snapshot!
+a|
+HANA database snapshot already exists on the database. Delete the HANA database snapshot or run unquiesce operation to resolve this issue.
+a|
+hdb-00006
+a|
+Unable to resolve hostname [$hana_node].
+a|
+The HANA node hostname cannot be resolved. Check your DNS server or etc hosts entries.
+a|
+hdb-00007
+a|
+Invalid username or password. Verify the credentials and try again.
+a|
+The user name and password provided for HANA database is incorrect. Correct the entries in the configuration file and try again.
+a|
+hdb-00008
+a|
+Running command [$hdbsql_cmd] on [$hana_node] failed.
+a|
+Plug-in failed to execute hdbsql command on all HANA nodes provided in the configuration. Verify the HANA nodes and instance parameters and ensure at least one HANA node is up and reachable.
+a|
+hdb-00009
+a|
+Unable to find HANA [$info].
+a|
+The SAP HANA plug-in SCDUMP operation was unable to retrieve a particular information from the HANA databases. Verify the HANA nodes and instance parameters and make sure at least one HANA node is up and reachable.
+a|
+hdb-00010
+a|
+Collection of OS information failed.
+a|
+The collection of OS information failed in the Windows environment; the SAP HANA plug-in is not supported on Windows. Use an SLES operating system instead.
+a|
+hdb-00011
+a|
+Collection of OS information failed.
+a|
+Snap Creator was unable to collect OS information for the SCDUMP operation. Check your agent configuration file and correct the settings.
+a|
+hdb-00012
+a|
+Collection of SnapDrive information failed.
+a|
+The SAP HANA plug-in is only supported in an NFS environment. Your configuration for HANA database has SnapDrive enabled; set SNAPDRIVE=Nin the configuration file.
+a|
+hdb-00013
+a|
+The HANA_NODES parameter is not set. Check HANA settings in the configuration file.
+a|
+HANA nodes (HANA_NODES) parameter is required for the SAP HANA plug-in. Set the parameter and try again.
+a|
+hdb-00014
+a|
+Unable to find an accessible HANA node for executing hdbsqlcommands using the provided configuration parameters. Verify and update HANA settings in the configuration and try again.
+a|
+Verify that HANA nodes are running and reachable, and the instance number provided is correct.
+a|
+hdb-00015
+a|
+The HANA_INSTANCE parameter is not set. Check HANA settings in the configuration file.
+a|
+HANA instance (HANA_INSTANCE) parameter is required for the SAP HANA plug-in. Set the parameter and try again.
+a|
+hdb-00016
+a|
+The HANA_PASSWORD parameter is not set. Check HANA settings in the configuration file.
+a|
+HANA password (HANA_PASSWORD) parameter is required for the SAP HANA plug-in. Set the parameter and try again.
+a|
+hdb-00017
+a|
+Path to hdbsql, value of parameter HANA_HDBSQL_CMD is invalid!
+a|
+One of the following has occurred:
+
+* You have not provided the hdbsql path
+* The hdbsql path provided is incorrect.
+
+Ensure you have the HANA hdbsql client installed on the management host where Snap Creator Agent is installed, and provide the correct path of the hdbsql binary in HANA parameters; then, try again.
+
+|===

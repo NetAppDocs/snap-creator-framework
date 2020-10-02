@@ -1,0 +1,32 @@
+---
+permalink: administration/task_performing_single_file_restore_using_the_gui.html
+sidebar: sidebar
+keywords: 
+summary: 'You can perform single file restore operations by using the Snap Creator GUI.'
+---
+= Performing single file restore operations
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can perform single file restore operations by using the Snap Creator GUI.
+
+. From the main menu of the Snap Creator GUI, select *Management* > *Configurations*.
+. From the Configurations tab in the Profiles and Configuration pane, select the configuration file.
+. Select *Action* > *Restore*.
++
+The Restore wizard opens in the right pane.
+
+. Complete the Restore wizard:
+ .. In the "`Restore details`" section, select a controller or Vserver name, a restore volume name, a policy, and a restore Snapshot copy name, and then select *Single File Restore* from the Restore type list.
++
+image::../media/restore_wizard_restore_details.gif[]
+
+ .. Select the files that are to be restored.
+ .. Select the location to which the files should be restored.
+ .. Review the summary and click *Finish*.
+
++
+A warning message appears, asking whether there are more items to be restored.
+. Click *No* if there are no more items to be restored, and then click *OK* on the Restore confirmation page.
+. In the Console pane, verify that the files that you selected were successfully restored by reviewing the messages that are displayed.

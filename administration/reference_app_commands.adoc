@@ -1,0 +1,34 @@
+---
+permalink: administration/reference_app_commands.html
+sidebar: sidebar
+keywords: 
+summary: 'The following table lists the application \(APP\) commands.'
+---
+= APP commands
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+The following table lists the application (APP) commands.
+
+|===
+| Command| Description
+a|
+APP_CLONE_FOLLOW_ UP_ CMD ##
+a|
+These are scripts or commands to be executed after the database is cloned, where ## is a number between 01 and 99, inclusive. This can be used to perform application-specific followup activities on SAP systems, such as installing a SAP license, adjusting database tables, deleting or updating content, and starting up the application.
+a|
+APP_QUIESCE_CMD ##
+a|
+These are scripts or commands that put your application into backup mode, where ## is a number between 01 and 99, inclusive.*Note:* This is ignored if you use APP_NAME, because it is in that case handled internally in Snap Creator.
+
+a|
+APP_UNQUIESCE_ CMD ##
+a|
+These are scripts or commands that take your application out of backup mode, where ## is a number from 01 to 99, inclusive. *Note:* This is ignored if you use APP_NAME because it is in that case handled internally in Snap Creator.
+
+a|
+ARCHIVE_CMD ##
+a|
+This command handles database archiving; it can also be used as a wrapper to run other scripts, where ## is a number from 01 through 99.
+|===

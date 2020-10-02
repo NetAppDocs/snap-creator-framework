@@ -1,0 +1,34 @@
+---
+permalink: administration/concept_what_snap_creator_does.html
+sidebar: sidebar
+keywords: 
+summary: 'The Snap Creator Framework enables you to use prepackaged and custom plug-ins that standardize and simplify data protection for a wide variety of third-party applications, databases, and hypervisors in Windows and UNIX \(AIX, HP-UX, Linux, and Solaris\) environments.'
+---
+= What Snap Creator Framework does
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+The Snap Creator Framework enables you to use prepackaged and custom plug-ins that standardize and simplify data protection for a wide variety of third-party applications, databases, and hypervisors in Windows and UNIX (AIX, HP-UX, Linux, and Solaris) environments.
+
+Snap Creator provides the following by leveraging Snapshot, SnapVault, Open Systems SnapVault, and SnapMirror functionalities, as well as NetApp Management Console data protection capabilities, the Operations Manager console, and FlexClone:
+
+* Application-consistent data protection
++
+A centralized solution for backing up critical information, integrating with existing application architectures to ensure data consistency and reduced operating costs.
+
+* Extensibility
++
+Achieve fast integration using modular architecture and policy-based automation.
+
+* Cloud readiness
++
+An operating system-independent Snap Creator functionality that supports physical and virtual platforms, and interoperates with IT-as-a-service and cloud environments.
+
+* Cloning capability
++
+Space-efficient data cloning is supported for development and testing purposes.
+
+The following illustration shows the components of the Snap Creator Framework:
+
+image::../media/scfw_overview_41_refresh.gif[]

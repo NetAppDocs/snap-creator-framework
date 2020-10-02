@@ -1,0 +1,35 @@
+---
+permalink: sap-hana-ops/task_configuring_sap_hana_for_san_environments.html
+sidebar: sidebar
+keywords: 
+summary: 'After you configure the data backups, you will need to add a new command to the Snap Creator configuration file in environments where a SAP HANA system is connected using Fibre Channel storage area network \(SAN\) to the storage controller\(s\).'
+---
+= Configuring SAP HANA for SAN environments
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+After you configure the data backups, you will need to add a new command to the Snap Creator configuration file in environments where a SAP HANA system is connected using Fibre Channel storage area network (SAN) to the storage controller(s).
+
+When a global synchronized backup savepoint is triggered by Snap Creator within SAP HANA, the last step occurs when SAP HANA writes the /hana/data/SID/mnt00001/hdb00001/snapshot_databackup_0_1 file. This file is part of the data volume on the storage and is therefore part of the storage Snapshot copy. This file is mandatory when performing a recovery in case the backup is restored. Due to metadata caching with the 'X' File System (XFS) on the Linux host, the file is not immediately visible at the storage layer. The standard XFS configuration for metadata caching is 30 seconds.
+
+Within Snap Creator, you need to add a post-application quiesce command, which waits until the XFS meta data cache is flushed to the disk layer.
+
+You can check the configuration of the metadata caching by using the following command:
+
+----
+stlrx300s8-2:/ # sysctl -A | grep xfssyncd_centisecs
+fs.xfs.xfssyncd_centisecs = 3000
+----
+
+. In the configuration file (install_path/scServerversion_number/engine/configs), add the /bin/sleep command to the Post Commands section as shown in the following example:
++
+----
+############################################################
+#     Post Commands      ############################################
+POST_NTAP_DATA_TRANSFER_CMD01=
+POST_APP_QUIESCE_CMD01=/bin/sleep 60
+POST_CLONE_CREATE_CMD01=
+----
++
+NOTE: You should allow a wait time that is twice the value of the fs.xfs.xfssyncd_centisecs parameter. For example, with the default value 30 seconds, the sleep command should be configured with 60 seconds.

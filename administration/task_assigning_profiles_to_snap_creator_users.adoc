@@ -1,0 +1,20 @@
+---
+permalink: administration/task_assigning_profiles_to_snap_creator_users.html
+sidebar: sidebar
+keywords: 
+summary: 'You can assign profiles to Snap Creator users by using the Snap Creator GUI.'
+---
+= Assigning profiles to Snap Creator users
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can assign profiles to Snap Creator users by using the Snap Creator GUI.
+
+. From the Snap Creator GUI main menu, select *Users and Roles* > *User management*.
+. In the User management tab, select the desired user name, and then click *Assign Profiles*.
+. Move the desired profiles from the left column to the right column, and then click *Save*.
++
+You can select and drag the profiles between columns or click the arrow to move the profiles between columns.
+
+. Verify that the profile was assigned by selecting the user and viewing the assigned profile in the *Assigned Profiles and Roles* pane.

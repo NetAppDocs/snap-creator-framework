@@ -1,0 +1,55 @@
+---
+permalink: administration/reference_parameters_to_set_up_event_management.html
+sidebar: sidebar
+keywords: 
+summary: 'Several parameters are required to set up event management for Snap Creator Server.'
+---
+= Parameters for setting up event management
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Several parameters are required to set up event management for Snap Creator Server.
+
+|===
+| Parameter| Setting| Description
+a|
+NTAP_ASUP_ERROR_ ENABLE
+a|
+"`Y`" or "`N`"
+a|
+EnablesSnap Creator error messages to also log an AutoSupport message on the storage controller. Snap Creator always creates an info AutoSupport message when the backup has started and when the backup is complete.
+
+a|
+FAILURE_MSG
+a|
+ 
+a|
+Logs the failure message that is defined in case of a Snap Creator failure. This failure message can also be sent to SENDTRAP if SENDTRAP is defined.
+
+a|
+SENDTRAP
+a|
+ 
+a|
+Interfaces with your monitoring software or email, enabling you to pass the alerts that are generated from Snap Creator into your own monitoring infrastructure. The %MSG variable is the message sent from Snap Creator. The following is an example of how you can send an email on a UNIX system: SENDTRAP=/usr/bin/mailx -s %MSG myaddress@mydomain.com </dev/null
+
+To send an email on a Windows system, you must add `cmd.exe /c` before any command. For example: SENDTRAP= cmd.exe /c echo %how
+
+a|
+SUCCESS_TRAP
+a|
+ 
+a|
+Interfaces with your monitoring software or email, enabling you to pass the success message generated from Snap Creator into your own monitoring infrastructure. The %SUCCESS_MSG variable is the success message for Snap Creator. The following is an example of how you can send an email on a UNIX system: SUCCESS_TRAP=/usr/bin/mailx -s %SUCCESS_MSG myaddress@mydomain.com </dev/null
+
+To send an email on a Windows system, you must add `cmd.exe /c` before any command. For example: SUCCESS_TRAP= cmd.exe /c echo %Hello
+
+a|
+SUCCESS_MSG
+a|
+ 
+a|
+After a successful Snap Creator backup, this setting logs the message that is defined. The message is also sent to SUCCESS_TRAP, if SUCCESS_TRAP is defined, or to SENDTRAP, if SENDTRAP is defined.
+
+|===

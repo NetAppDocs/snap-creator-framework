@@ -1,0 +1,25 @@
+---
+permalink: sap-hana-ops/task_configuring_log_backups.html
+sidebar: sidebar
+keywords: 
+summary: 'Log backups should be stored on a different storage system than the primary storage. The storage system that is used for the data backup can also be used for the log backup.'
+---
+= Configuring log backups
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Log backups should be stored on a different storage system than the primary storage. The storage system that is used for the data backup can also be used for the log backup.
+
+At the secondary storage, a volume needs to be configured to hold the log backups. Ensure that automatic Snapshot copies are switched off for this volume.
+
+. Mount the volume at each database node, either by running the mount command or editing the file system table (fstab) file.
++
+----
+hana2b:/vol/backup_log_ANA /mnt/backup_log_ANA nfs
+rw,bg,vers=3,hard,timeo=600,rsize=65536,wsize=65536,actimeo=0,noatime   0  0
+----
++
+Within SAP HANA Studio, the log backup destination is configured as shown in the following figure.
++
+image::../media/sap_hana_studio_log_backup_destination_gui.gif[This image is explained by the surrounding text.]

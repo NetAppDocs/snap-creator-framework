@@ -1,0 +1,500 @@
+---
+permalink: administration/reference_storage_error_messages.html
+sidebar: sidebar
+keywords: 
+summary: 'The storage-related error messages can help you troubleshoot any issues that occur.'
+---
+= Storage error messages
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+The storage-related error messages can help you troubleshoot any issues that occur.
+
+The following table lists the error codes and messages along with a brief description of the error and the suggested resolution.
+
+|===
+| Error code| Error message| Description/resolution
+a|
+STORAGE-00001
+a|
+Date format [%s] is not valid: [%s]
+a|
+Either the volume clone was not created by Snap Creator, or the time stamp that is appended to the clone name is not valid.
+a|
+STORAGE-00002
+a|
+Unable to retrieve executor
+a|
+An executor was not created for storage. Check the logs for NetApp Manageability errors, which might reveal the cause of the problem.
+
+a|
+STORAGE-00003
+a|
+Cannot connect to the host
+a|
+The host is not reachable. Ensure that the local firewall settings are correct, and that the host is able to ping from the system where Snap Creator Server is installed.
+
+a|
+STORAGE-01003
+a|
+Creating AutoSupport message with event id [%s], category [%s], description [%s], level [%s], hostname [%s] failed with error [%s].
+a|
+Check the logs for errors. You most likely have a NetApp Manageability error. The logs might reveal the cause of the problem.
+
+a|
+STORAGE-01004
+a|
+For file restore, the source and destination volumes need to be the same volume.
+a|
+The source and destination volumes are different.Provide the same volume as the source volume and the destination volume.
+
+a|
+STORAGE-02003
+a|
+Creating consistency group Snapshot copy [%s] on volumes [%s] failed with error [%s];
+a|
+Check the logs for errors. You most likely have a NetApp Manageability error. The logs might reveal the cause of the problem.
+
+a|
+STORAGE-02006
+a|
+Committing consistency group Snapshot copy on [%s] with CG Id [%s] failed with error [%s]
+a|
+Check the logs for errors. You most likely have a NetApp Manageability error. The logs might reveal the cause of the problem.
+
+a|
+STORAGE-02009
+a|
+Creating Snapshot copy [%s] on volume [%s] failed with error [%s]
+a|
+Check the logs for errors. You most likely have a NetApp Manageability error. The logs might reveal the cause of the problem.
+
+a|
+STORAGE-02015
+a|
+Removing Snapshot copy [%s] on volume [%s] failed with error [%s]
+a|
+Check the logs for errors. You most likely have a NetApp Manageability error. The logs might reveal the cause of the problem.
+
+a|
+STORAGE-02021
+a|
+Restoring Snapshot copy [%s] of volume [%s] failed with error [%s]
+a|
+Check the logs for errors. You most likely have a NetApp Manageability error. The logs might reveal the cause of the problem.
+
+a|
+STORAGE-02025
+a|
+Restoring file [%s] from Snapshot copy [%s] to [%s] failed with error [%s]
+a|
+Check the logs for errors. You most likely have a NetApp Manageability error. The logs might reveal the cause of the problem.
+
+a|
+STORAGE-02028
+a|
+Creating primary SnapVault Snapshot copy schedule [%s] on volume [%s] failed with error [%s]
+a|
+Check the logs for errors. You most likely have a NetApp Manageability error. The logs might reveal the cause of the problem.
+
+a|
+STORAGE-02034
+a|
+Removing primary SnapVault Snapshot copy schedules from volume [%s] failed with error [%s]
+a|
+Check the logs for errors. You most likely have a NetApp Manageability error. The logs might reveal the cause of the problem.
+
+a|
+STORAGE-02038
+a|
+Creating clone [%s] of volume [%s] based on Snapshot copy [%s] failed with error [%s]
+a|
+Check the logs for errors. You most likely have a NetApp Manageability error. The logs might reveal the cause of the problem.
+
+a|
+STORAGE-02041
+a|
+Cloning file [%s] on volume [%s] to [%s] based on Snapshot copy [%s] failed with error [%s]
+a|
+Check the logs for errors. You most likely have a NetApp Manageability error. The logs might reveal the cause of the problem.
+
+a|
+STORAGE-02043
+a|
+Listing files on path [%s] failed with error [%s]
+a|
+Check the logs for errors. You most likely have a NetApp Manageability error. The logs might reveal the cause of the problem.
+
+a|
+STORAGE-02046
+a|
+Cloning LUN [%s] to [%s] based on Snapshot copy [%s] with space reservation [%s] failed with error [%s]
+a|
+Check the logs for errors. You most likely have a NetApp Manageability error. The logs might reveal the cause of the problem.
+
+a|
+STORAGE-02049
+a|
+Deleting LUN [%s] from volume [%s] failed with error [%s]
+a|
+Check the logs for errors. You most likely have a NetApp Manageability error. The logs might reveal the cause of the problem.
+
+a|
+STORAGE-02052
+a|
+Listing LUNs failed with error [%s]
+a|
+Check the logs for errors. You most likely have a NetApp Manageability error. The logs might reveal the cause of the problem.
+
+a|
+STORAGE-02062
+a|
+Adding NFS export [%s] for host name [%s] with access [%s] failed with error [%s]
+a|
+Check the logs for errors. You most likely have a NetApp Manageability error. The logs might reveal the cause of the problem.
+
+a|
+STORAGE-02072
+a|
+Retrieving SnapMirror status on controller [%s] failed with error [%s]
+a|
+Check the logs for errors. You most likely have a NetApp Manageability error. The logs might reveal the cause of the problem.
+
+a|
+STORAGE-02075
+a|
+Retrieving SnapMirror relationships on controller [%s] failed with error [%s]
+a|
+Check the logs for errors. You most likely have a NetApp Manageability error. The logs might reveal the cause of the problem.
+
+a|
+STORAGE-02082
+a|
+Updating SnapMirror relationship [%s] based on Snapshot copy [%s] failed with error [%s]
+a|
+Check the logs for errors. You most likely have a NetApp Manageability error. The logs might reveal the cause of the problem.
+
+a|
+STORAGE-02092
+a|
+Listing Snapshot copies on volume [%s] failed with error [%s]
+a|
+Check the logs for errors. You most likely have a NetApp Manageability error. The logs might reveal the cause of the problem.
+
+a|
+STORAGE-02102
+a|
+Renaming Snapshot copy [%s] on volume [%s] to [%s] failed with error [%s]
+a|
+Check the logs for errors. You most likely have a NetApp Manageability error. The logs might reveal the cause of the problem.
+
+a|
+STORAGE-02112
+a|
+Retrieving SnapVault status on controller [%s] failed with error [%s]
+a|
+Check the logs for errors. You most likely have a NetApp Manageability error. The logs might reveal the cause of the problem.
+
+a|
+STORAGE-02115
+a|
+Retrieving SnapVault relationships on controller [%s] failed with error [%s]
+a|
+Check the logs for errors. You most likely have a NetApp Manageability error. The logs might reveal the cause of the problem.
+
+a|
+STORAGE-02122
+a|
+Updating SnapVault relationship [%s] based on Snapshot copy [%s] failed with error [%s]
+a|
+Check the logs for errors. You most likely have a NetApp Manageability error. The logs might reveal the cause of the problem.
+
+a|
+STORAGE-02132
+a|
+Listing cloned volumes based on volume [%s] failed with error [%s]
+a|
+Check the logs for errors. You most likely have a NetApp Manageability error. The logs might reveal the cause of the problem.
+
+a|
+STORAGE-02142
+a|
+Deleting volume [%s] failed with error [%s]
+a|
+Check the logs for errors. You most likely have a NetApp Manageability error. The logs might reveal the cause of the problem.
+
+a|
+STORAGE-02152
+a|
+Listing volumes failed with error [%s]
+a|
+Check the logs for errors. You most likely have a NetApp Manageability error. The logs might reveal the cause of the problem.
+
+a|
+STORAGE-02155
+a|
+Listing volume [%s] failed with error message [%s]
+a|
+Check the logs for errors. You most likely have a NetApp Manageability error. The logs might reveal the cause of the problem.
+
+a|
+STORAGE-02162
+a|
+Restoring Snapshot copy [%s] of volume [%s] failed with error [%s]
+a|
+Check the logs for errors. You most likely have a NetApp Manageability error. The logs might reveal the cause of the problem.
+
+a|
+STORAGE-03001
+a|
+Retrieving Vservers from Clustered ONTAP node [%s]
+a|
+Check the logs for errors. You most likely have a NetApp Manageability error. The logs might reveal the cause of the problem.
+
+a|
+STORAGE-05003
+a|
+Creating NetApp Management Console dataset [%s] failed with error [%s]
+a|
+Check the logs for errors. You most likely have a NetApp Manageability error. The logs might reveal the cause of the problem.
+
+a|
+STORAGE-05006
+a|
+Creating NetApp Management Console driven backup of dataset [%s] on storage controller [%s] failed with error [%s]
+a|
+Check the logs for errors. You most likely have a NetApp Manageability error. The logs might reveal the cause of the problem.
+
+a|
+STORAGE-05009
+a|
+Retrieving NetApp Management Console dataset status for dataset [%s] failed with error [%s]
+a|
+Check the logs for errors. You most likely have a NetApp Manageability error. The logs might reveal the cause of the problem.
+
+a|
+STORAGE-05012
+a|
+Validating NetApp Management Console dataset [%s] failed with error [%s].
+a|
+Check the logs for errors. You most likely have a NetApp Manageability error. The logs might reveal the cause of the problem.
+
+a|
+STORAGE-05018
+a|
+Creating OM Event [%s] on [%s]
+a|
+Check the logs for errors. You most likely have a NetApp Manageability error. The logs might reveal the cause of the problem.
+
+a|
+STORAGE-03002
+a|
+Mapping igroup [%s] on LUN [%s] failed with error [%s]
+a|
+Check the logs for errors. You most likely have a NetApp Manageability error. The logs might reveal the cause of the problem.
+
+a|
+STORAGE-03005
+a|
+Making LUN [%s] on volume [%s] failed with error [%s]
+a|
+Check the logs for errors. You most likely have a NetApp Manageability error. The logs might reveal the cause of the problem.
+
+a|
+STORAGE-03008
+a|
+Creating primary SnapVault Snapshot copy [%s] on volume [%s] failed with error [%s]
+a|
+Check the logs for errors. You most likely have a NetApp Manageability error. The logs might reveal the cause of the problem.
+
+a|
+STORAGE-03011
+a|
+Listing NetApp Management Console backup copies for dataset [%s] failed with error [%s]
+a|
+Check the logs for errors. You most likely have a NetApp Manageability error. The logs might reveal the cause of the problem.
+
+a|
+STORAGE-03014
+a|
+Deleting NetApp Management Console backup version ID [%s] failed with error [%s]
+a|
+Check the logs for errors. You most likely have a NetApp Manageability error. The logs might reveal the cause of the problem.
+
+a|
+STORAGE-03019
+a|
+NetApp Management Console backup start for [%s] ([%s]) failed, Exiting!
+a|
+Check the logs for errors.You most likely have a NetApp Manageability error. The logs might reveal the cause of the problem.
+
+a|
+STORAGE-03022
+a|
+NetApp Management Console backup progress start for job-id [%s] failed, Exiting!
+a|
+Check the logs for errors. You most likely have a NetApp Manageability error. The logs might reveal the cause of the problem.
+
+a|
+STORAGE-03025
+a|
+Deletion of file on path [%s] failed with error [%s]
+a|
+Check the logs for errors. You most likely have a NetApp Manageability error. The logs might reveal the cause of the problem.
+
+a|
+STORAGE-03030
+a|
+Discovery of clustered Data ONTAP nodes on [%s] failed
+a|
+Check the logs for errors. You most likely have a NetApp Manageability error. The logs might reveal the cause of the problem.
+
+a|
+STORAGE-03033
+a|
+Getting system version details of [%s] failed with error [%s]
+a|
+Check the logs for errors. You most likely have a NetApp Manageability error. The logs might reveal the cause of the problem.
+
+a|
+STORAGE-03036
+a|
+Creation of directory on path [%s] failed with error [%s]
+a|
+Check the logs for errors. You most likely have a NetApp Manageability error. The logs might reveal the cause of the problem.
+
+a|
+STORAGE-03039
+a|
+Deletion of directory on path [%s] failed with error [%s]
+a|
+Check the logs for errors. You most likely have a NetApp Manageability error. The logs might reveal the cause of the problem.
+
+a|
+STORAGE-03043
+a|
+Creation of file on path [%s] failed with error [%s]
+a|
+Check the logs for errors. You most likely have a NetApp Manageability error. The logs might reveal the cause of the problem.
+
+a|
+STORAGE-03046
+a|
+NetApp Management Console dataset modify failed for dataset [%s]
+a|
+Check the logs for errors. You most likely have a NetApp Manageability error. The logs might reveal the cause of the problem.
+
+a|
+STORAGE-03049
+a|
+File contents for file [%s] could not be read
+a|
+Check the logs for errors. You most likely have a NetApp Manageability error. The logs might reveal the cause of the problem.
+
+a|
+STORAGE-03052
+a|
+Options get for option [%s] failed
+a|
+Check the logs for errors. You most likely have a NetApp Manageability error. The logs might reveal the cause of the problem.
+
+a|
+STORAGE-03055
+a|
+Performance counters get for object [%s] failed
+a|
+Check the logs for errors. You most likely have a NetApp Manageability error. The logs might reveal the cause of the problem.
+
+a|
+STORAGE-03058
+a|
+Performance instances get for object [%s] failed
+a|
+Check the logs for errors. You most likely have a NetApp Manageability error. The logs might reveal the cause of the problem.
+
+a|
+STORAGE-03061
+a|
+NetApp Management Console dataset info for [%s] failed
+a|
+Check the logs for errors. You most likely have a NetApp Manageability error. The logs might reveal the cause of the problem.
+
+a|
+STORAGE-03064
+a|
+System CLI command [%s] failed
+a|
+Check the logs for errors. You most likely have a NetApp Manageability error. The logs might reveal the cause of the problem.
+
+a|
+STORAGE-03067
+a|
+Deleting NetApp Management Console dataset [%s] failed with error [%s]
+a|
+Check the logs for errors. You most likely have a NetApp Manageability error. The logs might reveal the cause of the problem.
+
+a|
+STORAGE-03070
+a|
+Restoring SnapVault relationship [%s] based on Snapshot copy [%s] failed with error [%s]
+a|
+Check the logs for errors. You most likely have a NetApp Manageability error. The logs might reveal the cause of the problem.
+
+a|
+STORAGE-03073
+a|
+CIFS export for [%s]:[%s] failed!
+a|
+Check the logs for errors. You most likely have a NetApp Manageability error. The logs might reveal the cause of the problem.
+
+a|
+STORAGE-03076
+a|
+Getting the root volume on controller [%s] failed with error [%s]
+a|
+Check the logs for errors. You most likely have a NetApp Manageability error. The logs might reveal the cause of the problem.
+
+a|
+STORAGE-03079
+a|
+Junction path get for volume [%s] failed
+a|
+Check the logs for errors. You most likely have a NetApp Manageability error. The logs might reveal the cause of the problem.
+
+a|
+STORAGE-03082
+a|
+System name get failed
+a|
+Check the logs for errors. You most likely have a NetApp Manageability error. The logs might reveal the cause of the problem.
+
+a|
+STORAGE-03085
+a|
+NFS service get on controller [%s] failed
+a|
+Check the logs for errors. You most likely have a NetApp Manageability error. The logs might reveal the cause of the problem.
+
+a|
+STORAGE-03088
+a|
+NFS permission check for host [%s] path name [%s] permission [%s] failed
+a|
+Check the logs for errors. You most likely have a NetApp Manageability error. The logs might reveal the cause of the problem.
+
+a|
+STORAGE-03091
+a|
+Network interface get on controller [%s] failed
+a|
+Check the logs for errors. You most likely have a NetApp Manageability error. The logs might reveal the cause of the problem.
+
+a|
+STORAGE-03094
+a|
+Qtree list on volume [%s] failed
+a|
+Check the logs for errors. You most likely have a NetApp Manageability error. The logs might reveal the cause of the problem.
+
+|===

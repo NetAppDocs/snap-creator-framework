@@ -1,0 +1,224 @@
+---
+permalink: administration/reference_snap_creator_variable_and_parameter_descriptions.html
+sidebar: sidebar
+keywords: 
+summary: 'Snap Creator includes built-in variables and parameters required in a basic configuration.'
+---
+= Snap Creator variable and parameter descriptions
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Snap Creator includes built-in variables and parameters required in a basic configuration.
+
+|===
+| Variables| Description
+a|
+%SNAP_TYPE
+a|
+Used when you run Snap Creator and it is your retention policy (daily, weekly, monthly)
+a|
+%SNAP_TIME
+a|
+The timestamp (YYYYMMDDhhmmss) used in the naming of Snapshot copies to create a guaranteed unique name for every Snapshot copy. It is also used to name the backup reports and Sybase transaction logs.
+a|
+%ACTION
+a|
+The list of actions you can perform when you run Snap Creator: (backup|cloneVol|cloneLun|arch|restore|backupDel|backupList|cloneList|pmsetup|ossv)
+a|
+%MSG
+a|
+Used to send an error message to another program such as email or Tivoli It can only be used with the SENDTRAP function.
+
+a|
+%USER_DEFINED
+a|
+Passes a user-defined argument to the Snap Creator configuration file For example, to integrate with a backup application such as NetBackup, CommVault, or Legato NetWorker, you might have to pass the desired backup product's schedule into the configuration file when you have multiple schedules and want to call NetBackup, CommVault, or Legato NetWorker with a certain schedule.
+
+You could also achieve this by having multiple configuration files for the different scenarios.
+
+|===
+The following table lists and describes the Snap Creator parameters used in a basic configuration:
+
+|===
+| Parameter| Setting| Description
+a|
+SNAME
+a|
+ 
+a|
+Specifies the Snapshot copy naming convention It should be unique. Snapshot copies are deleted according to the naming convention.
+
+a|
+SNAP_TIMESTAMP_ONLY
+a|
+(Y|N)
+a|
+Sets the Snapshot naming conventionIf set to Y, Snapshot copies end with YYYYMMDDHHMMSS. Otherwise, new Snapshot copies are renamed to end with YYYYMMDDHHMMSS.
+
+a|
+VOLUMES
+a|
+ 
+a|
+Lists the primary storage controllers and volumes of which you want to create a Snapshot copy For example:
+
+----
+controller1:vol1,vol2,vol3;
+controller2:vol1;
+controller3:vol2,vol3
+----
+
+a|
+VOLUME_GROUPS
+a|
+vol_1,vol_2,vol_n
+a|
+Defines multiple volumes into a single group. Multiple volumes are specified as a comma-separated listFor example:
+
+----
+VOLUMES_01=filer1:vol1,vol2,vol3;filer2:vol1
+VOLUMES_02=filer1:vol3,vol4
+VOLUMES_03=filer2:vol3,vol4
+VOLUME_GROUPS=VOLUMES_01,VOLUMES_02,VOLUMES_03
+----
+
+NOTE: VOLUME_GROUPS is only supported for backup operations. If this parameter is set, then the VOLUMES parameter will be ignored during the backup.
+
+a|
+NTAP_SNAPSHOT_RETENTIONS
+a|
+ 
+a|
+Determines the number of Snapshot copies to be retained for a given policyFor example:
+
+----
+daily:7,weekly:4,monthly:1
+----
+
+a|
+NTAP_USERS
+a|
+ 
+a|
+Lists the storage systems and their corresponding user names and passwordsFor example:
+
+----
+controller1:joe/password1;
+controller2:bob/password2;
+controller3:ken/password3
+----
+
+NOTE: Password must contain a minimum of two characters.
+
+a|
+NTAP_PWD_PROTECTION
+a|
+(Y|N)
+a|
+Enables or disables password protection You must encrypt all passwords (storage system and applications or plug-ins) and save encrypted passwords in configuration file.
+
+a|
+TRANSPORT
+a|
+HTTP|HTTPS
+a|
+Enables you to use either HTTP or HTTPS to connect to the storage controller**Note:** HTTPS might require openssl-devel libraries.
+
+a|
+PORT
+a|
+ 
+a|
+Configures the port number the storage controllers use; normally: 80 and 443
+a|
+LOG_NUM
+a|
+ 
+a|
+Specifies the number of .debug and .out reports that Snap Creator has to retain
+a|
+CONFIG_TYPE
+a|
+PLUGIN|STANDARD
+a|
+Specifies the configuration typeThere are two types of configurations: plug-in and standard. You can use multiple plug-in configurations to build complex quiesce and unquiesce backup workflows.
+
+a|
+CMODE_CLUSTER_USERS
+a|
+ 
+a|
+(Required for clustered Data ONTAP) Lists the primary and secondary clustered Data ONTAP clusters and their corresponding user names and passwordsFor example:
+
+----
+cluster1:joe/password1;
+cluster2:bob/password2
+----
+
+NOTE: Password must contain a minimum of two characters.
+
+a|
+CMODE_CLUSTER_NAME
+a|
+ 
+a|
+(Required for clustered Data ONTAP) Specifies the name of the primary clustered Data ONTAP cluster
+a|
+CMODE_SNAPSHOT_FORCE_DELETE
+a|
+(Y|N)
+a|
+Ensures deletion of Snapshot copies that should be deleted based on the Snapshot copy policy In clustered Data ONTAP, Snapshot copies are not deleted if they have any dependencies, such as a clone.
+
+a|
+LOG_TRACE_ENABLE
+a|
+(Y|N)
+a|
+Enables or disables logging of all events If disabled, the Manage ONTAP Solution result objects are not logged.
+
+a|
+NTAP_TIMEOUT
+a|
+Seconds
+a|
+Sets the timeout value for all storage controller Manage ONTAP Solution calls; default is 60 seconds
+a|
+USE_GLOBAL_CONFIG
+a|
+(Y|N)
+a|
+Enables you to use global configuration to store values
+a|
+FEDERATED_APPLICATIONS
+a|
+ 
+a|
+Lists the configuration and profile names for the federated applications under the configuration For example:
+
+----
+databases@db2;databases@oracle
+----
+
+a|
+CMODE_SET
+a|
+(Y|N)
+a|
+Defines whether the configuration is for clustered Data ONTAP or Data ONTAP operating in 7-Mode
+a|
+ALLOW_DUPLICATE_SNAME
+a|
+(Y|N)
+a|
+(Optional) Enables or disables the ability to create a configuration file with a duplicate Snapshot name This parameter will not work with global (Super Global or Profile Global) configuration files.
+
+a|
+SNAPCREATOR_MISSEDJOB_RUN
+a|
+(Y|N)
+a|
+Sets whether misfired jobs (for example, a scheduled backup operation) will run when Snap Creator is restarted.*Note:* This does not affect any hourly schedules that have been created in Snap Creator.
+
+|===

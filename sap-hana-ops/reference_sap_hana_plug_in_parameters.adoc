@@ -1,0 +1,106 @@
+---
+permalink: sap-hana-ops/reference_sap_hana_plug_in_parameters.html
+sidebar: sidebar
+keywords: 
+summary: ''
+---
+= SAP HANA plug-in parameters
+:icons: font
+:imagesdir: ../media/
+
+The following table lists the SAP HANA plug-in parameters, provides the parameter settings, and describes the parameters.
+
+|===
+| Parameter| Setting| Description
+a|
+HANA_SID
+a|
+Example: ABC
+a|
+HANA database SID.
+a|
+HANA_NODES
+a|
+Example: node1, node2, node3
+a|
+Comma-separated list of HANA nodes on which the hdbsql statements can be executed.
+a|
+HANA_USER_NAME
+a|
+Example: backupUser
+a|
+HANA database user name. The minimum privilege required for this user is BACKUP ADMIN privilege.
+
+a|
+HANA_PASSWORD
+a|
+Example: hfasfh87r83r
+a|
+HANA database password.
+a|
+HANA_INSTANCE
+a|
+Example: 42
+a|
+HANA node instance number.
+a|
+HANA_HDBSQL_CMD
+a|
+Example: /usr/sa p/hdbclient/ hdbsql
+a|
+Path to the HANA hdbsql command. If this parameter is not set, hdbsql on the search path is used. The default is hdbsql.
+
+a|
+HANA_OSDB_USER
+a|
+Example: user1
+a|
+The operating system user for executing hdbsql (usually sidadm) must have the hdbsql binary in the search path and the permission to execute it.
+a|
+HANA_USERSTORE_KEYS
+a|
+Example: node1:key1, node 2:key2, node3:ke y3
+a|
+Comma-separated list of HANA userstore keys and node pairs using which the hdbsql statements can be executed.
+a|
+HANA_FILE_BACKUP_ENABLE
+a|
+"`Y`" or "`N`"
+a|
+Determines whether Snap Creator should enable file-based backup for the SAP HANA plug-in. This setting is useful when you want to perform the SAP HANA file-based backup operation.
+
+a|
+HANA_FILE_BACKUP_PATH
+a|
+Example:/hana/data/SCN/mnt00001
+a|
+(Optional) Path to the directory where database file backup can be stored. If this parameter is not set, use default.
+
+a|
+HANA_FILE_BACKUP_PREFIX
+a|
+Example: SnapCreator_<HANA_FILE_BACKUP_PREFIX>__<CURRENT_TIMESTAMP>
+a|
+(Optional) Adds a prefix to the backup file name. Default: SnapCreator__<CURRENT_TIMESTAMP>
+
+a|
+HANA_INTEGRITY_CHECK_ENABLE
+a|
+"`Y`" or "`N`"
+a|
+Determines whether Snap Creator should enable Integrity Check for the SAP HANA plug-in. This setting is usual when you want to perform the SAP HANA Integrity Check operation.
+
+a|
+HANA_TEMP_FILE_BACKUP_PATH
+a|
+Example:/temp
+a|
+(Optional) Path where the temporary database file for Integrity Check can be stored. If not sure, use default.
+
+a|
+HANA_LOG_CLEANUP_ENABLE
+a|
+"`Y`" or "`N`"
+a|
+Enables Log Catalog cleanup.
+|===

@@ -1,0 +1,141 @@
+---
+permalink: administration/reference_parameters_to_set_up_a_snapshot_copy.html
+sidebar: sidebar
+keywords: 
+summary: 'Several configuration file parameters are required to set up Snapshot copies for Snap Creator Server.'
+---
+= Parameters for setting up Snapshot copies
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Several configuration file parameters are required to set up Snapshot copies for Snap Creator Server.
+
+|===
+| Parameter| Setting| Description
+a|
+NTAP_SNAPSHOT_ RETENTION_AGE
+a|
+ 
+a|
+Enables you to define the retention age (in days) for Snapshot copies. If configured, Snapshot copies are deleted only if they exceed the number defined in theNTAP_SNAPSHOT_ RETENTIONS parameter, and if they are older than the retention age (in days).
+
+a|
+SNAPDRIVE
+a|
+"`Y`" or "`N`"
+a|
+Enables you to use SnapDrive instead of the Data ONTAP API to create a Snapshot copy.
+a|
+SNAPDRIVE_DISCOVERY
+a|
+"`Y`" or "`N`"
+a|
+Enables you to use SnapDrive for storage discovery. This is required in a SAN or an iSAN environment when using the VALIDATE_VOLUMES parameter.
+
+a|
+NTAP_SNAPSHOT_ DISABLE
+a|
+"`Y`" or "`N`"
+a|
+Disables Snap Creator from creating a Snapshot copy so that Snap Creator can handle SnapVault or SnapMirror for SnapManager. For this setting to work, the SnapManager Snapshot copies must follow this naming convention: snapshot_copy_name-policy_recent.
+
+a|
+NTAP_SNAPSHOT_ NODELETE
+a|
+"`Y`" or "`N`"
+a|
+Overrides the NTAP_SNAPSHOT_RETENTIONS parameter, and prevents Snapshot copies from being deleted. Enabling this variable can make the volume full.
+
+a|
+NTAP_SNAPSHOT_DELETE_CMD
+a|
+ 
+a|
+Deletes snapshots through SnapDrive instead of Snap Creator based on snapshot retention.*Note:* All the volumes (mount drives) used in this Snapdrive command for snapshot deletion should be included the configuration file as well.
+
+a|
+NTAP_SNAPSHOT_DELETE_BY_AGE_ONLY
+a|
+(PRIMARY|SECONDARY|BOTH|N)
+a|
+Enables the deletion of old Snapshot copies. This parameter requires the NTAP_SNAPSHOT_RETENTION_AGE parameter, and forces deletion based on Snapshot copy age rather than the number of Snapshot copies.
+
+a|
+NTAP_SNAPSHOT_DEPENDENCY_IGNORE
+a|
+"`Y`" or "`N`"
+a|
+Applies only to Snapshot copy deletion using the backupDel action. Manually deletion of Snapshot copies with a dependency is not permitted.
+
+a|
+NTAP_SNAPSHOT_ CREATE_CMD ##
+a|
+ 
+a|
+Creates a Snapshot copy and flushes the file system buffers; ## is a number from 1 to 99. *Note:* This setting is required if you enable the SNAPDRIVE parameter. The Data ONTAP API is still used to perform everything else, but the SNAPDRIVE option creates Snapshot copies.
+
+a|
+NTAP_ METADATA_SNAPSHOT_ CREATE_CMD ##
+a|
+ 
+a|
+Creates the metadata volume Snapshot copy, and flushes the file system buffers; ## is a number from 1 to 99.
+a|
+NTAP_CONSISTENCY_ GROUP_SNAPSHOT
+a|
+"`Y`" or "`N`"
+a|
+Enables the use of consistency groups for creating consistent Snapshot copy across multiple volumes.
+a|
+NTAP_CONSISTENCY_ GROUP_SNAPSHOT_RETRY_COUNT
+a|
+ 
+a|
+Specifies the number of times a consistency group Snapshot should be retried in case of failure.
+a|
+NTAP_CONSISTENCY_ GROUP_SNAPSHOT_RETRY_WAIT
+a|
+Time (in seconds)
+a|
+Specifies the time to wait between each retry of a consistency group Snapshot.
+a|
+NTAP_CONSISTENCY_ GROUP_TIMEOUT
+a|
+(URGENT|MEDIUM|RELAXED)
+a|
+Specifies the wait time for the storage controller to consistently group Snapshot copies.
+a|
+NTAP_CONSISTENCY_GROUP_WAFL_SYNC
+a|
+"`Y`" or "`N`"
+a|
+Improves the performance of a consistency group Snapshot copy by forcing a consistency point (CP) through a wafl-sync before the cg-start. *Note:* If you are performing consistency group backup with the DB2 plug-in, you must set this parameter to "`N`".
+
+a|
+NTAP_SNAPSHOT_RESTORE_AUTO_DETECT
+a|
+"`Y`" or "`N`"
+a|
+If disabled, this setting always forces a Single File SnapRestore (SFSR) when performing a single file restore.
+a|
+NTAP_SNAPSHOT_CLEANUP
+a|
+"`Y`" or "`N`"
+a|
+Removes any Snapshot copies that were created in the event of backup failure.
+a|
+NTAP_USE_EXTERNAL_SNAPSHOT
+a|
+"`Y`" or "`N`"
+a|
+Enables the import of a non-Snap Creator Snapshot copy. The most recent Snapshot copy is matched.
+
+a|
+NTAP_EXTERNAL_SNAPSHOT_REGEX
+a|
+ 
+a|
+Matches the imported Snapshot copies. This regular expression requires the NTAP_USE_EXTERNAL_SNAPSHOT parameter.
+
+|===

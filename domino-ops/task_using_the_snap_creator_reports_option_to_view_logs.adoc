@@ -1,0 +1,24 @@
+---
+permalink: domino-ops/task_using_the_snap_creator_reports_option_to_view_logs.html
+sidebar: sidebar
+keywords: 
+summary: 'You can view logs in the Snap CreatorReports pane, in the same format used to display them in the Console pane. You can view error logs as well as standard logs in the Reports pane.'
+---
+= Viewing logs in the Reports pane
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can view logs in the Snap CreatorReports pane, in the same format used to display them in the Console pane. You can view error logs as well as standard logs in the Reports pane.
+
+. At the top of the Snap Creator Framework window, click *Reports* > *Logs*.
+. In the Reports pane, select the profile, configuration file, log type, and log file, where log types are as follows:
+ ** *Out Logs* provide verbose-level information for a job.
+ ** *Debug Logs* provides verbose-level information plus information useful in debugging.
+ ** *Stderr Logs* provides information about errors written to standard error.
+ ** *Error Logs* provides all error information.
+*Note:* Depending on the job size, choosing *Debug Log* can cause the browser to become slow or unresponsive.
+. Click:
+ ** *Download Selected Log* to download the selected log.
+ ** *Download GUI Logs* to download the GUI logs.
+In the download dialog, click *Open* or *Save* as required.

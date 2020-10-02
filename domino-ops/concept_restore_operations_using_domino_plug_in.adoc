@@ -1,0 +1,53 @@
+---
+permalink: domino-ops/concept_restore_operations_using_domino_plug_in.html
+sidebar: sidebar
+keywords: 
+summary: 'The IBM Domino plug-in restores database files from the Snapshot copy of the volume on which the database is stored. When the Snapshot restore operation is complete, the plug-in applies any changes recorded in the changeinfo directory.'
+---
+= Understanding IBM Domino plug-in restore operations
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+The IBM Domino plug-in restores database files from the Snapshot copy of the volume on which the database is stored. When the Snapshot restore operation is complete, the plug-in applies any changes recorded in the changeinfo directory.
+
+High-level steps are as follows:
+
+. Restore database files from Snapshot copies.
+. Apply changes recorded in changeinfo directory.
+. Apply transaction log information, if available.
+
+== Restore options
+
+The plug-in offers a wide variety of restore options:
+
+|===
+| Restore type| Description
+a|
+Volume restore (point-in-time)
+a|
+Restores the entire volume to its state at the time of the Snapshot copy.
+a|
+Volume restore (up-to-the-minute)
+a|
+Restores the entire volume to its state at the time of the Snapshot copy, then plays forward Domino transaction logs to the most recent copy.
+a|
+Volume restore (selectable up-to-the-minute)
+a|
+Restores the entire volume to its state at the time of the Snapshot copy, then plays forward Domino transaction logs to a specified time.
+a|
+Single-file restore (point-in-time)
+a|
+Restores a single file to its state at the time of the Snapshot copy (NFS only).
+a|
+Single-file restore (up-to-the-minute)
+a|
+Restores a single file to its state at the time of the Snapshot copy, then plays forward Domino transaction logs to the most recent copy (NFS only).
+a|
+Single-file restore (selectable up-to-the-minute)
+a|
+Restores a single file to its state at the time of the Snapshot copy, then plays forward Domino transaction logs to a specified time (NFS only).
+|===
+*Note:* For up-to-the-minute and selectable up-to-the-minute restores, Domino transaction logging must be enabled.
+
+Transaction logs can only be played forward. Selecting a time before the Snapshot copy was created causes a restore error.

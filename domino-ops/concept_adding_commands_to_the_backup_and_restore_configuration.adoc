@@ -1,0 +1,30 @@
+---
+permalink: domino-ops/concept_adding_commands_to_the_backup_and_restore_configuration.html
+sidebar: sidebar
+keywords: 
+summary: 'Occasionally, a backup or restore operation might need to run a command that is not available in Snap Creator. On Window hosts using FC or iSCSI, for example, you might prefer to use SnapDrive commands for backups instead of native Snap Creator commands, to ensure file system consistency at the OS level.'
+---
+= Adding commands to the backup and restore configuration
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Occasionally, a backup or restore operation might need to run a command that is not available in Snap Creator. On Window hosts using FC or iSCSI, for example, you might prefer to use SnapDrive commands for backups instead of native Snap Creator commands, to ensure file system consistency at the OS level.
+
+== Where to run supplemental commands
+
+By default, supplemental commands run on the Snap Creator Agent. You can run a supplemental command on the Server by prepending the command with the text SERVER, followed by a colon (:). For example, SERVER:C:\myscript.bat.
+
+If you want to run a supplemental command on the Agent, you must explicitly permit the command to be executed by including it in the allowed_commands.config file on the Agent. There is no requirement to allow supplemental commands on the Server.
+
+== Where to add supplemental commands
+
+You can use either the Snap Creator GUI or the Snap Creator CLI to add commands to your backup and restore configuration.
+
+NOTE: This guide shows how to use the GUI to add commands. For information on how to use the CLI, see the https://library.netapp.com/ecm/ecm_download_file/ECMP12395422[Snap Creator Framework 4.1.2 Administration Guide].
+
+*Related information*
+
+xref:concept_allowing_additional_commands_through_the_snap_creator_agent.adoc[Allowing supplemental commands on the Snap Creator Agent]
+
+xref:task_configuring_snap_creator_to_use_snapdrive_by_using_the_gui.adoc[Adding supplemental commands to the configuration]

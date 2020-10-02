@@ -1,0 +1,23 @@
+---
+permalink: sap-hana-ops/concept_housekeeping_of_log_backups.html
+sidebar: sidebar
+keywords: 
+summary: 'Housekeeping of log backups in SAP HANA is based on a function within the HANA Studio or based on an SQL statement that allows deleting all backups that are older than a selected backup.'
+---
+= Housekeeping of log backups
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Housekeeping of log backups in SAP HANA is based on a function within the HANA Studio or based on an SQL statement that allows deleting all backups that are older than a selected backup.
+
+Snap Creator handles the housekeeping of data backups (Snapshot copies) by deleting the Snapshot copies on the primary or secondary storage and by deleting the corresponding entries within the HANA catalog, based on a defined retention policy.
+
+The log backups that are older than the latest data backup are deleted because they are not required.
+
+Snap Creator handles the housekeeping of log file backups on file system level and within the SAP HANA backup catalog. As part of each Snapshot backup with Snap Creator, the following steps are executed:
+
+* Read backup catalog and obtain the backup ID of the oldest successful data or Snapshot backup.
+* Delete all backups that are older than the oldest backup.
+
+NOTE: Snap Creator only handles housekeeping for backups based on Snapshot copies. If additional file-based backups are created, you must ensure that the file-based backups are deleted from the backup catalog and file system. If such a data backup is not deleted manually from the backup catalog, it can become the oldest data backup, and the log backup housekeeping operation will fail.

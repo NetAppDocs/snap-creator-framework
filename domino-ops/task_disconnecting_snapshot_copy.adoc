@@ -1,0 +1,18 @@
+---
+permalink: domino-ops/task_disconnecting_snapshot_copy.html
+sidebar: sidebar
+keywords: 
+summary: 'You need to disconnect the mounted Snapshot copy when the restore operation is complete.'
+---
+= Disconnecting the Snapshot Copy
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You need to disconnect the mounted Snapshot copy when the restore operation is complete.
+
+The following procedure shows how to disconnect a mounted Snapshot copy on a Windows Server 2008 host. SnapDrive for Windows and the Snap Creator Agent must be running on the host.
+
+. In Server Manager, click *Storage* > *SnapDrive* > *physical_server_name* > *Disks*.
+. In the Disk Identification pane, select the mounted disk and click *Disconnect Disk* in the right-click menu.
+. In the Disconnect Disk dialog, click *Yes*.

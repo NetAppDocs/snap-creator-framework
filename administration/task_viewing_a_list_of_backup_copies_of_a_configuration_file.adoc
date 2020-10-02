@@ -1,0 +1,19 @@
+---
+permalink: administration/task_viewing_a_list_of_backup_copies_of_a_configuration_file.html
+sidebar: sidebar
+keywords: 
+summary: 'You can view a list of the backup copies of ONTAP volumes that are defined in the configuration file. You can also get details about available backups and rename specific backups based on the requirement.'
+---
+= Viewing a list of backup copies of a configuration file
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can view a list of the backup copies of ONTAP volumes that are defined in the configuration file. You can also get details about available backups and rename specific backups based on the requirement.
+
+. From the main menu of the Snap Creator GUI, select *Data* > *Backups*.
+. From the Profiles and Configurations pane of the Backups tab, expand a profile, and then select a configuration file.
++
+The Backups tab displays a list of all of the backup copies of the ONTAP volumes that are defined in the configuration file.
++
+NOTE: Snap Creator 4.3 or an earlier release deletes a Snapshot copy based on the retention period, even if the copies are renamed. To retain Snapshot copies for an unlimited time, Snap Creator Framework has provided a button named "`Unlimited Retention`", under the "`data \->backup`" tab on the Snap Creator Framework GUI. You can select a Snapshot copy that you want to keep for an unlimited time and click the "`Unlimited Retention`" button. The name of the selected Snapshot copy changes from <snapshot_name> to <snapshot_name_unlimited>.

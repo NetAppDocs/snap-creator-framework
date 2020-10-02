@@ -1,0 +1,14 @@
+---
+permalink: administration/concept_managing_scheduled_jobs.html
+sidebar: sidebar
+keywords: 
+summary: 'You can manage scheduled jobs by creating them \(to automate backup operations\), as well list as by editing, listing, running, and deleting those scheduled jobs.'
+---
+= Managing scheduled jobs
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can manage scheduled jobs by creating them (to automate backup operations), as well list as by editing, listing, running, and deleting those scheduled jobs.
+
+The Snap Creator Server contains a centralized scheduler that allows Snap Creator jobs to be scheduled, either through a policy schedule (part of Policy Objects) or by being created directly through the scheduler. The scheduler can run up to 10 jobs concurrently and can queue additional jobs until a running job completes.

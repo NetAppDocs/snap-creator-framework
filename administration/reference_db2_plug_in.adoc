@@ -1,0 +1,55 @@
+---
+permalink: administration/reference_db2_plug_in.html
+sidebar: sidebar
+keywords: 
+summary: 'The DB2 plug-in uses the db2 command to communicate with the database.'
+---
+= DB2 plug-in
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+The DB2 plug-in uses the db2 command to communicate with the database.
+
+The following table lists the DB2 plug-in parameters, provides the parameter settings, and describes the parameters.
+
+|===
+| Parameter| Setting| Description
+a|
+APP_NAME
+a|
+db2
+a|
+Provides the application name.
+a|
+DB2_DATABASES
+a|
+db_name:user_name
+a|
+Lists the DB2 databases and the user name.Multiple databases and user names can be specified as a semicolon-separated list: for example, `db1:user1;db2:user2`.
+
+a|
+DB2_CMD
+a|
+path_to_db2cli_cmd
+a|
+Specifies the path that is used to initialize the database connection so that further commands can be executed on the database.
+
+* UNIX-based environment:``db2_install_directory/sqllib/bin/db2``
++
+For example: `/home/db2inst1/sqllib/bin/db2`
+
+* Windows: `db2_install_directory\SQLLIB\BIN\db2cmd.exe`
++
+For example: `C:\"Program Files"\IBM\SQLLIB\BIN\db2cmd.exe`
+
+If a path is not specified, then sqllib/db2 is used as the path.
+
+|===
+*Note:* The DB2 plug-in handles Write Anywhere File Layout (WAFL) operations by default. If you want to back up a consistency group backup with the DB2 plug-in, you should set the parameter to NTAP_CONSISTENCY_GROUP_WAFL_SYNC parameter to N. If you set this parameter to Y, additional and redundant synchronizing operations are performed.
+
+For the latest information about support or to view compatibility matrices, see the Interoperability Matrix.
+
+*Related information*
+
+http://mysupport.netapp.com/matrix[Interoperability Matrix Tool: mysupport.netapp.com/matrix]

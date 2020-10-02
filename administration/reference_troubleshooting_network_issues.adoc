@@ -1,0 +1,74 @@
+---
+permalink: administration/reference_troubleshooting_network_issues.html
+sidebar: sidebar
+keywords: 
+summary: 'You might encounter network issues in Snap Creator such as authorization failures. You should be aware of these issues and know how to troubleshoot them.'
+---
+= Troubleshooting network issues
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You might encounter network issues in Snap Creator such as authorization failures. You should be aware of these issues and know how to troubleshoot them.
+
+* *Issue*
++
+While within Snap Creator, you encounter an authorization failure issue.
+
+* *Cause*
++
+An authorization failure might be due to the configuration, firewall permissions, or network address translation (NAT).
+
+* *Corrective action*
++
+Verify the following:
+
+ ** IP/Host name
++
+Unless you use host equiv, the storage system name from the hostname command on the controller should be the same as what was entered in the Snap Creator configuration file.
++
+Do not use a fully qualified domain name (FQDN) when the host name of a storage system is abbreviated.
++
+Ensure that the IP resolution matches the name that you specified. If there is a mismatch, correct it by using host equiv on the storage system.
++
+To enable host equiv, perform the following steps:
+
+  ... Enter the following command: options https.admin.hostsequiv.enable on
+  ... Edit the /etc/hostsequiv file, and add the following: IP/Host_name_in_Snap_Creator config_fileSnap_Creator_user
+
+ ** The NetApp Management Console data protection capability
++
+The storage controller name defined in the Snap Creator configuration parameter VOLUMES must match the storage controller name in the NetApp Management Console data protection capability. If the storage controller names do not match, you can use the operating system host file to force the storage controller names to match.
+
+ ** Firewall
++
+If there is a firewall between the host that is running Snap Creator and your storage system, ensure that you have bi-directional access control lists (ACLs) open for 80, 443, or both.
+
+  *** 80: Used to communicate with the storage system if HTTP is selected
+  *** 443: Used to communicate with the storage system if HTTPS is selected
+To use HTTPS (443) for Linux, Solaris, or AIX, install the openssl libraries, which are required to use SSL.
+
++
+If Snap Creator Agent is running, the port on which the Agent is running must be open. Ensure that the return traffic from the storage system can go to the system that is running Snap Creator, at least on the non-privileged ports.
+
+ ** Snap Creator Framework can communicate with both clustered Data ONTAP and Data ONTAP operating in 7-mode using TLS if SSL is disabled.
++
+In Snap Creator Framework you can disable SSLV3 in the host and the storage system:
+
+  *** To disable SSLV3 on AIX, Unix, or Windows, you should update the jdk.tls.disabledAlgorithms parameter in the java.security file as follows:
++
+jdk.tls.disabledAlgorithms=sslv3
++
+The java.security file is located under the path: /java/jre/lib/security/
+
+  *** To disable SSLV3 on the storage system, you should execute the system service web modify command, and configure the following parameters:
++
+TLSv1 Enabled: true
++
+SSLv3 Enabled: false
++
+SSLv2 Enabled: false
+
+ ** NAT
++
+If you use NAT, ensure that the source/destination IP addresses are not changed in the Transmission Control Protocol (TCP) packet. The host and storage systems need to know who they are communicating with. Presenting a firewall IP instead of the actual host or controller IP might cause problems.

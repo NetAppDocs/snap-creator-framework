@@ -1,0 +1,58 @@
+---
+permalink: installation/task_creating_a_snap_creator_user_for_data_ontap_operating_in_7_mode.html
+sidebar: sidebar
+keywords: 
+summary: 'Snap Creator uses the Data ONTAP APIs to communicate with the storage system. To ensure that the user account is granted access to only Snap Creator, create a new role, group, and user on each storage controller. The role is assigned to the group and the group contains the user. This controls the access and limits the scope of the Snap Creator account.'
+---
+= Creating a Snap Creator user for Data ONTAP operating in 7-Mode
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Snap Creator uses the Data ONTAP APIs to communicate with the storage system. To ensure that the user account is granted access to only Snap Creator, create a new role, group, and user on each storage controller. The role is assigned to the group and the group contains the user. This controls the access and limits the scope of the Snap Creator account.
+
+You must perform this procedure once for each storage controller on which Snap Creator is installed.
+
+To create a Snap Creator user for Data ONTAP operating in 7-Mode by using the Data ONTAP CLI (SSH, console connection, or Telnet), complete the following steps.
+
+NOTE: You should not copy and paste commands directly from this document; errors might result such as incorrectly transferred characters caused by line breaks and hard returns. Copy and paste the commands from this procedure into a text editor, verify the commands, and then enter them in the CLI.
+
+. Create a role defining the rights required for Snap Creator on the storage system by running the following command:
++
+----
+useradmin role add rolename -a login-\*,api-snapshot-\*,api-system-\*,
+api-ems-\*,api-snapvault-\*,api-snapmirror-\*,api-volume-\*,
+api-lun-\*,api-cg-\*,api-nfs-\*,api-file-\*,api-license-\*,
+api-net-\*api-clone-\*, api-options-get, api-wafl-sync
+----
++
+NOTE: The command shown in this step includes all the API roles used by Snap Creator. However, you can restrict the user access by including only the required roles (for example, if SnapMirror will not be used, then api-snapmirror-* is not needed).
++
+----
+useradmin role add sc_role -a login-*,api-snapshot-*,api-system-*,api-ems-*,api-snapvault-*,api-snapmirror-*,api-volume-*,
+api-lun-*,api-cg-*,api-nfs-*,api-file-*,api-license-*, api-net-*, api-clone-*, api-options-get, api-wafl-sync
+----
+
+. Create a new group on the storage system and assign the newly created role to the group by running the following command:
++
+----
+useradmin group add groupname -r rolename
+----
++
+----
+useradmin group add snap_creator_group -r snap_creator_role
+----
+
+. Create a user account by running the following command:
++
+----
+useradmin user add username -g groupname
+----
++
+----
+useradmin user add snap_creator_user -g snap_creator_group
+----
+
+. Enter the password for the account.
+
+Use this restricted account when creating configuration files for Snap Creator.

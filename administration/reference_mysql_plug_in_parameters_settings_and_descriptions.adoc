@@ -1,0 +1,74 @@
+---
+permalink: administration/reference_mysql_plug_in_parameters_settings_and_descriptions.html
+sidebar: sidebar
+keywords: Snap Creator
+summary: 'The MySQL plug-in uses Net-MySQL to communicate with the database.'
+---
+= MySQL plug-in
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+The MySQL plug-in uses Net-MySQL to communicate with the database.
+
+The MySQL plug-in does not support backup and restore operations for multiple databases. The Interoperability Matrix contains the latest information about support and compatibility.
+
+For Snap Creator configurations, the MySQL database user must have the LOCK TABLES privilege granted, along with other privileges, such as SUPER and RELOAD.
+
+The following table lists the MySQL plug-in parameters, provides their settings, and describes them:
+
+|===
+| Parameter| Setting| Description
+a|
+APP_NAME
+a|
+mysql
+a|
+Application name
+a|
+MYSQL_DATABASES
+a|
+db_name:user_name/password
+a|
+List of MySQL databases, the user name, and the password.You can specify multiple databases with user names and passwords as a semicolon-separated list, for example, `db1:user1/pwd1;db2:user2/pwd2`.
+
+a|
+HOST
+a|
+host_name
+a|
+Name of the host where the databases are located.*Note:* VALIDATE_VOLUMES functions properly only if HOST=localhost. If HOST=IP_address, then VALIDATE_VOLUMES will not discover the MySQL database.
+
+a|
+PORTS
+a|
+db_name:port_number
+a|
+List of databases and the ports they are listening on,for example, `db1:3307;db2:3308`.
+
+a|
+MASTER_SLAVE
+a|
+(Y|N)
+a|
+Specifies the backup database environment:If set to Y, backs up the master database.
+
+If set to N, either backs up the slave database or the Master-Slave configuration is not used.
+
+NOTE: Snap Creator Framework backup deletes the required MySQL binary log files on the MySQL server with the Master_Slave option enabled. The MySQL (master) database backup using Snap Creator Framework removes all binary log files and leaves only a single empty binary log file with reset numbering (.000001). Because of this issue, the slave server fails to start up after the backup operation.
+
+a|
+PURGE_BINARY_LOG
+a|
+(Y|N )
+a|
+Parameter works for the MySQL master slave database setup.
+
+If set as Y, it will purge binary logs to the latest binary log file available.
+
+If set as N, it uses recent timestamp for purge query.
+
+|===
+*Related information*
+
+http://mysupport.netapp.com/matrix[Interoperability Matrix Tool: mysupport.netapp.com/matrix]

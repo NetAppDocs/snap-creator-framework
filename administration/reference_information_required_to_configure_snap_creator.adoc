@@ -1,0 +1,143 @@
+---
+permalink: administration/reference_information_required_to_configure_snap_creator.html
+sidebar: sidebar
+keywords: 
+summary: 'Snap Creator supports the following built-in \(or native\) plug-ins: Oracle, DB2, MySQL, Sybase ASE, Domino, SnapManager for Microsoft SQL Server, SnapManager for Microsoft Exchange, MaxDB, VMware \(vSphere and vCloud Director\), Red Hat KVM, Citrix XenServer, and SAP HANA. Community plug-ins are not included in the package and must be downloaded separately.'
+---
+= Plug-in information required to configure Snap Creator
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Snap Creator supports the following built-in (or native) plug-ins: Oracle, DB2, MySQL, Sybase ASE, Domino, SnapManager for Microsoft SQL Server, SnapManager for Microsoft Exchange, MaxDB, VMware (vSphere and vCloud Director), Red Hat KVM, Citrix XenServer, and SAP HANA. Community plug-ins are not included in the package and must be downloaded separately.
+
+The following table lists and describes the plug-in parameters and settings:
+
+|===
+| Parameters| Setting| Description
+a|
+APP_NAME
+a|
+oracle|db2|mysql|domino|vibe|smsql|sme|sybase|maxdb|kvm|xen|hana<plug-in>
+a|
+Determines which application is being backed up. Snap Creator has built-in support for the listed applications. You can either use APP_NAME or configure APP_QUIESCE_CMDXX, APP_UNQUIESCE_CMDXX, and PRE_EXIT_CMDXX. If the application is not directly supported in Snap Creator, you can use a plug-in or run your own application quiesce or unquiesce commands or scripts. <PLUG-IN>: Copy the plug-in to the /path_to_scServer|scAgent/plug-ins directory and specify the plug-in in the APP_NAME parameter. Commands or Scripts:
+
+----
+APP_QUIESCE_CMD01=path_to_quiesceCMD
+APP_UNQUIESCE_CMD01=path_to_unquiesceCMD
+PRE_EXIT_CMD01=path_to_unquiesceCMD
+----
+
+a|
+APP_IGNORE_ERROR
+a|
+(Y|N)
+a|
+Determines whether Snap Creator should ignore errors from application plug-ins. This is useful when you want to back up multiple databases and do not want to stop the backup if the quiesce or unquiesce operations of one database fails.
+a|
+APP_DEFINED_BACKUP
+a|
+(Y|N)
+a|
+The application plug-in is expected to perform the entire backup operation including quiescing, creating a Snapshot copy, and unquiescing. The built-in plug-ins do not support this kind of backup.
+a|
+APP_DEFINED_RESTORE
+a|
+(Y|N)
+a|
+Enables application-based restore operations. In the event of a restore operation, Snap Creator sends a request to the application plug-in and the plug-in handles the request.
+a|
+APP_DEFINED_MOUNT
+a|
+(Y|N)
+a|
+The built-in mount abilities of Snap Creator are ignored. Instead, the plug-in is responsible for all mount activities including volume or LUN clone creation. The built-in plug-ins do not support this type of mount.
+a|
+APP_DEFINED_UMOUNT
+a|
+(Y|N)
+a|
+The built-in unmount abilities of Snap Creator are ignored. Instead, the plug-in is responsible for handling all unmount activities including volume or LUN clone deletion. The built-in plug-ins do not support this type of unmount operation.
+a|
+APP_AUTO_DISCOVERY
+a|
+(Y|N)
+a|
+Enables application automatic discovery. Snap Creator sends a discover request to the application plug-in and the plug-in is then responsible for the discovery of the storage configuration. This can be done dynamically or made persistent using the APP_CONF_PERSISTENCE parameter, if the information is to be saved to the configuration file.
+a|
+APP_CONF_PERSISTENCE
+a|
+(Y|N)
+a|
+Enables automatic discovery to be persistent, which means changes are dynamically updated in configuration file.
+a|
+APP_DEFINED_CLONE
+a|
+(Y|N)
+a|
+The built-in cloning abilities of Snap Creator are ignored. Instead, the plug-in is responsible for handling all clone activities, including volume or LUN clone creation and deletion. The built-in plug-ins do not support this type of clone.
+a|
+FS_NAME
+a|
+plug-in
+a|
+Determines which plug-in is being used for file system operations.
+a|
+JAVA_HOME
+a|
+Text
+a|
+This setting points to the Java Virtual Machine (JVM) that should be used for executing .class and .jar files.
+a|
+JVM_ARGS
+a|
+Text
+a|
+This setting controls the JVM settings when native Java .class or .jar files are executed. The default setting is -Xms32M -Xmx128M.
+a|
+JAVA_CLASSPATH
+a|
+Text
+a|
+This setting defines the Java classpath. By default, plug-ins/native is configured and can be completed using this environment variable, which is appended to the default.
+a|
+META_DATA_VOLUME
+a|
+ 
+a|
+Enables a Snapshot copy of the specified volume to be created after the unquiesce operation. This can be valuable for certain plug-ins for which the Snapshot copy of data must be created at different times. The parameter must not only specify the volume but the controller as well (for example, `controller1:volume1,volume2;controller2:volume3,volume4;controller3:volume5,volume6`).
+a|
+PERL_HOME
+a|
+Text
+a|
+This setting points to the Perl interpreter that should be used for executing .pl files.
+a|
+PERL_OPTS
+a|
+Text
+a|
+This setting controls the PERL interpreter settings when native Perl files are executed. Options for additional settings include directories (-I) that can be passed to the Perl interpreter.
+a|
+PYTHON_HOME
+a|
+Text
+a|
+This setting points to the Python interpreter that should be used for executing .py files.
+a|
+PYTHON_OPTS
+a|
+Text
+a|
+This setting controls the Python interpreter settings when native Python files are executed.
+a|
+VALIDATE_VOLUMES
+a|
+data
+a|
+Validates that all the volumes in which the database resides are part of the backup operation. Currently, there are limitations:
+
+* Only Network File System (NFS) is supported.
+* Only the data files for the supported databases are checked.
+
+|===

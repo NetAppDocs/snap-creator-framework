@@ -1,0 +1,52 @@
+---
+permalink: administration/reference_pre_commands.html
+sidebar: sidebar
+keywords: 
+summary: 'Snap Creator Server includes several configuration file PRE commands.'
+---
+= PRE commands
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Snap Creator Server includes several configuration file PRE commands.
+
+NOTE: For Windows, `cmd.exe /c` must be included before any PRE command.
+
+|===
+| Command| Description
+a|
+PRE_APP_QUIESCE_ CMD ##
+a|
+This is the pre-application backup start command, where ## is a number from 01-99.
+a|
+PRE_NTAP_CMD ##
+a|
+This is the pre-Snapshot command, where ## is a number from 01-99; it runs before all operations.
+a|
+PRE_APP_UNQUIESCE_CMD ##
+a|
+This is the pre-application backup stop command, where ## is a number from 01-99.
+a|
+PRE_NTAP_CLONE_ DELETE_CMD ##
+a|
+This is the pre-clone delete command, where ## is a number from 01-99. *Note:* The purpose of the clone delete command is to call a mount script or commands so that cloned LUNs can be mounted for the purpose of backing up (probably to tape).
+
+a|
+PRE_EXIT_CMD ##
+a|
+This is an optional command that is run after a fatal error occurs but before Snap Creator exits. This is useful to revert to the state it was before Snap Creator ran.*Note:*
+
+* This command returns an application into normal operation mode before Snap Creator exits due to an error.
+* This is ignored if you use APP_NAME because it is handled internally in Snap Creator.
+
+a|
+PRE_RESTORE_CMD ##
+a|
+This is an optional command that can be run before you enter an interactive restore. This enables you to interact with the application being restored. For example, you might want to shut down the application before performing a restore. *Note:* This is not supported with the MySQL plug-in.
+
+a|
+PRE_CLONE_CREATE _ CMD ##
+a|
+This is an optional command that can be run before ONTAPI cloning operations occur, where ## is a number from 01-99.
+|===

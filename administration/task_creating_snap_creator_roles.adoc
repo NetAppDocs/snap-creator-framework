@@ -1,0 +1,18 @@
+---
+permalink: administration/task_creating_snap_creator_roles.html
+sidebar: sidebar
+keywords: 
+summary: 'You can create Snap Creator roles by using the Snap Creator GUI.'
+---
+= Creating Snap Creator roles
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can create Snap Creator roles by using the Snap Creator GUI.
+
+. From the Snap Creator GUI main menu, select *Users and Roles* > *Role management*.
+. In the Role management tab, click *Add*.
+. In the Add Role dialog box, enter the role name and description; then click *Save*.
++
+The new role is displayed in the *Roles* pane.

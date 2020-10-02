@@ -1,0 +1,24 @@
+---
+permalink: administration/reference_mount_and_unmount_commands.html
+sidebar: sidebar
+keywords: 
+summary: 'When cloning, you should use the MOUNT_CMD and UMOUNT_CMD commands instead of the Snap Creator PRE or POST commands.'
+---
+= Mount and unmount commands
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+When cloning, you should use the MOUNT_CMD and UMOUNT_CMD commands instead of the Snap Creator PRE or POST commands.
+
+|===
+| Command| Description
+a|
+MOUNT_CMD ##
+a|
+Mount commands are used to mount the file system for cloning or mount actions, where ## is a number starting from 01-99.
+a|
+UMOUNT_CMD ##
+a|
+Unmount commands are used to mount the file system for cloning or mount actions, where ## is a number starting from 01-99.
+|===

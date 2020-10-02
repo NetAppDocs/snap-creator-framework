@@ -1,0 +1,26 @@
+---
+permalink: administration/task_performing_application_defined_restore_operations.html
+sidebar: sidebar
+keywords: 
+summary: 'If you are using VMware, KVM, and Xen plug-ins, you can perform application-defined restore operations by using the Snap Creator GUI.'
+---
+= Performing application-defined restore operations
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+If you are using VMware, KVM, and Xen plug-ins, you can perform application-defined restore operations by using the Snap Creator GUI.
+
+In certain VMware environments, restore operations can take a long time. In such cases, you can either use the Snap Creator CLI or set up two agents: one for backup and the other for restore.
+
+NOTE: VMware restore operations using the GUI are supported only for Snap Creator Agent.
+
+. From the Snap Creator GUI main menu, select *Management* > *Configurations*.
+. From the *Configurations* tab, in the Profiles and Configuration pane, select the configuration file.
+. Select *Action* > *Restore*.
++
+The Application Defined Restore dialog box is displayed in the right pane.
+
+. Enter the restore details and click *OK*:
++
+image::../media/restore_application_defined.gif[]

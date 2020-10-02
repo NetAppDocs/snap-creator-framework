@@ -1,0 +1,18 @@
+---
+permalink: administration/task_editing_scheduled_jobs.html
+sidebar: sidebar
+keywords: 
+summary: 'You can edit a scheduled job.'
+---
+= Editing scheduled jobs
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can edit a scheduled job.
+
+. From the Snap Creator GUI main menu, select *Management* > *Schedules*.
+. From the Schedules tab, select a job from the list of scheduled jobs, and click *Edit*.
+. Modify the desired fields, and click *Save*.
++
+The scheduled job is saved with the modifications.

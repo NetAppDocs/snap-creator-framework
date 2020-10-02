@@ -1,0 +1,18 @@
+---
+permalink: administration/task_creating_backup_types.html
+sidebar: sidebar
+keywords: 
+summary: 'You can optionally create a backup type using the Snap Creator GUI to help identify the purpose of a policy.'
+---
+= Creating backup types
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can optionally create a backup type using the Snap Creator GUI to help identify the purpose of a policy.
+
+. From the Snap Creator GUI main menu, select *Policy* > *Backup Type*.
+. From the *Backup type* tab, click *Add*.
+. Enter the new backup type name, and then click *OK*.
++
+The new backup type is listed under *Backup Type*.

@@ -1,0 +1,16 @@
+---
+permalink: installation/concept_configuring_unix_specific_settings_creating_symbolic_links.html
+sidebar: sidebar
+keywords: 
+summary: 'If you are going to install the Snap Creator Agent on a UNIX operating system \(AIX, Linux, and Solaris\), for the IBM Domino plug-in to work properly, three symbolic links \(symlinks\) must be created to link to Domino’s shared object files.'
+---
+= Configuring UNIX-specific settings: Creating symbolic links
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+If you are going to install the Snap Creator Agent on a UNIX operating system (AIX, Linux, and Solaris), for the IBM Domino plug-in to work properly, three symbolic links (symlinks) must be created to link to Domino's shared object files.
+
+Installation procedures vary slightly depending on the operating system. Refer to the appropriate procedure for your operating system.
+
+NOTE: Domino does not support the HP-UX operating system.

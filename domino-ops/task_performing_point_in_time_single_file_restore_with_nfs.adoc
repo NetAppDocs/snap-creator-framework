@@ -1,0 +1,104 @@
+---
+permalink: domino-ops/task_performing_point_in_time_single_file_restore_with_nfs.html
+sidebar: sidebar
+keywords: Snap Creator,IBM Domino plug-in
+summary: 'You can use the IBM Domino plug-in to perform point-in-time, up-to-the-minute, or selectable up-to-the-minute single-file restores for databases in NFS environments.'
+---
+= Performing a single-file restore
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can use the IBM Domino plug-in to perform point-in-time, up-to-the-minute, or selectable up-to-the-minute single-file restores for databases in NFS environments.
+
+You must set the Data Restore Directoryparameter in the configuration file to the correct subdirectory on the Domino data volume.
+
+NOTE: You do not have to stop the Domino server for a single-file restore.
+
+Single-file restore options are as follows:
+
+|===
+| Restore type| Description
+a|
+Single-file restore (point-in-time)
+a|
+Restores a single file to its state at the time of the Snapshot copy (NFS only).
+a|
+Single-file restore (up-to-the-minute)
+a|
+Restores a single file to its state at the time of the Snapshot copy, then plays forward Domino transaction logs to the most recent copy (NFS only).
+a|
+Single-file restore (selectable up-to-the-minute)
+a|
+Restores a single file to its state at the time of the Snapshot copy, then plays forward Domino transaction logs to a specified time (NFS only).
+|===
+*Note:* For up-to-the-minute and selectable point-in-time restores, Domino transaction logging must be enabled.
+
+Transaction logs can only be played forward. Selecting a time before the Snapshot copy was created causes a restore error.
+
+. In the Profiles and Configurations pane, select the configuration file, and then click *Actions* > *Restore*.
++
+Selecting *Restore* automatically launches the Snap Creator Framework Restore wizard. Throughout the Restore wizard, click *Next* to advance to the next page and click *Back* to return to the previous page.
++
+NOTE: If you are restoring from a SnapVault copy, you are prompted to restore from primary or secondary storage. Your selection depends on how you are handling the limitation described in link:concept_domino_database_restore_overview.md#GUID-4D864E27-DE54-43BF-9B9F-EF2F240F65D9[concept_domino_database_restore_overview.md#GUID-4D864E27-DE54-43BF-9B9F-EF2F240F65D9].
+
+. On the Restore details page, specify the restore details:
++
+|===
+| For this field...| Do this...
+a|
+Controller/Vserver name
+a|
+Select the SVM on the storage system you want to restore from.
+a|
+Restore volume name
+a|
+Select the volume you want to restore from.
+a|
+Policy
+a|
+Select the policy for the backup you want to restore from.
+a|
+Snap Creator Snapshot Copies/All Snapshot Copies
+a|
+Leave the default.
+a|
+Restore Snapshot copy name
+a|
+Select the Snapshot copy you want to restore from.
+a|
+Restore type
+a|
+Select *Single File Restore*.
+|===
+
+. On the following page, select the file you want to restore.
++
+The file is displayed with its full path name in the *Source path* field.
++
+TIP: Copy the path name to your clipboard for later use.
+
+. On the following page, select the directory to which you want to restore the file.
++
+The name of the parent subdirectory for the file must be identical to the name of the parent subdirectory in the source path. If, for example, the source path is /domino/data/mail/user1.nsf, the restore path is /domino/data/restore/mail/user1.nsf.
++
+The directory is displayed with its full path name in the *Destination path* field.
+
+. On the following page, specify the single-file restore type:
++
+|===
+| For this field...| Do this...
+a|
+Restore Type
+a|
+Click the single-file restore type.     If you choose *Selectable up the minute*, new fields are displayed where you can specify the date and time to which you want to play forward Domino transaction logs. Click *Ignore Validation* if the time on the Snap Creator Server does not match the time on the storage controller.
+a|
+Disable Replication
+a|
+Select this box to set a new Domino replica ID for the restored database file.
+|===
+
+. Review the summary, and then click *Finish*.
+. In the Single File Restore dialog, click *OK*.
++
+Snap Creator starts the restore job. Job information is displayed in the Console pane.

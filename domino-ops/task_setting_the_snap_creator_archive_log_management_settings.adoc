@@ -1,0 +1,57 @@
+---
+permalink: domino-ops/task_setting_the_snap_creator_archive_log_management_settings.html
+sidebar: sidebar
+keywords: 
+summary: 'If you are using Domino transaction logging, the IBM Domino plug-in archives copies of Domino transaction logs to the changeinfo directory for use in up-to-the-minute restore operations. You need to enable transaction log management before Snap Creator will clean up the copies of the transaction logs you no longer need.'
+---
+= Cleaning up archived copies of Domino transaction logs
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+If you are using Domino transaction logging, the IBM Domino plug-in archives copies of Domino transaction logs to the changeinfo directory for use in up-to-the-minute restore operations. You need to enable transaction log management before Snap Creator will clean up the copies of the transaction logs you no longer need.
+
+The Domino plug-in stores changeinfo files and archived copies of Domino transaction logs in the changeinfo directory. The plug-in automatically cleans up .info files based on the retention policy for the configuration. It does not clean up unneeded copies of transaction logs unless you explicitly enable transaction log management in Snap Creator.
+
+In setting up transaction log management, make sure to strike an appropriate balance between the number of archived copies of transaction logs you want to retain for up-to-the-minute restore operations and the size of the volume containing the changeinfo directory.
+
+IMPORTANT: Do not set the Archive Log directory parameter to the path of Domino transaction logs. Doing so can damage your Domino environment.
+
+. In the Profiles and Configurations pane, select the configuration file and click the *Archive Log Management* tab.
+. In the *Archive Log Management* tab, specify the following values for the transaction log management settings:
++
+|===
+| Parameter| Setting| Description
+a|
+Archive Log Enable
+a|
+Y
+a|
+Enables transaction log cleanup.
+a|
+Archive Log Retention
+a|
+Enter a value greater than or equal to the number of days Snapshot copies are retained.
+a|
+The number of days to retain transaction logs.
+a|
+Archive Log Directory
+a|
+changeinfo/logs
+a|
+The directory to clean up.    *Important:* Do not specify the path of Domino transaction logs. Doing so can damage your Domino environment.
+a|
+Archive Log Extension
+a|
+.txn
+a|
+The extension for copies of Domino transaction log files.
+a|
+Archive Log Recursive Search
+a|
+N
+a|
+The Snap Creator plug-in puts .txn files in the logs subdirectory of the changeinfo directory, so a recursive search is not required.
+|===
+
+. Click *Save* in the Configuration Content pane to save your changes.

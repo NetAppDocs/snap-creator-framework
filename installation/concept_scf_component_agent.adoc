@@ -1,0 +1,16 @@
+---
+permalink: installation/concept_scf_component_agent.html
+sidebar: sidebar
+keywords: 
+summary: 'The Snap Creator Agent is typically installed on the same host where an application or database is installed. The Agent is where the plug-ins are located. The Agent is sometimes shortened to scAgent within Snap Creator.'
+---
+= Snap Creator Agent
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+The Snap Creator Agent is typically installed on the same host where an application or database is installed. The Agent is where the plug-ins are located. The Agent is sometimes shortened to scAgent within Snap Creator.
+
+The Agent accepts application quiesce and unquiesce commands, as well as other PRE/POST commands, from the Snap Creator Server. The Snap Creator Agent is required when using plug-ins.
+
+https://library.netapp.com/ecm/ecm_download_file/ECMLP2854418[Snap Creator Framework 4.3.3 Administration Guide]

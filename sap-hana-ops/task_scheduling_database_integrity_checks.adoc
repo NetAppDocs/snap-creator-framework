@@ -1,0 +1,19 @@
+---
+permalink: sap-hana-ops/task_scheduling_database_integrity_checks.html
+sidebar: sidebar
+keywords: 
+summary: 'For SAP HANA configurations, you can schedule additional operations such as file-based backup and database integrity checks. You can schedule the database integrity checks operation to occur at specific intervals.'
+---
+= Scheduling database integrity checks
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+For SAP HANA configurations, you can schedule additional operations such as file-based backup and database integrity checks. You can schedule the database integrity checks operation to occur at specific intervals.
+
+. From the main menu of the Snap Creator GUI, select *Management* > *Schedules*, and click *Create*.
+. In the New Job window, enter the details for the job.
++
+The integrity check policy is set to "`none`" by default.
++
+image::../media/creating_database_integrity_checks_schedules.gif[Creating Database Integrity Checks schedules]

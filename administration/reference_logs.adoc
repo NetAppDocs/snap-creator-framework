@@ -1,0 +1,62 @@
+---
+permalink: administration/reference_logs.html
+sidebar: sidebar
+keywords: 
+summary: 'Snap Creator provides useful error messages and troubleshooting logs.'
+---
+= Types of error messages and troubleshooting logs
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Snap Creator provides useful error messages and troubleshooting logs.
+
+The following types of error messages are provided by Snap Creator:
+
+* *INFO*
++
+For standard, normally occurring operations.
+
+* *CMD*
++
+External command or script that Snap Creator runs (according to configuration) and the return code from the command or script is logged. Typically, these are PRE, POST, or APP quiesce or unquiesce commands.
+
+* *OUTPUT*
++
+For Data ONTAPI library calls.
+
+* *DEBUG*
++
+For debug information.
+
+* *WARN*
++
+To draw your attention, but it is considered to be a normal activity usually and does not require any action (for example, when you delete Snapshot copies)
+
+* *ERROR*
++
+Indicates a problem and most likely requires manual action to fix the error. Snap Creator exits on any ERROR message. It is important to fix any problem that occurred before it runs again. Snap Creator does not automatically fix problems, but you can specify what is to be done before exiting Snap Creator by using PRE_EXIT_CMD defined in the configuration file.
+
+The troubleshooting logs contain the output from any external commands or scripts run by Snap Creator (for example, SnapDrive). If you call other scripts through Snap Creator, it is important that you properly set up exit codes and output for those scripts. You should never exit with status 0 if a problem occurs.
+
+There following logs are available for every Snap Creator profile and configuration:
+
+* *Out*
++
+Contain only verbose logging information.
+
+* *Debug*
++
+Contain verbose and debug logging information. If trace messages are enabled in the configuration file, which is the default setting, then the trace information is displayed in this log. The parameter that enables trace messages is LOG_TRACE_ENABLE - (Y|N).
+
+* *Error*
++
+Contain a history of all of the error events for a given configuration. The error log helps with viewing information about past errors so that users can correlate events and gain a historical perspective. It can be monitored and used as a way to integrate Snap Creator with a monitoring application.
+
+* *Stderr*
++
+Contain information if issues with the Snap Creator code are encountered; however, the standard error streams log is typically empty.
+
+The Out, Debug, and Stderr logs are retained as defined by the LOG_NUM value in the configuration file while the error log is always appended. All logs are written to the /scServer_install_path/engine/logs/profile directory.
+
+The Snap Creator Agent optionally creates the Out, Debug, and Stderr logs as well, and is enabled, by default, with the following parameter setting: SC_AGENT_LOG_ENABLE=Y.

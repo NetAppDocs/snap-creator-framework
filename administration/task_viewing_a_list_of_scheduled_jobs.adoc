@@ -1,0 +1,17 @@
+---
+permalink: administration/task_viewing_a_list_of_scheduled_jobs.html
+sidebar: sidebar
+keywords: 
+summary: 'You can view of list of scheduled jobs.'
+---
+= Viewing a list of scheduled jobs
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can view of list of scheduled jobs.
+
+. From the Snap Creator GUI main menu, select *Management* > *Schedules*.
+. From the Schedules tab, review the list of scheduled jobs.
++
+The Last Run Result field shows the status of the last scheduled job. A green check mark in the field indicates that the job ran successfully, and a red "X" indicates that there was a failure.

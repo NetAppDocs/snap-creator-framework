@@ -1,0 +1,153 @@
+---
+permalink: installation/task_installing_the_snap_creator_server_on_unix.html
+sidebar: sidebar
+keywords: 
+summary: 'For UNIX platforms \(AIX, HP-UX, Linux, and Solaris\), the process of installing Snap Creator consists of extracting the Snap Creator software package \(a .tar file containing both the Snap Creator Server and the Snap Creator Agent\), running a setup script, starting the service, and validating the port.'
+---
+= Installing the Snap Creator Server on UNIX-based systems
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+For UNIX platforms (AIX, HP-UX, Linux, and Solaris), the process of installing Snap Creator consists of extracting the Snap Creator software package (a .tar file containing both the Snap Creator Server and the Snap Creator Agent), running a setup script, starting the service, and validating the port.
+
+JRE 1.8 Update 72 or later must be installed.
+
+The person performing the installation must have sufficient access and privileges to perform the installation.
+
+NOTE: You must have root-level privileges to perform the initial setup.
+
+The default port for the Snap Creator Server is 8443. You can use netstat or a similar tool to verify that the network port that you want to use supports HTTPS, is available, and is not already in use (for example, on UNIX hosts you can enter `netstat -nap | grep 8443`).
+
+You must have already downloaded Snap Creator.
+
+The UNIX Services (Server and Agent) feature provides a start script for Snap Creator Server and Snap Creator Agent. The start scripts are written in a UNIX shell script (Bourne shell) and are designed to run on all UNIX environments that are supported by Snap Creator.
+
+. Copy the downloaded Snap Creatortar.gz file to the location where you want to install Snap Creator Server:
+ .. Create a subdirectory: mkdir snap_creator_directoryCreate a subdirectory:
++
+mkdir snap_creator_directory
++
+----
+mkdir /SC_41
+----
+
+ .. Copy the Snap Creatortar.gz file to the newly created directory:
++
+----
+cp NetApp_Snap_Creator_Frameworkrelease-os.tar.gz
+/snap_creator_directory
+----
++
+----
+cp NetApp_Snap_Creator_Framework4.1.0-Linux32.tar.gz
+/SC_41
+----
+. Change to the directory where the Snap Creator Framework .tar file is located, and then extract the file:
++
+NOTE: Depending on the UNIX environment, you might be required to unzip the file before entering the tar command.
++
+----
+cd snap_creator_directory
+tar -xvf NetApp_Snap_Creator_Frameworkrelease-os.tar.gz
+----
+
+ ** snap_creator_directory is the location where Snap Creator will be installed.
+ ** release is the current release of the Snap Creator software package.
+ ** os is the operating system.
++
+----
+cd /sc_41
+tar -xvf NetApp_Snap_Creator_Framework4.1.0-Linux32.tar.gz
+----
+
++
+This extracts both the Server and the Agent software. Typically, only Snap Creator Server is configured. The agents typically reside on the database or application servers to be protected, as seen in the following example:
++
+----
+NetApp_Snap_Creator_Framework4.1.0-Linux32.tar.gz  scServer4.1.0
+scAgent4.1.0
+----
+
+. Perform the initial setup of Snap Creator:
++
+----
+cd scServer*
+./snapcreator --setup
+Welcome to the NetApp Snap Creator Framework release-version!
+\#\#\# Installation options \#\#\#
+01. NetApp Snap Creator Framework release-version Server
+02. NetApp Snap Creator Framework release-version Remote CLI
+Select install option (enter a number or "q" to quit):
+----
++
+Enter `01` to install Snap Creator Server.
+
+ ** Option 01 performs the initial setup of Snap Creator Server by configuring a Snap Creator user and password, designating the GUI port where Snap Creator Server will run, and configuring other parameters.
+ ** Option 02 sets up Snap Creator Server as a local binary and enables you to issue commands from your local system CLI to a remote Snap Creator Server.
+
+. Accept the end user license agreement by entering y here:
++
+----
+END USER LICENSE AGREEMENT
+...the EULA displays...
+
+Do you accept the End User License Agreement (y|n): <Enter y>
+
+Enter controller serial number (Recommended): <OPTIONAL: Enter serial number for one of your storage controllers>
+----
+
+. Enter the controller serial number.
++
+The controller serial number is embedded in the Snap Creator properties file and included in support and log outputs. You can use this information to help troubleshoot any issues that might happen later.
+
+. Enter the server port, system IP, and JAVA bin path, and then continue with the prompts.
++
+----
+Enter Snap Creator server port [8443]: <Enter server port>
+
+Enable job monitor (Y|N): <Enter Y>
+
+Enter job monitor size, how many jobs to allow [100]: <Enter the number of jobs from 1-1000>
+----
++
+NOTE: Although the maximum accepted value for the *job monitor size* is 10,000, the recommended maximum size that you provide is 1000.
++
+----
+Enter scServer Administrator Username: <Enter the Administrator username>
+Enter password for snap_creator_administrator: <Enter the password>
+Confirm password for snap_creator_administrator: <Enter the password again>
+
+Enter JAVA Bin Path: /usr/java/default/bin
+Enter Your System IP: 10.232.30.18
+INFO: Updated NetApp Snap Creator Framework release-version
+/install_path/scServerrelease-version/engine/etc/snapcreator.properties
+INFO: Updated NetApp Snap Creator Framework release-version
+/install_path/scServerrelease-version/bin/scServer
+
+INFO: To start scServer please do the following:
+
+/install_path/scServerrelease-version/bin/scServer start
+
+INFO: To access NetApp Snap Creator Framework release-version GUI goto https://hostname:gui_port
+----
+
+. Start the Snap Creator Framework Server:
++
+----
+/install_path/scServerrelease-version/bin/scServer start
+Checking Status of scServer:
+Running
+----
+
+. Validate the Snap Creator Framework GUI startup by navigating to the local host on the specified port (for example, https://10.12.123.123:8443).
++
+You must connect using HTTPS; otherwise, the GUI does not work.
++
+If communication goes through a firewall, open the network port.
+
+*Related information*
+
+xref:task_installing_java_on_snap_creator_hosts.adoc[Installing Java on Snap Creator hosts]
+
+xref:task_downloading_the_snap_creator_software.adoc[Downloading the Snap Creator software]

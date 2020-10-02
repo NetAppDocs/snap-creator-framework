@@ -1,0 +1,30 @@
+---
+permalink: installation/task_starting_the_agent_from_a_command_prompt.html
+sidebar: sidebar
+keywords: 
+summary: 'You can manually start the Snap Creator Agent from a command prompt by running a batch script \(scAgent.bat\).'
+---
+= Starting the Agent from a command prompt
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can manually start the Snap Creator Agent from a command prompt by running a batch script (scAgent.bat).
+
+Typically, you should follow this procedure only if you did not select the *Start agent as service* option during the installation process.
+
+You can also schedule the batch script (scAgent.bat) to run at startup through the Windows task scheduler. For details about using the Windows task scheduler, see the documentation for your Windows operating system.
+
+. Open a command prompt and enter the following commands:
++
+----
+cd \install_path\scAgentrelease-version\bin\
+scAgent.bat start
+----
++
+----
+cd \Program Files\NetApp\Snap_Creator_Framework\scAgent4.1.0\bin\
+scAgent.bat start
+----
+
+Because the batch script (scAgent.bat) runs Snap Creator in the foreground, the Snap Creator Agent continues to run only as long as the command prompt is open. Closing the command prompt will quit the Snap Creator Agent. To run Snap Creator in the background, the Snap Creator Agent service should be used.

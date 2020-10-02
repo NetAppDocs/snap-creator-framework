@@ -1,0 +1,18 @@
+---
+permalink: sap-hana-ops/task_modifying_the_housekeeping_of_log_backups.html
+sidebar: sidebar
+keywords: 
+summary: 'You can modify the parameters that are configured for the housekeeping of log backups if you want to disable the log cleanup operation.'
+---
+= Modifying the housekeeping of log backups
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can modify the parameters that are configured for the housekeeping of log backups if you want to disable the log cleanup operation.
+
+. Select the SAP HANA profile that you want to modify.
+. Select the configuration you want to modify, and click *SAP HANA Settings*.
+. Edit the Enable LOG cleanup parameter, and click *Save*.
++
+image::../media/modifying_housekeeping_of_logs.gif[Modifying housekeeping of log backup]

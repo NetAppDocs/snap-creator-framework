@@ -1,0 +1,23 @@
+---
+permalink: sap-hana-ops/task_performing_file_based_backup_from_the_snap_creator_gui.html
+sidebar: sidebar
+keywords: 
+summary: 'You can perform File-Based Backup from the Snap Creator graphical user interface \(GUI\).'
+---
+= Performing File-Based Backup from the Snap Creator GUI
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can perform File-Based Backup from the Snap Creator graphical user interface (GUI).
+
+You must have enabled the File-Based Backup parameter in the HANA File-Based Backup Settings tab.
+
+. Select the HANA_database_backup configuration.
+. Select *Actions* > *File-Based Backup*.
++
+image::../media/performing_file_based_backup_with_gui.gif[Performing File-Based Backup with GUI]
+
+. Set the Policy option to *None*, and click *OK*.
++
+image::../media/performing_file_based_backup_with_gui_2.gif[Performing File-Based Backup with GUI]

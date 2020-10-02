@@ -1,0 +1,39 @@
+---
+permalink: installation/concept_plug_ins_for_application_integration.html
+sidebar: sidebar
+keywords: 
+summary: 'Plug-ins are used to put applications or databases into a consistent state. Snap Creator contains several plug-ins that are already part of the binary file and do not require any additional installation.'
+---
+= Plug-ins for application integration
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Plug-ins are used to put applications or databases into a consistent state. Snap Creator contains several plug-ins that are already part of the binary file and do not require any additional installation.
+
+Types of applications that are supported include database, email, hypervisor, or custom applications. The following plug-ins are supported for use with Snap Creator:
+
+* Application and database plug-ins:
+ ** DB2
+ ** IBM Domino (Domino)
+ ** MaxDB
+ ** MySQL
++
+NOTE: The MySQL plug-in does not support backup and restore operations for multiple databases.
+
+ ** Oracle
+ ** SAP High-Performance Analytic Appliance (HANA)
+ ** Sybase Adaptive Server Enterprise (ASE)
+* SnapManager plug-ins:
+ ** SnapManager for Microsoft Exchange
+ ** SnapManager for Microsoft SQL Server
+* Hypervisor plug-ins:
+ ** Citrix XenServer
+ ** Red Hat Kernel-based Virtual Machine (KVM)
+ ** VMware (vSphere for individual virtual machine backup and vCloud Director for vApp backup)
+
+Custom (also called "community") plug-ins are written by the developer community, and can be enabled by Snap Creator but are not supported. These plug-ins leverage the interface provided by Snap Creator and enable the developers to concentrate their development efforts on their target applications.
+
+For more information, visit the http://community.netapp.com/t5/Snap-Creator-Framework-Discussions/bd-p/snap-creator-framework-discussions[Snap Creator Framework Discussions Community forum] site.
+
+https://library.netapp.com/ecm/ecm_download_file/ECMLP2854418[Snap Creator Framework 4.3.3 Administration Guide]

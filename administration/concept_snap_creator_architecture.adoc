@@ -1,0 +1,18 @@
+---
+permalink: administration/concept_snap_creator_architecture.html
+sidebar: sidebar
+keywords: 
+summary: 'Snap Creator has a full-featured server and agent architecture, which consists of three main components: Snap Creator Server, Snap Creator Agent, and plug-ins.'
+---
+= Snap Creator architecture
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Snap Creator has a full-featured server and agent architecture, which consists of three main components: Snap Creator Server, Snap Creator Agent, and plug-ins.
+
+Snap Creator interacts and integrates with various technologies and products as depicted in the following high-level diagram:
+
+image::../media/scfw_high_level_arch_41_refresh.gif[]
+
+The NetApp software products in the high-level diagram are optional; except for Snapshot technology, the other software products are not required for the Snap Creator Framework to function.

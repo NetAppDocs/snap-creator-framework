@@ -1,0 +1,41 @@
+---
+permalink: administration/concept_scf_component_plug_ins_ag.html
+sidebar: sidebar
+keywords: 
+summary: 'Plug-ins are used to put applications or databases into a consistent state. Snap Creator contains several plug-ins that are part of the binary file and do not require any additional installation.'
+---
+= Plug-ins for application integration
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Plug-ins are used to put applications or databases into a consistent state. Snap Creator contains several plug-ins that are part of the binary file and do not require any additional installation.
+
+The types of applications that are supported include database, email, hypervisor, and custom applications. The following plug-ins are supported for use with Snap Creator:
+
+* Application and database plug-ins:
+ ** DB2
+ ** IBM Domino (Domino)
+ ** MaxDB
+ ** MySQL
++
+NOTE: The MySQL plug-in does not support backup and restore operations for multiple databases.
+
+ ** Oracle
+ ** SAP High-Performance Analytic Appliance (HANA)
+ ** Sybase Adaptive Server Enterprise (ASE)
+* SnapManager plug-ins:
+ ** SnapManager for Microsoft Exchange
+ ** SnapManager for Microsoft SQL Server
+* Hypervisor plug-ins:
+ ** Citrix XenServer
+ ** Red Hat Kernel-based Virtual Machine (KVM)
+ ** VMware (vSphere for individual virtual machine backup and vCloud Director for vApp backup)
+
+For more information, see the plug-in information required to configure Snap Creator.Custom plug-ins (also called "community plug-ins") are created by the developer community, and can be enabled by Snap Creator; however, custom plug-ins are not supported. These plug-ins leverage the interface provided by Snap Creator.
+
+For more information, see http://community.netapp.com/t5/Snap-Creator-Framework-Discussions/bd-p/snap-creator-framework-discussions[Snap Creator Framework Discussions Community forum].
+
+*Related information*
+
+xref:reference_information_required_to_configure_snap_creator.adoc[Plug-in information required to configure Snap Creator]

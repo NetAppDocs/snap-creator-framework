@@ -1,0 +1,34 @@
+---
+permalink: sap-hana-ops/concept_considerations_for_backing_up_sap_hana_systems.html
+sidebar: sidebar
+keywords: 
+summary: 'SAP HANA administrators must deliver a reliable level of service, minimizing downtime or performance degradation due to backups.'
+---
+= Considerations for backing up SAP HANA systems
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+SAP HANA administrators must deliver a reliable level of service, minimizing downtime or performance degradation due to backups.
+
+To deliver this level of service, SAP HANA administrators contend with challenges in the following areas:
+
+* Performance effect on production SAP systems
++
+Backups typically have a significant performance impact on the production SAP system because there is a heavy load on the database server, the storage system, and the storage network during backups.
+
+* Shrinking backup windows
++
+Backups can be created only during times with low I/O or batch activities occurring on the SAP system. It is very difficult to define a backup window when the SAP system is active all the time.
+
+* Rapid data growth
++
+Rapid data growth together with shrinking backup windows result in ongoing investments in the backup infrastructure: more tape drives, new tape drive technology, faster storage networks. Growing databases also result in more tape media or disk space for backups. Incremental backups can address these issues, but result in a very slow restore process, which is usually not acceptable.
+
+* Increasing cost of downtime
++
+Unplanned downtime of an SAP system always has a financial effect on the business. A significant part of the unplanned downtime is the time that is required to restore and recover the SAP system in case of a failure. The backup and recovery architecture must be designed based on an acceptable recovery time objective (RTO).
+
+* Backup and recovery time
++
+Backup and recovery time are included in SAP upgrade projects. The project plan for a SAP upgrade always includes at least three backups of the SAP database. The time required to perform these backups reduces the total available time for the upgrade process. The decision whether to backup and recover is generally based on the amount of time required to restore and recover the database from the backup that was created previously. The option to restore very quickly provides more time to solve problems that might occur during the upgrade rather than just restore the system back to its previous state.

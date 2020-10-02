@@ -1,0 +1,18 @@
+---
+permalink: administration/task_monitoring_jobs_using_the_gui.html
+sidebar: sidebar
+keywords: 
+summary: 'You can monitor the status of the jobs being performed by Snap Creator by using the Snap Creator GUI.'
+---
+= Monitoring jobs
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can monitor the status of the jobs being performed by Snap Creator by using the Snap Creator GUI.
+
+. From the Snap Creator GUI main menu, select *Management* > *Job Monitor*.
++
+A list of the running jobs is displayed.
+
+. To stop a running job, select the job and click *Cancel*.

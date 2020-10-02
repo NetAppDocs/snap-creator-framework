@@ -1,0 +1,29 @@
+---
+permalink: administration/concept_requirements_for_vcloud_vapp_backup_and_restore_operations_using_the_vmware_plug_in.html
+sidebar: sidebar
+keywords: 
+summary: 'Snap Creator supports the backup of vCloud vApp through the VMware plug-in. vApp and virtual machine backup copies are made by the VMware plug-in through the vCloud Director API and vSphere API, which are invoked on the VMware vCloud Director and VMware vCenter server, respectively.'
+---
+= Requirements for vCloud vApp backup and restore operations using the VMware plug-in
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Snap Creator supports the backup of vCloud vApp through the VMware plug-in. vApp and virtual machine backup copies are made by the VMware plug-in through the vCloud Director API and vSphere API, which are invoked on the VMware vCloud Director and VMware vCenter server, respectively.
+
+For vApp backup and restore operations to be successful, you must provide the following details in the configuration file:
+
+* vCloud IP and credentials
+* vCloud organizations, virtual data centers (vDCs), and vApp names
+
+NOTE: If more than one vCenter is attached to vCloud, then the password for the all vCenter servers should be same.
+
+You must consider the following when performing the vCloud backup and restore operations:
+
+* The backup and restore processes for both VMware and vCloud are very similar except for the discovery process, in which vCloud backups require additional discovery of the vCloud Director metadata using representational state transfer (REST) APIs.
+* You should provide details of the vCloud with the organizations, vDCs, and vApps to be backed up.
+* If a vDC is listed, all the vApps in the vDC are backed up.
+* vCloud module discovers virtual machines associated with any vApp that must be backed up and puts them on a backup list.
+* If a vApp selected for backup is contained within an organization or a vDC that is also selected for backup, the vApp is backed up only once.
+
+NOTE: For Virtual Machine File System (VMFS) restore operations using the VMware plug-in, there must be enough space in the volume to create a LUN clone that is equal to the size of the LUN.

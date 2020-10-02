@@ -1,0 +1,30 @@
+---
+permalink: administration/task_performing_volume_restore_using_the_gui.html
+sidebar: sidebar
+keywords: 
+summary: 'You can perform a volume restore by using the Snap Creator GUI.'
+---
+= Performing volume restore
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can perform a volume restore by using the Snap Creator GUI.
+
+. From the Snap Creator GUI main menu, select *Management* > *Configurations*.
+. From the *Configurations* tab, in the *Profiles and Configuration* pane, select the configuration file.
+. Select *Action* > *Restore*.
++
+The Restore wizard is displayed in the right pane.
+
+. Complete the pages in the Restore wizard to perform the restore.
+ .. In the *Restore details* page, select the controller/SVM name, Restore volume name, Policy, and Restore Snapshot copy name, and then select *Volume Restore* from the *Restore type* drop-down list.
++
+image::../media/restore_wizard_restore_details.gif[]
+
+ .. Review the summary, and then click *Finish*.
+
++
+A warning message appears asking whether there are more items to be restored.
+. Click *No*, and then click *OK* on the Restore confirmation page.
+. In the *Console* pane, verify that the restore was completed successfully by viewing the messages.

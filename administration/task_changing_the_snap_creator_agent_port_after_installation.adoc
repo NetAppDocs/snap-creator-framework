@@ -1,0 +1,38 @@
+---
+permalink: administration/task_changing_the_snap_creator_agent_port_after_installation.html
+sidebar: sidebar
+keywords: 
+summary: 'To change the port on which the Snap Creator Agent is listening, you can make a change in the Snap Creatoragent.properties file and restart the agent.'
+---
+= Changing the Snap Creator Agent port after installation
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+To change the port on which the Snap Creator Agent is listening, you can make a change in the Snap Creatoragent.properties file and restart the agent.
+
+The procedure for changing the Snap Creator Agent port is the same for Windows and UNIX. The following procedure uses examples from the UNIX environment.
+
+. Log in to the system on which the Snap Creator Agent is running, and switch to the etc subdirectory within the installation directory.
++
+----
+cd /install_path/scAgent4.3.0/etc
+----
+
+. Open the agent.properties file using a text editor.
+. Change the value of the DEFAULT_PORT parameter to the new port (by default, the port is 9090).
++
+For example, to use port 9191, change the DEFAULT_PORT parameter as follows:
++
+----
+DEFAULT_PORT=9191
+----
+
+. Save and close the agent.properties file.
+. Restart the Snap Creator Agent.
++
+----
+/install_path/scAgent4.3.0/bin/scAgent restart
+----
++
+NOTE: If the Snap Creator Agent is running when any changes are made to the allowed_commands.config file or the agent.properties file, then the agent must be restarted.

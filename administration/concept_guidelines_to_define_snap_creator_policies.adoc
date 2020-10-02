@@ -1,0 +1,34 @@
+---
+permalink: administration/concept_guidelines_to_define_snap_creator_policies.html
+sidebar: sidebar
+keywords: 
+summary: 'Snap Creator policies are user-defined Snapshot copy retentions that apply to the Snapshot copies on the primary storage and SnapVault and SnapMirror copies on the secondary storage. You can use a policy to define the number of Snapshot copies that you want to retain and the Snapshot copy age.'
+---
+= Guidelines to define Snap Creator policies
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Snap Creator policies are user-defined Snapshot copy retentions that apply to the Snapshot copies on the primary storage and SnapVault and SnapMirror copies on the secondary storage. You can use a policy to define the number of Snapshot copies that you want to retain and the Snapshot copy age.
+
+You must define at least one policy in the *Snapshot Retention Count* field. For SnapVault, you can associate the same policy with different SnapVault retention periods. For example, to create daily Snapshot copies and retain them for seven days on the primary storage and one month on the secondary storage, you must use the following Policy options and settings:
+
+* *Snapshot Retention Count*: daily:7
+* *SnapVault Retention Count*: daily:28
+
+You can also specify the minimum number of days after which a Snapshot copy is deleted. Based on the preceding example, you should use the following options and settings:
+
+* *Snapshot Retention Age*: 7
+* *SnapVault Retention Age*: 28
+
+Additionally, you can specify the Snapshot copy deletion by age by setting the following parameter in the configuration file:
+
+NTAP_SNAPSHOT_DELETE_BY_AGE_ONLY=PRIMARY|SECONDARY|BOTH
+
+NOTE: This parameter is not available through the Snap Creator GUI. See the related references for more information about configuration file parameters used to set up Snapshot copies.
+
+Snap Creator can run only one policy at a time. The maximum age value is a global parameter that applies to all the policies. To configure an additional weekly policy, define the policy, and then call it in Snap Creator once a week by using cron or task manager with the Snap Creator variable %SNAP_TYPE set to weekly.
+
+*Related information*
+
+xref:reference_parameters_to_set_up_a_snapshot_copy.adoc[Parameters for setting up Snapshot copies]
