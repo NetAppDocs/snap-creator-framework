@@ -13,6 +13,6 @@ Snap Creator has a full-featured server and agent architecture, which consists o
 
 Snap Creator interacts and integrates with various technologies and products as depicted in the following high-level diagram:
 
-image::../media/scfw_high_level_arch_41_refresh.gif[]
+image::../media/scfw_high_level_arch_41_refresh_administration.gif[]
 
 The NetApp software products in the high-level diagram are optional; except for Snapshot technology, the other software products are not required for the Snap Creator Framework to function.

@@ -31,4 +31,4 @@ Space-efficient data cloning is supported for development and testing purposes.
 
 The following illustration shows the components of the Snap Creator Framework:
 
-image::../media/scfw_overview_41_refresh.gif[]
+image::../media/scfw_overview_41_refresh_installation.gif[]
