@@ -1,7 +1,9 @@
 ---
-title: helpData.xml
 entries:
+- title: Home
+  url: "/index.html"
 - title: administration
+  url: "/administration/index.html"
   entries:
   - title: What Snap Creator Framework does
     url: "/administration/concept_what_snap_creator_does.html"
@@ -332,6 +334,7 @@ entries:
     - title: Commands used to manage Snap Creator user access
       url: "/administration/reference_cli_command_for_snap_creator_rbac_actions.html"
 - title: domino-ops
+  url: "/domino-ops/index.html"
   entries:
   - title: IBM Domino plug-in overview
     url: "/domino-ops/concept_ibm_domino_plug_in_overview.html"
@@ -411,6 +414,7 @@ entries:
   - title: Where to go next
     url: "/domino-ops/reference_references.html"
 - title: installation
+  url: "/installation/index.html"
   entries:
   - title: What Snap Creator Framework does
     url: "/installation/concept_what_snap_creator_does.html"
@@ -544,6 +548,7 @@ entries:
       - title: CLI commands for creating SVM roles
         url: "/installation/reference_cli_commands_for_creating_svm_roles.html"
 - title: sap-hana-ops
+  url: "/sap-hana-ops/index.html"
   entries:
   - title: SAP HANA backup and restore solution overview
     url: "/sap-hana-ops/concept_sap_hana_backup_and_restore_solution_overview.html"
