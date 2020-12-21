@@ -1,7 +1,7 @@
 ---
 permalink: administration/concept_backup_and_recovery_workflow_with_plug_ins.html
 sidebar: sidebar
-keywords: 
+keywords: backup, recovery, workflow, snap, creator, framework
 summary: 'You can use the workflow as a guideline for your backup and recovery process using the Snap Creator GUI.'
 ---
 = Backup and recovery workflow
