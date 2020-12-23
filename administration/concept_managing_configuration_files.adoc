@@ -1,7 +1,7 @@
 ---
 permalink: administration/concept_managing_configuration_files.html
 sidebar: sidebar
-keywords: 
+keywords: create, copy, download, list, delete, configuration, managing, files
 summary: 'You can create, copy, download, list, and delete configuration files.'
 ---
 = Managing configuration files

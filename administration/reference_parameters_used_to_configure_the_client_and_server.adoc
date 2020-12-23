@@ -1,7 +1,7 @@
 ---
 permalink: administration/reference_parameters_used_to_configure_the_client_and_server.html
 sidebar: sidebar
-keywords: Snap Creator
+keywords: parameter, snap, creator, agent, host, client, port
 summary: 'You must be aware of the parameters for configuring the Snap Creator Agent host client and Snap Creator Server.'
 ---
 = Parameters for configuring the Snap Creator Agent host client and Snap Creator Server
@@ -11,6 +11,7 @@ summary: 'You must be aware of the parameters for configuring the Snap Creator A
 [.lead]
 You must be aware of the parameters for configuring the Snap Creator Agent host client and Snap Creator Server.
 
+[options="header"]
 |===
 | Parameter| Setting| Description
 a|

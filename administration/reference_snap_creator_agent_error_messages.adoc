@@ -1,7 +1,7 @@
 ---
 permalink: administration/reference_snap_creator_agent_error_messages.html
 sidebar: sidebar
-keywords: 
+keywords: snap, creator, agent, error, message, aft, sc_agentconfiguration, parameter, remote, port
 summary: 'The following table lists the Snap Creator Agent error messages.'
 ---
 = Snap Creator Agent error messages

@@ -1,7 +1,7 @@
 ---
 permalink: administration/task_assigning_roles_to_snap_creator_users.html
 sidebar: sidebar
-keywords: 
+keywords: snap, creator, user, gui, role, management
 summary: 'You can assign roles to Snap Creator users by using the Snap Creator GUI.'
 ---
 = Assigning roles to Snap Creator users

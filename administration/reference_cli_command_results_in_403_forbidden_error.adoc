@@ -1,7 +1,7 @@
 ---
 permalink: administration/reference_cli_command_results_in_403_forbidden_error.html
 sidebar: sidebar
-keywords: 
+keywords: unix, cli, command, 403, forbidden, error, username, password, incorrect
 summary: 'In a UNIX environment, you might encounter the 403 Forbidden error when running a CLI command.'
 ---
 = CLI command results in 403 Forbidden error

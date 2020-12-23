@@ -1,7 +1,7 @@
 ---
 permalink: administration/reference_parameters_to_set_up_ossv.html
 sidebar: sidebar
-keywords: Snap Creator
+keywords: parameter, open, system, snapvault, ossv, enable, homedir, snapshot
 summary: 'Several parameters are required to set up Open Systems SnapVault \(OSSV\).'
 ---
 = Parameters to set up OSSV
@@ -38,7 +38,7 @@ Required to set the NTAP_OSSV_FS_SNAPSHOT_CREATE_CMD parameter.Enables you to cr
 a|
 NTAP_OSSV_FS_SNAPSHOT_CREATE_CMD
 a|
- 
+
 a|
 Execute these are scripts or commands during or before the OSSV backup process, where ## is a number from 01 through 99. This can be used to perform backup file system Snapshot copies by using OSSV.
 |===

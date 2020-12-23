@@ -1,7 +1,7 @@
 ---
 permalink: administration/task_monitoring_jobs_using_the_gui.html
 sidebar: sidebar
-keywords: 
+keywords: monitor, job, snap, creator, gui
 summary: 'You can monitor the status of the jobs being performed by Snap Creator by using the Snap Creator GUI.'
 ---
 = Monitoring jobs

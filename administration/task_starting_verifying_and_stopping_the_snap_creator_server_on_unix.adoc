@@ -1,7 +1,7 @@
 ---
 permalink: administration/task_starting_verifying_and_stopping_the_snap_creator_server_on_unix.html
 sidebar: sidebar
-keywords: 
+keywords: snap, creator, service, server, start, verify, stop, unix
 summary: 'You can start and stop the Snap Creator Server service, and verify whether the Snap Creator Server service is running on your UNIX system.'
 ---
 = Starting, verifying, and stopping Snap Creator Server on UNIX
@@ -20,6 +20,7 @@ By default, the port is 8443.
  .. Log in by using the credentials for the Snap Creator GUI.
 . Verify whether the Snap Creator Server service is running or stop the Snap Creator Server service, as applicable:
 +
+[options="header"]
 |===
 | If you want to...| Enter the following...
 a|

@@ -1,7 +1,7 @@
 ---
 permalink: administration/reference_red_hat_kvm_plug_in.html
 sidebar: sidebar
-keywords: 
+keywords: kernel, kvm, virtualization, linux, snap, creator, virsh, command, plug-in, red, hat, guideline
 summary: 'Kernel-based Virtual Machine \(KVM\) is a virtualization solution for the Linux kernel. Snap Creator uses the KVM plug-in to back up and restore the guest virtual machines.'
 ---
 = Red Hat KVM plug-in guidelines
@@ -56,6 +56,7 @@ Guest virtual machines installed on LVM or on an image file in the SAN environme
 
 The following table describes the KVM plug-in parameters:
 
+[options="header"]
 |===
 | Parameter| Setting| Description
 a|

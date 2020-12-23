@@ -1,7 +1,7 @@
 ---
 permalink: administration/reference_sybase_plug_in.html
 sidebar: sidebar
-keywords: 
+keywords: sybase, ase, plug-in, isql, command, database, parameter, user, server
 summary: 'The Sybase ASE plug-in uses the isql command to interact with the Sybase database.'
 ---
 = Sybase ASE plug-in
@@ -15,6 +15,7 @@ NOTE: For latest information about support or to view compatibility matrices, se
 
 The following table lists the Sybase plug-in parameters, provides their settings, and describes them:
 
+[options="header"]
 |===
 | Parameter| Setting| Description
 a|

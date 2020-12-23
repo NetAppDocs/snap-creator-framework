@@ -1,7 +1,7 @@
 ---
 permalink: administration/reference_snap_creator_cli_commands_for_workflow_actions.html
 sidebar: sidebar
-keywords: Snap Creator
+keywords: command-line, interface, cli, snap, creator, workflow, command, backup, copy
 summary: 'You can use command-line interface \(CLI\) commands to perform various Snap Creator workflow actions that are based on the graphical user interface \(GUI\).'
 ---
 = Snap Creator CLI commands for workflow actions
@@ -13,12 +13,13 @@ You can use command-line interface (CLI) commands to perform various Snap Creato
 
 The following table provides the CLI commands for performing Snap Creator GUI-based workflow actions:
 
+[options="header"]
 |===
 | Workflow area| Action/description| Command and associated parameters
 a|
 Backups
 a|
-Create a backup copy.Performs a backup operation based on the configuration file associated with the profile.
+Create a backup copy. Performs a backup operation based on the configuration file associated with the profile.
 
 a|
 

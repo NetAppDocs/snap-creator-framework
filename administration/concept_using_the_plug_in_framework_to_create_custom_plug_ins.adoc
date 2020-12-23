@@ -1,7 +1,7 @@
 ---
 permalink: administration/concept_using_the_plug_in_framework_to_create_custom_plug_ins.html
 sidebar: sidebar
-keywords: 
+keywords: plug-in, framework, snap, creator, reuse, quiesce, unquiesce, discover, scdump, restore, restore, clone, describe, restore
 summary: 'The plug-in framework enables you to create your own plug-ins for Snap Creator or reuse the existing plug-ins. The plug-in provides Snap Creator with the steps for handling backup and recovery of a given application.'
 ---
 = Using the plug-in framework to create custom plug-ins
@@ -27,10 +27,8 @@ The plug-in framework defines the following methods:
 * clone_cleanup - Method for handling cleanup if a clone operation fails
 * restore_cleanup - Method for handling cleanup if a restore operation fails
 
-NOTE:
-
-* The plug-in framework supports Perl, PowerShell, Java, UNIX Shell, and Python for programming.
-* The plug-in framework enables you to implement objects and functions that exist within the Snap Creator.
+NOTE: The plug-in framework supports Perl, PowerShell, Java, UNIX Shell, and Python for programming.
+NOTE: The plug-in framework enables you to implement objects and functions that exist within the Snap Creator.
 +
 For example, error handling is available, which means the plug-in can use the standard implementation Snap Creator uses. This reduces the work required to create a plug-in.
 

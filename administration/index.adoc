@@ -1,7 +1,7 @@
 ---
 permalink: administration/index.html
 sidebar: sidebar
-keywords: 
+keywords: administration, guide
 summary: ''
 ---
 = Administration Guide

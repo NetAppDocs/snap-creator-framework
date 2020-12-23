@@ -1,7 +1,7 @@
 ---
 permalink: administration/concept_what_snap_creator_server_overview.html
 sidebar: sidebar
-keywords: 
+keywords: snap, creator, server, framework, overview, gui
 summary: 'The Snap Creator Server is the main engine of the Snap Creator Framework.'
 ---
 = Snap Creator Server overview

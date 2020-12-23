@@ -1,7 +1,7 @@
 ---
 permalink: administration/task_creating_snap_creator_roles.html
 sidebar: sidebar
-keywords: 
+keywords: snap, creator, gui, creating, role
 summary: 'You can create Snap Creator roles by using the Snap Creator GUI.'
 ---
 = Creating Snap Creator roles

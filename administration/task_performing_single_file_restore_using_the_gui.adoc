@@ -1,7 +1,7 @@
 ---
 permalink: administration/task_performing_single_file_restore_using_the_gui.html
 sidebar: sidebar
-keywords: 
+keywords: snap, creator, gui, file, restore, wizard
 summary: 'You can perform single file restore operations by using the Snap Creator GUI.'
 ---
 = Performing single file restore operations

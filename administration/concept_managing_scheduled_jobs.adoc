@@ -1,7 +1,7 @@
 ---
 permalink: administration/concept_managing_scheduled_jobs.html
 sidebar: sidebar
-keywords: 
+keywords: manage, scheduled, jobs, listing, running, deleting, managing
 summary: 'You can manage scheduled jobs by creating them \(to automate backup operations\), as well list as by editing, listing, running, and deleting those scheduled jobs.'
 ---
 = Managing scheduled jobs

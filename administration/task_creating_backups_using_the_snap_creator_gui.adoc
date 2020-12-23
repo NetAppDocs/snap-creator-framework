@@ -1,7 +1,7 @@
 ---
 permalink: administration/task_creating_backups_using_the_snap_creator_gui.html
 sidebar: sidebar
-keywords: 
+keywords: create, backup, snap, creator, gui, configuration, backup, action, parameter
 summary: 'You can create backups by using the Snap Creator GUI.'
 ---
 = Creating backups

@@ -1,7 +1,7 @@
 ---
 permalink: administration/concept_benefits_of_using_snap_creator.html
 sidebar: sidebar
-keywords: 
+keywords: benefits, using, snap, creator, framework, hypervisors, applications, databsases, microsoft, sql, ibm, db2, maxdb, sap, hana, imt, oracle
 summary: 'The Snap Creator Framework provides a simple and flexible software framework that addresses various storage requirements.'
 ---
 = Benefits of using Snap Creator

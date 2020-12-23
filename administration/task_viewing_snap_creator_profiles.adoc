@@ -1,7 +1,7 @@
 ---
 permalink: administration/task_viewing_snap_creator_profiles.html
 sidebar: sidebar
-keywords: 
+keywords: snap, creator, profile, view
 summary: 'You can list the existing Snap Creator profiles.'
 ---
 = Viewing profiles

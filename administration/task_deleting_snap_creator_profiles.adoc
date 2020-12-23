@@ -1,7 +1,7 @@
 ---
 permalink: administration/task_deleting_snap_creator_profiles.html
 sidebar: sidebar
-keywords: 
+keywords: delete, snap, creator, profile
 summary: 'You can delete Snap Creator profiles.'
 ---
 = Deleting profiles

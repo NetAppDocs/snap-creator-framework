@@ -1,7 +1,7 @@
 ---
 permalink: administration/task_starting_verifying_and_stopping_the_snap_creator_agent_on_windows.html
 sidebar: sidebar
-keywords: 
+keywords: snap, creator, agent, service, start, verify, stop, windows
 summary: 'You can start and stop the Snap Creator Agent service, and verify whether the Snap Creator Agent service is running on your Windows system.'
 ---
 = Starting, verifying, and stopping Snap Creator Agent on Windows
@@ -13,6 +13,7 @@ You can start and stop the Snap Creator Agent service, and verify whether the Sn
 
 . From the command prompt, start or stop the Snap Creator Agent service, or verify whether the Snap Creator Agent service is running, as applicable:
 +
+[options="header"]
 |===
 | If you want to...| Enter the following...
 a|

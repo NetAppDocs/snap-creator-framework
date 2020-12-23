@@ -1,7 +1,7 @@
 ---
 permalink: administration/concept_troubleshooting_snap_creator_server_or_agent_issues.html
 sidebar: sidebar
-keywords: 
+keywords: encounter, issues, snap, creator, server, agent, troubleshoot, issues
 summary: 'You might encounter some issues with the Snap Creator Server or Snap Creator Agent. You should be aware of these issues and know how to troubleshoot them.'
 ---
 = Troubleshooting Snap Creator Server or Snap Creator Agent issues

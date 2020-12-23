@@ -1,7 +1,7 @@
 ---
 permalink: administration/task_deleting_retention_policies.html
 sidebar: sidebar
-keywords: 
+keywords: delete, retention, policy, snap, creator, gui
 summary: 'You can delete retention policies.'
 ---
 = Deleting retention policies

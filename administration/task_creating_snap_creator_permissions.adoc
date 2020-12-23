@@ -1,7 +1,7 @@
 ---
 permalink: administration/task_creating_snap_creator_permissions.html
 sidebar: sidebar
-keywords: 
+keywords: snap, creator, permission, cli
 summary: 'You can create Snap Creator permissions that can be assigned to a role by using the command-line interface \(CLI\) only.'
 ---
 = Creating Snap Creator permissions by using the CLI

@@ -1,7 +1,7 @@
 ---
 permalink: administration/reference_db2_plug_in.html
 sidebar: sidebar
-keywords: 
+keywords: db2, plug-in, communicate, database
 summary: 'The DB2 plug-in uses the db2 command to communicate with the database.'
 ---
 = DB2 plug-in
@@ -13,6 +13,7 @@ The DB2 plug-in uses the db2 command to communicate with the database.
 
 The following table lists the DB2 plug-in parameters, provides the parameter settings, and describes the parameters.
 
+[options="header"]
 |===
 | Parameter| Setting| Description
 a|

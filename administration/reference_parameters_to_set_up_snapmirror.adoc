@@ -1,7 +1,7 @@
 ---
 permalink: administration/reference_parameters_to_set_up_snapmirror.html
 sidebar: sidebar
-keywords: 
+keywords: parameter, snapmirror, snap, creator, server, update, cascading, volume
 summary: 'Several parameters are required to set up SnapMirror for Snap Creator Server.'
 ---
 = Parameters for setting up SnapMirror
@@ -31,14 +31,14 @@ NOTE: This is not supported for clustered Data ONTAP.
 a|
 SNAPMIRROR_VOLUMES
 a|
- 
+
 a|
 Specifies the list of source storage systems and volumes on which you want to perform a SnapMirror update (for example, controller1:vol1,vol2,vol3;controller2:vol1;controller3:vol2,vol3). *Note:* For the VMware plug-ins (vSphere and vCloud), the value should be set to auto:detect.
 
 a|
 SNAPMIRROR_CASCADING_VOLUMES
 a|
- 
+
 a|
 Specifies the list of SnapVault destination storage systems and volumes where, after a SnapVault update, you want to perform a SnapMirror update (for example, sec-controller1:vol1-sec,vol2-sec).This is not supported with cascade replication if a source volume has multiple destinations.
 
@@ -47,7 +47,7 @@ NOTE: This is not supported for clustered Data ONTAP.
 a|
 NTAP_SNAPMIRROR_WAIT
 a|
- 
+
 a|
 Specifies the wait time (in minutes) for the SnapMirror update process to finish before creating a clone on the SnapMirror destination.If NTAP_CLONE_SECONDARY is set to Y, Snap Creator waits until the SnapMirror update is finished before proceeding.
 
@@ -63,14 +63,14 @@ If this parameter is enabled, the SnapMirror update uses the newly created Snaps
 a|
 NTAP_SNAPMIRROR_MAX_TRANSFER
 a|
- 
+
 a|
 Specifies the maximum bandwidth (in kbps) that SnapMirror is allowed to use.If this parameter is not set, SnapMirror uses the maximum available bandwidth.
 
 a|
 SNAPMIRROR_QTREE_INCLUDE
 a|
- 
+
 a|
 Specifies the list of primary storage controllers and qtree paths to be included in the SnapMirror update (for example, controller1:/vol/qtree/qtree1,/vol/volume/qtree2;controller2:/vol/volume/qtree1).If this option is not used, then all the qtrees under a volume will be backed up. By specifying a list using this option, only the qtrees that are listed will be backed up; the remaining qtrees will be ignored.
 

@@ -1,7 +1,7 @@
 ---
 permalink: administration/reference_parameters_to_set_up_cloning.html
 sidebar: sidebar
-keywords: 
+keywords: parameter, snap, creator, server, cloning, operation
 summary: 'Several parameters are required to set up Snap Creator Server cloning operations.'
 ---
 = Parameters to set up cloning operations
@@ -11,6 +11,7 @@ summary: 'Several parameters are required to set up Snap Creator Server cloning 
 [.lead]
 Several parameters are required to set up Snap Creator Server cloning operations.
 
+[options="header"]
 |===
 | Parameter| Setting| Description
 a|
@@ -28,7 +29,7 @@ If set to true, space is reserved for the cloned LUNs if the cloneLun action is 
 a|
 NTAP_CLONE_IGROUP_MAP
 a|
- 
+
 a|
 Specifies the storage system, source volume, and an IGROUP. The IGROUP is then mapped to cloned LUNs that reside in the source volume or cloned LUNs that reside in the volume clone (for example, `controller1:src_volume1/igroup1,src_volume2/igroup1,src_volume3/igroup1;controller2:src_volume1/igroup2,src_volume2/igroup2,src_volume3/igroup2`). *Note:*
 
@@ -52,13 +53,13 @@ If enabled, clones are created on the SnapMirror destination after the SnapMirro
 a|
 NTAP_CLONE_SECONDARY_VOLUMES
 a|
- 
+
 a|
 This is a mapping of primary or secondary storage systems and the secondary volumes. This is required so that Snap Creator can find the secondary volumes (for example, controller1:controller1-sec/vol1;controller1:controller1-sec/vol2).
 a|
 NTAP_NUM_VOL_CLONES
 a|
- 
+
 a|
 This is the number of volume clones you want to retain. This works similarly to the Snapshot copy retention policy. *Note:* This only works for volume clones that require a FlexClone license on the storage controller.
 

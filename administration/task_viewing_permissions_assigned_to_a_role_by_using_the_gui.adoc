@@ -1,7 +1,7 @@
 ---
 permalink: administration/task_viewing_permissions_assigned_to_a_role_by_using_the_gui.html
 sidebar: sidebar
-keywords: 
+keywords: snap, creator, permission, gui, role, management
 summary: 'You can view a list of all the Snap Creator permissions assigned to a role by using the Snap Creator GUI.'
 ---
 = Viewing Snap Creator permissions assigned to a role

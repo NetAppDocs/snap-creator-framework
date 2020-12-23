@@ -1,7 +1,7 @@
 ---
 permalink: administration/task_deleting_backups.html
 sidebar: sidebar
-keywords: 
+keywords: delete, backup, copy, configuration, file, delete, snap, creator, gui, data
 summary: 'You can delete backup copies of a configuration file.'
 ---
 = Deleting backups

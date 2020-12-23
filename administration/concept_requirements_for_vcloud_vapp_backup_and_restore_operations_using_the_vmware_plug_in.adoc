@@ -1,7 +1,7 @@
 ---
 permalink: administration/concept_requirements_for_vcloud_vapp_backup_and_restore_operations_using_the_vmware_plug_in.html
 sidebar: sidebar
-keywords: 
+keywords: snap, creator, backup, vcloud, vapp, vmware, director, api, vsphere, director, vcenter, vdc
 summary: 'Snap Creator supports the backup of vCloud vApp through the VMware plug-in. vApp and virtual machine backup copies are made by the VMware plug-in through the vCloud Director API and vSphere API, which are invoked on the VMware vCloud Director and VMware vCenter server, respectively.'
 ---
 = Requirements for vCloud vApp backup and restore operations using the VMware plug-in

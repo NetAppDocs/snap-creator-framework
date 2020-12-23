@@ -1,7 +1,7 @@
 ---
 permalink: administration/concept_troubleshooting_security_issues.html
 sidebar: sidebar
-keywords: Snap Creator
+keywords: security, issues, snap, creator, troubleshoot
 summary: 'You must be aware of certain security issues in Snap Creator and know how to troubleshoot them.'
 ---
 = Troubleshooting security issues

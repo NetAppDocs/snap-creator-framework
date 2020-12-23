@@ -1,7 +1,7 @@
 ---
 permalink: administration/reference_ca_signed_ssl_certificate.html
 sidebar: sidebar
-keywords: 
+keywords: ca-signed, ssl, certificate, snap, creator, framework
 summary: ''
 ---
 = CA-signed SSL certificate is required for Snap Creator Framework

@@ -1,7 +1,7 @@
 ---
 permalink: administration/task_creating_profiles.html
 sidebar: sidebar
-keywords: 
+keywords: profile, snap, creator, gui, configuration
 summary: 'You can create profiles to organize configuration files by using the Snap Creator GUI.'
 ---
 = Creating profiles

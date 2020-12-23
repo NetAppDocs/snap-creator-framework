@@ -1,7 +1,7 @@
 ---
 permalink: administration/reference_cli_command_results_in_404_not_found_error.html
 sidebar: sidebar
-keywords: 
+keywords: unix, cli, command, port, 404, error
 summary: 'In a UNIX environment, you might encounter the 404 Not Found error when running a CLI command.'
 ---
 = CLI command results in 404 Not Found error

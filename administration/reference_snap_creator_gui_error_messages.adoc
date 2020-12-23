@@ -1,7 +1,7 @@
 ---
 permalink: administration/reference_snap_creator_gui_error_messages.html
 sidebar: sidebar
-keywords: 
+keywords: snap, creator, gui, error, message, gui
 summary: 'The following table lists the Snap Creator GUI error messages.'
 ---
 = Snap Creator GUI error messages

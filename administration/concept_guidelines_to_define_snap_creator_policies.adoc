@@ -1,7 +1,7 @@
 ---
 permalink: administration/concept_guidelines_to_define_snap_creator_policies.html
 sidebar: sidebar
-keywords: 
+keywords: snap, creator, policies, guidelines, retendtion, snapshot
 summary: 'Snap Creator policies are user-defined Snapshot copy retentions that apply to the Snapshot copies on the primary storage and SnapVault and SnapMirror copies on the secondary storage. You can use a policy to define the number of Snapshot copies that you want to retain and the Snapshot copy age.'
 ---
 = Guidelines to define Snap Creator policies

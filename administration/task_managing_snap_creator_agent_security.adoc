@@ -1,7 +1,7 @@
 ---
 permalink: administration/task_managing_snap_creator_agent_security.html
 sidebar: sidebar
-keywords: 
+keywords: snap, creator, agent, server, manage, security, install, snapdrive
 summary: 'You can manage the security settings of the Snap Creator Agent by adding commands that can be used by Snap Creator. You can also limit communication to specific Snap Creator servers.'
 ---
 = Managing Snap Creator Agent security
@@ -15,7 +15,7 @@ The procedure for managing Snap Creator Agent security is the same for Windows a
 
 . Log in to the system where the Snap Creator Agent is running, and switch to the etc subdirectory within the installation directory.
 +
-cd /install_path/scAgent4.3.0/etc
+'cd /install_path/scAgent4.3.0/etc'
 
 . If you want to add commands that can be used by Snap Creator, perform the following steps:
  .. Open the allowed_commands.config file in a text editor.
@@ -39,4 +39,4 @@ AUTHORIZED_HOSTS=Lyon, 10.10.10.192, Fuji01
  .. Save and close the file.
 . Restart the Snap Creator Agent.
 +
-/install_path/scAgent4.3.0/bin/scAgent restart
+'/install_path/scAgent4.3.0/bin/scAgent restart'

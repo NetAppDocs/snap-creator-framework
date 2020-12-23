@@ -1,7 +1,7 @@
 ---
 permalink: administration/reference_oracle_plug_in.html
 sidebar: sidebar
-keywords: Snap Creator
+keywords: oracle, plug-in, sql, plus, database, quiesce, unquiesce, oracle, database
 summary: 'The Oracle plug-in uses SQL\*Plus to communicate with the database and quiesce & unquiesce oracle database for backup.'
 ---
 = Oracle plug-in
@@ -22,6 +22,7 @@ This can be accomplished using a shell startup file, such as ~/.cshrc.
 
 The following table lists the Oracle plug-in parameters, provides their settings, and describes them:
 
+[options="header"]
 |===
 | Parameter| Setting| Description
 a|
@@ -40,20 +41,20 @@ List of Oracle databases and user names Multiple databases and user names can be
 a|
 SQLPLUS_CMD
 a|
- 
+
 a|
 Path to the sqlplus command
 a|
 CNTL_FILE_BACKUP_DIR
 a|
- 
+
 a|
 Path to the directory where the user should store the backup control filesThe Oracle user must have appropriate permissions to this directory.
 
 a|
 ORA_TEMP
 a|
- 
+
 a|
 Path to the directory to store the temporary file, for example, /tmp.The Oracle user must have appropriate permissions to this directory.
 
@@ -67,13 +68,13 @@ Informs the Oracle plug-in to perform only a switch log operationThis setting is
 a|
 ORACLE_HOME
 a|
- 
+
 a|
 Path to the Oracle home directory
 a|
 ORACLE_HOME_SID
 a|
- 
+
 a|
 Path to the Oracle home directory for a given system identifier (SID)When backing up multiple databases, it might be important to specify more than one Oracle home directory.
 
@@ -86,7 +87,7 @@ The ORACLE_HOME and ORACLE_SID environment parameters are exported by using the 
 a|
 ORACLE_BACKUPMODE
 a|
- 
+
 a|
 Option to configure offline or online backups by using the Snap Creator policy. The default option is online. ORACLE_BACKUPMODE=hourly:online,daily:offline
 a|

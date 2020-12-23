@@ -1,7 +1,7 @@
 ---
 permalink: administration/reference_mount_and_unmount_commands.html
 sidebar: sidebar
-keywords: 
+keywords: cloning, mount_cmd, unmount_cmd, command, snap, creator, pre, post
 summary: 'When cloning, you should use the MOUNT_CMD and UMOUNT_CMD commands instead of the Snap Creator PRE or POST commands.'
 ---
 = Mount and unmount commands
@@ -11,6 +11,7 @@ summary: 'When cloning, you should use the MOUNT_CMD and UMOUNT_CMD commands ins
 [.lead]
 When cloning, you should use the MOUNT_CMD and UMOUNT_CMD commands instead of the Snap Creator PRE or POST commands.
 
+[options="header"]
 |===
 | Command| Description
 a|

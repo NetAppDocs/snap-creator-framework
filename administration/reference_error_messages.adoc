@@ -1,7 +1,7 @@
 ---
 permalink: administration/reference_error_messages.html
 sidebar: sidebar
-keywords: 
+keywords: error, messages, scf, repo, storage, agt, gui
 summary: 'You must be aware of the error messages associated with different Snap Creator operations.'
 ---
 = Error messages

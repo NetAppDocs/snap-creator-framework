@@ -1,7 +1,7 @@
 ---
 permalink: administration/concept_creating_retention_policies.html
 sidebar: sidebar
-keywords: 
+keywords: creating, retention, policies, local, configuration
 summary: 'If you plan to use policy objects instead of a local retention policy \(which is contained in the configuration file\), you can create a retention policy.'
 ---
 = Creating retention policies

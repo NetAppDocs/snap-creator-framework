@@ -1,7 +1,7 @@
 ---
 permalink: administration/reference_information_required_to_configure_snap_creator.html
 sidebar: sidebar
-keywords: 
+keywords: snap, creator, built-in, native, plug-in, oracle, db2, mysql, sybase, ase, domino, snapmanager, micorsoft, sql
 summary: 'Snap Creator supports the following built-in \(or native\) plug-ins: Oracle, DB2, MySQL, Sybase ASE, Domino, SnapManager for Microsoft SQL Server, SnapManager for Microsoft Exchange, MaxDB, VMware \(vSphere and vCloud Director\), Red Hat KVM, Citrix XenServer, and SAP HANA. Community plug-ins are not included in the package and must be downloaded separately.'
 ---
 = Plug-in information required to configure Snap Creator
@@ -103,7 +103,7 @@ This setting defines the Java classpath. By default, plug-ins/native is configur
 a|
 META_DATA_VOLUME
 a|
- 
+
 a|
 Enables a Snapshot copy of the specified volume to be created after the unquiesce operation. This can be valuable for certain plug-ins for which the Snapshot copy of data must be created at different times. The parameter must not only specify the volume but the controller as well (for example, `controller1:volume1,volume2;controller2:volume3,volume4;controller3:volume5,volume6`).
 a|

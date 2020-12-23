@@ -1,7 +1,7 @@
 ---
 permalink: administration/task_creating_policies.html
 sidebar: sidebar
-keywords: Snap Creator
+keywords: create, retention, policy, snap, creator, gui, guideline, policy, management
 summary: 'You can create a new retention policy by using the Snap Creator GUI to configure multiple Snapshot policies with different retention count.'
 ---
 = Creating policies
@@ -19,6 +19,7 @@ You should understand the guidelines for defining Snap Creator policies.
 +
 image::../media/create_new_policy.gif[]
 +
+[options="header"]
 |===
 | Field| Description
 a|

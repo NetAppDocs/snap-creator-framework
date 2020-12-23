@@ -1,15 +1,15 @@
 ---
 permalink: administration/reference_guidelines_for_using_the_snap_creator_command_line.html
 sidebar: sidebar
-keywords: 
-summary: 'Snap Creator provides command-line functionality that enables you to perform various actions without using the graphical user interface \(GUI\). For instance, you can createa backup, clonea volume or LUN, and importconfiguration files from the command-line interface \(CLI\).'
+keywords: snap, creator, command-line, functionality, gui, cli, backup, lun
+summary: 'Snap Creator provides command-line functionality that enables you to perform various actions without using the graphical user interface \(GUI\). For instance, you can createa backup, clonea volume or LUN, and import configuration files from the command-line interface \(CLI\).'
 ---
 = Guidelines for using the Snap Creator command-line interface
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Snap Creator provides command-line functionality that enables you to perform various actions without using the graphical user interface (GUI). For instance, you can createa backup, clonea volume or LUN, and importconfiguration files from the command-line interface (CLI).
+Snap Creator provides command-line functionality that enables you to perform various actions without using the graphical user interface (GUI). For instance, you can createa backup, clonea volume or LUN, and import configuration files from the command-line interface (CLI).
 
 To view a comprehensive list of all the commands and associated parameters, you should execute Snap Creator at the command prompt with no arguments: /install_path/scServer/snapcreator
 
@@ -39,10 +39,10 @@ Configuration Information
                              using vol clone
   cloneDel                   Deletes vol clones outside of normal workflow
   clone                      Performs a plug-in driven clone operation
- 									
+
   restore                    Enters an interactive restore menu for a given
                              Snap Creator policy, you can choose a file or volume restore
-		
+
   backupDel                  Enters an interactive backup delete menu for a given
                              Snap Creator policy
   backupList                 Lists all backups under Snap Creator control

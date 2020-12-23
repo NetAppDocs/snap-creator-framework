@@ -1,7 +1,7 @@
 ---
 permalink: administration/task_monitoring_logs_by_using_the_snap_creator_gui.html
 sidebar: sidebar
-keywords: 
+keywords: profile, configuration, snap, creator, gui, monitor, log, out, debug, error, stderr, log
 summary: 'You can view the logs for every profile and configuration by using the Snap Creator GUI.'
 ---
 = Monitoring logs

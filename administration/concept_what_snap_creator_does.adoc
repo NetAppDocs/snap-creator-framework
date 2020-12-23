@@ -1,7 +1,7 @@
 ---
 permalink: administration/concept_what_snap_creator_does.html
 sidebar: sidebar
-keywords: 
+keywords: snap, creator, framework, unix, applications, third-party, databases, hypervisors, windows, aix, hp-ux, linux, solaris, extensibility
 summary: 'The Snap Creator Framework enables you to use prepackaged and custom plug-ins that standardize and simplify data protection for a wide variety of third-party applications, databases, and hypervisors in Windows and UNIX \(AIX, HP-UX, Linux, and Solaris\) environments.'
 ---
 = What Snap Creator Framework does
