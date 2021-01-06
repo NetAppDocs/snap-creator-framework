@@ -1,7 +1,7 @@
 ---
 permalink: domino-ops/task_configuring_snap_creator_to_use_snapdrive_by_using_the_gui.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'You can add supplemental commands to your configuration after you create the configuration file. You can run the commands on the Snap Creator Server or Agent.'
 ---
 = Adding supplemental commands to the configuration
@@ -23,6 +23,7 @@ NOTE: This guide shows how to use the GUI to add commands. For information on ho
 +
 The following command types are available:
 +
+[options="header"]
 |===
 | Command type| Description
 a|
@@ -42,7 +43,7 @@ Snapshot Copy Create
 a|
 Use this type to run your own Snapshot copy create commands.
 |===
-*Note:* Only a subset of the supported commands are available in the GUI. For information on the APP, ARCHIVE, MOUNT/UNMOUNT, and POST commands, see the https://library.netapp.com/ecm/ecm_download_file/ECMP12395422[Snap Creator Framework 4.1.2 Administration Guide].
+*Note:* Only a subset of the supported commands are available in the GUI. For information on the APP, ARCHIVE, MOUNT/UNMOUNT, and POST commands, see the link:https://library.netapp.com/ecm/ecm_download_file/ECMP12395422[Snap Creator Framework 4.1.2 Administration Guide].
 
 . On the *Commands* tab, scroll to the section for the command type you want to use and click *Add*.
 . Type over the text *Add Command Here* to enter the command.

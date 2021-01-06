@@ -1,7 +1,7 @@
 ---
 permalink: domino-ops/reference_storage_layout_requirements.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'A typical IBM Domino environment has at least three Domino volumes, one each for Domino data, Domino transaction logs, and the plug-in changeinfo directory. Many sites also have volumes for Domino DAOS and for view rebuilds.'
 ---
 = Storage layout requirements
@@ -21,6 +21,7 @@ By default, these temporary files are located in the system's temporary folder o
 
 The following table shows the preferred volume layout:
 
+[options="header"]
 |===
 | Volume| Contents| Notes
 a|

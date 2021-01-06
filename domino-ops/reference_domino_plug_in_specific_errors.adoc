@@ -1,7 +1,7 @@
 ---
 permalink: domino-ops/reference_domino_plug_in_specific_errors.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'Common Snap Creator errors fall into two categories: generic Snap Creator errors and Domino plug-in-specific errors. Domino plug-in-specific errors typically involve preinstallation issues, bad databases, or problems with a custom restore action.'
 ---
 = Troubleshooting Domino plug-in-specific errors
@@ -11,7 +11,7 @@ summary: 'Common Snap Creator errors fall into two categories: generic Snap Crea
 [.lead]
 Common Snap Creator errors fall into two categories: generic Snap Creator errors and Domino plug-in-specific errors. Domino plug-in-specific errors typically involve preinstallation issues, bad databases, or problems with a custom restore action.
 
-NOTE: For information about generic Snap Creator errors, see the https://library.netapp.com/ecm/ecm_download_file/ECMP12395422[Snap Creator Framework 4.1.2 Administration Guide].
+NOTE: For information about generic Snap Creator errors, see the link:https://library.netapp.com/ecm/ecm_download_file/ECMP12395422[Snap Creator Framework 4.1.2 Administration Guide].
 
 == Domino plug-in is not supported on this platform
 
@@ -42,12 +42,12 @@ These errors messages appear if one of the following conditions is not met:
 * Preinstallation steps were not performed or were performed incorrectly:
  ** On UNIX hosts, you must create symbolic links to IBM Domino shared object files.
  ** On Windows hosts, you must add the IBM Domino installation path to the PATH environment variable.
-For more information, see the https://library.netapp.com/ecm/ecm_download_file/ECMP12395424[Snap Creator Framework 4.1.2 Installation Guide].
+For more information, see the link:https://library.netapp.com/ecm/ecm_download_file/ECMP12395424[Snap Creator Framework 4.1.2 Installation Guide].
 * The bit level of Domino is different from the bit level of Snap Creator. For example, if you are using 32-bit Domino, you should use 32-bit Snap Creator.
 
 == Snap Creator backup fails because of a bad database
 
-By default, a backup operation will fail if one or more databases are in an inconsistent or corrupted state. You can force the plug-in to proceed with backup operations despite errors, as described in step link:task_using_the_gui_to_create_a_configuration_file.md#STEP_AA41331683A24598B7845367CB967F99[task_using_the_gui_to_create_a_configuration_file.md#STEP_AA41331683A24598B7845367CB967F99].
+By default, a backup operation will fail if one or more databases are in an inconsistent or corrupted state. You can force the plug-in to proceed with backup operations despite errors, as described in step link:task_using_the_gui_to_create_a_configuration_file.md#STEP_AA41331683A24598B7845367CB967F99[task using the gui to create a configuration file].
 
 == Domino restore using custom action fails
 
@@ -74,6 +74,7 @@ Recovery Manager: Recovery only supported for Backup Files.ERROR_CODE:5114
 
 The following table lists the IBM Domino plug-in-specific error messages in reference format:
 
+[options="header"]
 |===
 | Error code| Error message| Description/resolution
 a|

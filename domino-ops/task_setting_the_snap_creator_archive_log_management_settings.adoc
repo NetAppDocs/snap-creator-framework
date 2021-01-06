@@ -1,7 +1,7 @@
 ---
 permalink: domino-ops/task_setting_the_snap_creator_archive_log_management_settings.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'If you are using Domino transaction logging, the IBM Domino plug-in archives copies of Domino transaction logs to the changeinfo directory for use in up-to-the-minute restore operations. You need to enable transaction log management before Snap Creator will clean up the copies of the transaction logs you no longer need.'
 ---
 = Cleaning up archived copies of Domino transaction logs
@@ -20,6 +20,7 @@ IMPORTANT: Do not set the Archive Log directory parameter to the path of Domino 
 . In the Profiles and Configurations pane, select the configuration file and click the *Archive Log Management* tab.
 . In the *Archive Log Management* tab, specify the following values for the transaction log management settings:
 +
+[options="header"]
 |===
 | Parameter| Setting| Description
 a|

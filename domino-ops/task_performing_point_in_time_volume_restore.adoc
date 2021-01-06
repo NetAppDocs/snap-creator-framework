@@ -1,7 +1,7 @@
 ---
 permalink: domino-ops/task_performing_point_in_time_volume_restore.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'You can use the IBM Domino plug-in to perform point-in-time, up-to-the-minute, or selectable up-to-the-minute volume restores for all major storage types.'
 ---
 = Performing a volume restore
@@ -18,6 +18,7 @@ Make sure to:
 
 Volume restore options are as follows:
 
+[options="header"]
 |===
 | Restore type| Description
 a|
@@ -45,6 +46,7 @@ NOTE: If you are restoring from a SnapVault copy, you are prompted to restore fr
 
 . On the Restore details page, specify the restore details:
 +
+[options="header"]
 |===
 | For this field...| Do this...
 a|
@@ -75,6 +77,7 @@ Select *Volume Restore*.
 
 . On the following page, specify the volume restore type:
 +
+[options="header"]
 |===
 | For this field...| Do this...
 a|

@@ -1,7 +1,7 @@
 ---
 permalink: domino-ops/task_scheduling_actions_using_the_snap_creator_gui.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'You can schedule recurring backup jobs after performing the initial backup.'
 ---
 = Scheduling backups
@@ -17,6 +17,7 @@ You should have created the configuration file for the backup, as described in x
 . In the Jobs pane, click *Create*
 . In the New Job dialog, specify the job information:
 +
+[options="header"]
 |===
 | For this field...| Do this...
 a|

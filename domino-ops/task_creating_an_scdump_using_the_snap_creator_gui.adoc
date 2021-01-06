@@ -1,7 +1,7 @@
 ---
 permalink: domino-ops/task_creating_an_scdump_using_the_snap_creator_gui.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'You can use the Snap Creatorscdump action to gather logs into a compressed file archive. You can then send the archive to technical support or a Snap Creator expert for review.'
 ---
 = Using scdump to gather logs in a compressed format
@@ -15,6 +15,7 @@ You should have created a backup and restore configuration file.
 
 An scdump includes the following files:
 
+[options="header"]
 |===
 | File| Description
 a|
