@@ -22,6 +22,7 @@ When using the SnapManager for Microsoft SQL Server plug-in, you must be aware o
 
 The following table provides the SnapManager for Microsoft SQL Server plug-in parameters, provides their settings, and describes them:
 
+[options="header"]
 |===
 | Parameter| Setting| Description
 a|

@@ -11,6 +11,7 @@ summary: 'Several parameters are required to set up Open Systems SnapVault \(OSS
 [.lead]
 Several parameters are required to set up Open Systems SnapVault (OSSV).
 
+[options="header"]
 |===
 | Parameter| Setting| Description
 a|

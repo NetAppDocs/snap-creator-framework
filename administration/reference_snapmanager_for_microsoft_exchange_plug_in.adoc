@@ -19,6 +19,7 @@ The SnapManager for Microsoft Exchange plug-in requires Snap Creator Agent to be
 
 The following table provides SnapManager for Microsoft Exchange plug-in parameters, provides their settings, and describes them:
 
+[options="header"]
 |===
 | Parameter| Setting| Description
 a|

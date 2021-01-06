@@ -11,6 +11,7 @@ summary: 'The following table lists the Snap Creator GUI error messages.'
 [.lead]
 The following table lists the Snap Creator GUI error messages.
 
+[options="header"]
 |===
 | Error code| Description/resolution
 a|

@@ -11,6 +11,7 @@ summary: 'Several parameters are required to set up SnapMirror for Snap Creator 
 [.lead]
 Several parameters are required to set up SnapMirror for Snap Creator Server.
 
+[options="header"]
 |===
 | Parameter| Setting| Description
 a|

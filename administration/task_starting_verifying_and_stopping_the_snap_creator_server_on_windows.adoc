@@ -42,6 +42,6 @@ If you want to run Snap Creator in the foreground, then instead of using the sc 
 
  .. Open a command prompt on the host where the Snap Creator Server is installed, and then navigate to the Snap Creator Serverdirectory: cd \install_path\scServer4.3.0\bin\
  .. To start the Snap Creator Server, run the batch script:
-   'scServer.bat start'
+   `scServer.bat start`
 +
 Closing the command prompt stops the Snap Creator Server service. Because the batch script (scServer.bat) runs Snap Creator in the foreground, the Snap Creator Server will run only as long as the command prompt is open. To run Snap Creator in the background, you should use the Snap Creator Server service command.

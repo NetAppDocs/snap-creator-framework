@@ -11,6 +11,7 @@ summary: 'Several configuration file parameters are required to set up Snapshot 
 [.lead]
 Several configuration file parameters are required to set up Snapshot copies for Snap Creator Server.
 
+[options="header"]
 |===
 | Parameter| Setting| Description
 a|
