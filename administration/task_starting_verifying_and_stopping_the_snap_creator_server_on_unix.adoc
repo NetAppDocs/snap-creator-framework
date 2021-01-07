@@ -11,9 +11,9 @@ summary: 'You can start and stop the Snap Creator Server service, and verify whe
 [.lead]
 You can start and stop the Snap Creator Server service, and verify whether the Snap Creator Server service is running on your UNIX system.
 
-. Start the Snap Creator Server service: install_path/scServer4.3.0/bin/scServer start
+. Start the Snap Creator Server service: `install_path/scServer4.3.0/bin/scServer start`
 . Open the Snap Creator graphical user interface (GUI):
- .. Enter the URL of the Snap Creator Server in a web browser: https://IP_address:gui_port
+ .. Enter the URL of the Snap Creator Server in a web browser: "https://IP_address:gui_port"
 +
 By default, the port is 8443.
 
@@ -26,9 +26,9 @@ By default, the port is 8443.
 a|
 Verify whether the Snap Creator Server service is running
 a|
-install_path/scServer4.3.0/bin/scServer status
+`install_path/scServer4.3.0/bin/scServer status`
 a|
 Stop the Snap Creator Server service
 a|
-install_path/scServer4.3.0/bin/scServer stop
+`install_path/scServer4.3.0/bin/scServer stop`
 |===

@@ -11,7 +11,9 @@ summary: 'You can view a list of all Snap Creator user accounts that have profil
 [.lead]
 You can view a list of all Snap Creator user accounts that have profiles by using the command line interface (CLI) only.
 
-. Enter the following command: snapcreator --server host_name --port port_number --user sc_user_name --passwd sc_passwd --profile profile_name --action userListForProfile --verbose
+. Enter the following command:
++
+`snapcreator --server host_name --port port_number --user sc_user_name --passwd sc_passwd --profile profile_name --action userListForProfile --verbose`
 +
 Here is an example:
 +

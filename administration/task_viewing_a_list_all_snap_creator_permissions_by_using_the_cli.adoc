@@ -11,7 +11,9 @@ summary: 'You can create a list of all Snap Creator permissions that can be assi
 [.lead]
 You can create a list of all Snap Creator permissions that can be assigned to a role by using the command line interface (CLI) only.
 
-. Enter the following command: snapcreator --server host_name --port port_number --user sc_user_name --passwd sc_passwd --action permissionsList -verbose
+. Enter the following command:
++
+`snapcreator --server host_name --port port_number --user sc_user_name --passwd sc_passwd --action permissionsList -verbose`
 +
 Here is an example:
 +

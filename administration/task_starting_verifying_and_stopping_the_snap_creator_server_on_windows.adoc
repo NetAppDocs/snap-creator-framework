@@ -12,7 +12,7 @@ summary: 'You can start and stop the Snap Creator Server service, and verify whe
 You can start and stop the Snap Creator Server service, and verify whether the Snap Creator Server service is running on your Windows system.
 
 . If the Snap Creator graphical user interface (GUI) is not open, open it:
- .. Enter the URL of the Snap Creator Server in a web browser: https://IP_address:gui_port
+ .. Enter the URL of the Snap Creator Server in a web browser: "https://IP_address:gui_port"
 +
 By default, the port is 8443.
 
@@ -40,7 +40,7 @@ sc stop snapcreatorserverservice
 |===
 If you want to run Snap Creator in the foreground, then instead of using the sc start command, perform the following steps:
 
- .. Open a command prompt on the host where the Snap Creator Server is installed, and then navigate to the Snap Creator Serverdirectory: cd \install_path\scServer4.3.0\bin\
+ .. Open a command prompt on the host where the Snap Creator Server is installed, and then navigate to the Snap Creator Serverdirectory: `cd \install_path\scServer4.3.0\bin\`
  .. To start the Snap Creator Server, run the batch script:
    `scServer.bat start`
 +

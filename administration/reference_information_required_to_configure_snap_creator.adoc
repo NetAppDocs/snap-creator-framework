@@ -13,6 +13,7 @@ Snap Creator supports the following built-in (or native) plug-ins: Oracle, DB2, 
 
 The following table lists and describes the plug-in parameters and settings:
 
+[options="header"]
 |===
 | Parameters| Setting| Description
 a|
