@@ -2,7 +2,7 @@
 entries:
 - title: Home
   url: "/index.html"
-- title: administration
+- title: Administration
   url: "/administration/index.html"
   entries:
   - title: What Snap Creator Framework does
@@ -333,7 +333,7 @@ entries:
       url: "/administration/reference_snap_creator_cli_commands_for_workflow_actions.html"
     - title: Commands used to manage Snap Creator user access
       url: "/administration/reference_cli_command_for_snap_creator_rbac_actions.html"
-- title: domino-ops
+- title: IBM® Domino® Plug-in Operations
   url: "/domino-ops/index.html"
   entries:
   - title: IBM Domino plug-in overview
@@ -413,7 +413,7 @@ entries:
     url: "/domino-ops/reference_domino_plug_in_specific_errors.html"
   - title: Where to go next
     url: "/domino-ops/reference_references.html"
-- title: installation
+- title: Installation
   url: "/installation/index.html"
   entries:
   - title: What Snap Creator Framework does
@@ -547,7 +547,7 @@ entries:
         url: "/installation/reference_cli_command_for_creating_cluster_roles.html"
       - title: CLI commands for creating SVM roles
         url: "/installation/reference_cli_commands_for_creating_svm_roles.html"
-- title: sap-hana-ops
+- title: SAP HANA® Plug-in Operations
   url: "/sap-hana-ops/index.html"
   entries:
   - title: SAP HANA backup and restore solution overview
