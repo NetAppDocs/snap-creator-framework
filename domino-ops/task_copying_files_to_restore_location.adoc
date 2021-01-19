@@ -1,8 +1,8 @@
 ---
 permalink: domino-ops/task_copying_files_to_restore_location.html
 sidebar: sidebar
-keywords: 
-summary: 'After you have mounted the Snapshot copy for the file you want to restore, you can copy the file to the Data Restore Directory specified in the backup and restore configuration file.'
+keywords: domino, ibm, copy, copying, file, data restore directory
+summary: After you have mounted the Snapshot copy for the file you want to restore, you can copy the file to the Data Restore Directory specified in the backup and restore configuration file.
 ---
 = Copying the file to the Data Restore Directory
 :icons: font

@@ -1,8 +1,8 @@
 ---
 permalink: domino-ops/reference_domino_plug_in_specific_errors.html
 sidebar: sidebar
-keywords:
-summary: 'Common Snap Creator errors fall into two categories: generic Snap Creator errors and Domino plug-in-specific errors. Domino plug-in-specific errors typically involve preinstallation issues, bad databases, or problems with a custom restore action.'
+keywords: domino, ibm, troubleshooting, plug-ins, errors
+summary: Common Snap Creator errors fall into two categories: generic Snap Creator errors and Domino plug-in-specific errors. Domino plug-in-specific errors typically involve preinstallation issues, bad databases, or problems with a custom restore action.
 ---
 = Troubleshooting Domino plug-in-specific errors
 :icons: font
@@ -129,7 +129,7 @@ Reasons could be:
 * Domino plug-in is not supported on this platform.
 * Prerequisites for the Domino plug-in to run are not satisfied.
 
-For more information, see <<GUID-24AE3D61-391A-4BA8-AA3F-CF0980BBF9C0,#GUID-24AE3D61-391A-4BA8-AA3F-CF0980BBF9C0>>.
+For more information, see link:reference_domino_plug_in_specific_errors.html#domino-plug-in-is-not-supported-on-this-platform[Domino plug-in is not supported on this platform].
 
 a|
 ltd-00010

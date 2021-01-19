@@ -1,47 +1,13 @@
 ---
 permalink: domino-ops/index.html
 sidebar: sidebar
-keywords: 
-summary: ''
+keywords: domino, ibm, plug-in, operations, guide, configure, use, backup, back up, restore, databases
+summary: Describes how to configure and use the IBM Domino plug-in to back up and restore IBM Domino databases.
 ---
 = IBM® Domino® Plug-in Operations Guide
 :icons: font
 :imagesdir: ../media/
 
-* xref:concept_ibm_domino_plug_in_overview.adoc[IBM Domino plug-in overview]
- ** xref:concept_backup_operations_using_domino_plug_in.adoc[Understanding IBM Domino plug-in backup operations]
- ** xref:concept_restore_operations_using_domino_plug_in.adoc[Understanding IBM Domino plug-in restore operations]
-* xref:concept_ibm_domino_backup_and_recovery_workflow.adoc[IBM Domino backup and recovery workflow]
-* xref:concept_preparing_for_ibm_domino_backup_and_restore_operations.adoc[Preparing for IBM Domino backup and restore]
- ** xref:reference_storage_layout_requirements.adoc[Storage layout requirements]
- ** xref:concept_snapmirror_and_snapvault_setup.adoc[SnapMirror and SnapVault setup]
-  *** xref:task_preparing_storage_systems_for_snapmirror_replication.adoc[Preparing storage systems for SnapMirror replication]
-  *** xref:task_preparing_storage_systems_for_snapvault_replication.adoc[Preparing storage systems for SnapVault replication]
-* xref:concept_creating_a_configuration_for_domino_using_the_gui.adoc[Creating a backup and restore configuration]
- ** xref:concept_general_configuration_file_information.adoc[Logging in to the Snap Creator GUI]
- ** xref:task_using_the_gui_to_create_a_configuration_file.adoc[Creating a configuration file]
- ** xref:concept_adding_commands_to_the_backup_and_restore_configuration.adoc[Adding commands to the backup and restore configuration]
-  *** xref:concept_allowing_additional_commands_through_the_snap_creator_agent.adoc[Allowing supplemental commands on the Snap Creator Agent]
-  *** xref:task_configuring_snap_creator_to_use_snapdrive_by_using_the_gui.adoc[Adding supplemental commands to the configuration]
- ** xref:task_setting_the_snap_creator_archive_log_management_settings.adoc[Cleaning up archived copies of Domino transaction logs]
- ** xref:concept_use_meta_data_volumes_setting_to_back_up_the_changeinfo_directory.adoc[Backing up the changeinfo directory]
-* xref:concept_create_a_domino_backup_using_snap_creator.adoc[Backing up databases]
- ** xref:task_creating_a_domino_backup_using_the_snap_creator_gui.adoc[Backing up databases on demand]
- ** xref:task_scheduling_actions_using_the_snap_creator_gui.adoc[Scheduling backups]
-* xref:concept_domino_database_restore_overview.adoc[Restoring databases]
- ** xref:task_performing_point_in_time_volume_restore.adoc[Performing a volume restore]
- ** xref:task_performing_point_in_time_single_file_restore_with_nfs.adoc[Performing a single-file restore]
- ** xref:concept_single_file_restore_in_fc_iscsi_environments.adoc[Performing a single-file restore in a SAN environment]
-  *** xref:task_using_snapdrive_for_windows_to_mount_snapshot_copy.adoc[Using SnapDrive to mount a Snapshot copy]
-  *** xref:task_copying_files_to_restore_location.adoc[Copying the file to the Data Restore Directory]
-  *** xref:task_running_snap_creator_by_using_the_custom_action.adoc[Using a Snap Creator custom action to complete restore processing]
-  *** xref:task_disconnecting_snapshot_copy.adoc[Disconnecting the Snapshot Copy]
-* xref:concept_accessing_snap_creator_log_files.adoc[Viewing job status and logs]
- ** xref:task_using_the_snap_creator_job_monitor_to_review_logs.adoc[Viewing job status and logs in the Job Monitor]
- ** xref:task_using_the_snap_creator_reports_option_to_view_logs.adoc[Viewing logs in the Reports pane]
- ** xref:task_creating_an_scdump_using_the_snap_creator_gui.adoc[Using scdump to gather logs in a compressed format]
-* xref:reference_domino_plug_in_specific_errors.adoc[Troubleshooting Domino plug-in-specific errors]
-* xref:reference_references.adoc[Where to go next]
-* xref:delete_reference_copyright.adoc[Copyright information]
-* xref:delete_reference_trademark.adoc[Trademark information]
-* xref:delete_concept_how_to_send_comments_about_documentation_and_receiv.adoc[How to send comments about documentation and receive update notifications]
+
+[.Lead]
+Describes how to configure and use the IBM Domino plug-in to back up and restore IBM Domino databases.

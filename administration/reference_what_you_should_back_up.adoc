@@ -2,7 +2,7 @@
 permalink: administration/reference_what_you_should_back_up.html
 sidebar: sidebar
 keywords: create, backup, copy, snap, creator, directories, information, server, snapcreator
-summary: 'The best practice is to create backup copies of specific Snap Creator directories to help ensure that the Snap Creator data can be restored without loss.'
+summary: The best practice is to create backup copies of specific Snap Creator directories to help ensure that the Snap Creator data can be restored without loss.
 ---
 = What Snap Creator information should be backed up
 :icons: font

@@ -1,8 +1,8 @@
 ---
 permalink: domino-ops/concept_single_file_restore_in_fc_iscsi_environments.html
 sidebar: sidebar
-keywords: 
-summary: 'For single-file restores in a SAN environment, you can use SnapDrive to mount the Snapshot copy on the Snap Creator Agent host. You can then copy the file you want to restore to the Data Restore Directory and use a Snap Creator custom action to complete restore processing.'
+keywords: domino, ibm, performing, single-file, restore, single, file, san
+summary: For single-file restores in a SAN environment, you can use SnapDrive to mount the Snapshot copy on the Snap Creator Agent host. 
 ---
 = Performing a single-file restore in a SAN environment
 :icons: font

@@ -2,7 +2,7 @@
 permalink: administration/concept_managing_user_access.html
 sidebar: sidebar
 keywords: snap, creator, security, features, rbac, snapcreator
-summary: 'Snap Creator provides security features such as role-based access control \(RBAC\), which enables you to manage user access within Snap Creator.'
+summary: Snap Creator provides security features such as role-based access control \(RBAC\), which enables you to manage user access within Snap Creator.
 ---
 = Managing user access
 :icons: font

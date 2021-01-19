@@ -2,7 +2,7 @@
 permalink: administration/concept_scf_component_plug_ins_ag.html
 sidebar: sidebar
 keywords: plug-in, applications, databases, snap, creator, plug-ins, binary, installation, integration, db2, ibm, domino, maxdb, mysql
-summary: 'Plug-ins are used to put applications or databases into a consistent state. Snap Creator contains several plug-ins that are part of the binary file and do not require any additional installation.'
+summary: Plug-ins are used to put applications or databases into a consistent state. Snap Creator contains several plug-ins that are part of the binary file and do not require any additional installation.
 ---
 = Plug-ins for application integration
 :icons: font

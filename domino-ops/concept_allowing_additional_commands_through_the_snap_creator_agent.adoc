@@ -1,8 +1,8 @@
 ---
 permalink: domino-ops/concept_allowing_additional_commands_through_the_snap_creator_agent.html
 sidebar: sidebar
-keywords: 
-summary: 'If you want to run a supplemental command on the Snap Creator Agent, you must explicitly permit the command to be executed by including it in the allowed_commands.config file on the Agent.'
+keywords: domino, ibm, allowing, allow, additional, commands, snap, creator, agent
+summary: If you want to run a supplemental command on the Snap Creator Agent, you must explicitly permit the command to be executed by including it in the allowed_commands.config file on the Agent.
 ---
 = Allowing supplemental commands on the Snap Creator Agent
 :icons: font

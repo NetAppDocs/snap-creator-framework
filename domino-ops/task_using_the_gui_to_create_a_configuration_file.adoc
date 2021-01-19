@@ -1,8 +1,8 @@
 ---
 permalink: domino-ops/task_using_the_gui_to_create_a_configuration_file.html
 sidebar: sidebar
-keywords: Snap Creator,IBM Domino plug-in
-summary: 'Before you can back up IBM Domino databases, you need to create a configuration file. The configuration file is the input for Snap Creator backup and restore operations.'
+keywords: domino, ibm,creating, create, configuraiton, file
+summary: Before you can back up IBM Domino databases, you need to create a configuration file. The configuration file is the input for Snap Creator backup and restore operations.
 ---
 = Creating a configuration file
 :icons: font

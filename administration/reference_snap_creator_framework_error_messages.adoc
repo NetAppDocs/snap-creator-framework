@@ -2,7 +2,7 @@
 permalink: administration/reference_snap_creator_framework_error_messages.html
 sidebar: sidebar
 keywords: snap, creator, framework, error, message, troubleshoot, issue, scf, serial, number, plug-in, snapcreator, application
-summary: 'The Snap Creator Framework error messages can help you troubleshoot any issues that occur.'
+summary: The Snap Creator Framework error messages can help you troubleshoot any issues that occur.
 ---
 = Snap Creator Framework error messages
 :icons: font

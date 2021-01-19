@@ -1,8 +1,8 @@
 ---
 permalink: domino-ops/concept_use_meta_data_volumes_setting_to_back_up_the_changeinfo_directory.html
 sidebar: sidebar
-keywords:
-summary: 'If you plan to back up the changeinfo directory, you must configure the volume containing the directory as a metadata volume. Doing so tells the IBM Domino plug-in to create a Snapshot copy of the changeinfo volume after creating the Snapshot copy for database files.'
+keywords: domino, ibm, backing up, backup, changeinfo, directory
+summary: If you plan to back up the changeinfo directory, you must configure the volume containing the directory as a metadata volume. Doing so tells the IBM Domino plug-in to create a Snapshot copy of the changeinfo volume after creating the Snapshot copy for database files.
 ---
 = Backing up the changeinfo directory
 :icons: font

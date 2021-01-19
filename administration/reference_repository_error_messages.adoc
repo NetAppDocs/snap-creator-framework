@@ -2,7 +2,7 @@
 permalink: administration/reference_repository_error_messages.html
 sidebar: sidebar
 keywords: table, repository, error, message, global, configuration, repo
-summary: 'The following table lists the Repository error messages.'
+summary: The following table lists the Repository error messages.
 ---
 = Repository error messages
 :icons: font

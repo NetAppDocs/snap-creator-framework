@@ -2,7 +2,7 @@
 permalink: administration/reference_information_required_to_configure_snap_creator.html
 sidebar: sidebar
 keywords: snap, creator, built-in, native, plug-in, oracle, db2, mysql, sybase, ase, domino, snapmanager, micorsoft, sql
-summary: 'Snap Creator supports the following built-in \(or native\) plug-ins: Oracle, DB2, MySQL, Sybase ASE, Domino, SnapManager for Microsoft SQL Server, SnapManager for Microsoft Exchange, MaxDB, VMware \(vSphere and vCloud Director\), Red Hat KVM, Citrix XenServer, and SAP HANA. Community plug-ins are not included in the package and must be downloaded separately.'
+summary: Snap Creator supports the following built-in \(or native\) plug-ins: Oracle, DB2, MySQL, Sybase ASE, Domino, SnapManager for Microsoft SQL Server, SnapManager for Microsoft Exchange, MaxDB, VMware \(vSphere and vCloud Director\), Red Hat KVM, Citrix XenServer, and SAP HANA. Community plug-ins are not included in the package and must be downloaded separately.
 ---
 = Plug-in information required to configure Snap Creator
 :icons: font

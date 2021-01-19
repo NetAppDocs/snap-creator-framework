@@ -2,7 +2,7 @@
 permalink: administration/reference_parameters_to_set_up_operations_manager_console.html
 sidebar: sidebar
 keywords: parameter, required, operation, manager, host, user, pwd, port
-summary: 'Several parameters are required to set up Operations Manager console.'
+summary: Several parameters are required to set up Operations Manager console.
 ---
 = Parameters to set up Operations Manager console
 :icons: font

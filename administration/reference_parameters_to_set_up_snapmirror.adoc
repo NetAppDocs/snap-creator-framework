@@ -2,7 +2,7 @@
 permalink: administration/reference_parameters_to_set_up_snapmirror.html
 sidebar: sidebar
 keywords: parameter, snapmirror, snap, creator, server, update, cascading, volume
-summary: 'Several parameters are required to set up SnapMirror for Snap Creator Server.'
+summary: Several parameters are required to set up SnapMirror for Snap Creator Server.
 ---
 = Parameters for setting up SnapMirror
 :icons: font

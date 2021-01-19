@@ -2,7 +2,7 @@
 permalink: administration/reference_snap_creator_server_or_agent_not_starting.html
 sidebar: sidebar
 keywords: snap, creator, server, agent, java
-summary: 'The Snap Creator Server or Snap Creator Agent might not start.'
+summary: The Snap Creator Server or Snap Creator Agent might not start.
 ---
 = Snap Creator Server or Agent not starting
 :icons: font

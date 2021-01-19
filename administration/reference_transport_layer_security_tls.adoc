@@ -2,7 +2,7 @@
 permalink: administration/reference_transport_layer_security_tls.html
 sidebar: sidebar
 keywords: cryptographic, flaw, transport, layer, security, tls, protocol
-summary: ''
+summary: Cryptographic flaws in Transport Layer Security
 ---
 = Cryptographic flaws in Transport Layer Security
 :icons: font

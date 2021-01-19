@@ -2,7 +2,7 @@
 permalink: administration/concept_snap_creator_agent_security.html
 sidebar: sidebar
 keywords: snap, creator, server, agent, https, multitenant, environment, self-signed
-summary: 'Snap Creator Server communicates with Snap Creator Agent only through HTTPS, which ensures a secure and encrypted communication. This feature is important in a multitenant environment. Self-signed certificates enables you to use your own generated certificate with Snap Creator Agent.'
+summary: Snap Creator Server communicates with Snap Creator Agent only through HTTPS, which ensures a secure and encrypted communication. This feature is important in a multitenant environment. Self-signed certificates enables you to use your own generated certificate with Snap Creator Agent.
 ---
 = Snap Creator Agent security
 :icons: font

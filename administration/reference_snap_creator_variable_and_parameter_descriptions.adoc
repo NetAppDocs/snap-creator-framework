@@ -2,7 +2,7 @@
 permalink: administration/reference_snap_creator_variable_and_parameter_descriptions.html
 sidebar: sidebar
 keywords: snap, creator, built-in, variable, parameter, basic, configuration, description, snap, type, time, action
-summary: 'Snap Creator includes built-in variables and parameters required in a basic configuration.'
+summary: Snap Creator includes built-in variables and parameters required in a basic configuration.
 ---
 = Snap Creator variable and parameter descriptions
 :icons: font

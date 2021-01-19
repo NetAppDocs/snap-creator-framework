@@ -2,7 +2,7 @@
 permalink: administration/reference_pre_commands.html
 sidebar: sidebar
 keywords: snap, creator, server, configuration, pre, command, quiesce, cmd, ntap, clone, exit
-summary: 'Snap Creator Server includes several configuration file PRE commands.'
+summary: Snap Creator Server includes several configuration file PRE commands.
 ---
 = PRE commands
 :icons: font

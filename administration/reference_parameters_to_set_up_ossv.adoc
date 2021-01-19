@@ -2,7 +2,7 @@
 permalink: administration/reference_parameters_to_set_up_ossv.html
 sidebar: sidebar
 keywords: parameter, open, system, snapvault, ossv, enable, homedir, snapshot
-summary: 'Several parameters are required to set up Open Systems SnapVault \(OSSV\).'
+summary: Several parameters are required to set up Open Systems SnapVault \(OSSV\).
 ---
 = Parameters to set up OSSV
 :icons: font

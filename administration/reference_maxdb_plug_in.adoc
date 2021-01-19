@@ -2,7 +2,7 @@
 permalink: administration/reference_maxdb_plug_in.html
 sidebar: sidebar
 keywords: maxdb, plug-in, automates, backup, restore, operations
-summary: 'The MaxDB plug-in automates backup and restore operations on MaxDB databases.'
+summary: The MaxDB plug-in automates backup and restore operations on MaxDB databases.
 ---
 = MaxDB plug-in
 :icons: font

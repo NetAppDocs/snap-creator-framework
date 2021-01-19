@@ -1,8 +1,8 @@
 ---
 permalink: domino-ops/reference_references.html
 sidebar: sidebar
-keywords: 
-summary: 'You can find more information about Snap Creator, including release-specific information, on the NetApp Support Site.'
+keywords: domino, ibm, more, information, snap creator
+summary: You can find more information about Snap Creator, including release-specific information, on the NetApp Support Site.
 ---
 = Where to go next
 :icons: font

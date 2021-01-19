@@ -2,7 +2,7 @@
 permalink: administration/reference_cli_command_for_snap_creator_rbac_actions.html
 sidebar: sidebar
 keywords: snap, creator, rbac, cli, command, user, access
-summary: 'You can perform Snap Creator RBAC actions using CLI commands.'
+summary: You can perform Snap Creator RBAC actions using CLI commands.
 ---
 = Commands used to manage Snap Creator user access
 :icons: font

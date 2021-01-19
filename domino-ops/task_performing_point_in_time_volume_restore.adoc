@@ -1,8 +1,8 @@
 ---
 permalink: domino-ops/task_performing_point_in_time_volume_restore.html
 sidebar: sidebar
-keywords:
-summary: 'You can use the IBM Domino plug-in to perform point-in-time, up-to-the-minute, or selectable up-to-the-minute volume restores for all major storage types.'
+keywords: domino, ibm, volume, restore
+summary: You can use the IBM Domino plug-in to perform point-in-time, up-to-the-minute, or selectable up-to-the-minute volume restores for all major storage types.
 ---
 = Performing a volume restore
 :icons: font
@@ -34,7 +34,7 @@ Volume restore (selectable up-to-the-minute)
 a|
 Restores the entire volume to its state at the time of the Snapshot copy, then plays forward Domino transaction logs to a specified time.
 |===
-*Note:* For up-to-the-minute and selectable point-in-time restores, Domino transaction logging must be enabled.
+NOTE: For up-to-the-minute and selectable point-in-time restores, Domino transaction logging must be enabled.
 
 Transaction logs can only be played forward. Selecting a time before the Snapshot copy was created causes a restore error.
 
@@ -42,7 +42,7 @@ Transaction logs can only be played forward. Selecting a time before the Snapsho
 +
 Selecting *Restore* automatically launches the Snap Creator Framework Restore wizard. Throughout the Restore wizard, click *Next* to advance to the next page. Click *Back* to return to the previous page.
 +
-NOTE: If you are restoring from a SnapVault copy, you are prompted to restore from primary or secondary storage. Your selection depends on how you are handling the limitation described in link:concept_domino_database_restore_overview.md#GUID-4D864E27-DE54-43BF-9B9F-EF2F240F65D9[concept_domino_database_restore_overview.md#GUID-4D864E27-DE54-43BF-9B9F-EF2F240F65D9].
+NOTE: If you are restoring from a SnapVault copy, you are prompted to restore from primary or secondary storage. Your selection depends on how you are handling the limitation described in link:concept_domino_database_restore_overview.html[Restoring databases].
 
 . On the Restore details page, specify the restore details:
 +

@@ -2,7 +2,7 @@
 permalink: administration/reference_mysql_plug_in_parameters_settings_and_descriptions.html
 sidebar: sidebar
 keywords: mysql, plug-in, net-mysql, interoperability, matrix
-summary: 'The MySQL plug-in uses Net-MySQL to communicate with the database.'
+summary: The MySQL plug-in uses Net-MySQL to communicate with the database.
 ---
 = MySQL plug-in
 :icons: font

@@ -2,7 +2,7 @@
 permalink: administration/concept_using_the_plug_in_framework_to_create_custom_plug_ins.html
 sidebar: sidebar
 keywords: plug-in, framework, snap, creator, reuse, quiesce, unquiesce, discover, scdump, restore, restore, clone, describe, restore
-summary: 'The plug-in framework enables you to create your own plug-ins for Snap Creator or reuse the existing plug-ins. The plug-in provides Snap Creator with the steps for handling backup and recovery of a given application.'
+summary: The plug-in framework enables you to create your own plug-ins for Snap Creator or reuse the existing plug-ins. The plug-in provides Snap Creator with the steps for handling backup and recovery of a given application.
 ---
 = Using the plug-in framework to create custom plug-ins
 :icons: font

@@ -2,7 +2,7 @@
 permalink: administration/reference_cli_command_results_in_500_connect_failed_error.html
 sidebar: sidebar
 keywords: unix, 500, error, connect, failed
-summary: 'In a UNIX environment, you might encounter the 500 Connect Failed error when running a CLI command.'
+summary: In a UNIX environment, you might encounter the 500 Connect Failed error when running a CLI command.
 ---
 = CLI command results in 500 Connect Failed error
 :icons: font

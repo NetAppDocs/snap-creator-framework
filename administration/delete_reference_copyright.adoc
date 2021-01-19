@@ -2,7 +2,7 @@
 permalink: administration/delete_reference_copyright.html
 sidebar: sidebar
 keywords: copyright
-summary: ''
+summary: Copyright information
 ---
 = Copyright
 :icons: font

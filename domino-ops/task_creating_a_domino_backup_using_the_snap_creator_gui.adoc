@@ -1,8 +1,8 @@
 ---
 permalink: domino-ops/task_creating_a_domino_backup_using_the_snap_creator_gui.html
 sidebar: sidebar
-keywords: 
-summary: 'You should back up your databases as soon as they are available in NetApp storage. You can schedule recurring backups after the initial backup.'
+keywords: domino, ibm, backing up, backup, databases, on-demand, on, demand
+summary: You should back up your databases as soon as they are available in NetApp storage. You can schedule recurring backups after the initial backup.
 ---
 = Backing up databases on demand
 :icons: font

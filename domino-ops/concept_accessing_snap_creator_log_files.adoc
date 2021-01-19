@@ -1,7 +1,7 @@
 ---
 permalink: domino-ops/concept_accessing_snap_creator_log_files.html
 sidebar: sidebar
-keywords:
+keywords: domino, ibm, viewing, job, status, logs, accessing, snap, creator, log, files
 summary: 'You can view the status of a job in the Snap Creator Job Monitor. You can view a log of job actions in the Console pane while the job is running, or in the Out Log for the job. A number of specialized logs also are available.'
 ---
 = Viewing job status and logs

@@ -2,7 +2,7 @@
 permalink: administration/reference_sybase_plug_in.html
 sidebar: sidebar
 keywords: sybase, ase, plug-in, isql, command, database, parameter, user, server
-summary: 'The Sybase ASE plug-in uses the isql command to interact with the Sybase database.'
+summary: The Sybase ASE plug-in uses the isql command to interact with the Sybase database.
 ---
 = Sybase ASE plug-in
 :icons: font

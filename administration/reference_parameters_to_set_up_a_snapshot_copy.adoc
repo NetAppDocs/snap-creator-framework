@@ -2,7 +2,7 @@
 permalink: administration/reference_parameters_to_set_up_a_snapshot_copy.html
 sidebar: sidebar
 keywords: parameter, snapshot, copy, snap, creator, server, retention, snapdrive
-summary: 'Several configuration file parameters are required to set up Snapshot copies for Snap Creator Server.'
+summary: Several configuration file parameters are required to set up Snapshot copies for Snap Creator Server.
 ---
 = Parameters for setting up Snapshot copies
 :icons: font

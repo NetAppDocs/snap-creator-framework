@@ -2,7 +2,7 @@
 permalink: administration/reference_parameters_to_connect_to_vfiler_units_and_interface.html
 sidebar: sidebar
 keywords: several, parameter, snap, creator, sefver, vfiler, unit, interface, management, secondary
-summary: 'Several parameters are required to connect Snap Creator Server to vFiler units and interfaces.'
+summary: Several parameters are required to connect Snap Creator Server to vFiler units and interfaces.
 ---
 = Parameters to connect to vFiler units and interfaces
 :icons: font

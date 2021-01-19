@@ -2,7 +2,7 @@
 permalink: administration/reference_parameters_to_set_up_snapvault.html
 sidebar: sidebar
 keywords: parameter, snapvault, update, volume, relationship
-summary: 'Several parameters are required to set up SnapVault.'
+summary: Several parameters are required to set up SnapVault.
 ---
 = Parameters to set up SnapVault
 :icons: font

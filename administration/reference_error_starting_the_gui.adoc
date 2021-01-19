@@ -2,7 +2,7 @@
 permalink: administration/reference_error_starting_the_gui.html
 sidebar: sidebar
 keywords: unix, environment, snap, creator, gui, linux
-summary: 'In a UNIX environment, you might encounter an error when starting the Snap Creator GUI.'
+summary: In a UNIX environment, you might encounter an error when starting the Snap Creator GUI.
 ---
 = Error starting the Snap Creator GUI
 :icons: font

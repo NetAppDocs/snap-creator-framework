@@ -2,7 +2,7 @@
 permalink: administration/reference_guidelines_for_using_the_snap_creator_command_line.html
 sidebar: sidebar
 keywords: snap, creator, command-line, functionality, gui, cli, backup, lun
-summary: 'Snap Creator provides command-line functionality that enables you to perform various actions without using the graphical user interface \(GUI\). For instance, you can createa backup, clonea volume or LUN, and import configuration files from the command-line interface \(CLI\).'
+summary: Snap Creator provides command-line functionality that enables you to perform various actions without using the graphical user interface \(GUI\). For instance, you can createa backup, clonea volume or LUN, and import configuration files from the command-line interface \(CLI\).
 ---
 = Guidelines for using the Snap Creator command-line interface
 :icons: font

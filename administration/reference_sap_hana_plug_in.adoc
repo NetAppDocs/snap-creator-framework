@@ -2,7 +2,7 @@
 permalink: administration/reference_sap_hana_plug_in.html
 sidebar: sidebar
 keywords: sap, hana, plug-in, backup, point-in-time, recovery, sql
-summary: 'The SAP HANA plug-in enables you to create backups and perform point-in-time recovery of SAP HANA databases based on storage Snapshot copies.'
+summary: The SAP HANA plug-in enables you to create backups and perform point-in-time recovery of SAP HANA databases based on storage Snapshot copies.
 ---
 = SAP HANA plug-in
 :icons: font

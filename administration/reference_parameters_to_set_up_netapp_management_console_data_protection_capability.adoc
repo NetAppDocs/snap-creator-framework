@@ -2,7 +2,7 @@
 permalink: administration/reference_parameters_to_set_up_netapp_management_console_data_protection_capability.html
 sidebar: sidebar
 keywords: parameter, netapp, management, console, protection, capability, ntap, update, set, backup, format
-summary: 'Several parameters are required to set up the NetApp Management Console data protection capability.'
+summary: Several parameters are required to set up the NetApp Management Console data protection capability.
 ---
 = Parameters to set up the NetApp Management Console data protection capability
 :icons: font

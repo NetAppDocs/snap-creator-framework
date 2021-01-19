@@ -2,7 +2,7 @@
 permalink: administration/reference_db2_plug_in.html
 sidebar: sidebar
 keywords: db2, plug-in, communicate, database
-summary: 'The DB2 plug-in uses the db2 command to communicate with the database.'
+summary: The DB2 plug-in uses the db2 command to communicate with the database.
 ---
 = DB2 plug-in
 :icons: font

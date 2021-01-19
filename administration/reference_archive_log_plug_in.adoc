@@ -2,7 +2,7 @@
 permalink: administration/reference_archive_log_plug_in.html
 sidebar: sidebar
 keywords: archive, log, plug-in, snap, creator, archive
-summary: 'The Archive log plug-in works with Snap Creator Archive logs and not with the logs of any application or database.'
+summary: The Archive log plug-in works with Snap Creator Archive logs and not with the logs of any application or database.
 ---
 = Archive log plug-in
 :icons: font

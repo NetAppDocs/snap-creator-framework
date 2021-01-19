@@ -1,8 +1,8 @@
 ---
 permalink: domino-ops/concept_backup_operations_using_domino_plug_in.html
 sidebar: sidebar
-keywords: 
-summary: 'Unlike other backup technologies, the IBM Domino plug-in allows data to be written to the database during backup operations. It ensures that the backup is consistent with application data by recording any changes to the database during backup operations in a temporary directory called changeinfo. At restore time, it applies these changes to the database after restoring data from the Snapshot copy.'
+keywords: domino, ibm, backup, operations, ibm, understanding
+summary: Unlike other backup technologies, the IBM Domino plug-in allows data to be written to the database during backup operations. It ensures that the backup is consistent with application data by recording any changes to the database during backup operations in a temporary directory called changeinfo. At restore time, it applies these changes to the database after restoring data from the Snapshot copy.
 ---
 = Understanding IBM Domino plug-in backup operations
 :icons: font

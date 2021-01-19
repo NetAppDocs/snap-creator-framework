@@ -2,7 +2,7 @@
 permalink: administration/reference_parameters_to_set_up_cloning.html
 sidebar: sidebar
 keywords: parameter, snap, creator, server, cloning, operation
-summary: 'Several parameters are required to set up Snap Creator Server cloning operations.'
+summary: Several parameters are required to set up Snap Creator Server cloning operations.
 ---
 = Parameters to set up cloning operations
 :icons: font

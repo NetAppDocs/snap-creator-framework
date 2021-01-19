@@ -2,7 +2,7 @@
 permalink: administration/reference_troubleshooting_network_issues.html
 sidebar: sidebar
 keywords: network, issues, snap, creator, authorization, failure, troubleshoot, nat
-summary: 'You might encounter network issues in Snap Creator such as authorization failures. You should be aware of these issues and know how to troubleshoot them.'
+summary: You might encounter network issues in Snap Creator such as authorization failures. You should be aware of these issues and know how to troubleshoot them.
 ---
 = Troubleshooting network issues
 :icons: font

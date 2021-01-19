@@ -2,7 +2,7 @@
 permalink: administration/reference_parameters_to_set_up_event_management.html
 sidebar: sidebar
 keywords: parameter, management, snap, creator, server, event, ntap, asup, error, failure, msg, sendtrap
-summary: 'Several parameters are required to set up event management for Snap Creator Server.'
+summary: Several parameters are required to set up event management for Snap Creator Server.
 ---
 = Parameters for setting up event management
 :icons: font

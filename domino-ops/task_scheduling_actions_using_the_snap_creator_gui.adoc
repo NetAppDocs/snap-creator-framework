@@ -1,8 +1,8 @@
 ---
 permalink: domino-ops/task_scheduling_actions_using_the_snap_creator_gui.html
 sidebar: sidebar
-keywords:
-summary: 'You can schedule recurring backup jobs after performing the initial backup.'
+keywords: domino, ibm, scheduling, schedule, backups
+summary: You can schedule recurring backup jobs after performing the initial backup.
 ---
 = Scheduling backups
 :icons: font

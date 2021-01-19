@@ -2,7 +2,7 @@
 permalink: administration/reference_oracle_plug_in.html
 sidebar: sidebar
 keywords: oracle, plug-in, sql, plus, database, quiesce, unquiesce, oracle, database
-summary: 'The Oracle plug-in uses SQL\*Plus to communicate with the database and quiesce & unquiesce oracle database for backup.'
+summary: The Oracle plug-in uses SQL\*Plus to communicate with the database and quiesce & unquiesce oracle database for backup.
 ---
 = Oracle plug-in
 :icons: font

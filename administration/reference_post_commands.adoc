@@ -2,7 +2,7 @@
 permalink: administration/reference_post_commands.html
 sidebar: sidebar
 keywords: snap, creator, server, configuration, post, command, quiescecmde, cmd, ntap, app, post, transfer
-summary: 'Snap Creator Server includes several configuration file POST commands.'
+summary: Snap Creator Server includes several configuration file POST commands.
 ---
 = POST commands
 :icons: font
