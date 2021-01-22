@@ -1,8 +1,8 @@
 ---
 permalink: domino-ops/concept_restore_operations_using_domino_plug_in.html
 sidebar: sidebar
-keywords: 
-summary: 'The IBM Domino plug-in restores database files from the Snapshot copy of the volume on which the database is stored. When the Snapshot restore operation is complete, the plug-in applies any changes recorded in the changeinfo directory.'
+keywords: domino, ibm, understanding, plug-in, restore
+summary: The IBM Domino plug-in restores database files from the Snapshot copy of the volume on which the database is stored. When the Snapshot restore operation is complete, the plug-in applies any changes recorded in the changeinfo directory.
 ---
 = Understanding IBM Domino plug-in restore operations
 :icons: font

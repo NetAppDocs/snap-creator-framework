@@ -1,8 +1,8 @@
 ---
 permalink: administration/concept_troubleshooting_cli_command_errors.html
 sidebar: sidebar
-keywords: 
-summary: 'You should be aware of some errors you might encounter when attempting to run CLI commands, and know how to troubleshoot these issues.'
+keywords: errors, cli, troubleshoot, troubleshooting, command
+summary: You should be aware of some errors you might encounter when attempting to run CLI commands, and know how to troubleshoot these issues.
 ---
 = Troubleshooting CLI command errors
 :icons: font

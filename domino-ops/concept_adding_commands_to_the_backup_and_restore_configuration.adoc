@@ -1,8 +1,8 @@
 ---
 permalink: domino-ops/concept_adding_commands_to_the_backup_and_restore_configuration.html
 sidebar: sidebar
-keywords: 
-summary: 'Occasionally, a backup or restore operation might need to run a command that is not available in Snap Creator. On Window hosts using FC or iSCSI, for example, you might prefer to use SnapDrive commands for backups instead of native Snap Creator commands, to ensure file system consistency at the OS level.'
+keywords: domino, ibm, adding, commands, backup, restore, configuration, supplemental,
+summary: You might prefer to use SnapDrive commands for backups instead of native Snap Creator commands, to ensure file system consistency at the OS level.
 ---
 = Adding commands to the backup and restore configuration
 :icons: font
@@ -25,6 +25,5 @@ NOTE: This guide shows how to use the GUI to add commands. For information on ho
 
 *Related information*
 
-xref:concept_allowing_additional_commands_through_the_snap_creator_agent.adoc[Allowing supplemental commands on the Snap Creator Agent]
-
-xref:task_configuring_snap_creator_to_use_snapdrive_by_using_the_gui.adoc[Adding supplemental commands to the configuration]
+link:concept_allowing_additional_commands_through_the_snap_creator_agent.adoc[Allowing supplemental commands on the Snap Creator Agent]
+link:task_configuring_snap_creator_to_use_snapdrive_by_using_the_gui.adoc[Adding supplemental commands to the configuration]

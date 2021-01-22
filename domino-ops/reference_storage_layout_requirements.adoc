@@ -1,8 +1,8 @@
 ---
 permalink: domino-ops/reference_storage_layout_requirements.html
 sidebar: sidebar
-keywords: 
-summary: 'A typical IBM Domino environment has at least three Domino volumes, one each for Domino data, Domino transaction logs, and the plug-in changeinfo directory. Many sites also have volumes for Domino DAOS and for view rebuilds.'
+keywords: domino, ibm, storage, layout, requirements,
+summary: A typical IBM Domino environment has at least three Domino volumes, one each for Domino data, Domino transaction logs, and the plug-in changeinfo directory. Many sites also have volumes for Domino DAOS and for view rebuilds.
 ---
 = Storage layout requirements
 :icons: font
@@ -13,14 +13,13 @@ A typical IBM Domino environment has at least three Domino volumes, one each for
 
 The IBM Domino plug-in uses the changeinfo directory for changes recorded during backup operations and for copies of transaction logs used in up-to-the-minute restore operations. It is a best practice to store the changeinfo directory on a separate volume, to avoid inadvertently overwriting the information and to make it easier to back up.
 
-NOTE: For all IBM Domino best practices, see http://www.netapp.com/in/media/tr-3917.pdf[NetApp Technical Report 3917: Best Practices for Domino on NetApp].
-
 You may also find it useful to have separate volumes for Domino DAOS (if it is enabled) and for view rebuilds. When Domino rebuilds a view (for example, when a user opens a view whose index has been deleted or when updall --R is run), it may generate temporary files to sort the data for rapid view rebuilding.
 
 By default, these temporary files are located in the system's temporary folder or in the Domino data folder. IBM recommends changing the location of the temporary files to a different drive to distribute disk I/O and to ensure adequate space to rebuild views. To change the temporary folder used for view rebuilds, add the View_Rebuild_Dir setting to the notes.ini file.
 
 The following table shows the preferred volume layout:
 
+[options="header"]
 |===
 | Volume| Contents| Notes
 a|
@@ -54,4 +53,4 @@ DAOS repository
 a|
 Optional. Contains .dlo files from DAOS. Low I/O requirements make this a good candidate for SATA drives.
 |===
-*Note:* In virtual environments, guest-mounted disks are preferred.
+NOTE: In virtual environments, guest-mounted disks are preferred.

@@ -1,7 +1,7 @@
 ---
 permalink: installation/concept_set_up_the_hosts_to_be_in_sync_with_the_same_ntp_server.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'Before installing Snap Creator, you should ensure that the time on the Snap Creator Server host is in sync with the time on the Agent host. You can do this by synchronizing the time of the hosts with the same Network Time Protocol \(NTP\) server.'
 ---
 = Synchronizing time on Snap Creator Server and Agent hosts
@@ -14,4 +14,4 @@ Before installing Snap Creator, you should ensure that the time on the Snap Crea
 For more information, refer to the following documentation:
 
 * Clustered Data ONTAP--_Clustered Data ONTAP Software Setup Guide_ for your version of Data ONTAP; in particular, refer to the information regarding verifying the system time and synchronizing the system time across the cluster.
-* Data ONTAP operating in 7-Mode--Knowledgebase article 1011954 How to setup NTP time synchronization at https://kb.netapp.com/support/index?page=content&id=1011954&locale=en_US[kb.netapp.com/support/index?page=content&id=1011954&locale=en_US].
+* Data ONTAP operating in 7-Mode--Knowledgebase article 1011954 How to setup NTP time synchronization at link:https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/ONTAP_OS/How_to_set_up_NTP_time_synchronization_in_Data_ONTAP_7-Mode[How to set up NTP time synchronization in Data ONTAP 7-Mode].

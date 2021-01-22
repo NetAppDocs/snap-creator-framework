@@ -1,7 +1,7 @@
 ---
 permalink: administration/task_assigning_profiles_to_snap_creator_users.html
 sidebar: sidebar
-keywords: 
+keywords: snap, creator, gui, profile, menu, assign
 summary: 'You can assign profiles to Snap Creator users by using the Snap Creator GUI.'
 ---
 = Assigning profiles to Snap Creator users

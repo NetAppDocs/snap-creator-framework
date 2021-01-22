@@ -1,7 +1,7 @@
 ---
 permalink: administration/task_deleting_configuration_files.html
 sidebar: sidebar
-keywords: 
+keywords: delete, configuration, file, profile, management
 summary: 'You can delete configuration files from a profile.'
 ---
 = Deleting configuration files from a profile

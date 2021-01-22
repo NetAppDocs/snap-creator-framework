@@ -1,8 +1,8 @@
 ---
 permalink: administration/reference_mysql_plug_in_parameters_settings_and_descriptions.html
 sidebar: sidebar
-keywords: Snap Creator
-summary: 'The MySQL plug-in uses Net-MySQL to communicate with the database.'
+keywords: mysql, plug-in, net-mysql, interoperability, matrix
+summary: The MySQL plug-in uses Net-MySQL to communicate with the database.
 ---
 = MySQL plug-in
 :icons: font
@@ -17,6 +17,7 @@ For Snap Creator configurations, the MySQL database user must have the LOCK TABL
 
 The following table lists the MySQL plug-in parameters, provides their settings, and describes them:
 
+[options="header"]
 |===
 | Parameter| Setting| Description
 a|

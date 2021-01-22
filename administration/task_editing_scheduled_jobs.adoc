@@ -1,7 +1,7 @@
 ---
 permalink: administration/task_editing_scheduled_jobs.html
 sidebar: sidebar
-keywords: 
+keywords: edit, schedule, job, snap, creator, gui
 summary: 'You can edit a scheduled job.'
 ---
 = Editing scheduled jobs

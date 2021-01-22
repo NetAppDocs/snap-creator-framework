@@ -1,8 +1,8 @@
 ---
 permalink: domino-ops/concept_ibm_domino_backup_and_recovery_workflow.html
 sidebar: sidebar
-keywords: 
-summary: 'Before you can create backups with the IBM Domino plug-in, you need to install the Snap Creator Server and Agent software and provision NetApp storage. If you plan to replicate Snapshot copies to secondary storage for disaster recovery and archiving, you need to set up SnapMirror and SnapVault relationships.'
+keywords: domino, ibm, backup, recovery, workflows
+summary: Before you can create backups with the IBM Domino plug-in, you need to install the Snap Creator Server and Agent software and provision NetApp storage. If you plan to replicate Snapshot copies to secondary storage for disaster recovery and archiving, you need to set up SnapMirror and SnapVault relationships.
 ---
 = IBM Domino backup and recovery workflow
 :icons: font

@@ -1,8 +1,8 @@
 ---
 permalink: administration/reference_logs.html
 sidebar: sidebar
-keywords: 
-summary: 'Snap Creator provides useful error messages and troubleshooting logs.'
+keywords: snap, creator, error, troubleshoot, cmd, output, debug, warn, error, out, debug, stderr
+summary: Snap Creator provides useful error messages and troubleshooting logs.
 ---
 = Types of error messages and troubleshooting logs
 :icons: font

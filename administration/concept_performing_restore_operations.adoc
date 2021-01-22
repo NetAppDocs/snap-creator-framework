@@ -1,8 +1,8 @@
 ---
 permalink: administration/concept_performing_restore_operations.html
 sidebar: sidebar
-keywords: 
-summary: 'You can perform volume restore, single file restore, and application-defined restore operations using the Snap Creator GUI.'
+keywords: snap, creator, gui, snapdrive, windows
+summary: You can perform volume restore, single file restore, and application-defined restore operations using the Snap Creator GUI.
 ---
 = Performing restore operations
 :icons: font

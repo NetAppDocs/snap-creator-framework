@@ -1,8 +1,8 @@
 ---
 permalink: administration/reference_app_commands.html
 sidebar: sidebar
-keywords: 
-summary: 'The following table lists the application \(APP\) commands.'
+keywords: app, command
+summary: The following table lists the application \(APP\) commands.
 ---
 = APP commands
 :icons: font
@@ -11,6 +11,7 @@ summary: 'The following table lists the application \(APP\) commands.'
 [.lead]
 The following table lists the application (APP) commands.
 
+[options="header"]
 |===
 | Command| Description
 a|

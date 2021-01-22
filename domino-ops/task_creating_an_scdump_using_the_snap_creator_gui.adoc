@@ -1,8 +1,8 @@
 ---
 permalink: domino-ops/task_creating_an_scdump_using_the_snap_creator_gui.html
 sidebar: sidebar
-keywords: 
-summary: 'You can use the Snap Creatorscdump action to gather logs into a compressed file archive. You can then send the archive to technical support or a Snap Creator expert for review.'
+keywords: domino, ibm, using scdump, gathering, logs, compressed, format
+summary: You can use the Snap Creatorscdump action to gather logs into a compressed file archive. You can then send the archive to technical support or a Snap Creator expert for review.
 ---
 = Using scdump to gather logs in a compressed format
 :icons: font
@@ -15,6 +15,7 @@ You should have created a backup and restore configuration file.
 
 An scdump includes the following files:
 
+[options="header"]
 |===
 | File| Description
 a|
@@ -50,7 +51,7 @@ configuration files
 a|
 All configuration files in the selected profile are included, including global configuration files.
 |===
-*Note:* Although a configuration file is the input for scdump, the utility gathers information for all configurations in the parent profile.
+NOTE: Although a configuration file is the input for scdump, the utility gathers information for all configurations in the parent profile.
 
 . In the Profiles and Configurations pane, select a configuration file and click *Actions* > *scdump*.
 +

@@ -1,8 +1,8 @@
 ---
 permalink: administration/reference_transport_layer_security_tls.html
 sidebar: sidebar
-keywords: Snap Creator
-summary: ''
+keywords: cryptographic, flaw, transport, layer, security, tls, protocol
+summary: Cryptographic flaws in Transport Layer Security
 ---
 = Cryptographic flaws in Transport Layer Security
 :icons: font

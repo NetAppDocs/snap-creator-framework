@@ -1,8 +1,8 @@
 ---
 permalink: administration/reference_snap_creator_variable_and_parameter_descriptions.html
 sidebar: sidebar
-keywords: 
-summary: 'Snap Creator includes built-in variables and parameters required in a basic configuration.'
+keywords: snap, creator, built-in, variable, parameter, basic, configuration, description, snap, type, time, action
+summary: Snap Creator includes built-in variables and parameters required in a basic configuration.
 ---
 = Snap Creator variable and parameter descriptions
 :icons: font
@@ -11,6 +11,7 @@ summary: 'Snap Creator includes built-in variables and parameters required in a 
 [.lead]
 Snap Creator includes built-in variables and parameters required in a basic configuration.
 
+[options="header"]
 |===
 | Variables| Description
 a|
@@ -45,7 +46,7 @@ The following table lists and describes the Snap Creator parameters used in a ba
 a|
 SNAME
 a|
- 
+
 a|
 Specifies the Snapshot copy naming convention It should be unique. Snapshot copies are deleted according to the naming convention.
 
@@ -59,7 +60,7 @@ Sets the Snapshot naming conventionIf set to Y, Snapshot copies end with YYYYMMD
 a|
 VOLUMES
 a|
- 
+
 a|
 Lists the primary storage controllers and volumes of which you want to create a Snapshot copy For example:
 
@@ -88,7 +89,7 @@ NOTE: VOLUME_GROUPS is only supported for backup operations. If this parameter i
 a|
 NTAP_SNAPSHOT_RETENTIONS
 a|
- 
+
 a|
 Determines the number of Snapshot copies to be retained for a given policyFor example:
 
@@ -99,7 +100,7 @@ daily:7,weekly:4,monthly:1
 a|
 NTAP_USERS
 a|
- 
+
 a|
 Lists the storage systems and their corresponding user names and passwordsFor example:
 
@@ -128,13 +129,13 @@ Enables you to use either HTTP or HTTPS to connect to the storage controller**No
 a|
 PORT
 a|
- 
+
 a|
 Configures the port number the storage controllers use; normally: 80 and 443
 a|
 LOG_NUM
 a|
- 
+
 a|
 Specifies the number of .debug and .out reports that Snap Creator has to retain
 a|
@@ -147,7 +148,7 @@ Specifies the configuration typeThere are two types of configurations: plug-in a
 a|
 CMODE_CLUSTER_USERS
 a|
- 
+
 a|
 (Required for clustered Data ONTAP) Lists the primary and secondary clustered Data ONTAP clusters and their corresponding user names and passwordsFor example:
 
@@ -161,7 +162,7 @@ NOTE: Password must contain a minimum of two characters.
 a|
 CMODE_CLUSTER_NAME
 a|
- 
+
 a|
 (Required for clustered Data ONTAP) Specifies the name of the primary clustered Data ONTAP cluster
 a|
@@ -193,7 +194,7 @@ Enables you to use global configuration to store values
 a|
 FEDERATED_APPLICATIONS
 a|
- 
+
 a|
 Lists the configuration and profile names for the federated applications under the configuration For example:
 

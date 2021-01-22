@@ -1,8 +1,8 @@
 ---
 permalink: administration/reference_vmware_vibe_plug_in.html
 sidebar: sidebar
-keywords: 
-summary: 'Snap Creator supports the backup of VMware virtual machines and vApps through the VMware VIBE plug-in. The VMware plug-in is an integrated plug-in for both virtual machines with vSphere and vApps with vCloud Director.'
+keywords: snap, creator, support, backup, virtual, machine, vmware, windows, linux, vcenter, ha
+summary: Snap Creator supports the backup of VMware virtual machines and vApps through the VMware VIBE plug-in. The VMware plug-in is an integrated plug-in for both virtual machines with vSphere and vApps with vCloud Director.
 ---
 = VMware VIBE plug-in
 :icons: font
@@ -42,6 +42,7 @@ If the VMware plug-in cannot clean up VMware snapshot copies and displays an err
 
 The following table lists the VMware VIBE plug-in parameters, provides the parameter settings, and describes the parameters.
 
+[options="header"]
 |===
 | Parameter| Setting| Description
 a|

@@ -1,7 +1,7 @@
 ---
 permalink: administration/task_viewing_a_list_of_scheduled_jobs.html
 sidebar: sidebar
-keywords: 
+keywords: schedule, job, view, list, snap, creator, gui
 summary: 'You can view of list of scheduled jobs.'
 ---
 = Viewing a list of scheduled jobs

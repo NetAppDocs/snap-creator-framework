@@ -1,7 +1,7 @@
 ---
 permalink: administration/task_changing_the_snap_creator_server_port.html
 sidebar: sidebar
-keywords: 
+keywords: snap, creator, server, snapcreator, properties, file, restart, server, installation, unix
 summary: 'To change the port that the Snap Creator Server uses, you can edit the snapcreator.properties file and restart the server.'
 ---
 = Changing the Snap Creator Server port after installation

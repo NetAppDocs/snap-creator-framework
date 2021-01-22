@@ -1,8 +1,8 @@
 ---
 permalink: domino-ops/delete_reference_trademark.html
 sidebar: sidebar
-keywords: 
-summary: ''
+keywords: trademarks
+summary: Trademark information
 ---
 = Trademark information
 :icons: font

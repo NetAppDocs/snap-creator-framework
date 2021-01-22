@@ -1,7 +1,7 @@
 ---
 permalink: administration/task_creating_global_configuration_files.html
 sidebar: sidebar
-keywords: 
+keywords: global, configuration, storage, controller, file, create, backup, super, profile
 summary: 'You can create a global configuration file to separate the storage controller, storage virtual machine \(SVM\), or VMware credential configuration from the backup policy.'
 ---
 = Creating global configuration files
@@ -41,6 +41,7 @@ NOTE: By default, password encryption is enabled to prevent passwords from being
 +
 The page that you advance to in the wizard depends on the option that you select.
 +
+[options="header"]
 |===
 | Plug-in type option| Next page| Next page
 a|

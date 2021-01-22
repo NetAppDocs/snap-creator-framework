@@ -1,7 +1,7 @@
 ---
 permalink: installation/reference_cli_commands_for_creating_svm_roles.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'The following table lists the commands that are required to create a role for a new SVM user.'
 ---
 = CLI commands for creating SVM roles
@@ -11,6 +11,7 @@ summary: 'The following table lists the commands that are required to create a r
 [.lead]
 The following table lists the commands that are required to create a role for a new SVM user.
 
+[options="header"]
 |===
 | Command directory name| Command to be run
 a|

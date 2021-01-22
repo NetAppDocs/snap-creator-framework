@@ -1,8 +1,8 @@
 ---
 permalink: domino-ops/task_disconnecting_snapshot_copy.html
 sidebar: sidebar
-keywords: 
-summary: 'You need to disconnect the mounted Snapshot copy when the restore operation is complete.'
+keywords: domino, ibm, disconnecting, disconnect, snapshot, copy
+summary: You need to disconnect the mounted Snapshot copy when the restore operation is complete.
 ---
 = Disconnecting the Snapshot Copy
 :icons: font

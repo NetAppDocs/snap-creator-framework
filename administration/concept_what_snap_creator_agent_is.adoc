@@ -1,8 +1,8 @@
 ---
 permalink: administration/concept_what_snap_creator_agent_is.html
 sidebar: sidebar
-keywords: 
-summary: 'The Snap Creator Agent, typically installed on the same host where an application or database is installed, handles quiesce and unquiesce commands from the Snap Creator Server to a given application, and is where the plug-ins are located. Agent is sometimes shortened to scAgent within Snap Creator.'
+keywords: snap, creator, agent, quiesce, server, plug-in, multi-tenant
+summary: The Snap Creator Agent, typically installed on the same host where an application or database is installed, handles quiesce and unquiesce commands from the Snap Creator Server to a given application, and is where the plug-ins are located. Agent is sometimes shortened to scAgent within Snap Creator.
 ---
 = Snap Creator Agent overview
 :icons: font

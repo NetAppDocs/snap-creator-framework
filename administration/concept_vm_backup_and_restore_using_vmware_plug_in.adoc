@@ -1,8 +1,8 @@
 ---
 permalink: administration/concept_vm_backup_and_restore_using_vmware_plug_in.html
 sidebar: sidebar
-keywords: 
-summary: 'Snap Creator supports the backup of VMware virtual machines through the VMware plug-in. Virtual machine backups are taken through the vSphere API on the VMware vCenter server.'
+keywords: snap, creator, support, backup, vmware, virtual, machines, vsphere, api, vmware, vcenter, credentials
+summary: Snap Creator supports the backup of VMware virtual machines through the VMware plug-in. Virtual machine backups are taken through the vSphere API on the VMware vCenter server.
 ---
 = Virtual machine backup and restore by using the VMware plug-in
 :icons: font

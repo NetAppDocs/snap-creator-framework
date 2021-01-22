@@ -1,8 +1,8 @@
 ---
 permalink: domino-ops/concept_domino_database_restore_overview.html
 sidebar: sidebar
-keywords: 
-summary: 'The IBM Domino plug-in restores database files from the Snapshot copy of the volume on which the database is stored. When the Snapshot restore is complete, the plug-in applies any changes recorded in the changeinfo directory.'
+keywords: domino, ibm, restore, restoring, databases, understanding, snapmirror, snapvault, destination, directories
+summary: The IBM Domino plug-in restores database files from the Snapshot copy of the volume on which the database is stored. When the Snapshot restore is complete, the plug-in applies any changes recorded in the changeinfo directory.
 ---
 = Restoring databases
 :icons: font
@@ -13,7 +13,7 @@ The IBM Domino plug-in restores database files from the Snapshot copy of the vol
 
 == Understanding SnapMirror and SnapVault restore operations
 
-You cannot use Snap Creator to restore a SnapMirror copy of the data. If you want to restore a mirror copy, you need to break the mirror first, then manually restore the data. For more information, see the http://docs.netapp.com/ontap-9/topic/com.netapp.doc.exp-sm-ic-fr/home.html[ONTAP 9 Volume Disaster Recovery Express Guide].
+You cannot use Snap Creator to restore a SnapMirror copy of the data. If you want to restore a mirror copy, you need to break the mirror first, then manually restore the data. For more information, see the link:http://docs.netapp.com/ontap-9/topic/com.netapp.doc.exp-sm-ic-fr/home.html[ONTAP 9 Volume Disaster Recovery Express Guide].
 
 Only point-in-time volume restores are available when you restore a SnapVault copy from secondary storage. You cannot perform an up-to-the-minute volume restore or a single-file restore. You can work around this limitation by first restoring from secondary storage to primary storage. From primary storage, you can then perform an up-to-the-minute volume restore or a single-file restore as needed.
 
@@ -34,8 +34,6 @@ NOTE: This guide shows how to use the CLI only for single-file restores in a SAN
 
 *Related information*
 
-xref:task_performing_point_in_time_volume_restore.adoc[Performing a volume restore]
-
-xref:task_performing_point_in_time_single_file_restore_with_nfs.adoc[Performing a single-file restore]
-
-xref:concept_single_file_restore_in_fc_iscsi_environments.adoc[Performing a single-file restore in a SAN environment]
+link:task_performing_point_in_time_volume_restore.adoc[Performing a volume restore]
+link:task_performing_point_in_time_single_file_restore_with_nfs.adoc[Performing a single-file restore]
+link:concept_single_file_restore_in_fc_iscsi_environments.adoc[Performing a single-file restore in a SAN environment]

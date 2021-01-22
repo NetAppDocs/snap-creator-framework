@@ -1,8 +1,8 @@
 ---
 permalink: administration/reference_parameters_to_set_up_netapp_management_console_data_protection_capability.html
 sidebar: sidebar
-keywords: 
-summary: 'Several parameters are required to set up the NetApp Management Console data protection capability.'
+keywords: parameter, netapp, management, console, protection, capability, ntap, update, set, backup, format
+summary: Several parameters are required to set up the NetApp Management Console data protection capability.
 ---
 = Parameters to set up the NetApp Management Console data protection capability
 :icons: font
@@ -11,6 +11,7 @@ summary: 'Several parameters are required to set up the NetApp Management Consol
 [.lead]
 Several parameters are required to set up the NetApp Management Console data protection capability.
 
+[options="header"]
 |===
 | Parameter| Setting| Description
 a|
@@ -23,7 +24,7 @@ Enables you to turn on and off the NetApp Management Console data protection cap
 a|
 NTAP_DFM_DATA_SET
 a|
- 
+
 a|
 Lists the storage systems and the NetApp Management Console data protection capability data sets to volume correlations; that is, controller1:dataset1/vol1,vol2;controller1:dataset2/vol3.
 a|
@@ -35,7 +36,7 @@ Starts the NetApp Management Console data protection capability backup, checks t
 a|
 NTAP_DFM_SNAPSHOT_FORMAT
 a|
- 
+
 a|
 Optional setting for the format of the secondary Snapshot copies when using the NetApp Management Console data protection capability. This option requires OnCommand 5.0 or later. Required variable:
 

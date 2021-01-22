@@ -1,7 +1,7 @@
 ---
 permalink: administration/task_viewing_assigned_configuration_files_for_a_profile.html
 sidebar: sidebar
-keywords: 
+keywords: configuration, file, assign, profile
 summary: 'You can view a list of configuration files assigned to a profile.'
 ---
 = Viewing a list of configuration files assigned to a profile

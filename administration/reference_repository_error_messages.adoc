@@ -1,8 +1,8 @@
 ---
 permalink: administration/reference_repository_error_messages.html
 sidebar: sidebar
-keywords: 
-summary: 'The following table lists the Repository error messages.'
+keywords: table, repository, error, message, global, configuration, repo
+summary: The following table lists the Repository error messages.
 ---
 = Repository error messages
 :icons: font
@@ -11,6 +11,7 @@ summary: 'The following table lists the Repository error messages.'
 [.lead]
 The following table lists the Repository error messages.
 
+[options="header"]
 |===
 | Error code| Error message| Description/resolution
 a|
@@ -103,31 +104,31 @@ REPO-02303
 a|
 Removing profile configuration [%s] failed
 a|
- 
+
 a|
 REPO-02403
 a|
 Exporting profile configuration [%s] failed with error [%s]
 a|
- 
+
 a|
 REPO-02503
 a|
 Importing profile configuration [%s] failed with error [%s]
 a|
- 
+
 a|
 REPO-02603
 a|
 Retrieving global profile failed with error [%s]
 a|
- 
+
 a|
 REPO-02606
 a|
 Retrieving profile [%s] failed with error [%s]
 a|
- 
+
 a|
 REPO-02703
 a|
@@ -145,13 +146,13 @@ REPO-03103
 a|
 Creating configuration [%s] for profile [%s] failed with error [%s]
 a|
- 
+
 a|
 REPO-03203
 a|
 Updating configuration [%s] for profile [%s] failed with error [%s]
 a|
- 
+
 a|
 REPO-03212
 a|
@@ -169,55 +170,55 @@ REPO-03403
 a|
 Exporting configuration [%s] for profile [%s] failed with error [%s]
 a|
- 
+
 a|
 REPO-03503
 a|
 Importing configuration [%s] to profile [%s] failed with error [%s]
 a|
- 
+
 a|
 REPO-03603
 a|
 Retrieving configuration [%s] from profile [%s] failed with error [%s]
 a|
- 
+
 a|
 REPO-03703
 a|
 Listing configurations from profile [%s] failed with error [%s]
 a|
- 
+
 a|
 REPO-04003
 a|
 Reading catalog for profile [%s], configuration [%s] and timestamp [%s] failed with error [%s]
 a|
- 
+
 a|
 REPO-04103
 a|
 Writing catalog for profile [%s], configuration [%s] and timestamp [%s] failed with error [%s]
 a|
- 
+
 a|
 REPO-04203
 a|
 Purging catalog for profile [%s], configuration [%s] and timestamp [%s] failed with error [%s]
 a|
- 
+
 a|
 REPO-04303
 a|
 Inventoring catalog for profile [%s] and configuration [%s] failed with error [%s]
 a|
- 
+
 a|
 REPO-04304
 a|
 Configuration [%s] does not exist
 a|
- 
+
 a|
 REPO-04309
 a|
@@ -319,43 +320,43 @@ REPO-04343
 a|
 Adding scheduler object failed, scheduler [%s] with same task name already exists
 a|
- 
+
 a|
 REPO-04344
 a|
 Failed to update profile [%s]. Profile is empty.
 a|
- 
+
 a|
 REPO-04345
 a|
 Policy Type cannot be null while adding new policy
 a|
- 
+
 a|
 REPO-04346
 a|
 Storage object cannot be null
 a|
- 
+
 a|
 REPO-04347
 a|
 Adding storage object failed, storage [%s] with same name/IP already exists
 a|
- 
+
 a|
 REPO-04348
 a|
 Failed to fetch the storage details. Database Error!
 a|
- 
+
 a|
 REPO-04349
 a|
 Invalid host name. Storage with the host name/IP [%s] does not exist
 a|
- 
+
 a|
 REPO-04350
 a|
@@ -379,19 +380,19 @@ REPO-04356
 a|
 Cluster object cannot be null
 a|
- 
+
 a|
 REPO-04358
 a|
 Adding storage [%s] failed with error [%s]
 a|
- 
+
 a|
 REPO-04359
 a|
 Updating cluster [%s] failed with error [%s]
 a|
- 
+
 a|
 REPO-04360
 a|

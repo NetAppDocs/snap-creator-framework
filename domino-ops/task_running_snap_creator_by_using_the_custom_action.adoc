@@ -1,8 +1,8 @@
 ---
 permalink: domino-ops/task_running_snap_creator_by_using_the_custom_action.html
 sidebar: sidebar
-keywords: 
-summary: 'You can use a Snap Creator custom action to complete processing of restores originated outside of Snap Creator.'
+keywords: domino, ibm,using, use, snap, creator, custom, action complete, restore
+summary: You can use a Snap Creator custom action to complete processing of restores originated outside of Snap Creator.
 ---
 = Using a Snap Creator custom action to complete restore processing
 :icons: font
@@ -37,7 +37,7 @@ NOTE: You can omit the --passwd option if you do not want to type the password i
 NOTE: An alternative method to allow Domino replication is to leave this parameter out of the command.
 
   *** Enter Y to disable Domino replication. The plug-in sets a new Domino replica ID for the restored database file.
-*Note:* Appending --verbose to the command will show additional information about the restore operation. Otherwise, you are immediately returned to the command prompt when the command finishes executing.
+NOTE: Appending --verbose to the command will show additional information about the restore operation. Otherwise, you are immediately returned to the command prompt when the command finishes executing.
 
 +
 ----

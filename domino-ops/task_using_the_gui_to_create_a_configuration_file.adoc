@@ -1,8 +1,8 @@
 ---
 permalink: domino-ops/task_using_the_gui_to_create_a_configuration_file.html
 sidebar: sidebar
-keywords: Snap Creator,IBM Domino plug-in
-summary: 'Before you can back up IBM Domino databases, you need to create a configuration file. The configuration file is the input for Snap Creator backup and restore operations.'
+keywords: domino, ibm,creating, create, configuraiton, file
+summary: Before you can back up IBM Domino databases, you need to create a configuration file. The configuration file is the input for Snap Creator backup and restore operations.
 ---
 = Creating a configuration file
 :icons: font
@@ -34,6 +34,7 @@ TIP: Hover over a field in the wizard to display a tool tip.
 +
 NOTE: The examples in the following table are for UNIX environments. You can view examples of the settings for Windows in the screenshot that follows the table.
 +
+[options="header"]
 |===
 | GUI parameter| CLI parameter| Description
 a|
@@ -102,6 +103,7 @@ image::../media/scfs_domino_param_filled_in_windows.gif[This image is explained 
 
 . On the Agent Configuration page, specify Snap Creator Agent connection information:
 +
+[options="header"]
 |===
 | For this field...| Do this...
 a|
@@ -124,6 +126,7 @@ NOTE: If the Agent is not responding, verify the Agent details and confirm that 
 
 . On the Storage Connection settings page, specify connection information for the Storage Virtual Machine (SVM, formerly known as Vserver) on the primary storage system:
 +
+[options="header"]
 |===
 | For this field...| Do this...
 a|
@@ -139,6 +142,7 @@ If you are not using the default port for the SVM (80 for HTTP, 443 for HTTPS), 
 
 . On the Controller/Vserver Credentials page, specify the credentials for the SVM on the primary storage system:
 +
+[options="header"]
 |===
 | For this field...| Do this...
 a|
@@ -169,6 +173,7 @@ IMPORTANT: If you plan to back up the changeinfo directory, you must configure t
 . On the Controller/Vserver Credentials page, click *Add* if you want to specify SVM details and volumes to be backed up for another primary storage system.
 . On the Snapshot details page, specify Snapshot configuration information:
 +
+[options="header"]
 |===
 | For this field...| Do this...
 a|

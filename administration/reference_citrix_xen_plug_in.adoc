@@ -1,8 +1,8 @@
 ---
 permalink: administration/reference_citrix_xen_plug_in.html
 sidebar: sidebar
-keywords: 
-summary: 'Snap Creator supports the backup and restore of Citrix XenServer virtual machines \(VMs\) by using the Citrix XenServer plug-in.'
+keywords: snap, creator, support, backup, restore, citrix, xenserver, virtual, machine, vm, citrix, xenserver, plug-in
+summary: Snap Creator supports the backup and restore of Citrix XenServer virtual machines \(VMs\) by using the Citrix XenServer plug-in.
 ---
 = Citrix XenServer plug-in
 :icons: font

@@ -1,8 +1,8 @@
 ---
 permalink: domino-ops/task_performing_point_in_time_single_file_restore_with_nfs.html
 sidebar: sidebar
-keywords: Snap Creator,IBM Domino plug-in
-summary: 'You can use the IBM Domino plug-in to perform point-in-time, up-to-the-minute, or selectable up-to-the-minute single-file restores for databases in NFS environments.'
+keywords: snap creator, ibm, domino, plug-in, perfomring, single-file, single, file restore
+summary: You can use the IBM Domino plug-in to perform point-in-time, up-to-the-minute, or selectable up-to-the-minute single-file restores for databases in NFS environments.
 ---
 = Performing a single-file restore
 :icons: font
@@ -17,6 +17,7 @@ NOTE: You do not have to stop the Domino server for a single-file restore.
 
 Single-file restore options are as follows:
 
+[options="header"]
 |===
 | Restore type| Description
 a|
@@ -32,7 +33,7 @@ Single-file restore (selectable up-to-the-minute)
 a|
 Restores a single file to its state at the time of the Snapshot copy, then plays forward Domino transaction logs to a specified time (NFS only).
 |===
-*Note:* For up-to-the-minute and selectable point-in-time restores, Domino transaction logging must be enabled.
+NOTE: For up-to-the-minute and selectable point-in-time restores, Domino transaction logging must be enabled.
 
 Transaction logs can only be played forward. Selecting a time before the Snapshot copy was created causes a restore error.
 
@@ -44,6 +45,7 @@ NOTE: If you are restoring from a SnapVault copy, you are prompted to restore fr
 
 . On the Restore details page, specify the restore details:
 +
+[options="header"]
 |===
 | For this field...| Do this...
 a|
@@ -86,6 +88,7 @@ The directory is displayed with its full path name in the *Destination path* fie
 
 . On the following page, specify the single-file restore type:
 +
+[options="header"]
 |===
 | For this field...| Do this...
 a|
