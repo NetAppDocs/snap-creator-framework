@@ -9,4 +9,4 @@ summary: Describes how to configure and use the SAP HANA plug-in to back up and 
 :imagesdir: ../media/
 
 [.Lead]
-This guide describes how to configure and use the SAP HANA plug-in to back up and restore SAP HANA databases.
+This guide describes how to configure and use the SAP HANA plug-in for Snap Creator 4.3.3 to back up and restore SAP HANA databases.
