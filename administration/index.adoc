@@ -10,4 +10,4 @@ summary: Describes hot to manage Snap Creator Server and Agent, including user a
 
 
 [.Lead]
-This guide describes hot to manage Snap Creator Server and Agent, including user access and profiles, policies, schedule jobs, and backup and recovery operations.
+This guide describes how to manage Snap Creator Server and Agent for Snap Creator 4.3.3, including user access and profiles, policies, schedule jobs, and backup and recovery operations.

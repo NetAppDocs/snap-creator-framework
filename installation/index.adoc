@@ -9,4 +9,4 @@ summary: Describes how to install and set up Snap Creator.
 :imagesdir: ../media/
 
 [.Lead]
-This guide describes how to install and set up Snap Creator.
+This guide describes how to install and set up Snap Creator 4.3.3.
