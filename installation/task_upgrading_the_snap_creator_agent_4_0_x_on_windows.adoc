@@ -1,7 +1,7 @@
 ---
 permalink: installation/task_upgrading_the_snap_creator_agent_4_0_x_on_windows.html
 sidebar: sidebar
-keywords: 
+keywords: upgrading, upgrade, snap, creator, agent, 4.0.x, windows
 summary: 'You can upgrade directly from Snap Creator Agent 4.0.x on Windows.'
 ---
 = Upgrading Snap Creator Agent 4.0.x on Windows

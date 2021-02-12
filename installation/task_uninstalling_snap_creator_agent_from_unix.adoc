@@ -1,7 +1,7 @@
 ---
 permalink: installation/task_uninstalling_snap_creator_agent_from_unix.html
 sidebar: sidebar
-keywords: 
+keywords: uninstalling, uninstall, snap, creator, agent, unix
 summary: 'You can uninstall Snap Creator Agent from UNIX by deleting the Snap Creator Agent installation folder.'
 ---
 = Uninstalling Snap Creator Agent on UNIX

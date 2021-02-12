@@ -1,7 +1,7 @@
 ---
 permalink: installation/task_creating_symbolic_links_for_domino_plug_in_on_aix_hosts.html
 sidebar: sidebar
-keywords: 
+keywords: creating, create, symbolic, links, domino, plug-in, aix, hosts
 summary: 'You must perform this procedure to add symbolic links for the Domino plug-in on AIX hosts.'
 ---
 = Creating symbolic links for the Domino plug-in on AIX hosts

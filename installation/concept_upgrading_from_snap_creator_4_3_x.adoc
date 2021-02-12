@@ -1,7 +1,7 @@
 ---
 permalink: installation/concept_upgrading_from_snap_creator_4_3_x.html
 sidebar: sidebar
-keywords: 
+keywords: upgrading, upgrade, snap, creator, 4.3
 summary: 'You can upgrade from Snap Creator 4.3.x, including all currently available patch releases.'
 ---
 = Upgrading from Snap Creator 4.3.x

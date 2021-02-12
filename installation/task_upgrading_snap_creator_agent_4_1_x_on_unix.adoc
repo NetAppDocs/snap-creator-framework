@@ -1,7 +1,7 @@
 ---
 permalink: installation/task_upgrading_snap_creator_agent_4_1_x_on_unix.html
 sidebar: sidebar
-keywords: 
+keywords: upgrading, upgrade, snap, creator, agent, 4.1.x, unix, unix-based
 summary: 'You can upgrade from Snap Creator Agent 4.1.x on UNIX-based systems.'
 ---
 = Upgrading Snap Creator Agent 4.1.x on UNIX-based systems
@@ -20,7 +20,7 @@ For example, enter the following command:
 ----
 
 * You have backed up the following directories, and all associated subdirectories and files, within the Snap Creator Agent directory (/install_path/scAgent4.1.x):
- ** Snap Creator Agent properties (../etc), which contains the allowed_commands.config  and agent.properties files
+ ** Snap Creator Agent properties (../etc), which contains the allowed_commands.config and agent.properties files
  ** Logs (../logs)
  ** Plug-ins (../plugins)
 *Note:* Do not delete the Snap Creator 4.1.x backup copies that you created.

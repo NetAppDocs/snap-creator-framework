@@ -1,7 +1,7 @@
 ---
 permalink: installation/task_upgrading_snap_creator_server_4_1_x_on_unix_based_systems.html
 sidebar: sidebar
-keywords: 
+keywords: upgrading, upgrade, snap, creator, server, 4.1.x, unix, unix-based
 summary: 'You can upgrade from Snap Creator Server 4.1.x on UNIX-based systems.'
 ---
 = Upgrading Snap Creator Server 4.1.x on UNIX-based systems

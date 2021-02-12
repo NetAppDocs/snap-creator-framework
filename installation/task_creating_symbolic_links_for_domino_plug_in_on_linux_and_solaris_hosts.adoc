@@ -1,7 +1,7 @@
 ---
 permalink: installation/task_creating_symbolic_links_for_domino_plug_in_on_linux_and_solaris_hosts.html
 sidebar: sidebar
-keywords: 
+keywords: creating, create, symbolic, links, domino, plug-in, linux, solaris, hosts
 summary: 'You need to perform this procedure if you want to create symbolic links for the Domino plug-in on Linux and Solaris hosts.'
 ---
 = Creating symbolic links for the Domino plug-in on Linux and Solaris hosts

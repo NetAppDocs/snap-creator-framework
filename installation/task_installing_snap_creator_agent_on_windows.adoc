@@ -1,7 +1,7 @@
 ---
 permalink: installation/task_installing_snap_creator_agent_on_windows.html
 sidebar: sidebar
-keywords: 
+keywords: installing, install, snap, creator, agent, windows
 summary: 'You can install Snap Creator Agent on Windows hosts by using the Windows installer.'
 ---
 = Installing Snap Creator Agent on Windows

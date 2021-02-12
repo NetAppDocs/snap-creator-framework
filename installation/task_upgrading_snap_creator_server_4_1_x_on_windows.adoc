@@ -1,7 +1,7 @@
 ---
 permalink: installation/task_upgrading_snap_creator_server_4_1_x_on_windows.html
 sidebar: sidebar
-keywords: 
+keywords: upgrading, upgrade, snap, creator, server, 4.1.x, windows
 summary: 'You can upgrade from Snap Creator Server 4.1.x on Windows.'
 ---
 = Upgrading Snap Creator Server 4.1.x on Windows
@@ -31,11 +31,11 @@ sc stop snapcreatoragentservice
  ** Configuration files (..\configs)
  ** Logs (..\logs)
  ** Plug-in repository, if enabled (..\snapcreatorPlugin)
-* (Optional) If the Snap Creator Agent is installed on the same host as the Snap Creator Server, you should back up the following directories and all associated subdirectories and files within the Snap  Creator Agent directory (C:\Program Files\NetApp\Snap_Creator_Framework\scAgent4.1.x):
- ** Snap Creator Agent properties (..\etc), which contains the allowed_commands.config  and agent.properties files
+* (Optional) If the Snap Creator Agent is installed on the same host as the Snap Creator Server, you should back up the following directories and all associated subdirectories and files within the Snap Creator Agent directory (C:\Program Files\NetApp\Snap_Creator_Framework\scAgent4.1.x):
+ ** Snap Creator Agent properties (..\etc), which contains the allowed_commands.config and agent.properties files
  ** Logs (..\logs)
  ** Plug-ins (..\plugins)
-* If Snap Creator was manually started from a command prompt, you must close the command  prompt and stop it.
+* If Snap Creator was manually started from a command prompt, you must close the command prompt and stop it.
 +
 NOTE: If Snap Creator was started from a service, the uninstaller stops the service as part of the uninstall process.
 

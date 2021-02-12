@@ -1,7 +1,7 @@
 ---
 permalink: installation/concept_scf_component_server.html
 sidebar: sidebar
-keywords: 
+keywords: snap, creator, server
 summary: 'Snap Creator actions are initiated by the Snap Creator Server.'
 ---
 = Snap Creator Server

@@ -1,7 +1,7 @@
 ---
 permalink: installation/concept_uninstalling_snap_creator.html
 sidebar: sidebar
-keywords: 
+keywords: unstalling, snap, creator
 summary: 'You can uninstall Snap Creator from your Windows and UNIX systems.'
 ---
 = Uninstalling Snap Creator

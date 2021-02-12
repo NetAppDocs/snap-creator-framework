@@ -1,7 +1,7 @@
 ---
 permalink: installation/task_uninstalling_snap_creator_on_windows.html
 sidebar: sidebar
-keywords: 
+keywords: uninstalling, uninstall, snap, creator, windows
 summary: 'You can uninstall Snap Creator using the Windows Start menu. The Windows uninstaller removes the Snap Creator components that are installed \(for example, if both the Snap Creator Server and Snap Creator Agent are installed, both will be uninstalled\). Similarly, if only one of the components is installed, that component will be uninstalled.'
 ---
 = Uninstalling Snap Creator on Windows

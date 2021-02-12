@@ -1,7 +1,7 @@
 ---
 permalink: installation/task_creating_a_snap_creator_user_for_data_ontap_operating_in_7_mode.html
 sidebar: sidebar
-keywords: 
+keywords: creating, create, snap, creator, user, ontap, 7-mode
 summary: 'Snap Creator uses the Data ONTAP APIs to communicate with the storage system. To ensure that the user account is granted access to only Snap Creator, create a new role, group, and user on each storage controller. The role is assigned to the group and the group contains the user. This controls the access and limits the scope of the Snap Creator account.'
 ---
 = Creating a Snap Creator user for Data ONTAP operating in 7-Mode
