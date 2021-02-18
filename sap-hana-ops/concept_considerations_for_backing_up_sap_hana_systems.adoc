@@ -1,7 +1,7 @@
 ---
 permalink: sap-hana-ops/concept_considerations_for_backing_up_sap_hana_systems.html
 sidebar: sidebar
-keywords: 
+keywords: considerations, backup, backing, up, sap, hana
 summary: 'SAP HANA administrators must deliver a reliable level of service, minimizing downtime or performance degradation due to backups.'
 ---
 = Considerations for backing up SAP HANA systems

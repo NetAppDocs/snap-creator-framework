@@ -1,7 +1,7 @@
 ---
 permalink: sap-hana-ops/concept_setup_assumptions_in_this_guide.html
 sidebar: sidebar
-keywords: 
+keywords: setup, assumptions
 summary: 'Though a typical Snap Creator installation assumes that the Server is installed on one host and the Agent is installed on a different host, the setup used in this guide is based on an SAP HANA multinode appliance.'
 ---
 = Setup assumptions in this guide

@@ -1,7 +1,7 @@
 ---
 permalink: sap-hana-ops/task_configuring_snapvault_relationships.html
 sidebar: sidebar
-keywords: 
+keywords: configuring, configure snapvault, relationships, snaprestore
 summary: 'When you configure SnapVault relationships, the primary storage controllers must have a valid SnapRestore and SnapVault license installed. The secondary storage must have a valid SnapVault license installed.'
 ---
 = Configuring SnapVault relationships

@@ -1,7 +1,7 @@
 ---
 permalink: sap-hana-ops/concept_sap_hana_plug_in_overview.html
 sidebar: sidebar
-keywords: 
+keywords: sap, hana, plug-in, overview
 summary: 'The SAP HANA plug-in works in conjunction with the Snap Creator Framework to provide a backup solution for SAP HANA databases that rely on a NetApp storage back end. The Snapshot backups created by Snap Creator are registered in the HANA Catalog and are visible in HANA Studio.'
 ---
 = SAP HANA plug-in overview

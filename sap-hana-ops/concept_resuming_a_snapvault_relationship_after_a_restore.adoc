@@ -1,7 +1,7 @@
 ---
 permalink: sap-hana-ops/concept_resuming_a_snapvault_relationship_after_a_restore.html
 sidebar: sidebar
-keywords: 
+keywords: resuming, resume, restart, snapvault, relationship, after, restore
 summary: 'Any restore that is not done using the latest Snapshot backup will delete the SnapVault relationship at the primary storage systems.'
 ---
 = Resuming a SnapVault relationship after a restore

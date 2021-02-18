@@ -1,7 +1,7 @@
 ---
 permalink: sap-hana-ops/task_overview_of_database_backups.html
 sidebar: sidebar
-keywords: 
+keywords: snap, creator, backing, up, database,
 summary: 'When Snap Creator is backing up the database, the following steps are executed.'
 ---
 = Overview of database backups

@@ -1,7 +1,7 @@
 ---
 permalink: sap-hana-ops/task_configuring_the_snap_creator_framework_and_sap_hana_database_backup.html
 sidebar: sidebar
-keywords: 
+keywords: configuring, configure, snap, creator, framework, sap, hana, database, backup
 summary: 'You must configure the Snap Creator Framework and the SAP HANA database backup.'
 ---
 = Configuring the Snap Creator Framework and SAP HANA database backup

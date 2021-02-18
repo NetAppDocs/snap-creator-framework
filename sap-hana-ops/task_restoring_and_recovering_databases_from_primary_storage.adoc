@@ -1,7 +1,7 @@
 ---
 permalink: sap-hana-ops/task_restoring_and_recovering_databases_from_primary_storage.html
 sidebar: sidebar
-keywords: 
+keywords: sap, hana, restore, restoring, recover, recovering, database, primary, storage
 summary: 'You can restore and recover the database from the primary storage.'
 ---
 = Restoring and recovering databases from primary storage

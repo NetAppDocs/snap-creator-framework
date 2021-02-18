@@ -1,7 +1,7 @@
 ---
 permalink: sap-hana-ops/concept_housekeeping_of_log_backups.html
 sidebar: sidebar
-keywords: 
+keywords: housekeeping, log, backups
 summary: 'Housekeeping of log backups in SAP HANA is based on a function within the HANA Studio or based on an SQL statement that allows deleting all backups that are older than a selected backup.'
 ---
 = Housekeeping of log backups

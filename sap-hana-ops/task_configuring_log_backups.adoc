@@ -1,7 +1,7 @@
 ---
 permalink: sap-hana-ops/task_configuring_log_backups.html
 sidebar: sidebar
-keywords: 
+keywords: configuring, log, backups
 summary: 'Log backups should be stored on a different storage system than the primary storage. The storage system that is used for the data backup can also be used for the log backup.'
 ---
 = Configuring log backups
