@@ -1,7 +1,7 @@
 ---
 permalink: sap-hana-ops/task_installing_and_configuring_required_software_components.html
 sidebar: sidebar
-keywords: 
+keywords: installing, install, configuring, configure, required, software
 summary: 'For the SAP HANA backup and restore solution using the Snap Creator Framework and the SAP HANA plug-in, you need to install Snap Creator software components and the SAP HANA hdbsql client software.'
 ---
 = Installing and configuring required software components

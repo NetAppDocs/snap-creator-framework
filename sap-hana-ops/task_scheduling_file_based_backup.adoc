@@ -1,7 +1,7 @@
 ---
 permalink: sap-hana-ops/task_scheduling_file_based_backup.html
 sidebar: sidebar
-keywords: 
+keywords: sap, hana, scheduling, file-based, backup
 summary: 'For SAP HANA configurations, you can schedule additional operations such as file-based backup and database integrity checks. You can schedule the file-based backup operation to occur at specific intervals.'
 ---
 = Scheduling file-based backup

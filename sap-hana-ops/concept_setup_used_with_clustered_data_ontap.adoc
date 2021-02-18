@@ -1,8 +1,8 @@
 ---
 permalink: sap-hana-ops/concept_setup_used_with_clustered_data_ontap.html
 sidebar: sidebar
-keywords: 
-summary: ''
+keywords: setup, sap, hana, clustered, data, ontap
+summary: 'Setup used with clustered Data ONTAP'
 ---
 = Setup used with clustered Data ONTAP
 :icons: font

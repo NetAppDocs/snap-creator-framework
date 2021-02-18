@@ -1,7 +1,7 @@
 ---
 permalink: installation/concept_scf_component_agent.html
 sidebar: sidebar
-keywords: 
+keywords: snap, creator, agent
 summary: 'The Snap Creator Agent is typically installed on the same host where an application or database is installed. The Agent is where the plug-ins are located. The Agent is sometimes shortened to scAgent within Snap Creator.'
 ---
 = Snap Creator Agent

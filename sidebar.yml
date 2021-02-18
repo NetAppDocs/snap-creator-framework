@@ -2,6 +2,8 @@
 entries:
 - title: Home
   url: "/index.html"
+- title: Release notes
+  url: "/releasenotes.html"
 - title: Administration
   url: "/administration/index.html"
   entries:
@@ -654,3 +656,5 @@ entries:
     url: "/sap-hana-ops/reference_troubleshooting.html"
   - title: Where to go next
     url: "/sap-hana-ops/reference_where_to_go_next_sap_hana.html"
+- title: Legal notices
+  url: "/reference_legal_notices.html"

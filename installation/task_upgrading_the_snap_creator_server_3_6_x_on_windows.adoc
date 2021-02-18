@@ -1,7 +1,7 @@
 ---
 permalink: installation/task_upgrading_the_snap_creator_server_3_6_x_on_windows.html
 sidebar: sidebar
-keywords: 
+keywords: upgrading, upgrade, snap, creator, server, 3.6.x, windows
 summary: 'You can upgrade directly from the Snap Creator Server 3.6.x on Windows.'
 ---
 = Upgrading the Snap Creator Server 3.6.x on Windows

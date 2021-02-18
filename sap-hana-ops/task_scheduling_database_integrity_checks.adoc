@@ -1,7 +1,7 @@
 ---
 permalink: sap-hana-ops/task_scheduling_database_integrity_checks.html
 sidebar: sidebar
-keywords: 
+keywords: sap, hana, scheduling, schedule, database, integrity, checks
 summary: 'For SAP HANA configurations, you can schedule additional operations such as file-based backup and database integrity checks. You can schedule the database integrity checks operation to occur at specific intervals.'
 ---
 = Scheduling database integrity checks

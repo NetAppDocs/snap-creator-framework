@@ -1,8 +1,8 @@
 ---
 permalink: sap-hana-ops/concept_configuring_data_backups.html
 sidebar: sidebar
-keywords: 
-summary: ''
+keywords: configuring, configure, data, backups, back-ups
+summary: 'You must configure your data backups after you install the required components'
 ---
 = Configuring data backups
 :icons: font

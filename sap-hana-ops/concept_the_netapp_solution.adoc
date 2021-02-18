@@ -1,7 +1,7 @@
 ---
 permalink: sap-hana-ops/concept_the_netapp_solution.html
 sidebar: sidebar
-keywords: 
+keywords: netapp, solution, sap, hana
 summary: 'A database backup can be created in minutes by using NetApp Snapshot™ technology. The time needed to create a Snapshot copy is independent of the size of the database because a Snapshot copy does not move any data blocks.'
 ---
 = The NetApp solution

@@ -1,7 +1,7 @@
 ---
 permalink: sap-hana-ops/task_resuming_a_snapvault_relationship_with_data_ontap_operating_in_7_mode.html
 sidebar: sidebar
-keywords: 
+keywords: sap,hana, resuming, resume, snapvault, relationship, data, ontap, operating, 7-mode
 summary: 'If you restore using a Snapshot backup other than the latest one, you need to resume the SnapVault relationship so that Snap Creator can continue to run backups.'
 ---
 = Resuming a SnapVault relationship with Data ONTAP operating in 7-Mode

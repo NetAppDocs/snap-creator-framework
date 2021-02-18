@@ -1,7 +1,7 @@
 ---
 permalink: sap-hana-ops/task_restoring_and_recovering_sap_hana_databases.html
 sidebar: sidebar
-keywords: 
+keywords: sap, hana, restoring, restore, recovering, recover, databases
 summary: 'You use SAP HANA Studio and Snap Creator to restore and recover SAP HANA databases.'
 ---
 = Restoring and recovering SAP HANA databases

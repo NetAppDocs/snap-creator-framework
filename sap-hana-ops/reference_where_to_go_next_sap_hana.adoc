@@ -1,7 +1,7 @@
 ---
 permalink: sap-hana-ops/reference_where_to_go_next_sap_hana.html
 sidebar: sidebar
-keywords: 
+keywords: more information, snap, creator, release, notes, support
 summary: 'You can find more information about Snap Creator, including release-specific information, on the NetApp Support Site.'
 ---
 = Where to go next

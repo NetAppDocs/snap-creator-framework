@@ -1,7 +1,7 @@
 ---
 permalink: sap-hana-ops/task_performing_file_based_backup_from_snap_creator_command_line.html
 sidebar: sidebar
-keywords: 
+keywords: sap, hana, performing, file-based, backup, snap, creator, command, line
 summary: 'You can perform File-Based Backup using the Snap Creator command line.'
 ---
 = Performing File-Based Backup from Snap Creator command line

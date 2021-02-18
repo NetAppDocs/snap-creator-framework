@@ -1,7 +1,7 @@
 ---
 permalink: installation/task_upgrading_snap_creator_agent_4_1_x_on_windows.html
 sidebar: sidebar
-keywords: 
+keywords: upgrading, snap, creator, agent, 4.1.x, windows
 summary: 'You can upgrade from Snap Creator Agent 4.1.x on Windows.'
 ---
 = Upgrading Snap Creator Agent 4.1.x on Windows
@@ -25,7 +25,7 @@ sc stop snapcreatoragentservice
 ----
 
 * You have backed up the following directories, and all associated subdirectories and files, within the Snap Creator Agent directory (C:\Program Files\NetApp\NetApp_Snap_Creator_Framework\scAgent4.1.x):
- ** Snap Creator Agent properties (..\etc), which contains the allowed_commands.config  and agent.properties files
+ ** Snap Creator Agent properties (..\etc), which contains the allowed_commands.config and agent.properties files
  ** Logs (..\logs)
  ** Plug-ins (..\plugins)
 *Note:* Do not delete the Snap Creator 4.1.x backup copies that you created.

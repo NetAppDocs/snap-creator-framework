@@ -1,7 +1,7 @@
 ---
 permalink: sap-hana-ops/task_restoring_and_recovering_database_from_secondary_storage.html
 sidebar: sidebar
-keywords: 
+keywords: sap, hana, restore, restoring, recover, recovering, databases, secondary, storage
 summary: 'You can restore and recover the database from the secondary storage.'
 ---
 = Restoring and recovering databases from secondary storage

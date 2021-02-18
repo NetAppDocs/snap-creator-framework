@@ -1,7 +1,7 @@
 ---
 permalink: installation/task_installing_the_snap_creator_server_on_unix.html
 sidebar: sidebar
-keywords: 
+keywords: installing, install, snap, creator, server, unix, unix-based
 summary: 'For UNIX platforms \(AIX, HP-UX, Linux, and Solaris\), the process of installing Snap Creator consists of extracting the Snap Creator software package \(a .tar file containing both the Snap Creator Server and the Snap Creator Agent\), running a setup script, starting the service, and validating the port.'
 ---
 = Installing the Snap Creator Server on UNIX-based systems

@@ -1,7 +1,7 @@
 ---
 permalink: sap-hana-ops/task_performing_file_based_backup_from_the_snap_creator_gui.html
 sidebar: sidebar
-keywords: 
+keywords: performing, perform, file-based, backup, snap, creator, gui, graphical, user, interface
 summary: 'You can perform File-Based Backup from the Snap Creator graphical user interface \(GUI\).'
 ---
 = Performing File-Based Backup from the Snap Creator GUI

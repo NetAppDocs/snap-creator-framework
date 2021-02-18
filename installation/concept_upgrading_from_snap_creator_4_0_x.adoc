@@ -1,7 +1,7 @@
 ---
 permalink: installation/concept_upgrading_from_snap_creator_4_0_x.html
 sidebar: sidebar
-keywords: 
+keywords: upgrading, upgrade, snap, creator, 4.0.x
 summary: 'When you upgrade from Snap Creator 4.0.x, the database schema is upgraded.'
 ---
 = Upgrading from Snap Creator 4.0.x

@@ -1,7 +1,7 @@
 ---
 permalink: installation/concept_install_snap_creator_agent.html
 sidebar: sidebar
-keywords: 
+keywords: installing, install, snap, creator, agent
 summary: 'You can install the Snap Creator Agent on Windows and UNIX hosts.'
 ---
 = Installing the Snap Creator Agent
