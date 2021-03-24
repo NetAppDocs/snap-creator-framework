@@ -1,7 +1,7 @@
 ---
 permalink: administration/task_viewing_a_list_of_backup_copies_of_a_configuration_file.html
 sidebar: sidebar
-keywords: 
+keywords: backup, copy, ontap, volume, configuration, file, data
 summary: 'You can view a list of the backup copies of ONTAP volumes that are defined in the configuration file. You can also get details about available backups and rename specific backups based on the requirement.'
 ---
 = Viewing a list of backup copies of a configuration file

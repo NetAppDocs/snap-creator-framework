@@ -1,7 +1,7 @@
 ---
 permalink: administration/task_deleting_scheduled_jobs.html
 sidebar: sidebar
-keywords: 
+keywords: delete, schedule, job, management
 summary: 'You can delete a scheduled job.'
 ---
 = Deleting scheduled jobs

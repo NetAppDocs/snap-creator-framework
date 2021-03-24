@@ -1,7 +1,7 @@
 ---
 permalink: sap-hana-ops/task_restoring_databases_after_a_primary_storage_failure_with_data_ontap_operating_in_7_mode.html
 sidebar: sidebar
-keywords: 
+keywords: restoring, restore, databases, primary, storage, failure, data, ontap, operating, 7-mode
 summary: 'You can restore an SAP HANA database after a primary storage system running Data ONTAP operating in 7-Mode fails.'
 ---
 = Restoring databases after a primary storage failure with Data ONTAP operating in 7-Mode

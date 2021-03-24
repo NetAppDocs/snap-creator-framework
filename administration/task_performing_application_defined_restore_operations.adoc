@@ -1,7 +1,7 @@
 ---
 permalink: administration/task_performing_application_defined_restore_operations.html
 sidebar: sidebar
-keywords: 
+keywords: vmware, kvm, xen, plug-in, snap, creator, gui
 summary: 'If you are using VMware, KVM, and Xen plug-ins, you can perform application-defined restore operations by using the Snap Creator GUI.'
 ---
 = Performing application-defined restore operations

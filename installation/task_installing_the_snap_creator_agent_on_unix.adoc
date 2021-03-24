@@ -1,7 +1,7 @@
 ---
 permalink: installation/task_installing_the_snap_creator_agent_on_unix.html
 sidebar: sidebar
-keywords: 
+keywords: installing, install, snap, creator, agent, unix
 summary: 'The Snap Creator Agent runs on any open systems platform \(AIX, HP-UX, Linux, and Solaris\).'
 ---
 = Installing the Snap Creator Agent on UNIX-based systems

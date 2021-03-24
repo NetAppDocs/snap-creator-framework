@@ -1,7 +1,7 @@
 ---
 permalink: installation/concept_upgrading_from_releases_earlier_than_snap_creator_3_6.html
 sidebar: sidebar
-keywords: 
+keywords: upgrading, upgrade, releases, earlier, before, snap, creator, 3.6
 summary: 'If you are upgrading from releases earlier than Snap Creator 3.6, you must first upgrade to Snap Creator 3.6 one version at a time.'
 ---
 = Upgrading from releases earlier than Snap Creator 3.6

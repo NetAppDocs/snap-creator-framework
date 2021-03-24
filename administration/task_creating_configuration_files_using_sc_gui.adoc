@@ -1,7 +1,7 @@
 ---
 permalink: administration/task_creating_configuration_files_using_sc_gui.html
 sidebar: sidebar
-keywords: 
+keywords: configuration, file, wizard, gui, management
 summary: 'You can create configuration files by using the Configuration wizard.'
 ---
 = Creating configuration files
@@ -25,6 +25,7 @@ NOTE: By default, password encryption is enabled to prevent passwords from being
 +
 The page that you advance to in the Configuration wizard depends on the option that you select.
 +
+[options="header"]
 |===
 | Plug-in type option| Next page| Next page
 a|
@@ -81,6 +82,7 @@ If changes are required, select a controller, and then click *Edit*.
 
  .. On the Snapshot Details page, provide the Snapshot copy details.
 +
+[options="header"]
 |===
 | Field| Description
 a|

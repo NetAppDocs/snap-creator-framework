@@ -1,8 +1,8 @@
 ---
 permalink: administration/reference_cli_command_results_in_500_cannot_locate_object_error.html
 sidebar: sidebar
-keywords: 
-summary: 'In a UNIX environment, you might encounter the 500 Cannot locate object error after running a CLI command.'
+keywords: unix, 500, locate, error, cli, ssl, libraries
+summary: In a UNIX environment, you might encounter the 500 Cannot locate object error after running a CLI command.
 ---
 = CLI command results in 500 Cannot locate object error
 :icons: font

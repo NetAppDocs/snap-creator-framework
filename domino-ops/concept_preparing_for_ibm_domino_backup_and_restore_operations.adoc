@@ -1,8 +1,8 @@
 ---
 permalink: domino-ops/concept_preparing_for_ibm_domino_backup_and_restore_operations.html
 sidebar: sidebar
-keywords: 
-summary: 'Before you deploy the IBM Domino plug-in, make sure that your storage system and hosts meet minimum resource requirements. You also need to configure storage system layouts for databases, and optionally set up SnapMirror and SnapVault relationships.'
+keywords: domino, ibm, preparing, prepare, ibm, domino, backup, restore
+summary: Before you deploy the IBM Domino plug-in, make sure that your storage system and hosts meet minimum resource requirements. You also need to configure storage system layouts for databases, and optionally set up SnapMirror and SnapVault relationships.
 ---
 = Preparing for IBM Domino backup and restore
 :icons: font

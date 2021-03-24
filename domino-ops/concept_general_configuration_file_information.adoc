@@ -1,10 +1,10 @@
 ---
 permalink: domino-ops/concept_general_configuration_file_information.html
 sidebar: sidebar
-keywords: 
+keywords: domino, ibm, logging into, Snap Creator, GUI, login
 summary: 'You use a web browser to log in to the Snap Creator GUI. Check with your administrator for the Snap Creator Server IP address, port, and login credentials.'
 ---
-= Logging in to the Snap Creator GUI
+= Logging into the Snap Creator GUI
 :icons: font
 :imagesdir: ../media/
 

@@ -1,7 +1,7 @@
 ---
 permalink: sap-hana-ops/concept_reviewing_available_backups_in_sap_hana_studio.html
 sidebar: sidebar
-keywords: 
+keywords: reviewing, review, available, backups, sap, hana, studio
 summary: 'You can see the list of storage Snapshot backups in the SAP HANA Studio.'
 ---
 = Reviewing available backups in SAP HANA Studio

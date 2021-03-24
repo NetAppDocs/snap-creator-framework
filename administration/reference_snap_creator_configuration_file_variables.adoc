@@ -1,8 +1,8 @@
 ---
 permalink: administration/reference_snap_creator_configuration_file_variables.html
 sidebar: sidebar
-keywords: 
-summary: 'You can define the variables, parameters, and commands within the Snap Creator configuration file.'
+keywords: variable, parameter, snap, creator, configuration, file, snapshot
+summary: You can define the variables, parameters, and commands within the Snap Creator configuration file.
 ---
 = Snap Creator configuration file variables, parameters, and commands
 :icons: font

@@ -1,7 +1,7 @@
 ---
 permalink: installation/task_installing_the_snap_creator_server_on_a_windows_host.html
 sidebar: sidebar
-keywords: 
+keywords: installing, install, snap, creator, server, windows, hosts
 summary: 'You can install Snap Creator Server on a Windows host by using Windows installer.'
 ---
 = Installing the Snap Creator Server on a Windows host

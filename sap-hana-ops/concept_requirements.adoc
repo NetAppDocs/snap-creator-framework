@@ -1,7 +1,7 @@
 ---
 permalink: sap-hana-ops/concept_requirements.html
 sidebar: sidebar
-keywords: 
+keywords: requirements, sap, hana, plug-in, create, backups, point-in-time, recovery, databases
 summary: 'The SAP HANA plug-in enables you to create backups and perform point-in-time recovery of HANA databases.'
 ---
 = Requirements

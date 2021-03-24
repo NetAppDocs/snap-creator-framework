@@ -1,7 +1,7 @@
 ---
 permalink: administration/task_creating_clones_from_a_new_backup.html
 sidebar: sidebar
-keywords: 
+keywords: clone, volume, lun, snapshot, copy, create, profile, configuration
 summary: 'You can clone volumes or LUNs from a new Snapshot copy.'
 ---
 = Creating clones from a new backup

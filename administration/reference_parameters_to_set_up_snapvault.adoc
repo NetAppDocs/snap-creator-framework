@@ -1,8 +1,8 @@
 ---
 permalink: administration/reference_parameters_to_set_up_snapvault.html
 sidebar: sidebar
-keywords: 
-summary: 'Several parameters are required to set up SnapVault.'
+keywords: parameter, snapvault, update, volume, relationship
+summary: Several parameters are required to set up SnapVault.
 ---
 = Parameters to set up SnapVault
 :icons: font
@@ -11,6 +11,7 @@ summary: 'Several parameters are required to set up SnapVault.'
 [.lead]
 Several parameters are required to set up SnapVault.
 
+[options="header"]
 |===
 | Parameter| Setting| Description
 a|
@@ -22,7 +23,7 @@ Enables you to turn on and off the SnapVault update function.
 a|
 SNAPVAULT_ VOLUMES
 a|
- 
+
 a|
 Lists the source storage systems and volumes on which you want to perform a SnapVault update (for example, controller1:vol1,vol2,vol3;controller2:vol1;controller3:vol2,vol3). *Note:*
 
@@ -37,19 +38,19 @@ Snap Creator does not create the relationships.
 a|
 SNAPVAULT_QTREE_INCLUDE
 a|
- 
+
 a|
 Lists the source storage systems and qtree paths that should be included in the SnapVault update. Without this option, all qtrees under a volume are vaulted by SnapVault if a relationship exists. Qtrees listed in the following example are vaulted by SnapVault and the rest are ignored by SnapVault: controller1:/vol/qtree/qtree1,/vol/volume/qtree2;controller2:/vol/volume/qtree1.
 a|
 NTAP_SNAPVAULT_RETENTIONS
 a|
- 
+
 a|
 Determines the number of Snapshot copies on the SnapVault secondary that you want to retain for a given policy (for example, daily:21, weekly:12, monthly:3).
 a|
 NTAP_SNAPVAULT_RETENTION_AGE
 a|
- 
+
 a|
 Enables you to define a retention age (in days) for SnapVault Snapshot copies. If configured, SnapVault Snapshot copies are deleted only if they exceed the number defined in NTAP_SNAPVAULT_RETENTIONS and if they are older than the retention age (in days).
 a|
@@ -73,13 +74,13 @@ In the case of SnapVault restore, it forces Snap Creator to wait for the operati
 a|
 NTAP_SNAPVAULT_WAIT
 a|
- 
+
 a|
 The wait time (in minutes) for the SnapVault update process to finish before creating a Snapshot copy on the SnapVault secondary.
 a|
 NTAP_SNAPVAULT_MAX_TRANSFER
 a|
- 
+
 a|
 The maximum bandwidth SnapVault is allowed to use, in kbps. If it is not set, SnapVault uses the maximum available bandwidth.
 |===

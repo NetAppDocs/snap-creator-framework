@@ -1,7 +1,7 @@
 ---
 permalink: administration/task_running_a_scheduled_job.html
 sidebar: sidebar
-keywords: 
+keywords: schedule, job, run, snap, creator, gui
 summary: 'You can run a scheduled job.'
 ---
 = Running scheduled jobs

@@ -1,7 +1,7 @@
 ---
 permalink: installation/concept_cli_reference.html
 sidebar: sidebar
-keywords: 
+keywords: cli, reference
 summary: 'This section contains reference information for using Snap Creator from the command line interface.'
 ---
 = CLI reference

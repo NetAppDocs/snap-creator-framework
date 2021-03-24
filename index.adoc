@@ -2,4 +2,6 @@
 permalink: index.html
 sidebar: sidebar
 ---
-= Main
+= Snap Creator Framework 4.3.3
+
+Welcome to the Snap Creator Framework Information Library. Here you will find documentation for Snap Creator Framework 4.3.3 software including how to install and set up Snap Creator, how to manage Snap Creator Sever and Agent, and how to configure and use the IBM Domino plug-in.

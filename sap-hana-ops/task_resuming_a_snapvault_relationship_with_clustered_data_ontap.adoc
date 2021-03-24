@@ -1,7 +1,7 @@
 ---
 permalink: sap-hana-ops/task_resuming_a_snapvault_relationship_with_clustered_data_ontap.html
 sidebar: sidebar
-keywords: 
+keywords: resuming, resume, snapvault, relationship, clustered, data, ontap
 summary: 'If you restore using a Snapshot backup other than the latest one, you need to resume the SnapVault relationship so that Snap Creator can continue to run backups.'
 ---
 = Resuming a SnapVault relationship with clustered Data ONTAP

@@ -1,8 +1,8 @@
 ---
 permalink: administration/delete_reference_trademark.html
 sidebar: sidebar
-keywords: 
-summary: ''
+keywords: trademark
+summary: Trademark information
 ---
 = Trademark
 :icons: font

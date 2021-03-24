@@ -1,7 +1,7 @@
 ---
 permalink: administration/task_creating_users.html
 sidebar: sidebar
-keywords: 
+keywords: snap, creator, profile, role, gui, user
 summary: 'You can create Snap Creator users and perform several actions, such as assigning profiles and roles to the users, by using the Snap Creator GUI.'
 ---
 = Creating Snap Creator users

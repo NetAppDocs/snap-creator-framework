@@ -1,8 +1,8 @@
 ---
 permalink: administration/reference_snap_creator_agent_not_responding.html
 sidebar: sidebar
-keywords: 
-summary: 'The Snap Creator Agent is not responding.'
+keywords: snap, creator, agent, responding, corrective, action
+summary: The Snap Creator Agent is not responding.
 ---
 = Snap Creator Agent not responding
 :icons: font

@@ -1,7 +1,7 @@
 ---
 permalink: sap-hana-ops/concept_sap_hana_backup_and_restore_solution_overview.html
 sidebar: sidebar
-keywords: 
+keywords: sap, hana, backup, restore, solution, overview
 summary: 'Corporations today require their SAP applications to be available 24 hours a day, seven days a week. Consistent levels of performance are expected regardless of increasing data volumes and routine maintenance tasks such as system backups.'
 ---
 = SAP HANA backup and restore solution overview

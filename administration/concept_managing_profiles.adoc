@@ -1,8 +1,8 @@
 ---
 permalink: administration/concept_managing_profiles.html
 sidebar: sidebar
-keywords: 
-summary: 'You can create, view, and delete profiles.'
+keywords: create, view, delete, profiles, managing, rbac
+summary: You can create, view, and delete profiles.
 ---
 = Managing profiles
 :icons: font

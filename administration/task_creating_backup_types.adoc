@@ -1,7 +1,7 @@
 ---
 permalink: administration/task_creating_backup_types.html
 sidebar: sidebar
-keywords: 
+keywords: backup, snap, creator, gui, policy, creating, type
 summary: 'You can optionally create a backup type using the Snap Creator GUI to help identify the purpose of a policy.'
 ---
 = Creating backup types

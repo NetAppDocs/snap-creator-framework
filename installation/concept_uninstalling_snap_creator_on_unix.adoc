@@ -1,7 +1,7 @@
 ---
 permalink: installation/concept_uninstalling_snap_creator_on_unix.html
 sidebar: sidebar
-keywords: 
+keywords: uninstalling, uninstall, snap, creator, unix
 summary: 'When uninstalling Snap Creator on UNIX, first uninstall the Snap Creator Agent, then uninstall the Snap Creator Server.'
 ---
 = Uninstalling Snap Creator on UNIX

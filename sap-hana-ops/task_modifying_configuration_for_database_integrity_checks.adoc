@@ -1,7 +1,7 @@
 ---
 permalink: sap-hana-ops/task_modifying_configuration_for_database_integrity_checks.html
 sidebar: sidebar
-keywords: 
+keywords: modifying, modify, configuration, database, integrity, checks, sap, hana
 summary: 'You can modify the parameters that are configured for Database Integrity Checks. The subsequent scheduled or on-demand Integrity Check operation reflects the updated information.'
 ---
 = Modifying configuration for Database Integrity Checks

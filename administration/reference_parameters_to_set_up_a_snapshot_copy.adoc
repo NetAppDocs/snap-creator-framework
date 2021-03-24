@@ -1,8 +1,8 @@
 ---
 permalink: administration/reference_parameters_to_set_up_a_snapshot_copy.html
 sidebar: sidebar
-keywords: 
-summary: 'Several configuration file parameters are required to set up Snapshot copies for Snap Creator Server.'
+keywords: parameter, snapshot, copy, snap, creator, server, retention, snapdrive
+summary: Several configuration file parameters are required to set up Snapshot copies for Snap Creator Server.
 ---
 = Parameters for setting up Snapshot copies
 :icons: font
@@ -11,12 +11,13 @@ summary: 'Several configuration file parameters are required to set up Snapshot 
 [.lead]
 Several configuration file parameters are required to set up Snapshot copies for Snap Creator Server.
 
+[options="header"]
 |===
 | Parameter| Setting| Description
 a|
 NTAP_SNAPSHOT_ RETENTION_AGE
 a|
- 
+
 a|
 Enables you to define the retention age (in days) for Snapshot copies. If configured, Snapshot copies are deleted only if they exceed the number defined in theNTAP_SNAPSHOT_ RETENTIONS parameter, and if they are older than the retention age (in days).
 
@@ -50,7 +51,7 @@ Overrides the NTAP_SNAPSHOT_RETENTIONS parameter, and prevents Snapshot copies f
 a|
 NTAP_SNAPSHOT_DELETE_CMD
 a|
- 
+
 a|
 Deletes snapshots through SnapDrive instead of Snap Creator based on snapshot retention.*Note:* All the volumes (mount drives) used in this Snapdrive command for snapshot deletion should be included the configuration file as well.
 
@@ -71,14 +72,14 @@ Applies only to Snapshot copy deletion using the backupDel action. Manually dele
 a|
 NTAP_SNAPSHOT_ CREATE_CMD ##
 a|
- 
+
 a|
 Creates a Snapshot copy and flushes the file system buffers; ## is a number from 1 to 99. *Note:* This setting is required if you enable the SNAPDRIVE parameter. The Data ONTAP API is still used to perform everything else, but the SNAPDRIVE option creates Snapshot copies.
 
 a|
 NTAP_ METADATA_SNAPSHOT_ CREATE_CMD ##
 a|
- 
+
 a|
 Creates the metadata volume Snapshot copy, and flushes the file system buffers; ## is a number from 1 to 99.
 a|
@@ -90,7 +91,7 @@ Enables the use of consistency groups for creating consistent Snapshot copy acro
 a|
 NTAP_CONSISTENCY_ GROUP_SNAPSHOT_RETRY_COUNT
 a|
- 
+
 a|
 Specifies the number of times a consistency group Snapshot should be retried in case of failure.
 a|
@@ -134,7 +135,7 @@ Enables the import of a non-Snap Creator Snapshot copy. The most recent Snapshot
 a|
 NTAP_EXTERNAL_SNAPSHOT_REGEX
 a|
- 
+
 a|
 Matches the imported Snapshot copies. This regular expression requires the NTAP_USE_EXTERNAL_SNAPSHOT parameter.
 

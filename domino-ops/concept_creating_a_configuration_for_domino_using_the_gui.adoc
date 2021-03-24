@@ -1,8 +1,8 @@
 ---
 permalink: domino-ops/concept_creating_a_configuration_for_domino_using_the_gui.html
 sidebar: sidebar
-keywords: 
-summary: 'You specify most of the information you need for backup and restore operations in a configuration file. The configuration file is the input for Snap Creator backup and restore operations.'
+keywords: domino, ibm, creating, create, backup, restore, configuration
+summary: You specify most of the information you need for backup and restore operations in a configuration file. The configuration file is the input for Snap Creator backup and restore operations.
 ---
 = Creating a backup and restore configuration
 :icons: font
@@ -22,12 +22,8 @@ You organize configuration files in Snap Creatorprofiles. Profiles and configura
 
 *Related information*
 
-xref:concept_general_configuration_file_information.adoc[Logging in to the Snap Creator GUI]
-
-xref:task_using_the_gui_to_create_a_configuration_file.adoc[Creating a configuration file]
-
-xref:concept_adding_commands_to_the_backup_and_restore_configuration.adoc[Adding commands to the backup and restore configuration]
-
-xref:task_setting_the_snap_creator_archive_log_management_settings.adoc[Cleaning up archived copies of Domino transaction logs]
-
-xref:concept_use_meta_data_volumes_setting_to_back_up_the_changeinfo_directory.adoc[Backing up the changeinfo directory]
+link:concept_general_configuration_file_information.adoc[Logging in to the Snap Creator GUI]
+link:task_using_the_gui_to_create_a_configuration_file.adoc[Creating a configuration file]
+link:concept_adding_commands_to_the_backup_and_restore_configuration.adoc[Adding commands to the backup and restore configuration]
+link:task_setting_the_snap_creator_archive_log_management_settings.adoc[Cleaning up archived copies of Domino transaction logs]
+link:concept_use_meta_data_volumes_setting_to_back_up_the_changeinfo_directory.adoc[Backing up the changeinfo directory]

@@ -1,7 +1,7 @@
 ---
 permalink: installation/concept_preinstallation_requirements_for_snap_creator.html
 sidebar: sidebar
-keywords: 
+keywords: preinstallation, requirements, before, install
 summary: 'There are system license, software, and hardware requirements that you should consider before you install Snap Creator.'
 ---
 = Preinstallation requirements for Snap Creator

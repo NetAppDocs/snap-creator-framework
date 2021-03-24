@@ -1,7 +1,7 @@
 ---
 permalink: installation/task_changing_the_snap_creator_agent_port_after_installation.html
 sidebar: sidebar
-keywords: 
+keywords: changing, change, snap, creator, agent, port, after, post, installation
 summary: 'To change the port on which the Snap Creator Agent is listening, you can make a change in the Snap Creatoragent.properties file and restart the agent.'
 ---
 = Changing the Snap Creator Agent port after installation

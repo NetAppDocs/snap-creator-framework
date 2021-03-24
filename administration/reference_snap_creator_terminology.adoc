@@ -1,8 +1,8 @@
 ---
 permalink: administration/reference_snap_creator_terminology.html
 sidebar: sidebar
-keywords: 
-summary: 'Snap Creator consists of a few different constructs, and it is important to understand the language and concepts.'
+keywords: snap, creator, terminology,action, backup, lun, clone, volume, agent, monitor, archive, log, configuration, discover, global, job, mount, ossv, profile, policy, quiesce, restore, scdump, schedule, umount, unquiesce, watchdog
+summary: Snap Creator consists of a few different constructs, and it is important to understand the language and concepts.
 ---
 = Snap Creator terminology
 :icons: font

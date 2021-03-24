@@ -1,7 +1,7 @@
 ---
 permalink: sap-hana-ops/concept_backup_solution_components.html
 sidebar: sidebar
-keywords: 
+keywords: backup, solution, components, sap, hana
 summary: 'The Snap Creator backup solution for SAP HANA consists of SAP HANA data file backup using storage-based Snapshot copies, replication of data file backups to a secondary offsite backup location, SAP HANA log file backup using the HANA database log backup functionality, database block integrity check using a file-based backup, and housekeeping of data file, log file backups, and the SAP HANA backup catalog.'
 ---
 = Backup solution components
@@ -21,6 +21,7 @@ image::../media/sap_hana_database_log_backup.gif[SAP HANA database and log backu
 
 The backup schedules and retention policies must be defined based on customer requirements. The following table shows an example configuration of the different schedules and retention policies.
 
+[options="header"]
 |===
 |  | Executed by Snap Creator| Primary storage| Secondary storage
 a|

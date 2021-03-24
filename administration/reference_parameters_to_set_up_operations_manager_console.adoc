@@ -1,8 +1,8 @@
 ---
 permalink: administration/reference_parameters_to_set_up_operations_manager_console.html
 sidebar: sidebar
-keywords: 
-summary: 'Several parameters are required to set up Operations Manager console.'
+keywords: parameter, required, operation, manager, host, user, pwd, port
+summary: Several parameters are required to set up Operations Manager console.
 ---
 = Parameters to set up Operations Manager console
 :icons: font
@@ -11,31 +11,32 @@ summary: 'Several parameters are required to set up Operations Manager console.'
 [.lead]
 Several parameters are required to set up Operations Manager console.
 
+[options="header"]
 |===
 | Parameter| Setting| Description
 a|
 OM_HOST
 a|
- 
+
 a|
 The name or IP address of the Operations Manager console host.
 a|
 OM_USER
 a|
- 
+
 a|
 The user name of an Operations Manager console user who has permission to create events.
 a|
 OM_PWD
 a|
- 
+
 a|
 The password for the Operations Manager console user. *Note:* The password must contain a minimum of two characters.
 
 a|
 OM_PORT
 a|
- 
+
 a|
 The port to use for communications with Operations Manager console; 8088 is the default HTTP port and 8488 is the default HTTPS port that the Operations Manager console uses.
 a|

@@ -1,7 +1,7 @@
 ---
 permalink: administration/task_deleting_clones.html
 sidebar: sidebar
-keywords: 
+keywords: unmount, delete, clone, gui, snap, creator, management, configuration, action, snapshot, copy, controller, volume
 summary: 'You can unmount \(or delete\) clones.'
 ---
 = Unmounting clones

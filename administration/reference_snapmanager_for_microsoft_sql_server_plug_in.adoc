@@ -1,8 +1,8 @@
 ---
 permalink: administration/reference_snapmanager_for_microsoft_sql_server_plug_in.html
 sidebar: sidebar
-keywords: 
-summary: 'The SnapManager for Microsoft SQL Server plug-in is used to centralize backup operations for Microsoft SQL Server through Snap Creator. Using this plug-in, you can configure tens or hundreds of SnapManager for Microsoft SQL servers through Snap Creator, allowing you to view all of your SnapManager for Microsoft SQL backup jobs and statuses from a single interface.'
+keywords: snapmanager, microsoft, sql, server, plug-in, backup, operation, program
+summary: The SnapManager for Microsoft SQL Server plug-in is used to centralize backup operations for Microsoft SQL Server through Snap Creator. Using this plug-in, you can configure tens or hundreds of SnapManager for Microsoft SQL servers through Snap Creator, allowing you to view all of your SnapManager for Microsoft SQL backup jobs and statuses from a single interface.
 ---
 = SnapManager for Microsoft SQL Server plug-in
 :icons: font
@@ -22,6 +22,7 @@ When using the SnapManager for Microsoft SQL Server plug-in, you must be aware o
 
 The following table provides the SnapManager for Microsoft SQL Server plug-in parameters, provides their settings, and describes them:
 
+[options="header"]
 |===
 | Parameter| Setting| Description
 a|

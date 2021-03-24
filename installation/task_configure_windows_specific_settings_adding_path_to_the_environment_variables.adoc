@@ -1,7 +1,7 @@
 ---
 permalink: installation/task_configure_windows_specific_settings_adding_path_to_the_environment_variables.html
 sidebar: sidebar
-keywords: 
+keywords: configuring, configure, windows, settings, adding, add, path, environment, variables
 summary: 'If you are going to install the Snap Creator Agent on Windows, you must add the path to the Domino binary files to the environment variables for Windows.'
 ---
 = Configuring Windows-specific settings: Adding path to the environment variables

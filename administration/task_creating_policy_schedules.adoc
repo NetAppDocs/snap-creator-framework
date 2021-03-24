@@ -1,7 +1,7 @@
 ---
 permalink: administration/task_creating_policy_schedules.html
 sidebar: sidebar
-keywords: 
+keywords: policy, schedule, snap, creator, gui
 summary: 'You can optionally create policy schedules by using the Snap Creator GUI.'
 ---
 = Creating policy schedules

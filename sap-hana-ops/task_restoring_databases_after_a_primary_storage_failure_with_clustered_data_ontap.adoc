@@ -1,7 +1,7 @@
 ---
 permalink: sap-hana-ops/task_restoring_databases_after_a_primary_storage_failure_with_clustered_data_ontap.html
 sidebar: sidebar
-keywords: 
+keywords: sap, hana, restore, restoring, databases, primary, storage, failure, clustered, data, ontap
 summary: 'You can restore an SAP HANA database after a primary storage system running clustered Data ONTAP fails.'
 ---
 = Restoring databases after a primary storage failure with clustered Data ONTAP

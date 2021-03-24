@@ -1,7 +1,7 @@
 ---
 permalink: sap-hana-ops/task_starting_the_snapvault_relationships_with_clustered_data_ontap.html
 sidebar: sidebar
-keywords: 
+keywords: sap, hana, starting, start, snapvault, relationship, clustered, data, ontap
 summary: 'You need to define a SnapMirror policy before you start a SnapVault relationship.'
 ---
 = Starting the SnapVault relationships with clustered Data ONTAP

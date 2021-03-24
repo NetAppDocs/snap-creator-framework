@@ -1,7 +1,7 @@
 ---
 permalink: sap-hana-ops/task_configuring_the_backup_user_and_hdbuserstore.html
 sidebar: sidebar
-keywords: 
+keywords: configuring, configure, backup, user, hdbususerstore
 summary: 'You should configure a dedicated database user within the HANA database to run the backup operations with Snap Creator. In a second step, you should configure an SAP HANA userstore key for this backup user. This userstore key is used within the configuration of the Snap Creator SAP HANA plug-in.'
 ---
 = Configuring the backup user and hdbuserstore

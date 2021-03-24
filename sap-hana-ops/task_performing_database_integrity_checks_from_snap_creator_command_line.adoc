@@ -1,7 +1,7 @@
 ---
 permalink: sap-hana-ops/task_performing_database_integrity_checks_from_snap_creator_command_line.html
 sidebar: sidebar
-keywords: 
+keywords: sap, hana, performing, perform, database, integrity, checks, snap, creator, command, line
 summary: 'You can perform Database Integrity Checks using the Snap Creator command line.'
 ---
 = Performing Database Integrity Checks from Snap Creator command line

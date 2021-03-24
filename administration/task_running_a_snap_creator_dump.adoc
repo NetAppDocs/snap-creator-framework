@@ -1,7 +1,7 @@
 ---
 permalink: administration/task_running_a_snap_creator_dump.html
 sidebar: sidebar
-keywords: 
+keywords: collect, support, information, perform, snap, creator, dump, gui
 summary: 'You can collect support information by using scdump from the Snap Creator GUI.'
 ---
 = Performing a Snap Creator dump

@@ -1,7 +1,7 @@
 ---
 permalink: sap-hana-ops/reference_troubleshooting.html
 sidebar: sidebar
-keywords: 
+keywords: troubleshooting
 summary: 'The troubleshooting section provides information about the error codes, error messages, and includes the description or resolution to solve the issue.'
 ---
 = Troubleshooting
@@ -13,6 +13,7 @@ The troubleshooting section provides information about the error codes, error me
 
 The following table lists the SAP HANA plug-in error messages.
 
+[options="header"]
 |===
 | Error code| Error message| Description/Resolution
 a|

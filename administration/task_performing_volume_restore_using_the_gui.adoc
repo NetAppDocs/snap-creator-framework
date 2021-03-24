@@ -1,7 +1,7 @@
 ---
 permalink: administration/task_performing_volume_restore_using_the_gui.html
 sidebar: sidebar
-keywords: 
+keywords: volume, restore, snap, creator, gui, perform, wizard
 summary: 'You can perform a volume restore by using the Snap Creator GUI.'
 ---
 = Performing volume restore

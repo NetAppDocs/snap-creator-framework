@@ -1,7 +1,7 @@
 ---
 permalink: administration/task_assigning_policies.html
 sidebar: sidebar
-keywords: 
+keywords: assign, retention, policy, configuration, snap, creator, gui, assignment
 summary: 'You can assign retention policies to the configuration files by using the Snap Creator GUI.'
 ---
 = Assigning policies

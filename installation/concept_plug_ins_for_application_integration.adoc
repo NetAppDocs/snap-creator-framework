@@ -1,7 +1,7 @@
 ---
 permalink: installation/concept_plug_ins_for_application_integration.html
 sidebar: sidebar
-keywords: 
+keywords: plug-in, application, integration
 summary: 'Plug-ins are used to put applications or databases into a consistent state. Snap Creator contains several plug-ins that are already part of the binary file and do not require any additional installation.'
 ---
 = Plug-ins for application integration

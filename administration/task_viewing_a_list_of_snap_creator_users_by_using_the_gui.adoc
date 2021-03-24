@@ -1,7 +1,7 @@
 ---
 permalink: administration/task_viewing_a_list_of_snap_creator_users_by_using_the_gui.html
 sidebar: sidebar
-keywords: 
+keywords: snap, creator, user, gui, assign, profile, role
 summary: 'You can view a list of Snap Creator users and their assigned roles by using the Snap Creator GUI.'
 ---
 = Viewing a list of Snap Creator users and assigned roles

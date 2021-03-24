@@ -1,7 +1,7 @@
 ---
 permalink: installation/task_checking_job_monitor_size.html
 sidebar: sidebar
-keywords: 
+keywords: checking, check, job, monitor, size
 summary: 'Before upgrading to the latest version of Snap Creator, you should check the job monitor size for the currently installed version of Snap Creator.'
 ---
 = Checking job monitor size

@@ -1,8 +1,8 @@
 ---
 permalink: administration/concept_managing_snap_creator_agent.html
 sidebar: sidebar
-keywords: 
-summary: 'You can start, verify, and stop Snap Creator Agent, change the Agent port, and manage Agent security on your Windows and UNIX systems.'
+keywords: start, verify, snap, creator, agent, port, managing, unix, windows
+summary: You can start, verify, and stop Snap Creator Agent, change the Agent port, and manage Agent security on your Windows and UNIX systems.
 ---
 = Managing Snap Creator Agent
 :icons: font

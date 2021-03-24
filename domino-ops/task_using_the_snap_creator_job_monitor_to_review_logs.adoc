@@ -1,8 +1,8 @@
 ---
 permalink: domino-ops/task_using_the_snap_creator_job_monitor_to_review_logs.html
 sidebar: sidebar
-keywords: 
-summary: 'The Snap Creator Job Monitor is a dashboard-like interface for Snap Creator jobs. You can use the Job Monitor to view job status and download logs.'
+keywords: domino, ibm, viewing, view, job, status, logs, monitor
+summary: The Snap Creator Job Monitor is a dashboard-like interface for Snap Creator jobs. You can use the Job Monitor to view job status and download logs.
 ---
 = Viewing job status and logs in the Job Monitor
 :icons: font

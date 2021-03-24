@@ -1,7 +1,7 @@
 ---
 permalink: administration/task_creating_clones_using_a_mounted_backup.html
 sidebar: sidebar
-keywords: 
+keywords: clone, volume, lun, existing, backup, server, snap, creator, configuration
 summary: 'You can clone volumes or LUNs from an existing backup as your source.'
 ---
 = Creating clones from an existing backup

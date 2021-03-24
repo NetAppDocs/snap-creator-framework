@@ -1,8 +1,8 @@
 ---
 permalink: administration/reference_storage_error_messages.html
 sidebar: sidebar
-keywords: 
-summary: 'The storage-related error messages can help you troubleshoot any issues that occur.'
+keywords: storage troubleshoot, error, message
+summary: The storage-related error messages can help you troubleshoot any issues that occur.
 ---
 = Storage error messages
 :icons: font
@@ -13,6 +13,7 @@ The storage-related error messages can help you troubleshoot any issues that occ
 
 The following table lists the error codes and messages along with a brief description of the error and the suggested resolution.
 
+[options="header"]
 |===
 | Error code| Error message| Description/resolution
 a|

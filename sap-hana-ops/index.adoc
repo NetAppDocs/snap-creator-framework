@@ -1,59 +1,12 @@
 ---
 permalink: sap-hana-ops/index.html
 sidebar: sidebar
-keywords: 
-summary: ''
+keywords: sap, hana, plug-in, operations, guide, configure, use, backup, back, up, restore, databases
+summary: Describes how to configure and use the SAP HANA plug-in to back up and restore SAP HANA databases.
 ---
 = SAP HANA® Plug-in Operations Guide
 :icons: font
 :imagesdir: ../media/
 
-* xref:concept_sap_hana_backup_and_restore_solution_overview.adoc[SAP HANA backup and restore solution overview]
- ** xref:concept_considerations_for_backing_up_sap_hana_systems.adoc[Considerations for backing up SAP HANA systems]
- ** xref:concept_the_netapp_solution.adoc[The NetApp solution]
- ** xref:concept_backup_solution_components.adoc[Backup solution components]
- ** xref:concept_sap_hana_plug_in_overview.adoc[SAP HANA plug-in overview]
- ** xref:concept_requirements.adoc[Requirements]
-* xref:task_installing_and_configuring_required_software_components.adoc[Installing and configuring required software components]
- ** xref:concept_setup_assumptions_in_this_guide.adoc[Setup assumptions in this guide]
- ** xref:concept_setup_used_with_clustered_data_ontap.adoc[Setup used with clustered Data ONTAP]
-* xref:concept_configuring_data_backups.adoc[Configuring data backups]
- ** xref:task_configuring_the_backup_user_and_hdbuserstore.adoc[Configuring the backup user and hdbuserstore]
- ** xref:task_configuring_snapvault_relationships.adoc[Configuring SnapVault relationships]
- ** xref:concept_starting_the_snapvault_relationships.adoc[Starting the SnapVault relationships]
-  *** xref:task_starting_the_snapvault_relationships_with_data_ontap_operating_in_7_mode.adoc[Starting the SnapVault relationships with Data ONTAP operating in 7-Mode]
-  *** xref:task_starting_the_snapvault_relationships_with_clustered_data_ontap.adoc[Starting the SnapVault relationships with clustered Data ONTAP]
- ** xref:task_configuring_the_snap_creator_framework_and_sap_hana_database_backup.adoc[Configuring the Snap Creator Framework and SAP HANA database backup]
-* xref:task_configuring_sap_hana_for_san_environments.adoc[Configuring SAP HANA for SAN environments]
-* xref:task_configuring_log_backups.adoc[Configuring log backups]
- ** xref:concept_housekeeping_of_log_backups.adoc[Housekeeping of log backups]
- ** xref:task_modifying_the_housekeeping_of_log_backups.adoc[Modifying the housekeeping of log backups]
-* xref:concept_executing_database_backups.adoc[Executing database backups]
- ** xref:task_overview_of_database_backups.adoc[Overview of database backups]
- ** xref:task_backing_up_the_database_with_the_snap_creator_gui.adoc[Backing up the database with the Snap Creator GUI]
- ** xref:task_backing_up_the_database_with_snap_creator_command_line.adoc[Backing up the database with Snap Creator command line]
- ** xref:concept_reviewing_available_backups_in_sap_hana_studio.adoc[Reviewing available backups in SAP HANA Studio]
-* xref:concept_sap_hana_file_based_backup_and_database_integrity_checks.adoc[SAP HANA File-Based Backup and Database Integrity Checks]
- ** xref:task_modifying_configuration_for_file_based_backup.adoc[Modifying configuration for File-Based Backup]
- ** xref:task_modifying_configuration_for_database_integrity_checks.adoc[Modifying configuration for Database Integrity Checks]
- ** xref:task_scheduling_file_based_backup.adoc[Scheduling file-based backup]
- ** xref:task_scheduling_database_integrity_checks.adoc[Scheduling database integrity checks]
- ** xref:task_performing_file_based_backup_from_the_snap_creator_gui.adoc[Performing File-Based Backup from the Snap Creator GUI]
- ** xref:task_performing_file_based_backup_from_snap_creator_command_line.adoc[Performing File-Based Backup from Snap Creator command line]
- ** xref:task_performing_database_integrity_checks_with_snap_creator_gui.adoc[Performing Database Integrity Checks from Snap Creator GUI]
- ** xref:task_performing_database_integrity_checks_from_snap_creator_command_line.adoc[Performing Database Integrity Checks from Snap Creator command line]
-* xref:task_restoring_and_recovering_sap_hana_databases.adoc[Restoring and recovering SAP HANA databases]
- ** xref:task_restoring_and_recovering_databases_from_primary_storage.adoc[Restoring and recovering databases from primary storage]
- ** xref:task_restoring_and_recovering_database_from_secondary_storage.adoc[Restoring and recovering databases from secondary storage]
- ** xref:concept_resuming_a_snapvault_relationship_after_a_restore.adoc[Resuming a SnapVault relationship after a restore]
-  *** xref:task_resuming_a_snapvault_relationship_with_data_ontap_operating_in_7_mode.adoc[Resuming a SnapVault relationship with Data ONTAP operating in 7-Mode]
-  *** xref:task_resuming_a_snapvault_relationship_with_clustered_data_ontap.adoc[Resuming a SnapVault relationship with clustered Data ONTAP]
- ** xref:concept_restoring_databases_after_primary_storage_failure.adoc[Restoring databases after primary storage failure]
-  *** xref:task_restoring_databases_after_a_primary_storage_failure_with_data_ontap_operating_in_7_mode.adoc[Restoring databases after a primary storage failure with Data ONTAP operating in 7-Mode]
-  *** xref:task_restoring_databases_after_a_primary_storage_failure_with_clustered_data_ontap.adoc[Restoring databases after a primary storage failure with clustered Data ONTAP]
-* xref:reference_sap_hana_plug_in_parameters.adoc[SAP HANA plug-in parameters]
-* xref:reference_troubleshooting.adoc[Troubleshooting]
-* xref:reference_where_to_go_next_sap_hana.adoc[Where to go next]
-* xref:delete_reference_copyright.adoc[Copyright]
-* xref:delete_reference_trademark.adoc[Trademark]
-* xref:delete_concept_how_to_send_comments_about_documentation_and_receiv.adoc[How to send comments about documentation and receive update notifications]
+[.Lead]
+This guide describes how to configure and use the SAP HANA plug-in for Snap Creator 4.3.3 to back up and restore SAP HANA databases.

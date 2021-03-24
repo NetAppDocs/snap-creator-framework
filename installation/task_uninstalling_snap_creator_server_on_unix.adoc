@@ -1,7 +1,7 @@
 ---
 permalink: installation/task_uninstalling_snap_creator_server_on_unix.html
 sidebar: sidebar
-keywords: 
+keywords: uninstalling, uninstall, snap, creator, server, unix
 summary: 'You can uninstall Snap Creator Server from UNIX by deleting the Snap Creator Server installation folder.'
 ---
 = Uninstalling Snap Creator Server on UNIX

@@ -1,7 +1,7 @@
 ---
 permalink: sap-hana-ops/concept_executing_database_backups.html
 sidebar: sidebar
-keywords: 
+keywords: executing, database, backups
 summary: 'You can back up your SAP HANA database by using the Snap Creator GUI or the command line. To schedule backups, you can use the scheduler within the GUI, or you can use the command line in combination with an external scheduler like cron.'
 ---
 = Executing database backups

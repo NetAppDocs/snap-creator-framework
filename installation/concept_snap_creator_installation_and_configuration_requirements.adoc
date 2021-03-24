@@ -1,7 +1,7 @@
 ---
 permalink: installation/concept_snap_creator_installation_and_configuration_requirements.html
 sidebar: sidebar
-keywords: 
+keywords: snap, creator, install, installation, configuration, requirements
 summary: 'Before you install the Snap Creator Framework, you should be aware of certain installation and configuration requirements for licenses, software, and hardware.'
 ---
 = Snap Creator installation and configuration requirements
@@ -62,6 +62,7 @@ The Snap Creator hardware requirements are as follows:
 
 * Snap Creator Server requirements:
 +
+[options="header"]
 |===
 | Hardware component| Minimum| Recommended
 a|

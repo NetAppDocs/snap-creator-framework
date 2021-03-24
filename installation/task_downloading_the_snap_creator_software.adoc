@@ -1,7 +1,7 @@
 ---
 permalink: installation/task_downloading_the_snap_creator_software.html
 sidebar: sidebar
-keywords: 
+keywords: downloading, download, snap, creator, software
 summary: 'You download the Snap Creator software from the NetApp Support Site. Snap Creator is listed in the “Software Download” section under Snap Creator Framework.'
 ---
 = Downloading the Snap Creator software

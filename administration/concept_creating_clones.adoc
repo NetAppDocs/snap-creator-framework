@@ -1,8 +1,8 @@
 ---
 permalink: administration/concept_creating_clones.html
 sidebar: sidebar
-keywords: 
-summary: 'There are two methods for cloning volumes or LUNS: from a new backup and from an existing backup.'
+keywords: creating, clones, lunes, volumes, cloning, snapshot
+summary: There are two methods for cloning volumes or LUNS: from a new backup and from an existing backup.
 ---
 = Creating clones
 :icons: font

@@ -1,8 +1,8 @@
 ---
 permalink: domino-ops/task_using_snapdrive_for_windows_to_mount_snapshot_copy.html
 sidebar: sidebar
-keywords: 
-summary: 'You can use SnapDrive to mount the Snapshot copy for the file you want to restore. You can then manually copy the file to the Data Restore Directory.'
+keywords: domino, ibm, using, snapdrive, mount, snapshot, copy
+summary: You can use SnapDrive to mount the Snapshot copy for the file you want to restore. You can then manually copy the file to the Data Restore Directory.
 ---
 = Using SnapDrive to mount a Snapshot copy
 :icons: font

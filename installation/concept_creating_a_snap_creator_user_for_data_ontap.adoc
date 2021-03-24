@@ -1,7 +1,7 @@
 ---
 permalink: installation/concept_creating_a_snap_creator_user_for_data_ontap.html
 sidebar: sidebar
-keywords: 
+keywords: creating, create, snap, creator, user
 summary: 'Prior to installing Snap Creator, you should create a Snap Creator user for Data ONTAP. The process that you follow to create the Snap Creator user depends on whether your systems are running Data ONTAP in 7-Mode or clustered Data ONTAP.'
 ---
 = Creating a Snap Creator user for Data ONTAP

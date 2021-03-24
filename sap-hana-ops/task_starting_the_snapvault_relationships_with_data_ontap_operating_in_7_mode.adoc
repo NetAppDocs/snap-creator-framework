@@ -1,7 +1,7 @@
 ---
 permalink: sap-hana-ops/task_starting_the_snapvault_relationships_with_data_ontap_operating_in_7_mode.html
 sidebar: sidebar
-keywords: 
+keywords: sap, hana, starting, snapvault, relationship, data, ontap, operating, 7-mode
 summary: 'You can start a SnapVault relationship with commands executed on the secondary storage system.'
 ---
 = Starting the SnapVault relationships with Data ONTAP operating in 7-Mode

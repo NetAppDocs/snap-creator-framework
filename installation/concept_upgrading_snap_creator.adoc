@@ -1,7 +1,7 @@
 ---
 permalink: installation/concept_upgrading_snap_creator.html
 sidebar: sidebar
-keywords: 
+keywords: upgrading, upgrade, snap, creator
 summary: 'You can upgrade to the latest version of Snap Creator from various supported versions.'
 ---
 = Upgrading Snap Creator

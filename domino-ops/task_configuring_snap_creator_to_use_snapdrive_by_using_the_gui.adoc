@@ -1,8 +1,8 @@
 ---
 permalink: domino-ops/task_configuring_snap_creator_to_use_snapdrive_by_using_the_gui.html
 sidebar: sidebar
-keywords: 
-summary: 'You can add supplemental commands to your configuration after you create the configuration file. You can run the commands on the Snap Creator Server or Agent.'
+keywords: domino, ibm, adding, supplemental, commands
+summary: You can add supplemental commands to your configuration after you create the configuration file. You can run the commands on the Snap Creator Server or Agent.
 ---
 = Adding supplemental commands to the configuration
 :icons: font
@@ -23,6 +23,7 @@ NOTE: This guide shows how to use the GUI to add commands. For information on ho
 +
 The following command types are available:
 +
+[options="header"]
 |===
 | Command type| Description
 a|
@@ -42,7 +43,7 @@ Snapshot Copy Create
 a|
 Use this type to run your own Snapshot copy create commands.
 |===
-*Note:* Only a subset of the supported commands are available in the GUI. For information on the APP, ARCHIVE, MOUNT/UNMOUNT, and POST commands, see the https://library.netapp.com/ecm/ecm_download_file/ECMP12395422[Snap Creator Framework 4.1.2 Administration Guide].
+NOTE: Only a subset of the supported commands are available in the GUI. For information on the APP, ARCHIVE, MOUNT/UNMOUNT, and POST commands, see the link:https://library.netapp.com/ecm/ecm_download_file/ECMP12395422[Snap Creator Framework 4.1.2 Administration Guide].
 
 . On the *Commands* tab, scroll to the section for the command type you want to use and click *Add*.
 . Type over the text *Add Command Here* to enter the command.
@@ -58,7 +59,7 @@ where:
  ** "C:\Program Files\NetApp\SnapDrive\sdcli.exe" is the default installation path for the SnapDrive CLI.
  ** %SNAME-%SNAP_TYPE_%SNAP_TIME specifies that the Snapshot copy name be formed from the configuration file name, the Snapshot policy (hourly, daily, or monthly), and the time and date the Snapshot copy was created.
  ** D is the switch and F G H are the mount points for the data to be backed up.
-*Tip:* To run the command on the Server, prepend the command with the text SERVER, followed by a colon (:).
+TIP: To run the command on the Server, prepend the command with the text SERVER, followed by a colon (:).
 
 . When you are satisfied with your entry, press *Enter*.
 . Repeat steps <<STEP_3F9C83DD05D84075AD0277213FD67C56,#STEP_3F9C83DD05D84075AD0277213FD67C56>> through <<STEP_FBEDD7AE105F42138EB35315EA9FA7CC,#STEP_FBEDD7AE105F42138EB35315EA9FA7CC>> to add another command.

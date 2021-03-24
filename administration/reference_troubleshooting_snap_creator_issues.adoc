@@ -1,8 +1,8 @@
 ---
 permalink: administration/reference_troubleshooting_snap_creator_issues.html
 sidebar: sidebar
-keywords: 
-summary: 'You can troubleshoot Snap Creator issues by using the information in the Snap Creator logs and error messages.'
+keywords: troubleshoot, snap, creator, information, log, error
+summary: You can troubleshoot Snap Creator issues by using the information in the Snap Creator logs and error messages.
 ---
 = Troubleshooting Snap Creator issues
 :icons: font
