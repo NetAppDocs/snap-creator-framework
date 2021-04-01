@@ -2,7 +2,7 @@
 permalink: administration/concept_managing_backups.html
 sidebar: sidebar
 keywords: managing, backups, backup, copies,
-summary: You can create backup copies, view a list of backup copies, and delete backup copies when they are no longer required.
+summary: 'You can create backup copies, view a list of backup copies, and delete backup copies when they are no longer required.'
 ---
 = Managing backups
 :icons: font
