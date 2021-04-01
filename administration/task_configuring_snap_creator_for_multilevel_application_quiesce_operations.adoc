@@ -2,7 +2,7 @@
 permalink: administration/task_configuring_snap_creator_for_multilevel_application_quiesce_operations.html
 sidebar: sidebar
 keywords: hypervisoer, virtualization, plug-in, vmware, vcloud, multilevel, application, quiesce
-summary: 'When you are using the hypervisor \(also known as “virtualization”\) plug-ins \(VMware \(VMware vCloud Director and VMware vSphere\), KVM, and Citrix XenServer\) and want to perform a multilevel application quiesce and backup operation, you need to configure Snap Creator for this type of setup.'
+summary: 'When you are using the hypervisor (also known as virtualization) plug-ins (VMware (VMware vCloud Director and VMware vSphere), KVM, and Citrix XenServer) and want to perform a multilevel application quiesce and backup operation, you need to configure Snap Creator for this type of setup.'
 ---
 = Configuring Snap Creator for multilevel application quiesce operations when using hypervisor plug-ins
 :icons: font

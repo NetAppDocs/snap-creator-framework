@@ -2,7 +2,7 @@
 permalink: administration/reference_clonevol_reports_that_aggregate_does_not_exist.html
 sidebar: sidebar
 keywords: clustered, data, ontap, storage, virtual, machine, svm, cloning, clonevol
-summary: For clustered Data ONTAP, the aggregate must be assigned to the storage virtual machine \(SVM\) for cloning purposes. If not, the cloneVol action might return an error.
+summary: 'For clustered Data ONTAP, the aggregate must be assigned to the storage virtual machine (SVM) for cloning purposes. If not, the cloneVol action might return an error.'
 ---
 = cloneVol reports that aggregate does not exist
 :icons: font

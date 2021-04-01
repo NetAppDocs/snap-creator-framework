@@ -2,7 +2,7 @@
 permalink: sap-hana-ops/task_configuring_sap_hana_for_san_environments.html
 sidebar: sidebar
 keywords: configuring, sap, hana, san, environments
-summary: 'After you configure the data backups, you will need to add a new command to the Snap Creator configuration file in environments where a SAP HANA system is connected using Fibre Channel storage area network \(SAN\) to the storage controller\(s\).'
+summary: 'After you configure the data backups, you will need to add a new command to the Snap Creator configuration file in environments where a SAP HANA system is connected using Fibre Channel storage area network (SAN) to the storage controller(s).'
 ---
 = Configuring SAP HANA for SAN environments
 :icons: font

@@ -2,7 +2,7 @@
 permalink: administration/reference_cannot_connect_to_the_gui.html
 sidebar: sidebar
 keywords: unix, snap, creator, gui, https
-summary: In a UNIX environment, you might be unable to connect to the Snap Creator GUI; you must verify that certain conditions exist as you investigate the source of the problem.
+summary: `In a UNIX environment, you might be unable to connect to the Snap Creator GUI; you must verify that certain conditions exist as you investigate the source of the problem.`
 ---
 = Cannot connect to the Snap Creator GUI
 :icons: font
