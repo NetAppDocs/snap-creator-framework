@@ -2,7 +2,7 @@
 permalink: administration/task_viewing_a_list_all_snap_creator_permissions_by_using_the_cli.html
 sidebar: sidebar
 keywords: snap, creator, snapcreator, permission, cli
-summary: 'You can create a list of all Snap Creator permissions that can be assigned to a role by using the command line interface \(CLI\) only.'
+summary: 'You can create a list of all Snap Creator permissions that can be assigned to a role by using the command line interface (CLI) only.'
 ---
 = Creating a list of all Snap Creator permissions by using the CLI
 :icons: font

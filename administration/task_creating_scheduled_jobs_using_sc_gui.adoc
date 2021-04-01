@@ -2,7 +2,7 @@
 permalink: administration/task_creating_scheduled_jobs_using_sc_gui.html
 sidebar: sidebar
 keywords: local, retention, policy, configuration, snap, creator, gui, copy, lun, volume, clone, snapvault, ossv, job
-summary: 'If you are using a local retention policy \(located in the configuration file\), you can use the Snap Creator graphical user interface \(GUI\) scheduler to create schedules and run tasks. The scheduler—which is contained within Snap Creator Server—can schedule backups \(Snapshot copies\), LUN clones, volume clones, application-defined clones, Open Systems SnapVault \(OSSV\) transfers, archive jobs, and custom actions.'
+summary: 'If you are using a local retention policy (located in the configuration file), you can use the Snap Creator graphical user interface (GUI) scheduler to create schedules and run tasks. The scheduler--which is contained within Snap Creator Server--can schedule backups (Snapshot copies), LUN clones, volume clones, application-defined clones, Open Systems SnapVault (OSSV) transfers, archive jobs, and custom actions.'
 ---
 = Creating scheduled jobs
 :icons: font

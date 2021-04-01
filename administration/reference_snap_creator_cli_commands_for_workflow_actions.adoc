@@ -2,7 +2,7 @@
 permalink: administration/reference_snap_creator_cli_commands_for_workflow_actions.html
 sidebar: sidebar
 keywords: command-line, interface, cli, snap, creator, workflow, command, backup, copy
-summary: You can use command-line interface \(CLI\) commands to perform various Snap Creator workflow actions that are based on the graphical user interface \(GUI\).
+summary: 'You can use command-line interface (CLI) commands to perform various Snap Creator workflow actions that are based on the graphical user interface (GUI).'
 ---
 = Snap Creator CLI commands for workflow actions
 :icons: font

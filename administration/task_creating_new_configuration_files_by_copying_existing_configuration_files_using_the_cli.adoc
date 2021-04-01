@@ -2,7 +2,7 @@
 permalink: administration/task_creating_new_configuration_files_by_copying_existing_configuration_files_using_the_cli.html
 sidebar: sidebar
 keywords: cli, command-line, interface, configuration, file, copy
-summary: 'Using the command-line interface \(CLI\), you can create a new configuration file by copying an existing configuration file, and then renaming the new file.'
+summary: 'Using the command-line interface (CLI), you can create a new configuration file by copying an existing configuration file, and then renaming the new file.'
 ---
 = Creating new configuration files by copying existing configuration files
 :icons: font

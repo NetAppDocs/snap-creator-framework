@@ -2,7 +2,7 @@
 permalink: domino-ops/reference_domino_plug_in_specific_errors.html
 sidebar: sidebar
 keywords: domino, ibm, troubleshooting, plug-ins, errors
-summary: Common Snap Creator errors fall into two categories: generic Snap Creator errors and Domino plug-in-specific errors. Domino plug-in-specific errors typically involve preinstallation issues, bad databases, or problems with a custom restore action.
+summary: 'Common Snap Creator errors fall into two categories: generic Snap Creator errors and Domino plug-in-specific errors. Domino plug-in-specific errors typically involve preinstallation issues, bad databases, or problems with a custom restore action.'
 ---
 = Troubleshooting Domino plug-in-specific errors
 :icons: font

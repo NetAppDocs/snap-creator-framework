@@ -2,7 +2,7 @@
 permalink: installation/task_creating_a_snap_creator_user_for_clustered_ontap.html
 sidebar: sidebar
 keywords: creating, create, snap, center, user, ontap
-summary: 'For clustered Data ONTAP, you should create users for Snap Creator. However, the type of user that you create depends on the version of clustered Data ONTAP. The two types of users are a cluster user and a storage virtual machine \(SVM\) user.'
+summary: 'For clustered Data ONTAP, you should create users for Snap Creator. However, the type of user that you create depends on the version of clustered Data ONTAP. The two types of users are a cluster user and a storage virtual machine (SVM) user.'
 ---
 = Creating a Snap Creator user for clustered Data ONTAP
 :icons: font

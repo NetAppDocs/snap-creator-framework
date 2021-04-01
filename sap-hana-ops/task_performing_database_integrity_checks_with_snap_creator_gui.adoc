@@ -2,7 +2,7 @@
 permalink: sap-hana-ops/task_performing_database_integrity_checks_with_snap_creator_gui.html
 sidebar: sidebar
 keywords: sap, hana, peforming, database, integrity, checks, snap, creator, gui, graphical, user, interface
-summary: 'You can perform Database Integrity Checks from the Snap Creator graphical user interface \(GUI\).'
+summary: 'You can perform Database Integrity Checks from the Snap Creator graphical user interface (GUI).'
 ---
 = Performing Database Integrity Checks from Snap Creator GUI
 :icons: font
