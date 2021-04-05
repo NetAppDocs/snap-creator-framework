@@ -2,7 +2,7 @@
 permalink: administration/concept_snap_creator_architecture.html
 sidebar: sidebar
 keywords: snap, creator, full-featured, server, agent, architecture, plug-ins, snapshot
-summary: Snap Creator has a full-featured server and agent architecture, which consists of three main components: Snap Creator Server, Snap Creator Agent, and plug-ins.
+summary: 'Snap Creator has a full-featured server and agent architecture, which consists of three main components: Snap Creator Server, Snap Creator Agent, and plug-ins.'
 ---
 = Snap Creator architecture
 :icons: font

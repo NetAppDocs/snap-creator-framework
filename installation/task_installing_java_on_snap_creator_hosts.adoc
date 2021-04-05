@@ -2,7 +2,7 @@
 permalink: installation/task_installing_java_on_snap_creator_hosts.html
 sidebar: sidebar
 keywords: installing, install, java, snap, creator, hosts
-summary: 'OpenJDK and Oracle Java Runtime Environment \(JRE\) 1.8 Update 72 or later must be installed on any Snap Creator Server and Agent host. To avoid the Transport Layer Security \(TLS\) vulnerability, it is best to install any later version of JRE 1.8 Update 72 on Snap Creator Server and Agent host.'
+summary: 'OpenJDK and Oracle Java Runtime Environment (JRE) 1.8 Update 72 or later must be installed on any Snap Creator Server and Agent host. To avoid the Transport Layer Security \(TLS\) vulnerability, it is best to install any later version of JRE 1.8 Update 72 on Snap Creator Server and Agent host.'
 ---
 = Installing Java on Snap Creator hosts
 :icons: font

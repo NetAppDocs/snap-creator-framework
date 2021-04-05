@@ -2,7 +2,7 @@
 permalink: administration/task_viewing_a_list_of_users_with_profiles_by_using_the_cli.html
 sidebar: sidebar
 keywords: snap, creator, command, line, interface, cli
-summary: 'You can view a list of all Snap Creator user accounts that have profiles by using the command line interface \(CLI\) only.'
+summary: 'You can view a list of all Snap Creator user accounts that have profiles by using the command line interface (CLI) only.'
 ---
 = Viewing a list of Snap Creator users and assigned profiles by using the CLI
 :icons: font

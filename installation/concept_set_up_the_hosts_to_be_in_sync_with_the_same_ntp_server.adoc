@@ -2,7 +2,7 @@
 permalink: installation/concept_set_up_the_hosts_to_be_in_sync_with_the_same_ntp_server.html
 sidebar: sidebar
 keywords: synchronizing, synchronize, time, snap, creator, server, agent, hosts
-summary: 'Before installing Snap Creator, you should ensure that the time on the Snap Creator Server host is in sync with the time on the Agent host. You can do this by synchronizing the time of the hosts with the same Network Time Protocol \(NTP\) server.'
+summary: 'Before installing Snap Creator, you should ensure that the time on the Snap Creator Server host is in sync with the time on the Agent host. You can do this by synchronizing the time of the hosts with the same Network Time Protocol (NTP) server.'
 ---
 = Synchronizing time on Snap Creator Server and Agent hosts
 :icons: font

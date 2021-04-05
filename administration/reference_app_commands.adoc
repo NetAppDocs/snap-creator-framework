@@ -2,7 +2,7 @@
 permalink: administration/reference_app_commands.html
 sidebar: sidebar
 keywords: app, command
-summary: The following table lists the application \(APP\) commands.
+summary: 'The following table lists the application (APP) commands'
 ---
 = APP commands
 :icons: font

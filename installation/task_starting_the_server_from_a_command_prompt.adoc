@@ -2,7 +2,7 @@
 permalink: installation/task_starting_the_server_from_a_command_prompt.html
 sidebar: sidebar
 keywords: starting, start, server, command, prompt
-summary: 'You can manually start the Snap Creator Server from a command prompt by running a batch script \(scServer.bat\).'
+summary: 'You can manually start the Snap Creator Server from a command prompt by running a batch script (scServer.bat).'
 ---
 = Starting the Server from a command prompt
 :icons: font
