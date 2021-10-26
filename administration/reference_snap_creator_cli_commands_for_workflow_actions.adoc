@@ -13,19 +13,16 @@ You can use command-line interface (CLI) commands to perform various Snap Creato
 
 The following table provides the CLI commands for performing Snap Creator GUI-based workflow actions:
 
-[options="header"]
+[cols="15,40,45",options="header"]
 |===
 | Workflow area| Action/description| Command and associated parameters
 a|
 Backups
 a|
 Create a backup copy. Performs a backup operation based on the configuration file associated with the profile.
-
 a|
-
 ----
-
-                  snapcreator
+snapcreator
 --server IP
 --port Port
 --user User
@@ -36,12 +33,10 @@ a|
 --policy Policy
 --verbose
 ----
-
+|
 a|
-Create an Open Systems SnapVault backup.Performs a backup operation using Open Systems SnapVault. This requires Snap Creator Agent. Snap Creator Server communicates with Snap Creator Agent and performs a SnapVault update. No primary backup copy is made.
-
+Create an Open Systems SnapVault backup. Performs a backup operation using Open Systems SnapVault. This requires Snap Creator Agent. Snap Creator Server communicates with Snap Creator Agent and performs a SnapVault update. No primary backup copy is made.
 a|
-
 ----
 snapcreator
 --server IP
@@ -54,14 +49,10 @@ snapcreator
 --policy Policy
 --verbose
 ----
-
+|
 a|
-Backups (contd...)
+Delete a backup copy (manually). Manually deletes an existing backup. This operation is menu-driven.
 a|
-Delete a backup copy (manually).Manually deletes an existing backup. This operation is menu-driven.
-
-a|
-
 ----
 snapcreator
 --server IP
@@ -74,11 +65,10 @@ snapcreator
 --policy Policy
 --verbose
 ----
-
+|
 a|
 Delete a backup copy (automatically).
 a|
-
 ----
 snapcreator
 --server IP
@@ -95,12 +85,10 @@ snapcreator
 --volName volume
 --backupName name
 ----
-
+|
 a|
-List backup copies.Lists the Snap Creator backup copies on the primary and secondary storage systems.
-
+List backup copies. Lists the Snap Creator backup copies on the primary and secondary storage systems.
 a|
-
 ----
 snapcreator
 --server IP
@@ -113,12 +101,10 @@ snapcreator
 --policy Policy
 --verbose
 ----
-
+|
 a|
 Mount a backup copy. Performs the mount operation on an existing backup. Creates a volume clone based on the backup, and enables the mounting of the clone through Snap Creator Agent using the MOUNT_CMD command.
-
 a|
-
 ----
 snapcreator
 --server IP
@@ -131,14 +117,10 @@ snapcreator
 --backupName name
 --verbose
 ----
-
+|
 a|
-Backups (contd...)
+Unmount a backup copy. Performs the unmount operation on an existing backup. Deletes a volume clone based on the backup, and enables the unmounting of the clone through Snap Creator Agent using the UMOUNT_CMDs command.
 a|
-Unmount a backup copy.Performs the unmount operation on an existing backup. Deletes a volume clone based on the backup, and enables the unmounting of the clone through Snap Creator Agent using the UMOUNT_CMDs command.
-
-a|
-
 ----
 snapcreator
 --server IP
@@ -151,13 +133,11 @@ snapcreator
 --backupName name
 --verbose
 ----
-
 a|
 Backup types
 a|
 Create a new backup type.
 a|
-
 ----
 snapcreator
 --server IP
@@ -168,11 +148,10 @@ snapcreator
 --backupTypeName name
 --verbose
 ----
-
+|
 a|
 Update an existing backup type.
 a|
-
 ----
 snapcreator
 --server IP
@@ -184,11 +163,10 @@ snapcreator
 --backupTypeName name
 --verbose
 ----
-
+|
 a|
 Delete an existing backup type.
 a|
-
 ----
 snapcreator
 --server IP
@@ -197,14 +175,12 @@ snapcreator
 --passwd Password
 --action backupTypeDelete
 --backupTypeId 1
-
 --verbose
 ----
-
+|
 a|
 List the backup types.
 a|
-
 ----
 snapcreator
 --server IP
@@ -214,14 +190,11 @@ snapcreator
 --action backupTypeList
 --verbose
 ----
-
 a|
 Clones
 a|
-Clone a LUN.Backs up the primary storage system and then clones the backup using a LUN clone. The volume mapping of igroups is also handled. This requires a SAN or iSAN environment.
-
+Clone a LUN. Backs up the primary storage system and then clones the backup using a LUN clone. The volume mapping of igroups is also handled. This requires a SAN or iSAN environment.
 a|
-
 ----
 snapcreator
 --server IP
@@ -234,12 +207,10 @@ snapcreator
 --policy Policy
 --verbose
 ----
-
+|
 a|
-Clone a volume.Backs up the primary storage system and then clones the backup using a volume clone. The volume mapping of igroups, NFS, or CIFS is also handled. This requires a SAN, iSAN, or NAS environment.
-
+Clone a volume. Backs up the primary storage system and then clones the backup using a volume clone. The volume mapping of igroups, NFS, or CIFS is also handled. This requires a SAN, iSAN, or NAS environment.
 a|
-
 ----
 snapcreator
 --server IP
@@ -252,12 +223,10 @@ snapcreator
 --policy Policy
 --verbose
 ----
-
+|
 a|
-Delete a clone.Performs a clone deletion operation based on the specified retention policy. Only one copy of the LUN clone is retained. Volume clones have policy-associated usage.
-
+Delete a clone. Performs a clone deletion operation based on the specified retention policy. Only one copy of the LUN clone is retained. Volume clones have policy-associated usage.
 a|
-
 ----
 snapcreator
 --server IP
@@ -270,12 +239,10 @@ snapcreator
 --policy Policy
 --verbose
 ----
-
+|
 a|
-List Snap Creator clones.Lists the Snap Creator volume clones for the given configuration.
-
+List Snap Creator clones. Lists the Snap Creator volume clones for the given configuration.
 a|
-
 ----
 snapcreator
 --server IP
@@ -287,12 +254,10 @@ snapcreator
 --action cloneList
 --verbose
 ----
-
+|
 a|
-List Snap Creator volumes.Lists the Snap Creator volumes for the specified configuration on the primary storage system.
-
+List Snap Creator volumes. Lists the Snap Creator volumes for the specified configuration on the primary storage system.
 a|
-
 ----
 snapcreator
 --server IP
@@ -304,13 +269,11 @@ snapcreator
 --action volumeList
 --verbose
 ----
-
 a|
 Configuration files
 a|
 Import a configuration.
 a|
-
 ----
 snapcreator
 --server IP
@@ -323,11 +286,10 @@ snapcreator
 --importFile file_path
 --verbose
 ----
-
+|
 a|
 Export a configuration.
 a|
-
 ----
 snapcreator
 --server IP
@@ -340,11 +302,10 @@ snapcreator
 --exportFile file_path
 --verbose
 ----
-
+|
 a|
 Import a global configuration file.
 a|
-
 ----
 snapcreator
 --server IP
@@ -355,11 +316,10 @@ snapcreator
 --importFile file_path
 --verbose
 ----
-
+|
 a|
 Export a global configuration file.
 a|
-
 ----
 snapcreator
 --server IP
@@ -370,11 +330,10 @@ snapcreator
 --ExportFile file_path
 --verbose
 ----
-
+|
 a|
 Delete a global configuration file from the repository.
 a|
-
 ----
 snapcreator
 --server IP
@@ -384,13 +343,10 @@ snapcreator
 --action globalDelete
 --verbose
 ----
-
 a|
-Configuration files (contd...)
 a|
 Import a global configuration file for a particular profile to the repository.
 a|
-
 ----
 snapcreator
 --server IP
@@ -402,11 +358,10 @@ snapcreator
 --importFile file_path
 --verbose
 ----
-
+|
 a|
 Export a global configuration file for a particular profile from the repository.
 a|
-
 ----
 snapcreator
 --server IP
@@ -418,11 +373,10 @@ snapcreator
 --exportFile file_path
 --verbose
 ----
-
+|
 a|
 Delete a global configuration for a particular profile from the repository.
 a|
-
 ----
 snapcreator
 --server IP
@@ -433,12 +387,10 @@ snapcreator
 --action profileglobalDelete
 --verbose
 ----
-
+|
 a|
 Upgrade older configuration files in a profile. Adds newly introduced parameters to older configuration files. Before executing this command, all old configuration files must be copied to the scServer/engine/configs folder along with the profile folder.
-
 a|
-
 ----
 snapcreator
 --server IP
@@ -449,13 +401,11 @@ snapcreator
 --profile profile_name
 --verbose
 ----
-
 a|
 Jobs
 a|
 List all jobs and their status.
 a|
-
 ----
 snapcreator
 --server IP
@@ -465,13 +415,11 @@ snapcreator
 --action jobStatus
 --verbose
 ----
-
 a|
 Policy
 a|
 Add a new local policy.
 a|
-
 ----
 snapcreator
 --server IP
@@ -487,13 +435,10 @@ snapcreator
 --primaryAge 0
 --verbose
 ----
-
 a|
-Policy (contd...)
 a|
 Add a new SnapMirror policy.
 a|
-
 ----
 snapcreator
 --server IP
@@ -509,11 +454,10 @@ snapcreator
 --primaryAge 0
 --verbose
 ----
-
+|
 a|
 Add a new SnapVault policy.
 a|
-
 ----
 snapcreator
 --server IP
@@ -531,11 +475,10 @@ snapcreator
 --secondaryAge 0
 --verbose
 ----
-
+|
 a|
 Update a SnapMirror policy.
 a|
-
 ----
 snapcreator
 --server IP
@@ -552,13 +495,10 @@ snapcreator
 --primaryAge 0
 --verbose
 ----
-
 a|
-Policy (contd...)
 a|
 Update a SnapVault policy.
 a|
-
 ----
 snapcreator
 --server IP
@@ -577,11 +517,10 @@ snapcreator
 --secondaryAge 0
 --verbose
 ----
-
+|
 a|
 Delete a policy.
 a|
-
 ----
 snapcreator
 --server IP
@@ -592,11 +531,10 @@ snapcreator
 --policyId 1
 --verbose
 ----
-
+|
 a|
 List all policies.
 a|
-
 ----
 snapcreator
 --server IP
@@ -606,11 +544,10 @@ snapcreator
 --action policyList
 --verbose
 ----
-
+|
 a|
 Show additional details for a particular policy.
 a|
-
 ----
 snapcreator
 --server IP
@@ -621,11 +558,10 @@ snapcreator
 --policyId 1
 --verbose
 ----
-
+|
 a|
 Assign policies to a profile.
 a|
-
 ----
 snapcreator
 --server IP
@@ -637,13 +573,10 @@ snapcreator
 --policies testPolicy
 --verbose
 ----
-
 a|
-Policy (contd...)
 a|
 Undo the assignment of policies for a profile.
 a|
-
 ----
 snapcreator
 --server IP
@@ -654,11 +587,10 @@ snapcreator
 --action policyUnassignFromProfile
 --verbose
 ----
-
+|
 a|
 List all policies assigned to a profile.
 a|
-
 ----
 snapcreator
 --server IP
@@ -669,13 +601,11 @@ snapcreator
 --action policyListForProfile
 --verbose
 ----
-
 a|
 Policy schedules
 a|
 Create an hourly policy schedule.
 a|
-
 ----
 snapcreator
 --server IP
@@ -690,11 +620,10 @@ snapcreator
 --schedActive true
 --verbose
 ----
-
+|
 a|
 Create a daily policy schedule.
 a|
-
 ----
 snapcreator
 --server IP
@@ -710,13 +639,10 @@ snapcreator
 --schedActive true
 --verbose
 ----
-
 a|
-Policy schedules (contd...)
 a|
 Create a weekly policy schedule.
 a|
-
 ----
 snapcreator
 --server IP
@@ -733,11 +659,10 @@ snapcreator
 --schedActive true
 --verbose
 ----
-
+|
 a|
 Create a cron policy schedule.
 a|
-
 ----
 snapcreator
 --server IP
@@ -752,11 +677,10 @@ snapcreator
 --schedActive true
 --verbose
 ----
-
+|
 a|
 Update an hourly policy schedule.
 a|
-
 ----
 snapcreator
 --server IP
@@ -772,13 +696,10 @@ snapcreator
 --schedActive true
 --verbose
 ----
-
 a|
-Policy schedules (contd...)
 a|
 Update a daily policy schedule.
 a|
-
 ----
 snapcreator
 --server IP
@@ -795,11 +716,10 @@ snapcreator
 --schedActive true
 --verbose
 ----
-
+|
 a|
 Update a weekly policy schedule.
 a|
-
 ----
 snapcreator
 --server IP
@@ -817,11 +737,10 @@ snapcreator
 --schedActive true
 --verbose
 ----
-
+|
 a|
 Update a cron policy schedule.
 a|
-
 ----
 snapcreator
 --server IP
@@ -837,13 +756,10 @@ snapcreator
 --schedActive true
 --verbose
 ----
-
 a|
-Policy schedules (contd...)
 a|
 Delete a policy schedule.
 a|
-
 ----
 snapcreator
 --server IP
@@ -854,11 +770,10 @@ snapcreator
 --schedId 1
 --verbose
 ----
-
+|
 a|
 List policy schedules.
 a|
-
 ----
 snapcreator
 --server IP
@@ -868,11 +783,10 @@ snapcreator
 --action policySchedList
 --verbose
 ----
-
+|
 a|
 Show additional information about a policy schedule.
 a|
-
 ----
 snapcreator
 --server IP
@@ -883,13 +797,11 @@ snapcreator
 --schedId 1
 --verbose
 ----
-
 a|
 Profiles
 a|
 Create a new profile.
 a|
-
 ----
 snapcreator
 --server IP
@@ -900,12 +812,11 @@ snapcreator
 --action profileCreate
 --verbose
 ----
-
+|
 a|
-Delete a profile.*Note:* The configuration files in the profile are also deleted.
-
+Delete a profile.
+*Note:* The configuration files in the profile are also deleted.
 a|
-
 ----
 snapcreator
 --server IP
@@ -916,14 +827,11 @@ snapcreator
 --action profileDelete
 --verbose
 ----
-
 a|
 Restore
 a|
-Perform interactive restore.Performs an interactive file restore operation or an interactive volume restore operation for a given policy.
-
+Perform interactive restore. Performs an interactive file restore operation or an interactive volume restore operation for a given policy.
 a|
-
 ----
 snapcreator
 --server IP
@@ -936,34 +844,10 @@ snapcreator
 --policy Policy
 --verbose
 ----
-
+|
 a|
-Perform non-interactive volume restore.Performs a non-interactive volume restore.
-
+Perform non-interactive volume restore. Performs a non-interactive volume restore.
 a|
-
-----
-snapcreator
---server IP
---port Port
---user User
---passwd Password
---profile Profile
---config Config
---action restore
---policy Policy
---verbose
---nonInteractive
---cntName controller
---volName volume
---backupName name
-----
-
-a|
-Perform non-interactive file restore.Performs a non-interactive file restore.
-
-a|
-
 ----
 snapcreator
 --server IP
@@ -979,15 +863,33 @@ snapcreator
 --cntName controller
 --volName volume
 --backupName name
---files file_path1,file_path2,etc.
 ----
-
+|
+a|
+Perform non-interactive file restore. Performs a non-interactive file restore.
+a|
+----
+snapcreator
+--server IP
+--port Port
+--user User
+--passwd Password
+--profile Profile
+--config Config
+--action restore
+--policy Policy
+--verbose
+--nonInteractive
+--cntName controller
+--volName volume
+--backupName name
+--fileNames file_path1,file_path2,etc.
+----
 a|
 Schedules
 a|
 Create a new hourly schedule.
 a|
-
 ----
 snapcreator
 --server IP
@@ -1006,11 +908,10 @@ snapcreator
 --schedStartDate date
 --verbose
 ----
-
+|
 a|
 Create a new daily schedule.
 a|
-
 ----
 snapcreator
 --server IP
@@ -1030,11 +931,10 @@ snapcreator
 --schedStartDate date
 --verbose
 ----
-
+|
 a|
 Create a new weekly schedule.
 a|
-
 ----
 snapcreator
 --server IP
@@ -1055,13 +955,10 @@ snapcreator
 --schedStartDate date
 --verbose
 ----
-
 a|
-Schedules (contd...)
 a|
 Create a new cron schedule.
 a|
-
 ----
 snapcreator
 --server IP
@@ -1080,11 +977,10 @@ snapcreator
 --schedStartDate date
 --verbose
 ----
-
 a|
+|
 Run a schedule.
 a|
-
 ----
 snapcreator
 --server IP
@@ -1095,11 +991,10 @@ snapcreator
 --schedId 1
 --verbose
 ----
-
+|
 a|
 Delete a schedule.
 a|
-
 ----
 snapcreator
 --server IP
@@ -1110,11 +1005,10 @@ snapcreator
 --schedId 10
 --verbose
 ----
-
+|
 a|
 Update an hourly schedule.
 a|
-
 ----
 snapcreator
 --server IP
@@ -1134,13 +1028,10 @@ snapcreator
 --schedStartDate date
 --verbose
 ----
-
 a|
-Schedules (contd...)
 a|
 Update a daily schedule.
 a|
-
 ----
 snapcreator
 --server IP
@@ -1161,11 +1052,10 @@ snapcreator
 --schedStartDate date
 --verbose
 ----
-
+|
 a|
 Update a weekly schedule.
 a|
-
 ----
 snapcreator
 --server IP
@@ -1187,11 +1077,10 @@ snapcreator
 --schedStartDate date
 --verbose
 ----
-
+|
 a|
 Update a cron schedule.
 a|
-
 ----
 snapcreator
 --server IP
@@ -1211,13 +1100,10 @@ snapcreator
 --schedStartDate date
 --verbose
 ----
-
 a|
-Schedules (contd...)
 a|
 List all schedules.
 a|
-
 ----
 snapcreator
 --server IP
@@ -1227,11 +1113,10 @@ snapcreator
 --action schedList
 --verbose
 ----
-
+|
 a|
 List supported scheduler actions.
 a|
-
 ----
 snapcreator
 --server IP
@@ -1241,11 +1126,10 @@ snapcreator
 --action schedActionList
 --verbose
 ----
-
+|
 a|
 List supported scheduler frequencies.
 a|
-
 ----
 snapcreator
 --server IP
@@ -1255,11 +1139,10 @@ snapcreator
 --action schedFreqList
 --verbose
 ----
-
+|
 a|
 Show additional details for a schedule ID.
 a|
-
 ----
 snapcreator
 --server IP
@@ -1270,14 +1153,11 @@ snapcreator
 --schedId 1
 --verbose
 ----
-
 a|
 scdump
 a|
 Create an scdump file.Dumps logs, configuration files, and support information about a particular profile in a .zip file called scdump located under the Snap Creator root directory.
-
 a|
-
 ----
 snapcreator
 --server IP
@@ -1290,13 +1170,11 @@ snapcreator
 --policy Policy
 --verbose
 ----
-
 a|
 Snap Creator Server and Agent
 a|
 List the status for all agents known to the Snap Creator Server.
 a|
-
 ----
 snapcreator
 --server IP
@@ -1306,13 +1184,10 @@ snapcreator
 --action agentStatus
 --verbose
 ----
-
 a|
-Snap Creator Server and Agent (contd...)
 a|
 Ping a Snap Creator Server.
 a|
-
 ----
 snapcreator
 --server IP
@@ -1322,11 +1197,10 @@ snapcreator
 --action pingServer
 --verbose
 ----
-
+|
 a|
 Ping a Snap Creator Agent.
 a|
-
 ----
 snapcreator
 --server IP
@@ -1338,14 +1212,11 @@ snapcreator
 --agentPort port
 --verbose
 ----
-
 a|
 Archive
 a|
 Perform archive log management according to the settings in the configuration file. This operation requires Snap Creator Agent.
-
 a|
-
 ----
 snapcreator
 --server IP
@@ -1357,13 +1228,11 @@ snapcreator
 --action arch
 --verbose
 ----
-
 a|
 Data protection capability
 a|
 Configure the NetApp Management Console data protection capability dataset for a given configuration.
 a|
-
 ----
 snapcreator
 --server IP
@@ -1375,12 +1244,10 @@ snapcreator
 --action pmsetup
 --verbose
 ----
-
+|
 a|
 Show the data protection status of the SnapVault and SnapMirror relationship for a controller. If SnapVault or SnapMirror is not configured, the results are not displayed.
-
 a|
-
 ----
 snapcreator
 --server IP
@@ -1392,14 +1259,11 @@ snapcreator
 --action dpstatus
 --verbose
 ----
-
 a|
 Quiesce/unquiesce
 a|
 Perform the quiesce operation for a given application. This operation requires Snap Creator Agent.
-
 a|
-
 ----
 snapcreator
 --server IP
@@ -1411,12 +1275,10 @@ snapcreator
 --action quiesce
 --verbose
 ----
-
+|
 a|
 Perform the unquiesce operation for a given application. This operation requires Snap Creator Agent.
-
 a|
-
 ----
 snapcreator
 --server IP
@@ -1428,14 +1290,11 @@ snapcreator
 --action unquiesce
 --verbose
 ----
-
 a|
 Discover
 a|
 Perform discovery for a given application. This operation requires Snap Creator Agent.
-
 a|
-
 ----
 snapcreator
 --server IP
@@ -1447,5 +1306,4 @@ snapcreator
 --action discover
 --verbose
 ----
-
 |===
