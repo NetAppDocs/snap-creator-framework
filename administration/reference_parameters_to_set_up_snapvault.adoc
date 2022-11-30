@@ -18,6 +18,7 @@ Several parameters are required to set up SnapVault.
 a|NTAP_ALLOW_MIRRORVAULT_AS_MIRROR	a|(Y/N)	a|Enables you to use mirror_vault protection policy type as SnapVault or SnapMirror.
 (Default) N: Enables  mirror_vault protection policy type for SnapVault.
 Y: Enables  mirror_vault protection policy type for SnapMirror.
+//BURT 1515411 Nov 30 2022
 
 a|SNAPVAULT_ VOLUMES
 a|
