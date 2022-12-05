@@ -22,8 +22,8 @@ Y: Enables the mirror_vault protection policy type for SnapMirror.
 
 a|SNAPVAULT_ VOLUMES
 a|
-a|Lists the source storage systems and volumes on which you want to perform a SnapVault update (for example, controller1:vol1,vol2,vol3;controller2:vol1;controller3:vol2,vol3). *Note:*
-
+a|Lists the source storage systems and volumes on which you want to perform a SnapVault update (for example, controller1:vol1,vol2,vol3;controller2:vol1;controller3:vol2,vol3). 
+[NOTE]
 * For SnapVault and SnapMirror updates to work, the relationships must exist.
 +
 Snap Creator does not create the relationships.
