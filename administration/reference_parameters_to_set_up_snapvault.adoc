@@ -11,22 +11,19 @@ summary: Several parameters are required to set up SnapVault.
 [.lead]
 Several parameters are required to set up SnapVault.
 
-[options="header"]
+[options="header", cols="20,30,50"]
 |===
-| Parameter| Setting| Description
-a|
-NTAP_SNAPVAULT_UPDATE
-a|
-(Y|N)
-a|
-Enables you to turn on and off the SnapVault update function.
-a|
-SNAPVAULT_ VOLUMES
-a|
+|Parameter |Setting |Description
+|NTAP_SNAPVAULT_UPDATE |(Y/N) |Enables you to turn on and off the SnapVault update function.
+a|NTAP_ALLOW_MIRRORVAULT_AS_MIRROR	a|(Y/N)	a|Enables you to use the mirror_vault protection policy type as SnapVault or SnapMirror.
+(Default) N: Enables the mirror_vault protection policy type for SnapVault.
+Y: Enables the mirror_vault protection policy type for SnapMirror.
+//BURT 1515411 Nov 30 2022
 
+a|SNAPVAULT_ VOLUMES
 a|
-Lists the source storage systems and volumes on which you want to perform a SnapVault update (for example, controller1:vol1,vol2,vol3;controller2:vol1;controller3:vol2,vol3). *Note:*
-
+a|Lists the source storage systems and volumes on which you want to perform a SnapVault update (for example, controller1:vol1,vol2,vol3;controller2:vol1;controller3:vol2,vol3). 
+[NOTE]
 * For SnapVault and SnapMirror updates to work, the relationships must exist.
 +
 Snap Creator does not create the relationships.
@@ -35,52 +32,36 @@ Snap Creator does not create the relationships.
 * For vSphere or vCloud, the value should be set to auto:detect.
 * Host names should be the short host name (name that appears on storage controller command prompt), not the FQDN.
 
-a|
-SNAPVAULT_QTREE_INCLUDE
-a|
-
-a|
-Lists the source storage systems and qtree paths that should be included in the SnapVault update. Without this option, all qtrees under a volume are vaulted by SnapVault if a relationship exists. Qtrees listed in the following example are vaulted by SnapVault and the rest are ignored by SnapVault: controller1:/vol/qtree/qtree1,/vol/volume/qtree2;controller2:/vol/volume/qtree1.
-a|
-NTAP_SNAPVAULT_RETENTIONS
+a|SNAPVAULT_QTREE_INCLUDE
 a|
 
-a|
-Determines the number of Snapshot copies on the SnapVault secondary that you want to retain for a given policy (for example, daily:21, weekly:12, monthly:3).
-a|
-NTAP_SNAPVAULT_RETENTION_AGE
+a|Lists the source storage systems and qtree paths that should be included in the SnapVault update. Without this option, all qtrees under a volume are vaulted by SnapVault if a relationship exists. Qtrees listed in the following example are vaulted by SnapVault and the rest are ignored by SnapVault: controller1:/vol/qtree/qtree1,/vol/volume/qtree2;controller2:/vol/volume/qtree1.
+
+a|NTAP_SNAPVAULT_RETENTIONS
 a|
 
-a|
-Enables you to define a retention age (in days) for SnapVault Snapshot copies. If configured, SnapVault Snapshot copies are deleted only if they exceed the number defined in NTAP_SNAPVAULT_RETENTIONS and if they are older than the retention age (in days).
-a|
-NTAP_SNAPVAULT_SNAPSHOT
-a|
-(Y|N)
-a|
-Enables use of SnapVault Snapshot copies; that is, Snapshot copies that are compatible with the storage controller SnapVault scheduler. When using this option, Snapshot copy delete is handled by the storage controller and not by Snap Creator. Additionally, Snapshot copies are named as follows: sv_<POLICY>.<##>. The policy name comes from the NTAP_SNAPSHOT_RETENTIONS parameter and the retention set is also applied to the storage controller SnapVault schedule.
-a|
-NTAP_SNAPVAULT_ NODELETE
-a|
-(Y|N)
-a|
-Overrides NTAP_SNAPVAULT_RETENTIONS and prevents Snapshot copies from being deleted. Leaving this on can cause your volume to fill up.
-a|
-NTAP_SNAPVAULT_RESTORE_WAIT
-a|
-(Y|N)
-a|
-In the case of SnapVault restore, it forces Snap Creator to wait for the operation to finish. This is recommended because after the SnapVault restore is complete, Snap Creator prompts the user to delete the restore Snapshot copies that get created on primary storage and are no longer needed.
-a|
-NTAP_SNAPVAULT_WAIT
+a|Determines the number of Snapshot copies on the SnapVault secondary that you want to retain for a given policy (for example, daily:21, weekly:12, monthly:3).
+
+a|NTAP_SNAPVAULT_RETENTION_AGE
 a|
 
-a|
-The wait time (in minutes) for the SnapVault update process to finish before creating a Snapshot copy on the SnapVault secondary.
-a|
-NTAP_SNAPVAULT_MAX_TRANSFER
+a|Enables you to define a retention age (in days) for SnapVault Snapshot copies. If configured, SnapVault Snapshot copies are deleted only if they exceed the number defined in NTAP_SNAPVAULT_RETENTIONS and if they are older than the retention age (in days).
+a|NTAP_SNAPVAULT_SNAPSHOT
+a|(Y/N)
+a|Enables use of SnapVault Snapshot copies; that is, Snapshot copies that are compatible with the storage controller SnapVault scheduler. When using this option, Snapshot copy delete is handled by the storage controller and not by Snap Creator. Additionally, Snapshot copies are named as follows: sv_<POLICY>.<##>. The policy name comes from the NTAP_SNAPSHOT_RETENTIONS parameter and the retention set is also applied to the storage controller SnapVault schedule.
+a|NTAP_SNAPVAULT_ NODELETE
+a|(Y/N)
+a|Overrides NTAP_SNAPVAULT_RETENTIONS and prevents Snapshot copies from being deleted. Leaving this on can cause your volume to fill up.
+a|NTAP_SNAPVAULT_RESTORE_WAIT
+a|(Y/N)
+a|In the case of SnapVault restore, it forces Snap Creator to wait for the operation to finish. This is recommended because after the SnapVault restore is complete, Snap Creator prompts the user to delete the restore Snapshot copies that get created on primary storage and are no longer needed.
+a|NTAP_SNAPVAULT_WAIT
 a|
 
+a|The wait time (in minutes) for the SnapVault update process to finish before creating a Snapshot copy on the SnapVault secondary.
+a|NTAP_SNAPVAULT_MAX_TRANSFER
 a|
-The maximum bandwidth SnapVault is allowed to use, in kbps. If it is not set, SnapVault uses the maximum available bandwidth.
+
+a|The maximum bandwidth SnapVault is allowed to use, in kbps. If it is not set, SnapVault uses the maximum available bandwidth.
 |===
+
