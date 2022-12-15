@@ -9,13 +9,15 @@ summary: 'You should configure a dedicated database user within the HANA databas
 :imagesdir: ../media/
 
 [.lead]
-You should configure a dedicated database user within the HANA database to run the backup operations with Snap Creator. In a second step, you should configure an SAP HANA userstore key for this backup user. This userstore key is used within the configuration of the Snap Creator SAP HANA plug-in.
+You should configure a dedicated database user within the HANA database to run the backup operations with Snap Creator. In a second step, you should configure a SAP HANA userstore key for this backup user. This userstore key is used within the configuration of the Snap Creator SAP HANA plug-in.
 
 The backup user must have the following privileges:
 
 * BACKUP ADMIN
 * CATALOG READ
-
+* DATABASE BACKUP ADMIN
+* DATABASE RECOVER OPERATOR
+//GitHub issue 
 image::../media/sap_hana_studio_to_create_backup_user.gif[The following screenshot of the SAP HANA Studio shows where the backup user can be created.]
 
 . At the administration host, the host where Snap Creator got installed, a userstore key is configured for all database hosts that belong to the SAP HANA database. The userstore key is configured with the OS root user: hdbuserstore set keyhost 3[instance]15 userpassword
