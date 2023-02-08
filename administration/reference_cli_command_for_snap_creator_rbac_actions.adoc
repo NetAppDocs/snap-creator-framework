@@ -19,7 +19,7 @@ The following table provides the command-line equivalent for Snap Creator GUI-ba
 a|
 Users
 a|
-Create a new user.
+Create a new user
 a|
 
 ----
@@ -34,8 +34,7 @@ snapcreator
 --verbose
 ----
 
-a|
-Delete a user.
+| |Delete a user
 a|
 
 ----
@@ -49,8 +48,8 @@ snapcreator
 --verbose
 ----
 
-a|
-List all users.
+a||
+List all users
 a|
 
 ----
@@ -63,8 +62,8 @@ snapcreator
 --verbose
 ----
 
-a|
-List all assigned users for a role.
+a||
+List all assigned users for a role
 a|
 
 ----
@@ -78,8 +77,8 @@ snapcreator
 --verbose
 ----
 
-a|
-List all users who are assigned a profile.
+a||
+List all users who are assigned a profile
 a|
 
 ----
@@ -96,7 +95,7 @@ snapcreator
 a|
 Roles
 a|
-Create a new role.
+Create a new role
 a|
 
 ----
@@ -111,8 +110,8 @@ snapcreator
 --verbose
 ----
 
-a|
-Delete a role.
+a||
+Delete a role
 a|
 
 ----
@@ -126,8 +125,8 @@ snapcreator
 --verbose
 ----
 
-a|
-Assign a role to a user.
+a||
+Assign a role to a user
 a|
 
 ----
@@ -142,8 +141,8 @@ snapcreator
 --verbose
 ----
 
-a|
-Unassign a role from a user.
+a||
+Unassign a role from a user
 a|
 
 ----
@@ -158,8 +157,8 @@ snapcreator
 --verbose
 ----
 
-a|
-List all assigned roles for a user.
+a||
+List all assigned roles for a user
 a|
 
 ----
@@ -176,7 +175,7 @@ snapcreator
 a|
 Permissions
 a|
-Create a new permission.
+Create a new permission
 a|
 
 ----
@@ -191,8 +190,8 @@ snapcreator
 --verbose
 ----
 
-a|
-Delete a permission.
+a||
+Delete a permission
 a|
 
 ----
@@ -207,8 +206,8 @@ snapcreator
 ----
 
 a|
-Assign a permission to a user.
-a|
+Assign a permission to a user
+a||
 
 ----
 snapcreator
@@ -222,8 +221,8 @@ snapcreator
 --verbose
 ----
 
-a|
-Unassign a permission from a user.
+a||
+Unassign a permission from a user
 a|
 
 ----
@@ -238,8 +237,8 @@ snapcreator
 --verbose
 ----
 
-a|
-List all permissions.
+a||
+List all permissions
 a|
 
 ----
@@ -252,8 +251,8 @@ snapcreator
 --verbose
 ----
 
-a|
-List all permissions assigned to a role.
+a||
+List all permissions assigned to a role
 a|
 
 ----
@@ -270,7 +269,7 @@ snapcreator
 a|
 Operations
 a|
-Assign an operation to a permission.
+Assign an operation to a permission
 a|
 
 ----
@@ -285,7 +284,7 @@ snapcreator
 --verbose
 ----
 
-a|
+a||
 Unassign an operation from a permission.
 a|
 
@@ -301,8 +300,8 @@ snapcreator
 --verbose
 ----
 
-a|
-List all operations.
+a||
+List all operations
 a|
 
 ----
@@ -315,8 +314,8 @@ snapcreator
 --verbose
 ----
 
-a|
-List all operations assigned to a permission.
+a||
+List all operations assigned to a permission
 a|
 
 ----
@@ -348,8 +347,8 @@ snapcreator
 --verbose
 ----
 
-a|
-Unassign a profile from a user.
+a||
+Unassign a profile from a user
 a|
 
 ----
@@ -364,8 +363,8 @@ snapcreator
 --verbose
 ----
 
-a|
-List all profiles assigned to a user.
+a||
+List all profiles assigned to a user
 a|
 
 ----
