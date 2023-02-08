@@ -205,9 +205,9 @@ snapcreator
 --verbose
 ----
 
-a|
-Assign a permission to a user
 a||
+Assign a permission to a user
+a|
 
 ----
 snapcreator
