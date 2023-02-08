@@ -65,7 +65,7 @@ The standard port for the selected transport type is displayed. If the storage s
 
  .. On the Controller/Vserver Credentials page, enter the IP address and login credentials for each storage controller or SVM that contains the volumes in this configuration file.
 +
-NOTE: You must add at least one storage controller or SVM to the configuration.
+NOTE: You must add at least one storage controller or SVM to the configuration. To use the vsim tunneling feature, select the *IP Tunneling* check box (for cluster only).
 
  .. On the Controller Credentials page, verify that the controllers display the correct information.
 +

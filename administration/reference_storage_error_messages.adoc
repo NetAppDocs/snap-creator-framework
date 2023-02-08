@@ -13,7 +13,7 @@ The storage-related error messages can help you troubleshoot any issues that occ
 
 The following table lists the error codes and messages along with a brief description of the error and the suggested resolution.
 
-[options="header"]
+[cols="15,35,50",options="header"]
 |===
 | Error code| Error message| Description/resolution
 a|
@@ -497,5 +497,19 @@ a|
 Qtree list on volume [%s] failed
 a|
 Check the logs for errors. You most likely have a NetApp Manageability error. The logs might reveal the cause of the problem.
+
+a|
+STORAGE-04119
+a|
+Listing Vservers failed with error
+a|
+Check the logs for errors. You most likely have a Manage ONTAP Solution error which may reveal the cause of the problem.
+
+a|
+VSERVER_TUNNEL_ENABLED
+a|
+(Y/N)
+a|
+Set the Vsim Tunneling. If set to Y, the Vsim Tunneling feature is enabled.
 
 |===
