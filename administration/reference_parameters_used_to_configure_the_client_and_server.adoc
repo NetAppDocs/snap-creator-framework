@@ -36,7 +36,7 @@ SC_CLONE_TARGET
 a|
 host name or IP_address of the clone target:port
 a|
-Enables clone operations.Using the parameter *cloneVol* with the {PRE|POST}_CLONE_CREATE_CMDxx parameter, you can manage the remote storage objects on the remote side (for example, mounting or unmounting file systems).
+Enables clone operations.Using the parameter *cloneVol* with the {PRE/POST}_CLONE_CREATE_CMDxx parameter, you can manage the remote storage objects on the remote side (for example, mounting or unmounting file systems).
 
 To specify a clone target, you should enter its name or IP address followed by a colon, and the port on which Snap Creator Agent is listening.
 
