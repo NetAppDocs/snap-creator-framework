@@ -11,7 +11,7 @@ summary: You can back up databases on demand or on a schedule. You can use eithe
 [.lead]
 You can back up databases on demand or on a schedule. You can use either the Snap Creator GUI or the Snap Creator CLI to back up databases.
 
-NOTE: You can use the GUI to back up databases.For information on how to use the CLI, see the https://library.netapp.com/ecm/ecm_download_file/ECMP12395422[Snap Creator Framework 4.1.2 Administration Guide^].
+NOTE: You can use the GUI to back up databases. For information on how to use the CLI, see the https://library.netapp.com/ecm/ecm_download_file/ECMP12395422[Snap Creator Framework 4.1.2 Administration Guide^].
 
 *Related information*
 
