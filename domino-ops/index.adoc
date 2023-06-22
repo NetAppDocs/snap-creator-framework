@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: domino, ibm, plug-in, operations, guide, configure, use, backup, back up, restore, databases
 summary: Describes how to configure and use the IBM Domino plug-in to back up and restore IBM Domino databases.
 ---
-= IBM Domino Plug-in Operations Guide
+= IBM Domino Plug-in Operations 
 :icons: font
 :imagesdir: ../media/
 
