@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: preinstallation, requirements, before, install
 summary: 'There are system license, software, and hardware requirements that you should consider before you install Snap Creator.'
 ---
-= Preinstallation requirements for Snap Creator
+= Preinstallation requirements for ONTAP Snap Creator
 :icons: font
 :imagesdir: ../media/
 
@@ -22,4 +22,4 @@ In addition, you should perform the following tasks before installing Snap Creat
 +
 For details, see the _Troubleshooting_ section in the _Snap Creator Framework Administration Guide_.
 
-// 2025 Jan 22, GH-16
+// 2025 Jan 23, GH-16
