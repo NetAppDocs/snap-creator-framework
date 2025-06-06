@@ -666,4 +666,4 @@ sidebar:
       - title: Commands used to manage Snap Creator user access
         url: "/administration/reference_cli_command_for_snap_creator_rbac_actions.html"
   - title: Legal notices
-    url: "/legal_notices.html"
+    url: "/legal-notices.html"
