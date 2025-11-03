@@ -42,7 +42,7 @@ These errors messages appear if one of the following conditions is not met:
 * Preinstallation steps were not performed or were performed incorrectly:
  ** On UNIX hosts, you must create symbolic links to IBM Domino shared object files.
  ** On Windows hosts, you must add the IBM Domino installation path to the PATH environment variable.
-For more information, see the link:https://docs.netapp.com/us-en/snap-creator-framework/installation/task_configure_windows_specific_settings_adding_path_to_the_environment_variables.html[Adding path to the environment variables].
+For more information, see the link:https://docs.netapp.com/us-en/snap-creator-framework/installation/task_configure_windows_specific_settings_adding_path_to_the_environment_variables.html[Snap Creator Framework Installation Guide - Adding path to the environment variables].
 * The bit level of Domino is different from the bit level of Snap Creator. For example, if you are using 32-bit Domino, you should use 32-bit Snap Creator.
 
 == Snap Creator backup fails because of a bad database
