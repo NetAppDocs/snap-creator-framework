@@ -11,7 +11,7 @@ summary: 'Common Snap Creator errors fall into two categories: generic Snap Crea
 [.lead]
 Common Snap Creator errors fall into two categories: generic Snap Creator errors and Domino plug-in-specific errors. Domino plug-in-specific errors typically involve preinstallation issues, bad databases, or problems with a custom restore action.
 
-NOTE: For information about generic Snap Creator errors, see the link:https://library.netapp.com/ecm/ecm_download_file/ECMP12395422[Snap Creator Framework 4.1.2 Administration Guide].
+NOTE: For information about generic Snap Creator errors, see the link:../administration/index.html[Snap Creator Framework 4.3.3 Administration Guide].
 
 == Domino plug-in is not supported on this platform
 
@@ -42,7 +42,7 @@ These errors messages appear if one of the following conditions is not met:
 * Preinstallation steps were not performed or were performed incorrectly:
  ** On UNIX hosts, you must create symbolic links to IBM Domino shared object files.
  ** On Windows hosts, you must add the IBM Domino installation path to the PATH environment variable.
-For more information, see the link:https://library.netapp.com/ecm/ecm_download_file/ECMP12395424[Snap Creator Framework 4.1.2 Installation Guide].
+For more information, see the link:https://docs.netapp.com/us-en/snap-creator-framework/installation/task_configure_windows_specific_settings_adding_path_to_the_environment_variables.html[Snap Creator Framework Installation Guide - Adding path to the environment variables].
 * The bit level of Domino is different from the bit level of Snap Creator. For example, if you are using 32-bit Domino, you should use 32-bit Snap Creator.
 
 == Snap Creator backup fails because of a bad database
@@ -138,3 +138,5 @@ Errors encountered while opening databases
 a|
 Check the logs to find the exact reason for the error or run Snap Creator in debug mode to find the error.
 |===
+
+// Internal GH issue #27, 2025-NOV-03
