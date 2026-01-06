@@ -75,7 +75,7 @@ Here is an example: `%S_%D_%T.log`
 a|
 SYBASE_TRAN_DUMP_COMPRESS
 a|
-(Y|N )
+(Y\|N )
 a|
 Enables or disables native Sybase transaction dump compression.
 a|
@@ -117,14 +117,14 @@ Enables you to specify the manifest file naming convention. The following keys c
 a|
 SYBASE_MANIFEST_DELETE
 a|
-(Y|N )
+(Y\|N )
 a|
 Allows the manifest to be deleted after the Snapshot copy has been created. The manifest file should be captured in the Snapshot copy so that it is always available with the backup.
 
 a|
 SYBASE_EXCLUDE_TEMPDB
 a|
-(Y|N )
+(Y\|N )
 a|
 Enables automatic exclusion of user-created temporary databases.
 

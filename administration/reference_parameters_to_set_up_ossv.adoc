@@ -17,7 +17,7 @@ Several parameters are required to set up Open Systems SnapVault (OSSV).
 a|
 NTAP_OSSV_ENABLE
 a|
-(Y|N)
+(Y\|N)
 a|
 Enables OSSV integration. This parameter must be used in combination with the NTAP_OSSV_HOMEDIR parameter. OSSV is also required on the host running Snap Creator. In OSSV, the policy retention logic handles the policies based on the predefined Snap Creator policies only. It does not support any policy object.
 
@@ -32,7 +32,7 @@ Sets the path to the OSSV home directory (/usr/snapvault).
 a|
 NTAP_OSSV_FS_SNAPSHOT
 a|
-(Y|N)
+(Y\|N)
 a|
 Required to set the NTAP_OSSV_FS_SNAPSHOT_CREATE_CMD parameter.Enables you to create a file system Snapshot copy using the Open System or file system command. The file system Snapshot copy is then transferred to the storage system using SnapVault.
 

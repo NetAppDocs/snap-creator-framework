@@ -61,7 +61,7 @@ Path to the directory to store the temporary file, for example, /tmp.The Oracle 
 a|
 ARCHIVE_LOG_ONLY
 a|
-(Y|N|policy:<Y|N>)
+(Y\|N|policy:<Y\|N>)
 a|
 Informs the Oracle plug-in to perform only a switch log operationThis setting is useful if you are handling archive log backups separately from data backups.
 
@@ -81,7 +81,7 @@ Path to the Oracle home directory for a given system identifier (SID)When backin
 a|
 ORACLE_EXPORT_PARAMETERS
 a|
-(Y|N )
+(Y\|N )
 a|
 The ORACLE_HOME and ORACLE_SID environment parameters are exported by using the export command. This is applicable only in UNIX or a Linux-based environment.
 a|
@@ -93,7 +93,7 @@ Option to configure offline or online backups by using the Snap Creator policy. 
 a|
 ORACLE_SHUTDOWNABORT
 a|
-(Y|N )
+(Y\|N )
 a|
 If set to Y while performing the Oracle offline backup, it uses the shutdown abort mechanism to ensure database shuts down in a consistent state. The shutdown steps for the ORACLE_SHUTDOWNABORT parameter is as follows:
 
