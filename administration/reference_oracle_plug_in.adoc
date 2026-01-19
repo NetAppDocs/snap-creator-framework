@@ -61,7 +61,7 @@ Path to the directory to store the temporary file, for example, /tmp.The Oracle 
 a|
 ARCHIVE_LOG_ONLY
 a|
-(Y\|N|policy:<Y\|N>)
+(Y\|N\|policy:<Y\|N>)
 a|
 Informs the Oracle plug-in to perform only a switch log operationThis setting is useful if you are handling archive log backups separately from data backups.
 

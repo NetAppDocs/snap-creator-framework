@@ -43,6 +43,7 @@ The following table lists and describes the Snap Creator parameters used in a ba
 
 |===
 | Parameter| Setting| Description
+
 a|
 SNAME
 a|
