@@ -39,14 +39,14 @@ Specifies the storage system, source volume, and an IGROUP. The IGROUP is then m
 a|
 NTAP_CLONE_FOR_BACKUP
 a|
-(Y|N)
+(Y\|N)
 a|
 If enabled, clones (volume and LUN) are created and then deleted after the other operations are complete. Otherwise, clones are deleted before the operations are complete. *Note:* If you are backing up clones to tape, this should be set to Y. If you are doing database refreshes, then you should set it to N.
 
 a|
 NTAP_CLONE_SECONDARY
 a|
-(Y|N)
+(Y\|N)
 a|
 If enabled, clones are created on the SnapMirror destination after the SnapMirror update is complete. *Note:* This setting should be used with NTAP_SNAPMIRROR_USE_SNAPSHOT, NTAP_SNAPMIRROR_WAIT, and NTAP_CLONE_SECONDARY_VOLUMES, and the cloneVol action.
 
@@ -97,7 +97,7 @@ Determines whether NFS export is persistent. If true is selected, the clone volu
 a|
 NTAP_CIFS_EXPORT_ENABLE
 a|
-(Y|N)
+(Y\|N)
 a|
 Setting to share a cloned volume using CIFS.
 |===

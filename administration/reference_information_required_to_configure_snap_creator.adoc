@@ -32,49 +32,49 @@ PRE_EXIT_CMD01=path_to_unquiesceCMD
 a|
 APP_IGNORE_ERROR
 a|
-(Y|N)
+(Y\|N)
 a|
 Determines whether Snap Creator should ignore errors from application plug-ins. This is useful when you want to back up multiple databases and do not want to stop the backup if the quiesce or unquiesce operations of one database fails.
 a|
 APP_DEFINED_BACKUP
 a|
-(Y|N)
+(Y\|N)
 a|
 The application plug-in is expected to perform the entire backup operation including quiescing, creating a Snapshot copy, and unquiescing. The built-in plug-ins do not support this kind of backup.
 a|
 APP_DEFINED_RESTORE
 a|
-(Y|N)
+(Y\|N)
 a|
 Enables application-based restore operations. In the event of a restore operation, Snap Creator sends a request to the application plug-in and the plug-in handles the request.
 a|
 APP_DEFINED_MOUNT
 a|
-(Y|N)
+(Y\|N)
 a|
 The built-in mount abilities of Snap Creator are ignored. Instead, the plug-in is responsible for all mount activities including volume or LUN clone creation. The built-in plug-ins do not support this type of mount.
 a|
 APP_DEFINED_UMOUNT
 a|
-(Y|N)
+(Y\|N)
 a|
 The built-in unmount abilities of Snap Creator are ignored. Instead, the plug-in is responsible for handling all unmount activities including volume or LUN clone deletion. The built-in plug-ins do not support this type of unmount operation.
 a|
 APP_AUTO_DISCOVERY
 a|
-(Y|N)
+(Y\|N)
 a|
 Enables application automatic discovery. Snap Creator sends a discover request to the application plug-in and the plug-in is then responsible for the discovery of the storage configuration. This can be done dynamically or made persistent using the APP_CONF_PERSISTENCE parameter, if the information is to be saved to the configuration file.
 a|
 APP_CONF_PERSISTENCE
 a|
-(Y|N)
+(Y\|N)
 a|
 Enables automatic discovery to be persistent, which means changes are dynamically updated in configuration file.
 a|
 APP_DEFINED_CLONE
 a|
-(Y|N)
+(Y\|N)
 a|
 The built-in cloning abilities of Snap Creator are ignored. Instead, the plug-in is responsible for handling all clone activities, including volume or LUN clone creation and deletion. The built-in plug-ins do not support this type of clone.
 a|

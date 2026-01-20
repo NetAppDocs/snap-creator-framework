@@ -35,13 +35,13 @@ Specifies the application name.
 a|
 XUSER_ENABLE
 a|
-(Y|N)
+(Y\|N)
 a|
 Enables or disables the use of an xuser for MaxDB so that a password is not required for the database user.
 a|
 HANDLE_LOGWRITER
 a|
-(Y|N)
+(Y\|N)
 a|
 Executes suspend logwriter (N) or resume logwriter (Y) operations.
 a|
@@ -63,7 +63,7 @@ Specifies the path for the MaxDB sqlcli command.If not set, sqlcli is used on th
 a|
 MAXDB_UPDATE_HIST_LOG
 a|
-(Y|N)
+(Y\|N)
 a|
 Instructs the MaxDB backup program whether or not to update the MaxDB history log.
 a|

@@ -42,7 +42,7 @@ The port to use for communications with Operations Manager console; 8088 is the 
 a|
 OM_EVENT_GENERATE
 a|
-(Y|N)
+(Y\|N)
 a|
 Enables or disables event creation in Operations Manager console.
 |===
