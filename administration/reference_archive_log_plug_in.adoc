@@ -19,7 +19,7 @@ The following table lists the Archive log plug-in parameters, provides their set
 a|
 ARCHIVE_LOG_ENABLE
 a|
-(Y|N|policy:age)
+(Y\|N\|policy:age)
 a|
 Enables archive log management (deletion of the old archive logs).
 a|
@@ -45,7 +45,7 @@ Specifies the file extension of the archive logs. For example, if the archive lo
 a|
 ARCHIVE_LOG_RECURSIVE_SEARCH
 a|
-(Y|N)
+(Y\|N)
 a|
 Enables the management of archive logs within subdirectories. If the archive logs are located under subdirectories, you should use this parameter.
 |===

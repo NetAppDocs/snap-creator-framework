@@ -50,7 +50,7 @@ List of databases and the ports they are listening on,for example, `db1:3307;db2
 a|
 MASTER_SLAVE
 a|
-(Y|N)
+(Y\|N)
 a|
 Specifies the backup database environment:If set to Y, backs up the master database.
 
@@ -61,7 +61,7 @@ NOTE: Snap Creator Framework backup deletes the required MySQL binary log files 
 a|
 PURGE_BINARY_LOG
 a|
-(Y|N )
+(Y\|N )
 a|
 Parameter works for the MySQL master slave database setup.
 

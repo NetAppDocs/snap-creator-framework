@@ -44,7 +44,7 @@ Specifies the SnapManager for Microsoft Exchange server name.
 a|
 SME_32bit
 a|
-(Y|N)
+(Y\|N)
 a|
 Enables or disables the use of the 32-bit version of PowerShell.
 |===

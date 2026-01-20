@@ -43,6 +43,7 @@ The following table lists and describes the Snap Creator parameters used in a ba
 
 |===
 | Parameter| Setting| Description
+
 a|
 SNAME
 a|
@@ -53,7 +54,7 @@ Specifies the Snapshot copy naming convention It should be unique. Snapshot copi
 a|
 SNAP_TIMESTAMP_ONLY
 a|
-(Y|N)
+(Y\|N)
 a|
 Sets the Snapshot naming conventionIf set to Y, Snapshot copies end with YYYYMMDDHHMMSS. Otherwise, new Snapshot copies are renamed to end with YYYYMMDDHHMMSS.
 
@@ -115,7 +116,7 @@ NOTE: Password must contain a minimum of two characters.
 a|
 NTAP_PWD_PROTECTION
 a|
-(Y|N)
+(Y\|N)
 a|
 Enables or disables password protection You must encrypt all passwords (storage system and applications or plug-ins) and save encrypted passwords in configuration file.
 
@@ -168,14 +169,14 @@ a|
 a|
 CMODE_SNAPSHOT_FORCE_DELETE
 a|
-(Y|N)
+(Y\|N)
 a|
 Ensures deletion of Snapshot copies that should be deleted based on the Snapshot copy policy In clustered Data ONTAP, Snapshot copies are not deleted if they have any dependencies, such as a clone.
 
 a|
 LOG_TRACE_ENABLE
 a|
-(Y|N)
+(Y\|N)
 a|
 Enables or disables logging of all events If disabled, the Manage ONTAP Solution result objects are not logged.
 
@@ -188,7 +189,7 @@ Sets the timeout value for all storage controller Manage ONTAP Solution calls; d
 a|
 USE_GLOBAL_CONFIG
 a|
-(Y|N)
+(Y\|N)
 a|
 Enables you to use global configuration to store values
 a|
@@ -205,20 +206,20 @@ databases@db2;databases@oracle
 a|
 CMODE_SET
 a|
-(Y|N)
+(Y\|N)
 a|
 Defines whether the configuration is for clustered Data ONTAP or Data ONTAP operating in 7-Mode
 a|
 ALLOW_DUPLICATE_SNAME
 a|
-(Y|N)
+(Y\|N)
 a|
 (Optional) Enables or disables the ability to create a configuration file with a duplicate Snapshot name This parameter will not work with global (Super Global or Profile Global) configuration files.
 
 a|
 SNAPCREATOR_MISSEDJOB_RUN
 a|
-(Y|N)
+(Y\|N)
 a|
 Sets whether misfired jobs (for example, a scheduled backup operation) will run when Snap Creator is restarted.*Note:* This does not affect any hourly schedules that have been created in Snap Creator.
 
