@@ -84,7 +84,7 @@ NOTE: Although the maximum accepted value for the *Job log size* is 10,000, the 
 During the Snap Creator Server service installation, a command prompt is displayed if a service was selected as part of the installation options. This process attempts to start existing services; therefore, it is common to see failure messages listed as part of this step.
 
 . Click *Finish* to close the Windows installer.
-. Validate the Snap Creator Framework GUI startup by navigating to the local host on the specified port (https://IP_address:gui_port).
+. Validate the Snap Creator Framework GUI startup by navigating to the local host on the specified port +(https://IP_address:gui_port)+.
 +
 You must connect using HTTPS; otherwise, the connection is not automatically redirected to an HTTPS connection and the GUI will not work.
 
