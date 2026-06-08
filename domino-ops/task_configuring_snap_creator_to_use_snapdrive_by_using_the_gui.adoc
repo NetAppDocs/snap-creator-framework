@@ -62,5 +62,5 @@ where:
 TIP: To run the command on the Server, prepend the command with the text SERVER, followed by a colon (:).
 
 . When you are satisfied with your entry, press *Enter*.
-. Repeat the last two steps to add another command.
+. Repeat steps 3 and 4 to add another command.
 . Click *Save* in the Configuration Content pane to save your changes.
