@@ -69,7 +69,7 @@ After the upgrade process is complete, start the Snap Creator Server service by 
 * Use the Services snap-in and start the service.
 * From a command prompt, enter the following command: `sc start snapcreatorserverservice`
 
-Also, you must validate the Snap Creator Framework GUI startup by navigating to the local host on the specified port (https://IP_address:gui_port).
+Also, you must validate the Snap Creator Framework GUI startup by navigating to the local host on the specified port +(https://IP_address:gui_port)+.
 
 You must connect using HTTPS; otherwise, the connection is not automatically redirected to an HTTPS connection and the GUI will not work.
 

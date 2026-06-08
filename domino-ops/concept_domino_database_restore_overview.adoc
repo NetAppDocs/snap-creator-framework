@@ -19,7 +19,7 @@ Only point-in-time volume restores are available when you restore a SnapVault co
 
 == Understanding destination directories
 
-Volume restores and single-file restores typically have different destination directories. You specify the destination directory in the Data Restore Directory parameter in the backup and restore configuration file (see step link:task_using_the_gui_to_create_a_configuration_file.md#STEP_E6C507729B3647FD8B2E8D0818F22D3B[task_using_the_gui_to_create_a_configuration_file.md#STEP_E6C507729B3647FD8B2E8D0818F22D3B]):
+Volume restores and single-file restores typically have different destination directories. You specify the destination directory in the Data Restore Directory parameter in the backup and restore configuration file (see step link:task_using_the_gui_to_create_a_configuration_file.html[task using the gui to create a configuration file]):
 
 * For a volume restore, you need to set Data Restore Directory to the Domino data directory.
 * For a single-file restore, you need to set Data Restore Directory to a subdirectory on the Domino data volume.
