@@ -171,7 +171,7 @@ The specified volumes are displayed on the Controller/Vserver Credentials page.
 IMPORTANT: If you plan to back up the changeinfo directory, you must configure the volume containing the directory as a metadata volume, as described in xref:concept_use_meta_data_volumes_setting_to_back_up_the_changeinfo_directory.adoc[Backing up the changeinfo directory]. This option tells the IBM Domino plug-in to create a Snapshot copy of the changeinfo volume _after_ creating the Snapshot copy for database files.
 
 . On the Controller/Vserver Credentials page, click *Add* if you want to specify SVM details and volumes to be backed up for another primary storage system.
-. On the Snapshot details page, specify Snapshot configuration information:
+. [[thirteenth-step]]On the Snapshot details page, specify Snapshot configuration information:
 +
 [options="header"]
 |===
@@ -218,7 +218,7 @@ The policy for mirrored Snapshot copies is the same as the policy for primary Sn
 
  .. Click *SnapVault* to archive Snapshot copies.
  .. Specify the policy for archived Snapshot copies.
- .. The instructions are in the following step<<STEP_81795CF9D6294AC891BC3D0CE4827CA3,13>>.
+ .. The instructions are in the following step<<thirteenth-step,13>>.
  .. In *SnapVault wait time*, enter the number of minutes you want Snap Creator to wait for the SnapVault operation to complete.
  .. You need to have set up SnapMirror and SnapVault relationships before performing replication to secondary storage. For more information, see xref:concept_snapmirror_and_snapvault_setup.adoc[SnapMirror and SnapVault setup].
 . On the Data Protection Volumes page, click *Add*, and then select the SVM for the primary storage system.

@@ -57,7 +57,7 @@ Also, delete the Snap Creator 4.0 installation directory.
 
 IMPORTANT: Do not delete your backup copies until you are certain that you do not need to revert to an older version.
 
-You must also validate the Snap Creator Framework GUI startup by navigating to the local host on the specified port (https://IP_address:gui_port).
+You must also validate the Snap Creator Framework GUI startup by navigating to the local host on the specified port +(https://IP_address:gui_port)+.
 
 You must connect using HTTPS; otherwise, the connection is not automatically redirected to an HTTPS connection and the GUI will not work.
 

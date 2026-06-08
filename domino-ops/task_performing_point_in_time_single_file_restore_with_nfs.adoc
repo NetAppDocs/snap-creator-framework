@@ -41,7 +41,7 @@ Transaction logs can only be played forward. Selecting a time before the Snapsho
 +
 Selecting *Restore* automatically launches the Snap Creator Framework Restore wizard. Throughout the Restore wizard, click *Next* to advance to the next page and click *Back* to return to the previous page.
 +
-NOTE: If you are restoring from a SnapVault copy, you are prompted to restore from primary or secondary storage. Your selection depends on how you are handling the limitation described in link:concept_domino_database_restore_overview.md#GUID-4D864E27-DE54-43BF-9B9F-EF2F240F65D9[concept_domino_database_restore_overview.md#GUID-4D864E27-DE54-43BF-9B9F-EF2F240F65D9].
+NOTE: If you are restoring from a SnapVault copy, you are prompted to restore from primary or secondary storage. Your selection depends on how you are handling the limitation described in link:concept_domino_database_restore_overview.html[concept_domino_database_restore_overview.md#GUID-4D864E27-DE54-43BF-9B9F-EF2F240F65D9].
 
 . On the Restore details page, specify the restore details:
 +

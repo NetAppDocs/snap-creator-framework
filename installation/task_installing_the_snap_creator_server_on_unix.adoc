@@ -140,7 +140,7 @@ Checking Status of scServer:
 Running
 ----
 
-. Validate the Snap Creator Framework GUI startup by navigating to the local host on the specified port (for example, https://10.12.123.123:8443).
+. Validate the Snap Creator Framework GUI startup by navigating to the local host on the specified port +(for example, https://10.12.123.123:8443)+.
 +
 You must connect using HTTPS; otherwise, the GUI does not work.
 +

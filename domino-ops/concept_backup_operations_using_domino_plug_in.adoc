@@ -19,7 +19,7 @@ High-level steps are as follows:
 . Put files in backup mode, one database at a time.
 . Check for inconsistent or corrupted databases.
 +
-NOTE: You can force the plug-in to proceed with backup operations despite errors, as described in step link:task_using_the_gui_to_create_a_configuration_file.md#STEP_AA41331683A24598B7845367CB967F99[task_using_the_gui_to_create_a_configuration_file.md#STEP_AA41331683A24598B7845367CB967F99].
+NOTE: You can force the plug-in to proceed with backup operations despite errors, as described in step link:task_using_the_gui_to_create_a_configuration_file.html[task_using_the_gui_to_create_a_configuration_file].
 
 . Make a Snapshot copy of each volume.
 . If Domino transaction logging is in use, archive copies of Domino transaction logs for use in up-to-the-minute restore operations.

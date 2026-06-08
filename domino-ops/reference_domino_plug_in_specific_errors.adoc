@@ -47,7 +47,7 @@ For more information, see the link:https://docs.netapp.com/us-en/snap-creator-fr
 
 == Snap Creator backup fails because of a bad database
 
-By default, a backup operation will fail if one or more databases are in an inconsistent or corrupted state. You can force the plug-in to proceed with backup operations despite errors, as described in step link:task_using_the_gui_to_create_a_configuration_file.md#STEP_AA41331683A24598B7845367CB967F99[task using the gui to create a configuration file].
+By default, a backup operation will fail if one or more databases are in an inconsistent or corrupted state. You can force the plug-in to proceed with backup operations despite errors, as described in step link:task_using_the_gui_to_create_a_configuration_file.html[task using the gui to create a configuration file].
 
 == Domino restore using custom action fails
 
@@ -82,7 +82,7 @@ ltd-00001
 a|
 Domino plug-in cannot work with SNAP_TIMESTAMP_ONLY = N. SNAP_TIMESTAMP_ONLY should be set to Y.
 a|
-For more information, see step link:task_using_the_gui_to_create_a_configuration_file.md#STEP_81795CF9D6294AC891BC3D0CE4827CA3[task_using_the_gui_to_create_a_configuration_file.md#STEP_81795CF9D6294AC891BC3D0CE4827CA3].
+For more information, see step link:task_using_the_gui_to_create_a_configuration_file.html[task_using_the_gui_to_create_a_configuration_file].
 a|
 ltd-00002
 a|
